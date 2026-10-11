@@ -1,0 +1,27 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Synthetic plate on block, one externally visible mechanical rod; no functional flow claims",
+    "operating_state": "static",
+    "outputs": {"views": ["overview"], "annotations": "svg", "width": 420, "height": 300, "background": "opaque", "samples": 8},
+    "required_components": ["base", "plate"],
+    "required_connections": ["rod"],
+    "required_supports": ["stack"]
+  },
+  "components": [
+    {"id": "base", "object": "base_mesh", "evidence": "schematic", "size_basis": "illustrative", "state": "static"},
+    {"id": "plate", "object": "plate_mesh", "evidence": "schematic", "size_basis": "illustrative", "state": "static", "parent": "base"}
+  ],
+  "ports": [
+    {"id": "a", "owner": "base", "object": "anchor_a", "medium": "mechanical", "direction": "bidirectional", "state": "connected"},
+    {"id": "b", "owner": "plate", "object": "anchor_b", "medium": "mechanical", "direction": "bidirectional", "state": "connected"}
+  ],
+  "connections": [
+    {"id": "rod", "a": "a", "b": "b", "kind": "mechanical", "medium": "mechanical", "object": "rod_curve", "required": true, "tolerance": 0.03}
+  ],
+  "supports": [
+    {"id": "stack", "child": "plate", "parent": "base", "required": true, "tolerance": 0.03}
+  ],
+  "labels": [{"id": "plate_label", "text": "Plate", "target": "plate", "side": "right"}]
+}

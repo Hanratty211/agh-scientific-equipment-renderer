@@ -1,0 +1,11 @@
+# 可选项目记录 v0.6（JSON）
+
+普通预览可先画完整低成本整体，再逐步填写实际需要的字段；**不填写不表示核查通过**。需要自动 QA 时复制 `examples/valid_record.json` 并按任务裁剪。工具 `scripts/validate_project_record.py` 只核记录的一致性与请求范围，不替代论文、图像或真实连通的验证。文件应与 `.blend` 同步留版，不在失败后偷偷缩小 `required_components/required_connections`。
+
+最小顶层：`schema: "agh-equipment/0.6"`、`task`、`components`、`ports`、`connections`、`supports`。`task` 中 `kind` 为 `physical_setup`（整体实物）、`device`、`internal_state`、`repair` 或 `hybrid`；`scope` 为用户原话摘要；`outputs` 中 `views` 非空，`annotations` 为 `none|svg`，`width/height`、`background`、`samples` 按任务选。`required_components`、`required_connections`（关系 ID）与 `required_supports` 只列本次**必须展示**的条目。空/缺失的范围不会 PASS，返回 UNKNOWN；有明确必需项却不存在返回 FAIL。
+
+`components` 每项 `id`, `object`（Blender 对象名）, `evidence`（`photo|paper|user|schematic|unknown`）、可选 `parent`（组件 ID）、`size_basis`（`source|illustrative|unknown`）和 `state`。`ports` 每项 `id`, `owner`（组件 ID）, `object`（Blender 可识别锚点；独立场景核查要求此对象真实落在所属部件的**评估后网格表面**附近）, `medium`（如 `fluid|electric|optical|mechanical|rf|unknown`）, `direction`（`in|out|bidirectional|unknown`）, `state`（`connected|open|unknown`）及必要时 `open_reason`。不见的端口不要虚构锚点；未确定的身份/流向就记 unknown。
+
+`connections` 每项 `id`, `a`, `b`（端口 ID）, `kind`（`transport|electric|optical|mechanical|rf|field|logical|temporal|contact`）, `medium`, 可选 `object`（真实曲线/直束对象名）, `required`（是否必须建并验端点）。可见连线应指定对象；`temporal/field/logical` 不等于物理管线，默认不查端点。两端须明确；已知介质矛盾 FAIL，unknown 时 UNKNOWN，不会靠外观猜连通。`supports` 每项 `id`, `child`, `parent`（组件 ID）、`required`、`tolerance`（场景世界单位）；接触仅按有明确声明/容差且工具支持的网格表面采样查，非力学承载认证。一个选定 `task.operating_state` 可填字符串；多个时序状态不得写成同时存在的硬件。
+
+修改依赖：部件身份/端口 owner 或 medium 变更后，重验所引用的 connections、supports、对象绑定、标签和相应旧 QA；工具报告 `dependent_records` 供逐项回查，不会自动修复历史结论。`report.status` 只代表记录静态检查。由 `validate_project_record.py RECORD --report qa.json` 执行；保存场景检查见 `scripts/audit_saved_scene.py`，PNG 辅助见 `scripts/review_images.py`。本文件及工具可单独拷贝 Skill 目录使用；`references/evidence_index.md` 的开发仓库相对链接只是**可选档案**。

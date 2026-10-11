@@ -1,0 +1,8 @@
+{
+  "images": [
+    {"id": "synthetic", "path": "fixture.png", "regions": [
+      {"id": "left_center", "xyxy": [0.15, 0.25, 0.65, 0.8], "output": "crops/left_center.png"}
+    ]}
+  ],
+  "contact_sheet": "contact_sheet.png"
+}

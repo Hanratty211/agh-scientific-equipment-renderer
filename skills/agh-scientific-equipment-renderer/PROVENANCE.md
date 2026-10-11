@@ -1,9 +1,9 @@
-# Skill v0.5 试用版｜编写、更正与 AGH 执行记录
+# Skill v0.6 试用版｜编写、更正与 AGH 执行记录
 
 **Skill**：`agh-research-figure-skill/skills/agh-scientific-equipment-renderer/`
-**版本**：v0.1 草案 → v0.2 纠错 → v0.3 试用版 → v0.4 本地候选 → **v0.5 本地修订（2026-10-11；安装与运行时版本须单独核验）**。
+**版本**：v0.1 草案 → v0.2 纠错 → v0.3 试用版 → v0.4 本地候选 → v0.5 本地/Git → **v0.6 本地开发（2026-10-11；安装与运行时版本独立）**。
 **来源**：两个公开光学案例：case-1 ⁸⁷Sr 冷冻光晶格钟与 case-2 D2NN OAM-STM Fig.2(a) 的真实迭代、失败版本和撤回记录。case-1 有正式图；case-2 仅有低成本预览，用户允许本轮更新 Skill，**未出正式图**；材质对比**未应用总览**。
-**状态**：有限案例经验的试用版，不宣称全领域或 CAD 级复刻验证。旧 NOT_FOUND 是 v0.3 起草时的历史事实；后续已按第 77–80 行所载在运行时成功读取 v0.3。**本地 v0.5 / Git 同步本身不等于已安装、已启用或运行时已读到 v0.5；此前 SKILL_TARGET_CONFLICT 不得以 shell 覆盖安装快照。**
+**状态**：有限案例经验的试用版，不宣称全领域或 CAD 级复刻验证。旧 NOT_FOUND 是 v0.3 起草时的历史事实；后续已按第 77–80 行所载在运行时成功读取 v0.3。**本地 v0.6 / Git 同步本身不等于已安装、已启用或运行时已读到 v0.6；此前 SKILL_TARGET_CONFLICT 不得以 shell 覆盖安装快照。**
 
 ## v0.1–v0.2 历史轨迹（E# 为动作摘要，见会话 sessionKey `360fa855-0fd0-430f-ad31-8e0da1e94661`；非原始 ledger 行号）
 
@@ -93,3 +93,9 @@
 - 修 `scripts/blender_core.py`：`clip_check` 保持仅轴向 near/far；`key_parts_ok` 从误导的 `in_frame` 改为 `in_clip_range`，删除旧键而不将其默认映射成全入框（旧调用者须显式迁移）；横/纵投影与遮挡**不在该助手内实现**，按任务独立报告。`behavior_tests.py` 新增 T4 反例：目标轴向在裁剪内但水平/垂直画外、无相机/缺失对象为 None。此行为变化不追溯改变 case-2 旧脚本或旧通过表，旧 `in_frame` 宣称不可作为全角点入框证据。
 - 保留 v0.1–v0.4 的历史更正和 AGH 索引；新批次落盘执行及外部反馈见 [最终审查状态](../../FINAL_EXTERNAL_REVIEW_STATUS.md)、[07 裁切检查点](../../FINAL_REFERENCE_CROP_V3_CHECKPOINT.md)、[批次 v05 状态](../../V05_BATCH_STATUS.md)。07 仍只称**范围改善、功能拓扑未验证**；外部模型阶段反馈不是用户验收或跨领域验证。该会话已加载的仍是 revision `d15965f5e5ee534aaea1e5121d35c19b8d64799a1280c6bd4b148fbc8455a962` 对应的 v0.3，更新本地/Git 不能替代受控安装和后续 skill_read。
 - **本地行为核查**：`python3 skills/agh-scientific-equipment-renderer/scripts/check_structure.py` 实际退出 0，Blender T1 8m³、T2 4/4、T3 8/8、T4 10/10（水平/垂直越界但轴向通过）均 PASS；91 条本地 Markdown 引用缺失 0，`git diff --check` 无报错。该结果不验证 03–10 PNG 外观或 07 功能拓扑。此轮修改以前已存在的 v0.4 工作区未提交差异（尤其 T2/T3 更正）一并审查提交，原始历史与撤回保留。新 `in_clip_range` 是有意破坏旧 `in_frame` 字典键的兼容变更；case-2 早期调用脚本只读 exists/renders，其他使用者须迁移，不在本轮重渲旧案例。
+
+## v0.6 本地能力补齐｜合成工具而非科研验收
+- 只读本项目现有 Skill、公开案例检查点及当前用户/外部模型实际反馈；**未读原 Scientific-System-Renderer Skill、脚本或历史制品，未用未发表成果**。保持先整体 3D 预览。新增独立可拷贝的可选记录/例子与静态校验，保存场景审计，以及 PNG 数值裁图和目标网格锚定的可编辑 SVG 标签层；按需域检查保留在 `references/domain_checks.md`。既有开发仓库旧案例链接属可选证据档案，新工具/例子均在 Skill 内，不依赖本机 `/Users/wht`。
+- **记录/审计边界**：无必需范围 UNKNOWN，缺 required 组件/连接/支撑与错端口/介质 FAIL；场景审核读磁盘 `.blend`，评估后网格三角面求锚点归属及有限支持近接，曲线/简单直圆柱取真实端点，投影分水平/垂直/near-far。未支持复杂曲面束、遮挡、碰撞、受力、密封、真实流路/电路则 UNVERIFIED；无字任务拒绝 SVG 标签，数值图片报告不判视觉。部件/端口改动的依赖记录重查，不替旧结论静默过关。
+- **真实修订轨迹**：首次有效场景审核发生局部变量 `checks` 覆盖报告列表的 Python 异常（`10468`），修成 `projections_checks` 后独立重开场景 PASS（`10502`）。首次水平画外反例以世界 X 平移误使物体越相机背面、深度 FAIL，回查数值后改为相机局部横向平移；第一次回归 `10656` 16/17，修后 `10690` 17/17，后续补场景渲染状态再次 `10742` 17/17。该通过仅是合成测试工具覆盖项，非公开案例再验或视觉验收。PNG 小样合成 RGBA 图，`review_images.py` 的哈希/裁框/alpha 结果见本轮轻量结果；SVG 确有 Plate/引线、无字拒绝生效。不重渲历史案例。
+- v0.5 Git 基线为 `f6dfd9d2eebaf1c9bdf10becfd42b5ba2b8ed8d7`，当时本地/`private/main`/远端 SHA 一致。此次 v0.6 提交/远端验证单独以本轮实际 Git 结果为准；**运行时当前加载资源不是本地 v0.6**，此前安装快照冲突不通过 shell 覆盖。合成反例的轻量数值摘录见 [`examples/v06_results.json`](examples/v06_results.json)；脚本放到独立临时目录后，静态记录检查与 17 案例回归再次 exit 0（`10913`）。本轮没有借用旧案例 PNG/场景训练或重渲。

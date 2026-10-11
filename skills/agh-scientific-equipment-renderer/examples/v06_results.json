@@ -1,0 +1,23 @@
+{
+  "version": "v0.6-trial",
+  "environment": "Blender 5.1.2, macOS darwin-arm64; synthetic local fixture only",
+  "commands": [
+    "python3 examples/run_v06_regression.py --blender /Applications/Blender.app/Contents/MacOS/Blender --report /tmp/agh-v06-regression.json",
+    "python3 scripts/check_structure.py",
+    "python3 scripts/review_images.py /tmp/agh-v06/review.json --report /tmp/agh-v06/review_report.json"
+  ],
+  "observed": {
+    "regression_first_exit": 1,
+    "regression_first_issue": "horizontal world-X displacement also moved object behind camera; clip-depth FAIL invalidated intended counterexample",
+    "regression_corrected_exit": 0,
+    "regression_cases": 17,
+    "record": "valid PASS; empty required scope UNKNOWN; missing component, wrong owner, medium contradiction, missing required connection/support, no-text-with-label FAIL",
+    "saved_scene": "valid PASS; translated route endpoint mismatch, horizontal and vertical outside while clip depth PASS, removed contact support FAIL",
+    "labels": "actual Plate text and line with data-target=plate generated in editable SVG; no-text task rejected and no file created",
+    "png_report": "NUMERIC_ONLY; 420x300 RGBA synthetic PNG, crop [63,75,273,240] => 210x165; SHA-256 0cf8a7de342b126e8765cac2125f21c3ccafdd4bd067ac12cd090e7182635cf9",
+    "structure_check_exit": 0,
+    "local_markdown_links": "109 checked, 0 missing",
+    "copied_skill_regression_exit": 0
+  },
+  "limits": ["synthetic tests are not science or visual approval", "occlusion/collisions/functional transport/force/electrical field are UNVERIFIED", "copy requires Blender and Pillow for respective scripts"]
+}

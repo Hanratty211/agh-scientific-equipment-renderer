@@ -1,6 +1,6 @@
-# v0.5 证据索引｜既有三案例＋03–10 八例外部有限读图，非跨域验收
+# v0.6 证据索引｜有限公开案例＋合成工具测试，非跨域验收
 
-路径相对本文件。每项只支持**指明的判断**；旧文件中有撤回的“通过”声明，必须连同更正阅读。案例尺寸、坐标、对象名、材质权重、视角数、采样数只属于案例证据，不作为 Skill 默认值。
+以下旧案例相对路径是**开发仓库可选档案**；Skill 复制到新目录后缺少这些档案不影响主流程、示例与脚本。每项只支持**指明的判断**；旧文件中有撤回的“通过”声明，必须连同更正阅读。案例尺寸、坐标、对象名、材质权重、视角数、采样数只属于案例证据，不作为 Skill 默认值。
 
 | 方法/纠错 | case-1 可核查证据 | case-2 可核查证据 | 推广边界 |
 |---|---|---|---|
@@ -31,3 +31,8 @@
 | P28 批次裁图与证据分层 | [最终外部模型读图状态](../../../FINAL_EXTERNAL_REVIEW_STATUS.md)、[07 v3 裁图与检查点](../../../FINAL_REFERENCE_CROP_V3_CHECKPOINT.md)、[最新版拼图](../../../cases_03-10_reference_previous_latest_final_montage_v2.png) | 外部模型后续确认 b/标签完整且排除 a/data，仅证明**参考范围**；非 AGH 亲眼读图、非用户最终验收/全域通过 |
 
 **最新版索引**：03/04/10 v04；05 v05；06/09 v02；07/08 v03。03/04/05/06/08/09/10 的外部模型仅作有限视觉反馈；07 特别标为“范围改善，功能拓扑未验证”。以上经验把**行动与边界**提升，不把具体源图像素坐标、布尔面数、材质参数或接头数量写成通用默认。
+
+## v0.6 自包含合成工具证据（拷贝 Skill 后可运行）
+- [`examples/valid_record.json`](../examples/valid_record.json) 是 2 组件、2 锚点、一条合成机械线与一条支撑的非科学小例；[记录格式](project_record.md) 和 [`scripts/validate_project_record.py`](../scripts/validate_project_record.py) 明确静态检查边界。
+- [`examples/make_synthetic_scene.py`](../examples/make_synthetic_scene.py) 生成临时 `.blend`；[`scripts/audit_saved_scene.py`](../scripts/audit_saved_scene.py) 独立读已存场景，报告世界几何端点/有限支撑近接及横、纵、深度。[`examples/run_v06_regression.py`](../examples/run_v06_regression.py) 的有效与可失败反例只证明这些工具在合成场景的分项行为。
+- [`scripts/review_images.py`](../scripts/review_images.py) 和 [`examples/review_config.json`](../examples/review_config.json) 演示 PNG 哈希、归一化裁框、Alpha/分辨率数值；[`scripts/make_svg_labels.py`](../scripts/make_svg_labels.py) 输出有字 SVG 或拒绝无字记录。这些均**不**建立源图观感、照片标签正确性、接触功能、设备身份或用户最终验收。
