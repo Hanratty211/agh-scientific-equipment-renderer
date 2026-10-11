@@ -13,16 +13,25 @@
     "regression_cases_before_independent_review": 17,
     "regression_cases_after_review": 31,
     "regression_after_review_exit": 0,
+    "regression_final_review_cases": 44,
+    "regression_final_review_exit": 0,
+    "regression_final_first_exit": 1,
+    "regression_final_first_issues": "test harness mistakenly expected overall UNVERIFIED where separate endpoint/projection FAIL remained; static FAIL short-circuit rightly removed endpoint checks for invalid tolerances; viewport hide did not change render branch but other geometric checks could FAIL",
     "copied_skill_regression_after_review_exit": 0,
+    "copied_skill_regression_final_exit": 0,
+    "copied_skill_regression_final_cases": 44,
     "local_markdown_links_after_review": "110 checked, 0 missing",
     "record": "valid PASS; empty required scope UNKNOWN; missing component, wrong owner, medium contradiction, missing required connection/support, no-text-with-label FAIL",
     "saved_scene_initial": "valid PASS before render-inclusion limit was corrected; translated route endpoint mismatch, horizontal and vertical outside while clip depth PASS, removed contact support FAIL",
-    "saved_scene_corrected": "valid geometric ENDPOINTS/SUPPORT/CLIP/HORIZONTAL/VERTICAL PASS, overall UNVERIFIED because render inclusion/occlusion is not fully checked; missing explicit port/connection tolerance UNVERIFIED; bool/NaN FAIL; missing task-required route FAIL",
+    "saved_scene_corrected": "valid geometric ENDPOINTS/SUPPORT/CLIP/HORIZONTAL/VERTICAL PASS, overall UNVERIFIED because render inclusion/occlusion is not fully checked; absent tolerance UNVERIFIED; invalid bool/NaN fail static record with no geometry; missing task-required route FAIL",
+    "final_support_counterexamples": "support_gap and face-interior-contact both SUPPORT=UNVERIFIED even if other independent geometric checks produce overall FAIL; face-interior sampled vertex gap 1.414 > tolerance 0.03 world units despite face contact",
+    "final_render_counterexamples": "viewport_hide => COMPONENT_RENDER UNVERIFIED with valid path (overall may fail independent checks); object.hide_render => COMPONENT_RENDER FAIL; sole collection excluded => COMPONENT_RENDER FAIL; alternate included collection => COMPONENT_RENDER UNVERIFIED with valid path",
+    "final_invalid_record_audit": "task.kind=[], port.medium={}, outputs=[] each exit 2, structured FAIL, zero geometry checks; single component without ports/connections => UNVERIFIED no physical failure",
     "labels": "actual Plate text and line with data-target=plate generated in editable SVG; no-text task rejected and no file created",
     "png_report": "NUMERIC_ONLY; 420x300 RGBA synthetic PNG, crop [63,75,273,240] => 210x165; SHA-256 0cf8a7de342b126e8765cac2125f21c3ccafdd4bd067ac12cd090e7182635cf9",
     "structure_check_exit": 0,
     "local_markdown_links": "109 checked, 0 missing",
     "copied_skill_regression_initial_exit": 0
   },
-  "limits": ["synthetic tests are not science or visual approval", "render inclusion, occlusion/collisions/functional transport/force/electrical field are UNVERIFIED", "SVG actual glyph extents not checked; anchor in frame does not imply entire text fits", "copy requires Blender and Pillow for respective scripts"]
+  "limits": ["synthetic tests are not science or visual approval", "render inclusion, face-contact completeness, occlusion/collisions/functional transport/force/electrical field are UNVERIFIED", "SVG actual glyph extents not checked; anchor in frame does not imply entire text fits", "copy requires Blender and Pillow for respective scripts"]
 }

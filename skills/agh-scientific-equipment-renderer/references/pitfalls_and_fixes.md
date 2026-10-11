@@ -175,4 +175,5 @@
 - **行动**：按 [可选记录](project_record.md)声明要求展示的对象、两端/所属、未知开放状态与所选状态；运行静态校验及保存场景审核。空必需范围 UNKNOWN，错端口/少支撑 FAIL；世界端点取评估后曲线或简单直束网格、锚点取真实网格顶点中心，再查 owner 的 BVH 三角面。投影分水平、垂直与 near/far；报告的对象/线段接近仅有限几何证据。
 - **合成反例**：[`examples/run_v06_regression.py`](../examples/run_v06_regression.py) 覆盖空记录、少组件/支撑、错 owner/介质、世界变换后端点错配、横/纵画外而轴向通过、无字标签拒绝。PNG 辅助只记录哈希/裁框；有字 SVG 目标为已保存场景网格的投影中心。
 - **修订**：外部独立检查发现种类/介质矛盾及 NaN 可过、非法引用崩溃、隐式容差/required route 漏查。现静态记录错类型结构化 FAIL、未知尺寸 UNKNOWN；场景缺显式容差 UNVERIFIED，必需 route 结合任务列表，render 不再只凭 hide_render 给 PASS。长 SVG 文字的完整边界**未核**。
+- **再次更正**：顶点最小近接未采到不证明面间无接触，大平面内面接触反例使角点都离父面远；改为 UNVERIFIED，首次 `support_gap` 被整体其他几何 FAIL 混淆，现要求该 SUPPORT 项不 FAIL。view-layer 取当前上下文，忽略仅属视口的 `hide_viewport`，多 collection 路径按至少一条有效纳入；静态 FAIL 短路几何并保留结构化错误。见 PROVENANCE 真实首次误判/更正。
 - **边界**：合成场景不是公开科学案例或视觉验收；曲面/复杂束、碰撞、遮挡、真实受力、流体闭合/密封、电气传输、时序正确性均未自动证明。

@@ -30,6 +30,7 @@ def validate(data):
   return out
  if not isinstance(data,dict):return {'status':'FAIL','errors':[{'code':'NOT_OBJECT','where':'$'}],'unknown':[],'checks':[],'dependent_records':{}}
  if data.get('schema')!=SCHEMA:fail('SCHEMA','schema')
+ if 'task' in data and not isinstance(data['task'],dict):fail('TASK_TYPE','task')
  task=data.get('task');task=task if isinstance(task,dict) else {}
  if not identifier(task.get('kind')) or task['kind'] not in KINDS:fail('TASK_KIND','task.kind')
  if not isinstance(task.get('scope'),str) or not task.get('scope').strip():unsure('SCOPE_UNDECLARED','task.scope')
@@ -38,8 +39,8 @@ def validate(data):
  if 'outputs' in task and not isinstance(task['outputs'],dict):fail('OUTPUTS_TYPE','task.outputs')
  if 'views' in outs and not isinstance(outs['views'],list):fail('VIEWS_TYPE','task.outputs.views')
  if not isinstance(outs.get('views'),list) or not outs['views']:unsure('VIEWS_UNDECLARED','task.outputs.views')
- if 'annotations' in outs and not identifier(outs['annotations']):fail('ANNOTATION_MODE_INVALID','task.outputs.annotations')
- elif outs.get('annotations') not in ('none','svg'):unsure('ANNOTATION_MODE_UNDECLARED','task.outputs.annotations')
+ if 'annotations' in outs and (not identifier(outs['annotations']) or outs['annotations'] not in ('none','svg')):fail('ANNOTATION_MODE_INVALID','task.outputs.annotations')
+ elif 'annotations' not in outs:unsure('ANNOTATION_MODE_UNDECLARED','task.outputs.annotations')
  if 'operating_state' in task and not identifier(task['operating_state']):fail('OPERATING_STATE_TYPE','task.operating_state')
  if not task.get('operating_state'):unsure('OPERATING_STATE_UNDECLARED','task.operating_state')
  comps=ids(data.get('components',[]),'components');ports=ids(data.get('ports',[]),'ports');links=ids(data.get('connections',[]),'connections');supports=ids(data.get('supports',[]),'supports')

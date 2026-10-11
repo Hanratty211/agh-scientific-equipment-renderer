@@ -18,6 +18,16 @@ record=Path(args[0]);out=Path(args[args.index('--report')+1]) if '--report' in a
 try:data=json.loads(record.read_text(encoding='utf-8'))
 except (OSError,ValueError) as e:raise SystemExit(f'record read failed: {e}')
 static=validate(data);scene=bpy.context.scene;deps=bpy.context.evaluated_depsgraph_get()
+if static['status']=='FAIL':
+ result={'status':'FAIL','scene':bpy.data.filepath,'record':str(record),'record_status':'FAIL',
+         'record_issues':{'errors':static['errors'],'unknown':static['unknown']},
+         'dependent_records':static.get('dependent_records',{}),'checks':[],
+         'failures':['STATIC_RECORD'],'unverified':[],
+         'not_checked':['saved_scene_geometry','render_inclusion','projection','support_sampling'],
+         'meaning':'Invalid record; geometry branch not run; no physical error inferred'}
+ text=json.dumps(result,ensure_ascii=False,indent=2)
+ if out:out.write_text(text+'\n',encoding='utf-8')
+ print('AUDIT FAIL STATIC_RECORD; geometry not run');raise SystemExit(2)
 if not isinstance(data,dict):data={}
 task=data.get('task') if isinstance(data.get('task'),dict) else {}
 required_routes=set(x for x in task.get('required_connections',[]) if identifier(x)) if isinstance(task.get('required_connections'),list) else set()
@@ -27,25 +37,25 @@ def report(code,status,subject,detail):
  if status=='FAIL':failures.append(code+':'+subject)
  elif status=='UNVERIFIED':unverified.append(code+':'+subject)
 def render_state(obj,code,subject):
- """Fail only known exclusions; PASS means no checked exclusion, not pixel visibility."""
- exclusions=[]
- if obj.hide_render:exclusions.append('object.hide_render')
- if obj.name not in scene.objects:exclusions.append('not in active scene')
- for collection in obj.users_collection:
-  layer=scene.view_layers[0].layer_collection if scene.view_layers else None
-  # A collection can occur under more than one LayerCollection path.
-  def paths(node,ancestors):
-   here=ancestors+[node]
-   found=[here] if node.collection==collection else []
-   for child in node.children:found.extend(paths(child,here))
-   return found
-  active_paths=paths(layer,[]) if layer else []
-  if active_paths and all(any(n.exclude for n in path) for path in active_paths):
-   exclusions.append('collection excluded from sampled view layer: '+collection.name)
- if exclusions:report(code,'FAIL',subject,{'known_exclusions':exclusions,'limits':'pixel occlusion not checked'})
- elif any(c.hide_render for c in obj.users_collection):
-  report(code,'UNVERIFIED',subject,{'reason':'linked collection hide_render may affect effective render','collections':[c.name for c in obj.users_collection]})
- else:report(code,'UNVERIFIED',subject,{'hide_render':False,'limits':'active render view-layer selection, collection render inclusion and pixel occlusion not fully checked'})
+ """Only definite exclusions FAIL; viewport toggles are never render failures.
+ Context view_layer is the current layer. An object may have several valid collection paths;
+ complete rendering/occlusion inclusion is deliberately UNVERIFIED.
+ """
+ if obj.hide_render:
+  report(code,'FAIL',subject,{'known_exclusion':'object.hide_render','limits':'no pixel/occlusion check'});return
+ layer=bpy.context.view_layer
+ def paths(node,collection,ancestors=()):
+  here=ancestors+(node,)
+  found=[here] if node.collection==collection else []
+  for child in node.children:found.extend(paths(child,collection,here))
+  return found
+ all_paths=[p for coll in obj.users_collection for p in paths(layer.layer_collection,coll)]
+ effective=[p for p in all_paths if not any(n.exclude or n.collection.hide_render for n in p)]
+ if all_paths and not effective:
+  report(code,'FAIL',subject,{'known_exclusion':'all collection paths excluded or collection.hide_render',
+                              'view_layer':layer.name,'path_count':len(all_paths),'limits':'no pixel/occlusion check'});return
+ report(code,'UNVERIFIED',subject,{'view_layer':layer.name,'included_paths_checked':len(effective),
+     'limits':'viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven'})
 def mesh_vertices(obj):
  if obj is None or obj.type!='MESH':return None
  ev=obj.evaluated_get(deps);me=ev.to_mesh()
@@ -158,7 +168,10 @@ for s in records('supports'):
  pts=mesh_vertices(child)
  if not pts:report('SUPPORT','UNVERIFIED',s['id'],'unsupported child geometry');continue
  gaps=[surface_gap(v,parent) for v in pts];g=min((x for x in gaps if x is not None),default=None)
- report('SUPPORT','UNVERIFIED' if g is None else 'PASS' if g<=tol else 'FAIL',s['id'],{'sampled_vertex_to_surface_min':g,'tolerance':tol,'limitation':'only sampled vertices; no load-bearing proof'})
+ report('SUPPORT','UNVERIFIED' if g is None or g>tol else 'PASS',s['id'],
+        {'sampled_vertex_to_surface_min':g,'tolerance':tol,
+         'observation':'sampled vertex proximity' if g is not None and g<=tol else 'no sampled vertex proximity observed',
+         'limitation':'vertex sampling may miss face-interior contact; proximity does not prove support or load bearing'})
 
 cam=scene.camera
 if not cam:report('CAMERA','UNVERIFIED','scene','no active camera')
@@ -175,9 +188,11 @@ else:
   for name,ok,bounds in projections_checks:report(name,'PASS' if ok else 'FAIL',id_,{'bounds':bounds,'camera':cam.name})
 
 if not bpy.data.filepath:unverified.append('SCENE_NOT_SAVED')
-if static['status']=='FAIL':failures.append('STATIC_RECORD')
-elif static['status']=='UNKNOWN':unverified.append('STATIC_RECORD')
-status='FAIL' if failures else 'UNVERIFIED' if unverified or not components or not ports or not data.get('connections') or not data.get('supports') else 'PASS'
+if static['status']=='UNKNOWN':unverified.append('STATIC_RECORD')
+if not ports:unverified.append('NO_PORTS_DECLARED:interface_geometry_not_covered')
+if not records('connections'):unverified.append('NO_CONNECTIONS_DECLARED:route_geometry_not_covered')
+if not records('supports'):unverified.append('NO_SUPPORTS_DECLARED:support_geometry_not_covered')
+status='FAIL' if failures else 'UNVERIFIED' if unverified or not components else 'PASS'
 result={'status':status,'scene':bpy.data.filepath,'record':str(record),'record_status':static['status'],
         'record_issues':{'errors':static['errors'],'unknown':static['unknown']},'dependent_records':static['dependent_records'],
         'checks':checks,'failures':failures,'unverified':unverified,

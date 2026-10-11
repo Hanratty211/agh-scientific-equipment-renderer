@@ -16,7 +16,7 @@ description: 根据公开论文、图版、图注和正文制作有依据的实�
 
 ## 可选轻量工具（不阻塞普通预览）
 - 首轮仍先搭完整低成本 3D；当需要记录/核查时，复制 [`examples/valid_record.json`](examples/valid_record.json)，按 [项目记录字段](references/project_record.md) 保留用户原始范围、必需组件/连接、接口 owner、介质与开放未知。`python3 scripts/validate_project_record.py record.json --report record_report.json`：空范围为 UNKNOWN，错引用/媒介为 FAIL；不要缩小用户范围来凑 PASS。
-- 从磁盘重开最终场景核查：`blender --background scene.blend --python scripts/audit_saved_scene.py -- record.json --report audit.json`；只检查已声明几何的对象/端点/支撑近接、轴向裁剪、横纵投影；端口/连接缺显式容差则对应项 UNVERIFIED（Blender 场景世界单位）。render 仅识别部分排除，不能声称像素可见；遮挡、物理功能及图片可读性均 UNVERIFIED。对象身份、端口 owner 变化后根据报告依赖关系重查路径、标签和旧 QA。小反例命令见 [项目记录](references/project_record.md)。
+- 从磁盘重开最终场景核查：`blender --background scene.blend --python scripts/audit_saved_scene.py -- record.json --report audit.json`；只检查已声明几何的对象/端点/支撑**顶点采样近接**、轴向裁剪、横纵投影；未采到支撑近接为 UNVERIFIED，不能否定完整面接触；端口/连接缺显式容差则对应项 UNVERIFIED（Blender 场景世界单位）。record 静态 FAIL 时停止几何审核；render 只识别部分明确排除且不把 hide_viewport 当渲染失败，不能声称像素可见；遮挡、物理功能及图片可读性均 UNVERIFIED。对象身份、端口 owner 变化后根据报告依赖关系重查路径、标签和旧 QA。小反例命令见 [项目记录](references/project_record.md)。
 - 图片数值辅助：`python3 scripts/review_images.py review_config.json --report review.json`，归一化裁图与拼图保留原图哈希/像素范围；**数值不证明清晰或拓扑**。仅当用户需要有字混合图，用 `blender --background scene.blend --python scripts/make_svg_labels.py -- record.json labels.svg` 得到目标网格投影锚定的可编辑水平文字/引线。无字任务禁止调用标签生成；文字本身边界未测，长文字须目视检查，不能把锚点入框当文字完整；不重渲旧案例。
 
 ## 适用边界与按需参考
