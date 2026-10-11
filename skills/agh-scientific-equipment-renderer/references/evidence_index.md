@@ -1,4 +1,4 @@
-# v0.3 证据索引｜两例公开光学装置，非跨领域验收
+# v0.5 证据索引｜既有三案例＋03–10 八例外部有限读图，非跨域验收
 
 路径相对本文件。每项只支持**指明的判断**；旧文件中有撤回的“通过”声明，必须连同更正阅读。案例尺寸、坐标、对象名、材质权重、视角数、采样数只属于案例证据，不作为 Skill 默认值。
 
@@ -13,4 +13,21 @@
 | P19 纤维截面、材质小样 | [v16 图审记录](../../../case-1_87sr_cryo_lattice/REVIEW_RECORD_v16.md) | [R5 0 面光纤撤回/R6 曲线修复](../../../case-2_D2NN_OAM2/REVISION_LOG_case2.md)、[v10 材质对比](../../../case-2_D2NN_OAM2/MATERIAL_COMPARISON_v10.md) | 外部判 v10 总览灰粉；三档比较只提供选择，**未应用到总览**，未称通过 |
 | P6/P12/P13/P14/P20 读图/失败/执行 | [case-1 AGH 记录](../../../case-1_87sr_cryo_lattice/AGH_EXECUTION_RECORD_v16.md)、[更正](../../../case-1_87sr_cryo_lattice/REVISION_LOG.md) | [case-2 AGH 关键事件摘录](../../../case-2_D2NN_OAM2/AGH_EXECUTION_RECORD_case2.md)、[完整修订与撤回](../../../case-2_D2NN_OAM2/REVISION_LOG_case2.md)、[v9](../../../case-2_D2NN_OAM2/REVISION_RECORD_v9.md)、[v10](../../../case-2_D2NN_OAM2/REVISION_RECORD_v10.md) | E# 是摘要而非 ledger 行号；旧记录自称的成功可能被后续推翻，必须按时间与更正阅读 |
 
-**状态（本轮用户指示）**：case-1 有正式图；case-2 低成本预览已迭代，用户允许开始 Skill 更新，未生成正式图。v10 红束材质未获外部通过；[候选对比](../../../case-2_D2NN_OAM2/MATERIAL_COMPARISON_v10.md)尚未应用总览。两个来源均为公开光学案例，其他科研领域及工程 CAD 可复用性仍待检验。
+## case-3 新增证据（逐项限定）
+| 方法 | 本例实际观察与更正 | 尚不能证明 |
+|---|---|---|
+| P21/P22 逐跳与连接类型 | [v02 位置检查](../../../case-3_soft_robotics/V02_NOTES.md)→[v03 收窄措辞](../../../case-3_soft_robotics/V03_NOTES.md)→[v04 灰夹体局限](../../../case-3_soft_robotics/V04_NOTES.md)→[v05 高分辨率纠错](../../../case-3_soft_robotics/V05_NOTES.md)。外部指出「附着外观≠白管气动连接」 | 隐藏孔口、气密性、流向与背面连接；没有电连接实测案例 |
+| P23 证据不足停于遮挡 | 出版方 [Fig.3b](https://www.nature.com/articles/s41467-023-39691-z) 原始 2001×1572 图像支持连续白管→蓝套→深色双线组件遮挡；旧灰短节/灰夹体撤回，v01–v05 保留于 [案例目录](../../../case-3_soft_robotics/STAGE_ACCEPTANCE.md) | 可见邻接不证明组件的孔道、内部流路、机械固定或压力表接口 |
+| P24 外观/材料分层 | [v01–v05 记录](../../../case-3_soft_robotics/STAGE_ACCEPTANCE.md)与论文 Methods `soft-foamed body`；早期织物纹理是建模猜测，软指分段从块状/横条修正 | 材料配方、力学变形、精确比例或跨柔性装置复刻能力 |
+
+**前例状态**：case-1 有正式图；case-2 低成本预览无正式图，v10 材质候选未应用总览；case-3 [v05 阶段收口](../../../case-3_soft_robotics/STAGE_ACCEPTANCE.md)获用户阶段认可但隐藏气路未知。
+
+## 03–10 本批证据与可推广程度（均为低成本形态草案）
+| 方法 | 已存脚本/检查点与外部阶段反馈 | 不可推广的特定值及未证实项 |
+|---|---|---|
+| P25 整体装配/朝向/实孔 | [05 v05 构建](../../../case-05_acoustic_materials/build_scene_v05.py)、[材料与 bbox 核验](../../../case-05_acoustic_materials/V05_CHECKPOINT.md)；[08 v03 阵列](../../../case-08_radio_frequency/V03_CHECKPOINT.md)及[10 v04 顶部贴片](../../../case-10_ultrasound/V04_CHECKPOINT.md)；[03 v04 筒环/小片](../../../case-03_radiative_cooling/V04_CHECKPOINT.md) | 孔径/数目与金属类别、条纹数、贴片实际层次皆案例代理；颜色/图片坐标不构成工程尺寸 |
+| P26 连接与残留 | [09 v02 弹簧](../../../case-09_mechanical_memory/V02_CHECKPOINT.md)、[07 v03 测试装配](../../../case-07_flow_battery/V03_CHECKPOINT.md)、[03 v04 跨柱线](../../../case-03_radiative_cooling/V04_CHECKPOINT.md)、[10 v04 前壁删件](../../../case-10_ultrasound/V04_CHECKPOINT.md) | 弹簧附着不等于力学；07 只恢复泵/容器/堆/支撑**范围**，功能流路与回流未验证；04 端口数是示意 |
+| P27 透射与相机 | [05 v04 入框](../../../case-05_acoustic_materials/V04_CHECKPOINT.md)及[05 v05 引擎/透射](../../../case-05_acoustic_materials/V05_CHECKPOINT.md)，外部读图反馈在[批次最终状态](../../../FINAL_EXTERNAL_REVIEW_STATUS.md) | Cycles 透射/采样/IOR 为本例展示参数，不代表实际板材性质；轴向裁剪不是横纵投影或遮挡 |
+| P28 批次裁图与证据分层 | [最终外部模型读图状态](../../../FINAL_EXTERNAL_REVIEW_STATUS.md)、[07 v3 裁图与检查点](../../../FINAL_REFERENCE_CROP_V3_CHECKPOINT.md)、[最新版拼图](../../../cases_03-10_reference_previous_latest_final_montage_v2.png) | 外部模型后续确认 b/标签完整且排除 a/data，仅证明**参考范围**；非 AGH 亲眼读图、非用户最终验收/全域通过 |
+
+**最新版索引**：03/04/10 v04；05 v05；06/09 v02；07/08 v03。03/04/05/06/08/09/10 的外部模型仅作有限视觉反馈；07 特别标为“范围改善，功能拓扑未验证”。以上经验把**行动与边界**提升，不把具体源图像素坐标、布尔面数、材质参数或接头数量写成通用默认。

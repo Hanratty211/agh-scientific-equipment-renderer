@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-blender_core.py — 科研装置三维渲染可复用助手（v0.3 试用；最早抽取于 v0.1）
+blender_core.py — 科研装置三维渲染可复用助手（v0.5 试用；最早抽取于 v0.1）
 ============================================================
 用途：Blender 几何/材质/相机/布尔/核查基础助手。
 从 case-1（⁸⁷Sr 冷冻光晶格钟）build_blender_v16.py 中提取，
@@ -134,16 +134,18 @@ def sphere(name, r, loc, segments=24, rings=12, m=None):
 # ---------- 光束 ----------
 def beam(name, p0, p1, r=0.0012, m=None, seg=16, record_ends=True):
     """
-    圆柱光束，p0→p1。P2：把几何轴端点记录为对象自定义属性 beam_p0/beam_p1，
-    供光路交汇核查（中轴线，非顶点云 bounding box）。
+    圆柱光束，输入 p0→p1 为创建时世界坐标。beam_p0/beam_p1 始终存【对象局部坐标】，
+    由当前 matrix_world 恢复世界轴（中轴线，非 bounding box 对角线）。
     """
     v = mathutils.Vector(p1) - mathutils.Vector(p0)
     mid = (mathutils.Vector(p0) + mathutils.Vector(p1)) / 2
     rot = v.to_track_quat('Z', 'Y').to_euler()
     o = cyl(name, r, v.length, tuple(mid), tuple(rot), m, seg=seg)
     if record_ends:
-        o['beam_p0'] = tuple(p0)
-        o['beam_p1'] = tuple(p1)
+        # 切忌把世界输入原样存入端点属性：读取时还要乘 matrix_world。
+        inv = o.matrix_world.inverted()
+        o['beam_p0'] = tuple(inv @ mathutils.Vector(p0))
+        o['beam_p1'] = tuple(inv @ mathutils.Vector(p1))
     return o
 
 
@@ -243,10 +245,11 @@ def clip_check(cam_name, tgt_name, require_some_in_front=True):
     再变换到【相机坐标系】(cam.matrix_world.inverted())，取有符号轴向深度 d=-p.z（相机前方为正）。
 
     返回 (message, in_range_bool)。
-    规则（修复版）：
+    规则（修复版；保留 require_some_in_front 形参供旧调用，完整判定不受其放宽）：
       - 相机后方角点(p.z>=0)单独计数；若目标全部 8 角都在相机后方（behind==8），
         则【不能】判"完整通过"——返回 in_range=False 并注明"全部在相机后方"。
-      - 只要有一个前方角点，就对其余前方角点做 [clip_start, clip_end] 判定。
+      - 只有 8 角均在前方，且全部满足 [clip_start, clip_end] 才判完整入裁剪范围；
+        混合前后角点不得因跳过后方角点而误判完整通过。仅检轴向裁剪，不检横纵视锥。
     必须把世界变换计入，否则对象离相机 11m 会被误报成 1m。
     """
     o = bpy.data.objects.get(tgt_name)
@@ -271,10 +274,10 @@ def clip_check(cam_name, tgt_name, require_some_in_front=True):
         return (f"  {cam_name} -> {tgt_name}: 全部 8 角在相机后方(behind=8)，无法完整入框 "
                 f"behind_cam={behind}角点 in_range=False"), False
     msg = (f"  {cam_name} -> {tgt_name}: 有符号轴向深度=[{mn:.4f},{mx:.4f}]m "
-           f"clip=[{cam.data.clip_start:.3f},{cam.data.clip_end:.1f}] in_range={ok} "
+           f"clip=[{cam.data.clip_start:.3f},{cam.data.clip_end:.1f}] in_range={ok and behind == 0} "
            f"front={infront}/8角 behind_cam={behind}角点")
-    # 若存在前方角点但全超裁剪范围，ok 已 False；返回与 ok 一致
-    return msg, ok
+    # 有任一后方角点都不能称为完整位于裁剪范围内；仅检查轴向，不检查画面边界。
+    return msg, (ok and behind == 0)
 
 # ---------- 渲染（局部视角独立隐藏规则 + 还原） ----------
 class LocalRenderRule:
@@ -333,25 +336,24 @@ class LocalRenderRule:
         print(f"rendered {out} (待核查对象 must_keep={rep}, 临时隐藏已恢复) {extra_note}")
         return True, rep
 
-# ---------- 关键件完整性核查（分层报告，不混为“可见”） ----------
+# ---------- 关键件完整性核查（轴向裁剪 ≠ 画幅投影） ----------
 def key_parts_ok(view_name, KEY_PARTS, cam_name=None):
-    """
-    对关键件分层报告（修复版，不把“可见”混为一谈）：
-      exists   对象是否存在于场景
-      renders  是否参与渲染（未被 hide_render）
-      in_frame 若提供 cam_name：目标 8 角是否全部在相机前方且落入裁剪范围(用 clip_check)
-    无遮挡/图片可辨认 属于阶段 4 实际图片核查（人工/外部读 PNG），不在此函数内。
-    返回 (view_name, report) ，report: name -> dict(exists, renders, in_frame|None)。
+    """分层返回 exists / renders / in_clip_range；后者仅为 bbox 8 角
+    的相机轴向 near/far 检查，不判断画幅水平/垂直投影或互遮挡。
+    未指定相机或对象缺失时 in_clip_range=None。旧消费者依赖
+    report[name]['in_frame'] 的代码须更新，不能把旧键再当作入框通过。
+    返回 (view_name, report)，不承诺视觉可辨或真实连接。
     """
     report = {}
     for k in KEY_PARTS:
         o = bpy.data.objects.get(k)
         exists = o is not None
         renders = (not o.hide_render) if exists else False
-        in_frame = None
+        in_clip_range = None
         if exists and cam_name:
-            _msg, in_frame = clip_check(cam_name, k)
-        report[k] = {'exists': exists, 'renders': renders, 'in_frame': in_frame}
+            _msg, in_clip_range = clip_check(cam_name, k)
+        report[k] = {'exists': exists, 'renders': renders,
+                     'in_clip_range': in_clip_range}
     return view_name, report
 
 # ---------- 光路交汇核查（中轴线，非顶点云） ----------
@@ -367,43 +369,51 @@ def pt_to_line_dist(P, A, B):
 
 
 def beam_axis_world(beam_obj):
-    """
-    P2：返回光束【当前世界空间】的中轴线端点 (p0, p1) 或 None。
-    优先用 beam_p0/beam_p1 自定义属性，且校验其与当前世界 bbox 对角线一致性：
-      - 若属性存在但与当前世界 bbox 对角线偏差 > 0.1m，判定为【过期】（对象移动/旋转/父级变换后），
-        返回 None（不据此判“经过目标”）；
-      - 无属性时不回退到包围盒对角线当作中轴线（光束截面半径会污染轴端点），返回 None。
+    """返回当前世界轴端点或 None；beam_p0/p1 必须是对象局部坐标。
+
+    不把包围盒对角线当轴，也不按任意长度差臆断端点过期。比较属性端点
+    与当前【局部网格】两端截面中心；不符即失败关闭（旧版世界坐标属性也会拒绝）。
+    当前对象及父级的 matrix_world 只对一致的局部端点乘一次。
+    仅针对 beam() 生成的直圆柱且网格未被重塑的轴；其他模型请显式定义接口。
     """
     p0 = beam_obj.get('beam_p0')
     p1 = beam_obj.get('beam_p1')
-    if p0 is None or p1 is None:
+    if p0 is None or p1 is None or beam_obj.type != 'MESH':
         return None
-    p0, p1 = mathutils.Vector(p0), mathutils.Vector(p1)
-    bb = [beam_obj.matrix_world @ mathutils.Vector(c) for c in beam_obj.bound_box]
-    d_axis = (p1 - p0).length
-    d_bb = (bb[6] - bb[0]).length
-    if abs(d_axis - d_bb) > 0.1:      # 轴长与 bbox 对角线显著不符 -> 属性已过期
+    try:
+        a, b = mathutils.Vector(p0), mathutils.Vector(p1)
+        if (b - a).length < 1e-10:
+            return None
+        verts = beam_obj.data.vertices
+        if not verts:
+            return None
+        zs = [v.co.z for v in verts]
+        zlo, zhi = min(zs), max(zs)
+        lo = [v.co for v in verts if abs(v.co.z - zlo) < 1e-6]
+        hi = [v.co for v in verts if abs(v.co.z - zhi) < 1e-6]
+        if not lo or not hi:
+            return None
+        center_lo = sum(lo, mathutils.Vector()) / len(lo)
+        center_hi = sum(hi, mathutils.Vector()) / len(hi)
+        if (a - center_lo).length > 1e-5 or (b - center_hi).length > 1e-5:
+            return None
+        M = beam_obj.matrix_world
+        return tuple(M @ a), tuple(M @ b)
+    except (TypeError, ValueError, OverflowError):
         return None
-    return (tuple(p0), tuple(p1))
 
 
 def beam_crosses_point(beam_obj, point, tol=5e-4):
     """
-    P2（修复版）：光束中轴线是否经过 point，且对应【当前世界空间】实际位置。
-    返回 (dist, t, passed, axis_known)：
-      axis_known=False 时（端点缺失或过期）passed 恒为 False，不得当作“经过目标”的通过证据。
-    0≤t≤1 且 dist<tol 才算“在线段上”（t 不要求 0.5/对称）。
-    反例：光束被移动 5m 后，旧端点属性与当前世界位置不符 -> axis_known=False，不再误报经过原交点。
+    P2：当前世界轴是否经过世界坐标 point。返回 (dist,t,passed,axis_known)。
+    属性缺失或不符当前局部网格时 axis_known=False/passed=False；
+    0≤t≤1 且 dist<tol 判通过。平移/旋转/父级变换由局部端点随 matrix_world
+    正确更新；轴仍已知，但旧交点不再通过。
     """
     ends = beam_axis_world(beam_obj)
     if ends is None:
         return None, None, False, False
-    p0, p1 = ends
-    P = mathutils.Vector(point)
-    M = beam_obj.matrix_world
-    # 端点属性按创建时世界坐标记录；若对象后续有变换，则按当前 matrix_world 重新定位。
-    cur_p0 = M @ mathutils.Vector(p0)
-    cur_p1 = M @ mathutils.Vector(p1)
-    d, t = pt_to_line_dist(tuple(P), tuple(cur_p0), tuple(cur_p1))
+    p0, p1 = ends  # 已是世界坐标，绝不再乘 matrix_world
+    d, t = pt_to_line_dist(tuple(point), p0, p1)
     passed = (0.0 <= t <= 1.0) and (d < tol)
     return d, t, passed, True

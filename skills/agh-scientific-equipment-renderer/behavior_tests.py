@@ -11,10 +11,12 @@ behavior_tests.py — 反例最小行为验证（真实 Blender 运行）
 反例与期望：
   T1 solid_inter_mm3 世界缩放：两个重合单位立方体各自 scale=2 → 应 8 m³ = 8e9 mm³ 重叠
      （修复前漏世界缩放会返回 1 m³ = 1e9 mm³）
-  T2 clip_check 世界变换 + 相机后方：把对象放到相机后方 11m 处 → 必须报"全在后方/in_range=False"，
-     不得报成 ~1m 通过
-  T3 beam_crosses_point 过期端点：光束沿轴建好后整体平移 5m → 旧端点属性过期 →
-     beam_crosses_point 应对原交点返回 axis_known=False / passed=False（不再误报经过）
+  T2 clip_check 数值四反例：前方裁剪内/前方超远/真后方/前后角点混合；
+     独立计算 8 个局部角点的相机空间有符号深度，不靠消息文字判通过。
+  T3 beam_axis_world 局部端点：非原点非对称轴与真实网格截面中心相等；
+     平移/旋转/父级变换后仍相等，旧点不经过；缺失/篡改属性失败关闭。
+  T4 key_parts_ok 只返回 in_clip_range：相机前方但水平画外仍可入裁剪深度；
+     缺失目标/无相机报告 None，绝不输出误导性的 in_frame 键。
 """
 import os
 import sys
@@ -55,43 +57,120 @@ ok1 = abs(v_m3 - exp_m3) < 0.05
 results.append(("T1", ok1, f"重合 scale=2 单位立方体 重叠={v_m3:.3f} m³ (期望 {exp_m3} m³)"))
 log(f"T1 solid_inter_mm3(两重合 scale=2 立方体) = {v_m3:.3f} m³ -> {'PASS' if ok1 else 'FAIL'} (期望 8 m³)")
 
-# ---------- T2: clip_check 世界变换 + 相机后方 ----------
+# ---------- T2: 独立计算所有 8 个角点的相机坐标；只判轴向裁剪 ----------
 cam = bc.make_cam("t2_cam", (0.0, 0.0, 11.0), look_at=(0.0, 0.0, 10.0),
                   lens=50, clip_start=0.001, clip_end=2.0)
-# 对象实际放在 z=0（相机在 z=11，朝向 -z 看 z=10；对象在 z=0 在相机后方 11m）
-far = bc.box("t2_far", 0.1, 0.1, 0.1, (0.0, 0.0, 0.0))
-# 触发 bpy 更新以便 bound_box/matrix_world 生效
-bpy.context.view_layer.update()
-msg, in_range = bc.clip_check("t2_cam", "t2_far")
-log(f"T2 clip_check(对象在相机后方11m) -> in_range={in_range}; msg: {msg}")
-# 期望：全部角点在相机后方 -> in_range=False，且消息含"后方"，不得报成 ~1m 通过
-ok2 = (in_range is False) and ("后方" in msg or "behind" in msg)
-results.append(("T2", ok2, f"相机后方11m 对象: in_range={in_range}（应 False，不得报通过）"))
+# 世界 Z 越低越在相机前；z=0 是前方 11m，不是后方（撤回旧 T2）。
+cases = [
+    ("front_in", (0., 0., 10.), 0.1, True, lambda d: all(0.9 < x < 1.1 for x in d)),
+    ("front_far", (0., 0., 0.), 0.1, False, lambda d: all(x > 10.9 for x in d)),
+    ("behind", (0., 0., 12.), 0.1, False, lambda d: all(x < -0.9 for x in d)),
+    ("mixed", (0., 0., 11.), 0.4, False,
+     lambda d: sum(x > 0 for x in d) == 4 and sum(x < 0 for x in d) == 4),
+]
+t2_checks = []
+for label, loc, size, expected, depth_rule in cases:
+    obj = bc.box("t2_" + label, size, size, size, loc)
+    bpy.context.view_layer.update()
+    inv = cam.matrix_world.inverted()
+    depth = [-(inv @ (obj.matrix_world @ mathutils.Vector(c))).z for c in obj.bound_box]
+    _msg, actual = bc.clip_check(cam.name, obj.name)
+    numerical = depth_rule(depth)
+    full_range = all(cam.data.clip_start <= x <= cam.data.clip_end for x in depth)
+    ok = numerical and (full_range is expected) and (actual is expected)
+    t2_checks.append(ok)
+    log(f"T2 {label}: depth=[{min(depth):.4f},{max(depth):.4f}]m "
+        f"front={sum(x>0 for x in depth)}/8 expected={expected} actual={actual} "
+        f"numeric={numerical} -> {'PASS' if ok else 'FAIL'}")
+results.append(("T2", all(t2_checks), f"四类前后/裁剪组合通过={sum(t2_checks)}/4"))
 
-# ---------- T3: beam_crosses_point 过期端点 ----------
-# 建一条沿 x 轴、穿过原点 (0,0,0) 的光束，端点属性记录当前世界坐标
-b3 = bc.beam("t3_beam", (-1.0, 0.0, 0.0), (1.0, 0.0, 0.0), r=0.05)
-before = bc.beam_crosses_point(b3, (0.0, 0.0, 0.0))
-# 现在把光束整体平移 +5m（世界变换），端点属性仍是旧值 -> 应判过期
-b3.location = (5.0, 0.0, 0.0)
+# ---------- T3: 非原点非对称轴，逐次与真实局部网格截面中心对照 ----------
+p0, p1 = mathutils.Vector((1.2, -0.7, 0.4)), mathutils.Vector((2.7, 0.8, 2.3))
+b3 = bc.beam("t3_beam", p0, p1, r=0.025)
+mid = tuple(p0.lerp(p1, 0.3))  # 不对称测试点，不能只检 0.5 对称点
+old_mid = mid
+
+def actual_mesh_axis(obj):
+    """独立从圆柱局部网格上下截面顶点求中心，再变换到世界坐标。"""
+    verts = obj.data.vertices
+    loz, hiz = min(v.co.z for v in verts), max(v.co.z for v in verts)
+    def mean_end(z):
+        vv = [v.co for v in verts if abs(v.co.z - z) < 1e-6]
+        return obj.matrix_world @ (sum(vv, mathutils.Vector()) / len(vv))
+    return mean_end(loz), mean_end(hiz)
+
+def axis_check(label, obj, known_expected=True):
+    bpy.context.view_layer.update()
+    ends = bc.beam_axis_world(obj)
+    mesh = actual_mesh_axis(obj)
+    axis_ok = (ends is not None and all((mathutils.Vector(a) - b).length < 1e-5
+                                         for a, b in zip(ends, mesh))) if known_expected else ends is None
+    if known_expected:
+        q = tuple(mesh[0].lerp(mesh[1], 0.3))
+        d, t, passed, known = bc.beam_crosses_point(obj, q, tol=1e-5)
+        axis_ok &= known and passed and abs(d) < 1e-5 and abs(t - 0.3) < 1e-5
+        log(f"T3 {label}: axis/mesh Δmax={max((mathutils.Vector(a)-b).length for a,b in zip(ends,mesh)) if ends else -1:.7f}m "
+            f"t={t} known={known} pass={passed} -> {'PASS' if axis_ok else 'FAIL'}")
+    else:
+        _, _, passed, known = bc.beam_crosses_point(obj, tuple(mesh[0]))
+        axis_ok &= not known and not passed
+        log(f"T3 {label}: axis={ends} known={known} pass={passed} -> {'PASS' if axis_ok else 'FAIL'}")
+    return axis_ok
+
+t3_checks = [axis_check('created', b3)]
+# 旧坐标的 0.3 位置必须准确；证明不是世界端点再乘对象 matrix_world。
+d, t, passed, known = bc.beam_crosses_point(b3, mid, tol=1e-5)
+t3_checks.append(known and passed and abs(d) < 1e-5 and abs(t - 0.3) < 1e-5)
+b3.location += mathutils.Vector((3.0, -1.0, 0.6))
+t3_checks.append(axis_check('translated', b3))
+_, _, old_pass, old_known = bc.beam_crosses_point(b3, old_mid, tol=1e-5)
+t3_checks.append(old_known and not old_pass)
+b3.rotation_euler.rotate_axis('Z', math.radians(41))
+t3_checks.append(axis_check('rotated', b3))
+parent = bc.box('t3_parent', 0.1, 0.1, 0.1, (0.2, -0.3, 0.4))
 bpy.context.view_layer.update()
-after = bc.beam_crosses_point(b3, (0.0, 0.0, 0.0))  # 原点此时已不在平移后的光束轴上
-log(f"T3 平移前 beam_crosses_point(原点) = {before}")
-log(f"T3 平移+5m后 beam_crosses_point(原点) = {after}")
-# 期望：平移+5m 后原点已不在当前世界轴上 -> passed=False（关键修复：不再误报“经过原交点”）。
-# 属性端点 + 当前 matrix_world 可正确重建平移后轴，故 known 仍 True（轴已知，只是不经过原点）。
-d2, t2, passed2, known2 = after
-ok3 = (passed2 is False)
-# 平移前应对原点通过（构造保证）
-d1, t1, passed1, known1 = before
-ok3b = (known1 is True) and (passed1 is True)
-# 额外验证：无端点属性时绝不判“经过”（包围盒对角线不作通过证据）
-nb = bc.beam("t3_norecord", (-1.0, 0.0, 0.0), (1.0, 0.0, 0.0), r=0.05, record_ends=False)
-_, _, npass, nknown = bc.beam_crosses_point(nb, (0.0, 0.0, 0.0))
-ok3c = (npass is False) and (nknown is False)
-log(f"T3 无端点属性 beam_crosses_point(原点) = ({npass}, {nknown}) -> 应 (False, False)")
-results.append(("T3", (ok3 and ok3b and ok3c),
-                f"平移前 known={known1}/passed={passed1}(应T/T)；平移+5m后 passed={passed2}(应F，不再误报)；无端点属性 passed={npass}/known={nknown}(应F/F)"))
+prior = b3.matrix_world.copy()
+b3.parent = parent
+b3.matrix_world = prior  # 设父级时不使几何瞬移
+parent.location += mathutils.Vector((-0.8, 1.2, 0.3))
+parent.rotation_euler[1] = math.radians(28)
+t3_checks.append(axis_check('parent_transform', b3))
+# 局部属性被改写为错误坐标时不能再假装是网格轴。
+b3['beam_p0'] = tuple(mathutils.Vector(b3['beam_p0']) + mathutils.Vector((0.17, 0, 0)))
+t3_checks.append(axis_check('tampered_local_endpoint', b3, known_expected=False))
+nb = bc.beam('t3_norecord', p0, p1, r=0.025, record_ends=False)
+t3_checks.append(axis_check('missing_endpoint', nb, known_expected=False))
+results.append(('T3', all(t3_checks), f"网格轴/创建/平移/旋转/父级/旧点/篡改/缺失通过={sum(t3_checks)}/{len(t3_checks)}"))
+
+# ---------- T4: 轴向裁剪与水平/垂直画幅不得混淆 ----------
+wide = bc.box('t4_horizontal_outside', .1, .1, .1, (40., 0., 10.))
+vertical = bc.box('t4_vertical_outside', .1, .1, .1, (0., 40., 10.))
+inside = bc.box('t4_center_inside', .1, .1, .1, (0., 0., 10.))
+bpy.context.view_layer.update()
+_, r4 = bc.key_parts_ok('t4', [wide.name, vertical.name, inside.name,
+                                't4_missing'], cam_name=cam.name)
+_, r_none = bc.key_parts_ok('t4_nocamera', [inside.name])
+# Independently project bbox corners: xy outside while depth remains between near/far.
+from bpy_extras.object_utils import world_to_camera_view
+xy = {}
+for obj in (wide, vertical, inside):
+    vs = [world_to_camera_view(scene, cam, obj.matrix_world @ mathutils.Vector(c))
+          for c in obj.bound_box]
+    xy[obj.name] = (min(v.x for v in vs), max(v.x for v in vs),
+                    min(v.y for v in vs), max(v.y for v in vs))
+checks4 = [all('in_clip_range' in r and 'in_frame' not in r for r in r4.values()),
+           r4[wide.name]['in_clip_range'] is True,
+           r4[vertical.name]['in_clip_range'] is True,
+           r4[inside.name]['in_clip_range'] is True,
+           xy[wide.name][0] > 1, xy[vertical.name][2] > 1,
+           0 < xy[inside.name][0] < xy[inside.name][1] < 1,
+           0 < xy[inside.name][2] < xy[inside.name][3] < 1,
+           r4['t4_missing']['in_clip_range'] is None,
+           r_none[inside.name]['in_clip_range'] is None]
+results.append(('T4', all(checks4), f'裁剪与投影分离={sum(checks4)}/{len(checks4)}'))
+log(f'T4 clip-only key vs independent XY projection: {sum(checks4)}/{len(checks4)} '
+    f"horizontal={xy[wide.name]} vertical={xy[vertical.name]} -> "
+    f"{'PASS' if all(checks4) else 'FAIL'}")
 
 # ---------- 汇总 ----------
 log("")

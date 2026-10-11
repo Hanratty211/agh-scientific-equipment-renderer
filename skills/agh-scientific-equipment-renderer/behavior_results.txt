@@ -1,11 +1,19 @@
 T1 solid_inter_mm3(两重合 scale=2 立方体) = 8.000 m³ -> PASS (期望 8 m³)
-T2 clip_check(对象在相机后方11m) -> in_range=False; msg:   t2_cam -> t2_far: 有符号轴向深度=[10.9500,11.0500]m clip=[0.001,2.0] in_range=False front=8/8角 behind_cam=0角点
-T3 平移前 beam_crosses_point(原点) = (0.0, 0.5, True, True)
-T3 平移+5m后 beam_crosses_point(原点) = (5.0, 0.5, False, True)
-T3 无端点属性 beam_crosses_point(原点) = (False, False) -> 应 (False, False)
+T2 front_in: depth=[0.9500,1.0500]m front=8/8 expected=True actual=True numeric=True -> PASS
+T2 front_far: depth=[10.9500,11.0500]m front=8/8 expected=False actual=False numeric=True -> PASS
+T2 behind: depth=[-1.0500,-0.9500]m front=0/8 expected=False actual=False numeric=True -> PASS
+T2 mixed: depth=[-0.2000,0.2000]m front=4/8 expected=False actual=False numeric=True -> PASS
+T3 created: axis/mesh Δmax=0.0000002m t=0.29999996332587225 known=True pass=True -> PASS
+T3 translated: axis/mesh Δmax=0.0000002m t=0.29999992760718375 known=True pass=True -> PASS
+T3 rotated: axis/mesh Δmax=0.0000002m t=0.29999992679873805 known=True pass=True -> PASS
+T3 parent_transform: axis/mesh Δmax=0.0000003m t=0.29999993182757817 known=True pass=True -> PASS
+T3 tampered_local_endpoint: axis=None known=False pass=False -> PASS
+T3 missing_endpoint: axis=None known=False pass=False -> PASS
+T4 clip-only key vs independent XY projection: 10/10 horizontal=(53.34390640258789, 59.05263900756836, 0.3700454533100128, 0.6299545168876648) vertical=(0.42690056562423706, 0.5730994343757629, 94.4447250366211, 104.59358215332031) -> PASS
 
 ==== 行为验证汇总 ====
   [PASS] T1: 重合 scale=2 单位立方体 重叠=8.000 m³ (期望 8.0 m³)
-  [PASS] T2: 相机后方11m 对象: in_range=False（应 False，不得报通过）
-  [PASS] T3: 平移前 known=True/passed=True(应T/T)；平移+5m后 passed=False(应F，不再误报)；无端点属性 passed=False/known=False(应F/F)
+  [PASS] T2: 四类前后/裁剪组合通过=4/4
+  [PASS] T3: 网格轴/创建/平移/旋转/父级/旧点/篡改/缺失通过=8/8
+  [PASS] T4: 裁剪与投影分离=10/10
 总体: 全部 PASS
