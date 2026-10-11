@@ -23,6 +23,15 @@ record_case('medium_mismatch',lambda d:d['ports'][0].__setitem__('medium','fluid
 record_case('required_connection_missing',lambda d:d['connections'].clear(),'FAIL','REQUIRED_MISSING')
 record_case('support_missing',lambda d:d['supports'].clear(),'FAIL','REQUIRED_MISSING')
 record_case('no_text_with_label',lambda d:d['task']['outputs'].__setitem__('annotations','none'),'FAIL','LABELS_FORBIDDEN')
+record_case('kind_medium_mismatch',lambda d:d['connections'][0].__setitem__('kind','optical'),'FAIL','KIND_MEDIUM_CONTRADICTION')
+record_case('nan_support_tolerance',lambda d:d['supports'][0].__setitem__('tolerance',float('nan')),'FAIL','SUPPORT_TOLERANCE_INVALID')
+record_case('infinite_port_tolerance',lambda d:d['ports'][0].__setitem__('surface_tolerance',float('inf')),'FAIL','PORT_TOLERANCE_INVALID')
+record_case('bool_connection_tolerance',lambda d:d['connections'][0].__setitem__('tolerance',True),'FAIL','CONNECTION_TOLERANCE_INVALID')
+record_case('bad_owner_type',lambda d:d['ports'][0].__setitem__('owner',[]),'FAIL','PORT_OWNER_BAD_ID')
+record_case('bad_required_type',lambda d:d['task'].__setitem__('required_components',[{}]),'FAIL','REQUIRED_BAD_ID')
+record_case('bad_kind_type',lambda d:d['connections'][0].__setitem__('kind',[]),'FAIL','CONNECTION_KIND')
+record_case('unknown_size_basis',lambda d:d['components'][0].__setitem__('size_basis','unknown'),'UNKNOWN','SIZE_BASIS_UNKNOWN')
+record_case('nonphysical_medium_not_inferred',lambda d:(d['connections'][0].__setitem__('kind','field'),d['connections'][0].__setitem__('medium','unknown')),'UNKNOWN','NONPHYSICAL_ROUTE_OBJECT')
 with tempfile.TemporaryDirectory() as tmp:
  tmp=Path(tmp);scene=tmp/'fixture.blend';make=ROOT/'examples/make_synthetic_scene.py';audit=ROOT/'scripts/audit_saved_scene.py';label=ROOT/'scripts/make_svg_labels.py'
  build=subprocess.run([args.blender,'--background','--python',str(make),'--',str(scene)],capture_output=True,text=True)
@@ -30,7 +39,9 @@ with tempfile.TemporaryDirectory() as tmp:
  if scene.exists():
   # Different saved scenes, no regeneration from historic research case.
   script=tmp/'mutate.py';script.write_text('''import bpy,sys\nfrom mathutils import Vector\nmode=sys.argv[-2];target=sys.argv[-1]\nif mode=="endpoint":\n o=bpy.data.objects["rod_curve"];o.location.x+=.5\nelif mode=="horizontal":\n cam=bpy.context.scene.camera;o=bpy.data.objects["plate_mesh"];o.location+=cam.matrix_world.to_quaternion()@Vector((7,0,0))\nelif mode=="vertical":\n cam=bpy.context.scene.camera;o=bpy.data.objects["plate_mesh"];o.location+=cam.matrix_world.to_quaternion()@Vector((0,7,0))\nelif mode=="support":\n o=bpy.data.objects["plate_mesh"];o.location.z+=1\nbpy.ops.wm.save_as_mainfile(filepath=target)\n''')
-  for name,mode,expected,code in [('valid_scene',None,'PASS','ENDPOINTS'),('world_endpoint_mismatch','endpoint','FAIL','ENDPOINTS'),('horizontal_outside','horizontal','FAIL','HORIZONTAL'),('vertical_outside','vertical','FAIL','VERTICAL'),('support_gap','support','FAIL','SUPPORT')]:
+  for name,mode,expected,code in [('valid_scene',None,'UNVERIFIED','ENDPOINTS'),('world_endpoint_mismatch','endpoint','FAIL','ENDPOINTS'),('horizontal_outside','horizontal','FAIL','HORIZONTAL'),('vertical_outside','vertical','FAIL','VERTICAL'),('support_gap','support','FAIL','SUPPORT')]:
+   # Render inclusion is deliberately UNVERIFIED even if hide_render=False.
+   check_expected='PASS' if name=='valid_scene' else expected
    path=scene if mode is None else tmp/(name+'.blend');rep=tmp/(name+'.json')
    if mode is not None:
     proc=subprocess.run([args.blender,'--background',str(scene),'--python',str(script),'--',mode,str(path)],capture_output=True,text=True)
@@ -39,9 +50,21 @@ with tempfile.TemporaryDirectory() as tmp:
    data=json.loads(rep.read_text()) if rep.exists() else {'status':'NO_REPORT','checks':[]}
    checks=[x for x in data['checks'] if x['code']==code and (name!='horizontal_outside' and name!='vertical_outside' or x['subject']=='plate')]
    depth=[x for x in data['checks'] if x['code']=='CLIP_DEPTH' and x['subject']=='plate']
-   ok=data['status']==expected and proc.returncode==(0 if expected=='PASS' else 2) and any(x['status']==expected for x in checks)
+   ok=data['status']==expected and proc.returncode==({'PASS':0,'FAIL':2,'UNVERIFIED':3}[expected]) and any(x['status']==check_expected for x in checks)
    if name in ('horizontal_outside','vertical_outside'):ok=ok and bool(depth) and depth[0]['status']=='PASS'
    rows.append({'name':name,'expected':expected,'actual':data['status'],'exit':proc.returncode,'target_checks':checks,'clip_depth':depth,'pass':ok})
+  for name,mutation,expected,code,subject in [
+    ('port_tolerance_absent',lambda d:d['ports'][0].pop('surface_tolerance'),'UNVERIFIED','PORT_OWNER_SURFACE','a'),
+    ('route_tolerance_absent',lambda d:d['connections'][0].pop('tolerance'),'UNVERIFIED','ENDPOINTS','rod'),
+    ('route_tolerance_nan',lambda d:d['connections'][0].__setitem__('tolerance',float('nan')),'FAIL','ENDPOINTS','rod'),
+    ('route_tolerance_bool',lambda d:d['connections'][0].__setitem__('tolerance',True),'FAIL','ENDPOINTS','rod'),
+    ('required_route_missing',lambda d:(d['connections'][0].__setitem__('object','missing_route'),d['connections'][0].__setitem__('required',False)),'FAIL','ROUTE_OBJECT','rod')]:
+   d=copy.deepcopy(base);mutation(d);rec=tmp/(name+'.json');rec.write_text(json.dumps(d));rep=tmp/(name+'_audit.json')
+   proc=subprocess.run([args.blender,'--background',str(scene),'--python',str(audit),'--',str(rec),'--report',str(rep)],capture_output=True,text=True)
+   data=json.loads(rep.read_text()) if rep.exists() else {'status':'NO_REPORT','checks':[]}
+   matches=[x for x in data['checks'] if x['code']==code and x['subject']==subject]
+   ok=data['status']==expected and proc.returncode=={'PASS':0,'FAIL':2,'UNVERIFIED':3}[expected] and any(x['status']==expected for x in matches)
+   rows.append({'name':name,'expected':expected,'actual':data['status'],'target_checks':matches,'exit':proc.returncode,'pass':ok})
   lbl=tmp/'labels.svg';proc=subprocess.run([args.blender,'--background',str(scene),'--python',str(label),'--',str(ROOT/'examples/valid_record.json'),str(lbl)],capture_output=True,text=True)
   markup=lbl.read_text() if lbl.exists() else ''
   rows.append({'name':'svg_real_label','pass':proc.returncode==0 and 'data-target="plate"' in markup and '<line ' in markup and '>Plate<' in markup})

@@ -10,7 +10,7 @@ from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from validate_project_record import validate
+from validate_project_record import validate, finite_nonnegative, identifier
 
 args=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
 if not args:raise SystemExit('record.json required after --')
@@ -18,11 +18,34 @@ record=Path(args[0]);out=Path(args[args.index('--report')+1]) if '--report' in a
 try:data=json.loads(record.read_text(encoding='utf-8'))
 except (OSError,ValueError) as e:raise SystemExit(f'record read failed: {e}')
 static=validate(data);scene=bpy.context.scene;deps=bpy.context.evaluated_depsgraph_get()
+if not isinstance(data,dict):data={}
+task=data.get('task') if isinstance(data.get('task'),dict) else {}
+required_routes=set(x for x in task.get('required_connections',[]) if identifier(x)) if isinstance(task.get('required_connections'),list) else set()
 checks=[];unverified=[];failures=[]
 def report(code,status,subject,detail):
  checks.append({'code':code,'status':status,'subject':subject,'detail':detail})
  if status=='FAIL':failures.append(code+':'+subject)
  elif status=='UNVERIFIED':unverified.append(code+':'+subject)
+def render_state(obj,code,subject):
+ """Fail only known exclusions; PASS means no checked exclusion, not pixel visibility."""
+ exclusions=[]
+ if obj.hide_render:exclusions.append('object.hide_render')
+ if obj.name not in scene.objects:exclusions.append('not in active scene')
+ for collection in obj.users_collection:
+  layer=scene.view_layers[0].layer_collection if scene.view_layers else None
+  # A collection can occur under more than one LayerCollection path.
+  def paths(node,ancestors):
+   here=ancestors+[node]
+   found=[here] if node.collection==collection else []
+   for child in node.children:found.extend(paths(child,here))
+   return found
+  active_paths=paths(layer,[]) if layer else []
+  if active_paths and all(any(n.exclude for n in path) for path in active_paths):
+   exclusions.append('collection excluded from sampled view layer: '+collection.name)
+ if exclusions:report(code,'FAIL',subject,{'known_exclusions':exclusions,'limits':'pixel occlusion not checked'})
+ elif any(c.hide_render for c in obj.users_collection):
+  report(code,'UNVERIFIED',subject,{'reason':'linked collection hide_render may affect effective render','collections':[c.name for c in obj.users_collection]})
+ else:report(code,'UNVERIFIED',subject,{'hide_render':False,'limits':'active render view-layer selection, collection render inclusion and pixel occlusion not fully checked'})
 def mesh_vertices(obj):
  if obj is None or obj.type!='MESH':return None
  ev=obj.evaluated_get(deps);me=ev.to_mesh()
@@ -44,7 +67,7 @@ def surface_gap(point,owner):
   return (q[0]-point).length if q and q[0] is not None else None
  finally:ev.to_mesh_clear()
 def portpoint(name):
- o=bpy.data.objects.get(name)
+ o=named_object(name)
  if not o:return None
  # Evaluated mesh centroid: transformed real vertices; do not trust arbitrary self-authored anchor properties.
  pts=mesh_vertices(o)
@@ -76,54 +99,60 @@ def endpoint(obj):
   finally:ev.to_mesh_clear()
  return None
 
-components={x['id']:x for x in data.get('components',[]) if isinstance(x,dict) and x.get('id')}
-ports={x['id']:x for x in data.get('ports',[]) if isinstance(x,dict) and x.get('id')}
+def records(key):
+ rows=data.get(key,[])
+ return rows if isinstance(rows,list) else []
+def named_object(name):return bpy.data.objects.get(name) if identifier(name) else None
+components={x['id']:x for x in records('components') if isinstance(x,dict) and identifier(x.get('id'))}
+ports={x['id']:x for x in records('ports') if isinstance(x,dict) and identifier(x.get('id'))}
 for id_,c in components.items():
- o=bpy.data.objects.get(c.get('object',''))
- report('COMPONENT_OBJECT','PASS' if o else 'FAIL',id_,{'object':c.get('object'),'renders':bool(o and not o.hide_render)})
- if o and o.hide_render:report('COMPONENT_RENDER','FAIL',id_,'hide_render=True')
- elif o:report('COMPONENT_RENDER','PASS',id_,'hide_render=False')
+ o=named_object(c.get('object'))
+ report('COMPONENT_OBJECT','PASS' if o else 'FAIL',id_,{'object':c.get('object')})
+ if o:render_state(o,'COMPONENT_RENDER',id_)
  parent=components.get(c.get('parent')) if c.get('parent') else None
  if parent:
-  po=bpy.data.objects.get(parent.get('object',''))
+  po=named_object(parent.get('object'))
   # Declared parent is assembly identity; do not require Blender parenting, but parent object must exist.
   report('PARENT_OBJECT','PASS' if po else 'FAIL',id_,{'parent':c['parent']})
 for id_,p in ports.items():
- a=bpy.data.objects.get(p.get('object',''));owner=components.get(p.get('owner'));obj=bpy.data.objects.get(owner.get('object','')) if owner else None
+ a=named_object(p.get('object'));owner=components.get(p.get('owner')) if identifier(p.get('owner')) else None;obj=named_object(owner.get('object')) if owner else None
  if not a or not obj:report('PORT_BINDING','FAIL',id_,{'anchor':bool(a),'owner':bool(obj)});continue
- if a.hide_render:report('PORT_RENDER','FAIL',id_,'hide_render=True')
+ render_state(a,'PORT_RENDER',id_)
  point=portpoint(p['object'])
  if point is None:report('PORT_BINDING','UNVERIFIED',id_,'anchor must be an actual mesh with vertices');continue
- tolerance=p.get('surface_tolerance',.03)
- if not isinstance(tolerance,(int,float)) or tolerance<0:report('PORT_BINDING','FAIL',id_,'invalid surface_tolerance');continue
+ if 'surface_tolerance' not in p:report('PORT_OWNER_SURFACE','UNVERIFIED',id_,'explicit surface_tolerance absent; Blender scene world units');continue
+ tolerance=p['surface_tolerance']
+ if not finite_nonnegative(tolerance):report('PORT_OWNER_SURFACE','FAIL',id_,'surface_tolerance must be finite nonnegative number (not bool), Blender scene world units');continue
  gap=surface_gap(point,obj)
  report('PORT_OWNER_SURFACE','UNVERIFIED' if gap is None else 'PASS' if gap<=tolerance else 'FAIL',id_,{'gap':gap,'tolerance':tolerance,'point':list(point)})
 
-for conn in data.get('connections',[]):
- if not isinstance(conn,dict) or not conn.get('id'):continue
- id_=conn['id'];a,b=ports.get(conn.get('a')),ports.get(conn.get('b'))
+for conn in records('connections'):
+ if not isinstance(conn,dict) or not identifier(conn.get('id')):continue
+ id_=conn['id'];a,b=ports.get(conn.get('a')) if identifier(conn.get('a')) else None,ports.get(conn.get('b')) if identifier(conn.get('b')) else None
  if not a or not b:continue
  if conn.get('kind') in ('logical','field','temporal'):
   report('NONPHYSICAL_ROUTE','UNVERIFIED',id_,'logical/field/temporal relation not physical endpoint QA');continue
- obj=bpy.data.objects.get(conn.get('object',''))
- if not obj:report('ROUTE_OBJECT','FAIL' if conn.get('required') else 'UNVERIFIED',id_,'route object missing');continue
- report('ROUTE_RENDER','FAIL' if obj.hide_render else 'PASS',id_,{'hide_render':obj.hide_render})
+ obj=named_object(conn.get('object'))
+ if not obj:report('ROUTE_OBJECT','FAIL' if conn.get('required') is True or id_ in required_routes else 'UNVERIFIED',id_,'route object missing');continue
+ render_state(obj,'ROUTE_RENDER',id_)
  e=endpoint(obj);pa=portpoint(a.get('object',''));pb=portpoint(b.get('object',''))
  if e is None or pa is None or pb is None:report('ENDPOINTS','UNVERIFIED',id_,'unsupported curve/straight mesh or anchor');continue
- tol=conn.get('tolerance',.03)
- if not isinstance(tol,(float,int)) or tol<0:report('ENDPOINTS','FAIL',id_,'invalid tolerance');continue
+ if 'tolerance' not in conn:report('ENDPOINTS','UNVERIFIED',id_,'explicit tolerance absent; Blender scene world units');continue
+ tol=conn['tolerance']
+ if not finite_nonnegative(tol):report('ENDPOINTS','FAIL',id_,'tolerance must be finite nonnegative number (not bool), Blender scene world units');continue
  direct=((e[0]-pa).length,(e[1]-pb).length);reverse=((e[1]-pa).length,(e[0]-pb).length)
  gaps=direct if max(direct)<=max(reverse) else reverse
  report('ENDPOINTS','PASS' if max(gaps)<=tol else 'FAIL',id_,{'gaps':gaps,'tolerance':tol,'actual_world_endpoints':[list(x) for x in e]})
 
-for s in data.get('supports',[]):
- if not isinstance(s,dict) or not s.get('id'):continue
- c=components.get(s.get('child'));p=components.get(s.get('parent'))
+for s in records('supports'):
+ if not isinstance(s,dict) or not identifier(s.get('id')):continue
+ c=components.get(s.get('child')) if identifier(s.get('child')) else None;p=components.get(s.get('parent')) if identifier(s.get('parent')) else None
  if not c or not p:continue
- child=bpy.data.objects.get(c.get('object',''));parent=bpy.data.objects.get(p.get('object',''))
+ child=named_object(c.get('object'));parent=named_object(p.get('object'))
  if not child or not parent:report('SUPPORT_OBJECT','FAIL',s['id'],'missing child/parent');continue
  tol=s.get('tolerance');
- if not isinstance(tol,(int,float)) or tol<0:report('SUPPORT','UNVERIFIED',s['id'],'tolerance absent');continue
+ if tol is None:report('SUPPORT','UNVERIFIED',s['id'],'explicit tolerance absent; Blender scene world units');continue
+ if not finite_nonnegative(tol):report('SUPPORT','FAIL',s['id'],'invalid tolerance; finite nonnegative number in Blender scene world units required');continue
  # Evaluate actual child mesh VERTICES vs nearest evaluated parent triangle surface.
  # A mesh vertex may be far from a face interior: passing is limited evidence of contact only.
  pts=mesh_vertices(child)
@@ -135,7 +164,7 @@ cam=scene.camera
 if not cam:report('CAMERA','UNVERIFIED','scene','no active camera')
 else:
  for id_,c in components.items():
-  obj=bpy.data.objects.get(c.get('object',''))
+  obj=named_object(c.get('object'))
   pts=mesh_vertices(obj)
   if not pts:report('PROJECTION','UNVERIFIED',id_,'unsupported/nonmesh geometry');continue
   projections=[world_to_camera_view(scene,cam,v) for v in pts]
@@ -153,7 +182,8 @@ result={'status':status,'scene':bpy.data.filepath,'record':str(record),'record_s
         'record_issues':{'errors':static['errors'],'unknown':static['unknown']},'dependent_records':static['dependent_records'],
         'checks':checks,'failures':failures,'unverified':unverified,
         'not_covered':['occlusion','collision','force','fluid_seal','signal_integrity','physical_transport','material_identity','visual_quality'],
-        'meaning':'PASS only for declared checks; no scientific/visual acceptance'}
+        'units':{'tolerances':'Blender scene world units; scene unit scale must be interpreted by the task owner','projection':'normalized camera coordinates'},
+ 'meaning':'PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance'}
 text=json.dumps(result,ensure_ascii=False,indent=2)
 if out:out.write_text(text+'\n',encoding='utf-8')
 print('AUDIT',status,'FAIL',len(failures),'UNVERIFIED',len(unverified))

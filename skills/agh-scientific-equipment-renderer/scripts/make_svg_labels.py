@@ -3,6 +3,7 @@
 blender --background scene.blend --python make_svg_labels.py -- record.json output.svg
 No-text tasks fail closed. Label anchors use projected evaluated MESH geometry centroid,
 not custom object-origin or caller-provided pixel coordinates. Output is SVG only.
+Text glyph bounds, font substitutions and clipping are NOT checked; inspect the SVG visually.
 """
 import bpy,json,sys,html
 from pathlib import Path

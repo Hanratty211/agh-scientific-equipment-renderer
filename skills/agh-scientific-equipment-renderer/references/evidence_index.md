@@ -34,5 +34,5 @@
 
 ## v0.6 自包含合成工具证据（拷贝 Skill 后可运行）
 - [`examples/valid_record.json`](../examples/valid_record.json) 是 2 组件、2 锚点、一条合成机械线与一条支撑的非科学小例；[记录格式](project_record.md) 和 [`scripts/validate_project_record.py`](../scripts/validate_project_record.py) 明确静态检查边界。
-- [`examples/make_synthetic_scene.py`](../examples/make_synthetic_scene.py) 生成临时 `.blend`；[`scripts/audit_saved_scene.py`](../scripts/audit_saved_scene.py) 独立读已存场景，报告世界几何端点/有限支撑近接及横、纵、深度。[`examples/run_v06_regression.py`](../examples/run_v06_regression.py) 的有效与可失败反例只证明这些工具在合成场景的分项行为。
+- [`examples/make_synthetic_scene.py`](../examples/make_synthetic_scene.py) 生成临时 `.blend`；[`scripts/audit_saved_scene.py`](../scripts/audit_saved_scene.py) 独立读已存场景，报告世界几何端点/有限支撑近接及横、纵、深度。[`examples/run_v06_regression.py`](../examples/run_v06_regression.py) 的有效与可失败反例只证明这些工具在合成场景的分项行为。后续纠错回归 31/31，包含 kind/medium、NaN、bool、错类型、未知尺寸、显式容差和任务要求路线；render inclusion 仍 UNVERIFIED，故有效几何场景的审计总状态为 UNVERIFIED 而非 PASS。
 - [`scripts/review_images.py`](../scripts/review_images.py) 和 [`examples/review_config.json`](../examples/review_config.json) 演示 PNG 哈希、归一化裁框、Alpha/分辨率数值；[`scripts/make_svg_labels.py`](../scripts/make_svg_labels.py) 输出有字 SVG 或拒绝无字记录。这些均**不**建立源图观感、照片标签正确性、接触功能、设备身份或用户最终验收。

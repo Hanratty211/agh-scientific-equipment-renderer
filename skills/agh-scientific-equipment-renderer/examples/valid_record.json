@@ -14,8 +14,8 @@
     {"id": "plate", "object": "plate_mesh", "evidence": "schematic", "size_basis": "illustrative", "state": "static", "parent": "base"}
   ],
   "ports": [
-    {"id": "a", "owner": "base", "object": "anchor_a", "medium": "mechanical", "direction": "bidirectional", "state": "connected"},
-    {"id": "b", "owner": "plate", "object": "anchor_b", "medium": "mechanical", "direction": "bidirectional", "state": "connected"}
+    {"id": "a", "owner": "base", "object": "anchor_a", "medium": "mechanical", "direction": "bidirectional", "state": "connected", "surface_tolerance": 0.03},
+    {"id": "b", "owner": "plate", "object": "anchor_b", "medium": "mechanical", "direction": "bidirectional", "state": "connected", "surface_tolerance": 0.03}
   ],
   "connections": [
     {"id": "rod", "a": "a", "b": "b", "kind": "mechanical", "medium": "mechanical", "object": "rod_curve", "required": true, "tolerance": 0.03}
