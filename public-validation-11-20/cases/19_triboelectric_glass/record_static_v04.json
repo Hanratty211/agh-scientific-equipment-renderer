@@ -1,0 +1,139 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.glass-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.glass-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.resistor"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.scope"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "glass-left",
+        "glass-right"
+      ],
+      "connections": [
+        "glass-to-resistor",
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "object": "TeRC transparent coating"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "raised clear reservoir"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "continuous U regulator"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "downward nozzle"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "resistor"
+      ],
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "object": "resistance substituter"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "scope"
+      ],
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "object": "oscilloscope"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "visible signal to resistance socket"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "visible signal to scope socket"
+    },
+    "port:glass-left": {
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:glass-right": {
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:resistor": {
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:scope": {
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "owner": "c6"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

@@ -18,3 +18,7 @@
 - R2 external reviewer: Codex actual v02 reference/output pixel comparison requires v03. See user R2 feedback, not AGH own pixel acceptance. v01/v02 retained; v03 build and route QA pending.
 
 - AGH R2 v03 done: Blender build/render exit 0; static UNKNOWN(3); reopened-scene UNVERIFIED(3), zero recorded failures; PNG review NUMERIC_ONLY(0). Declared routes 0 / endpoint PASS 0; zero does not mean all routes absent. See V03_CHECKPOINT.md. Output pixels pending Codex.
+
+- R3 external actual-v03-pixel correction requires v04; scope limited to this case, v01/v02/v03 retained. Source feedback in ../../CODEX_FEEDBACK_R3.md; no user final acceptance.
+
+- AGH v04 R3: case-local build/render exit 0, static UNKNOWN(3), reopened scene UNVERIFIED(3) FAIL 0, PNG NUMERIC_ONLY(0). Visible declared endpoint count 3/3; latest pixels pending Codex. See V04_CHECKPOINT.md.

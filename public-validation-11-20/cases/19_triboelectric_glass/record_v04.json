@@ -1,0 +1,179 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the g-panel tilted glass/drop delivery test and electrical readout instruments. Do not turn droplet time-series states e/f into simultaneous hardware or invent concealed electrode routes. Panel Fig.2(g); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. R3 Codex targeted pixel correction; original panel scope retained.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1100,
+      "height": 800,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ],
+    "required_connections": [
+      "glass-to-resistor",
+      "glass-to-scope"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "glass",
+      "object": "TeRC transparent coating",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "reservoir",
+      "object": "raised clear reservoir",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "U regulator",
+      "object": "continuous U regulator",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "down nozzle",
+      "object": "downward nozzle",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "resistance substituter",
+      "object": "resistance substituter",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "oscilloscope",
+      "object": "oscilloscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "lead one",
+      "object": "visible signal to resistance socket",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "lead two",
+      "object": "visible signal to scope socket",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "glass-left",
+      "owner": "c1",
+      "object": "QA glass left contact",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "glass-right",
+      "owner": "c1",
+      "object": "QA glass right contact",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "resistor",
+      "owner": "c5",
+      "object": "QA resistor terminal",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "scope",
+      "owner": "c6",
+      "object": "QA scope terminal",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    }
+  ],
+  "connections": [
+    {
+      "id": "glass-to-resistor",
+      "a": "glass-left",
+      "b": "resistor",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "visible signal to resistance socket",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "glass-to-scope",
+      "a": "glass-right",
+      "b": "scope",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "visible signal to scope socket",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units; port tolerance 0.09 / route endpoint 0.08 limited to visible model marker rounding; never engineering fit.",
+  "source": {
+    "doi": "10.1038/s41467-024-50872-2",
+    "figure_url": "https://www.nature.com/articles/s41467-024-50872-2/figures/2",
+    "target_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "v04 source-output visual comparison pending",
+    "hidden signal or fluid topology",
+    "physical operation and occlusion"
+  ],
+  "coverage_gap": "Only declared source-visible segments audited; no complete system path approval."
+}

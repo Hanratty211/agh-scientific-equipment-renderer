@@ -1,0 +1,199 @@
+{
+  "status": "FAIL",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v04.blend",
+  "rows": [
+    {
+      "position": 1,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": -3.63,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 2,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": -3.175,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 3,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": -2.72,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 4,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": -2.265,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 5,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": -1.81,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 6,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": -1.355,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 7,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": -0.9,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 8,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": -0.445,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 9,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": 0.01,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 10,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": 0.465,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 11,
+      "expected": "OPEN",
+      "status": "FAIL",
+      "frame_bars": 4,
+      "contrast_panels": 0,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": null,
+      "sampled_world_y": 0.92,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 12,
+      "expected": "FRAME+PANEL",
+      "status": "PASS",
+      "frame_bars": 4,
+      "contrast_panels": 1,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 1.375,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 13,
+      "expected": "FRAME+PANEL",
+      "status": "PASS",
+      "frame_bars": 4,
+      "contrast_panels": 1,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 1.83,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 14,
+      "expected": "FRAME+PANEL",
+      "status": "PASS",
+      "frame_bars": 4,
+      "contrast_panels": 1,
+      "frame_center_open": true,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 2.285,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 15,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 2.74,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 16,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 3.195,
+      "limit": "one center ray, not all hole geometry or seals"
+    },
+    {
+      "position": 17,
+      "expected": "SOLID",
+      "status": "PASS",
+      "frame_bars": 0,
+      "contrast_panels": 0,
+      "frame_center_open": null,
+      "base_or_panel_center_hit": true,
+      "sampled_world_y": 3.65,
+      "limit": "one center ray, not all hole geometry or seals"
+    }
+  ],
+  "not_covered": [
+    "identity_15_16",
+    "all_out-of-center_channels",
+    "fluid_sealing",
+    "visual_similarity"
+  ]
+}

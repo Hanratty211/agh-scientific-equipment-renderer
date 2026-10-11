@@ -1,0 +1,230 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel apparatus with opposed array and reflector, probe, camera/light and readout instruments. Draw sound/wavefront arrows only as explanatory layers if needed, not as physical rods. Panel Fig.5(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. R3 Codex targeted pixel correction; original panel scope retained.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1140,
+      "height": 830,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [
+      "camera-to-laptop",
+      "microphone-to-amp",
+      "array-to-amp"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "upper array",
+      "object": "downward transducer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "reflector",
+      "object": "flat rectangular reflector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "gap droplet",
+      "object": "single working-gap drop",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "microphone",
+      "object": "microphone exterior body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "left camera",
+      "object": "LEFT high speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "right LED",
+      "object": "RIGHT LED housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "amplifier",
+      "object": "amplifier electronics",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "oscilloscope",
+      "object": "oscilloscope instrument",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "laptop",
+      "object": "laptop open screen",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "array support",
+      "object": "top array support",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "camera",
+      "owner": "c5",
+      "object": "camera lead owner surface",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "microphone",
+      "owner": "c4",
+      "object": "microphone cable surface",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "array",
+      "owner": "c10",
+      "object": "array upper signal boundary",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "amp-mic",
+      "owner": "c7",
+      "object": "amp microphone socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "amp-array",
+      "owner": "c7",
+      "object": "amp array socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "computer",
+      "owner": "c9",
+      "object": "laptop input socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    }
+  ],
+  "connections": [
+    {
+      "id": "camera-to-laptop",
+      "a": "camera",
+      "b": "computer",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "camera-to-laptop visible wire",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "microphone-to-amp",
+      "a": "microphone",
+      "b": "amp-mic",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "microphone-to-amplifier visible wire",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "array-to-amp",
+      "a": "array",
+      "b": "amp-array",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "array-to-amplifier visible wire",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units; port tolerance 0.09 / route endpoint 0.08 limited to visible model marker rounding; never engineering fit.",
+  "source": {
+    "doi": "10.1038/s41598-019-53281-4",
+    "figure_url": "https://www.nature.com/articles/s41598-019-53281-4/figures/5",
+    "target_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "v04 source-output visual comparison pending",
+    "hidden signal or fluid topology",
+    "physical operation and occlusion"
+  ],
+  "coverage_gap": "Only declared source-visible segments audited; no complete system path approval.",
+  "route_coverage": "Visible wiring/electrode/stage details remain unbound or source topology ambiguous; do not interpret zero as absent routes in real device."
+}

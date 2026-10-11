@@ -1,0 +1,117 @@
+{
+  "status": "LATEST_PIXEL_REVIEW_PENDING",
+  "report": "BATCH_STATUS_mixed_v03_v04.md",
+  "mixed_contact": "reference_mixed_latest_v03_v04_local.png",
+  "cases": [
+    {
+      "id": 11,
+      "slug": "optical_binding",
+      "version": "v03",
+      "route_declared": 10,
+      "endpoint_pass": 10,
+      "endpoint_fail": 0,
+      "render_sha256": "a1122732071a7a301abff3a32269abf703cc7f7e723c79fee6f8aa89dbcb72a6",
+      "pair": "pair_11_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 12,
+      "slug": "capillary_microfluidics",
+      "version": "v03",
+      "route_declared": 3,
+      "endpoint_pass": 3,
+      "endpoint_fail": 0,
+      "render_sha256": "141b78e122231c4385d564d66d9babf1db6537f8d5cbb3708d477ae13749e7e3",
+      "pair": "pair_12_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 13,
+      "slug": "fff_printer",
+      "version": "v03",
+      "route_declared": 0,
+      "endpoint_pass": 0,
+      "endpoint_fail": 0,
+      "render_sha256": "8386351f067b88cee5e828e98bfde7c349458d7abd294cbe23a5413741b207c6",
+      "pair": "pair_13_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 14,
+      "slug": "acoustic_levitation",
+      "version": "v04",
+      "route_declared": 3,
+      "endpoint_pass": 3,
+      "endpoint_fail": 0,
+      "render_sha256": "84647b1240de75dbc8a0b6386157938508b669640ee58cd65ec8b97558966f38",
+      "pair": "pair_14_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 15,
+      "slug": "retractable_sensor",
+      "version": "v04",
+      "route_declared": 0,
+      "endpoint_pass": 0,
+      "endpoint_fail": 0,
+      "render_sha256": "307f788bf15f384b3c45d6e4b78306a760938e42f6c649e0610b98188015eb76",
+      "pair": "pair_15_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 16,
+      "slug": "electrospinning",
+      "version": "v03",
+      "route_declared": 2,
+      "endpoint_pass": 2,
+      "endpoint_fail": 0,
+      "render_sha256": "8f1c2cda70e5a2ce964cffdfa51c68edf703b3b181b0a617e4da18af6cc95587",
+      "pair": "pair_16_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 17,
+      "slug": "magnetic_shell",
+      "version": "v03",
+      "route_declared": 2,
+      "endpoint_pass": 2,
+      "endpoint_fail": 0,
+      "render_sha256": "337a7707941fba4fd8998a3f3555778470a4214a28b4f5f8985afa3ba01a912c",
+      "pair": "pair_17_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 18,
+      "slug": "electrochemical_stack",
+      "version": "v04",
+      "route_declared": 0,
+      "endpoint_pass": 0,
+      "endpoint_fail": 0,
+      "render_sha256": "110a6f300ce3dc18fd575f9b487cc8878568a39337c170a584712333005c5feb",
+      "pair": "pair_18_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 19,
+      "slug": "triboelectric_glass",
+      "version": "v04",
+      "route_declared": 2,
+      "endpoint_pass": 2,
+      "endpoint_fail": 0,
+      "render_sha256": "b48401e5c216fb8363868b4e323203a3853daf0f3fc8b8895bb81ef6306efc9c",
+      "pair": "pair_19_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    },
+    {
+      "id": 20,
+      "slug": "thermoelectric_measurement",
+      "version": "v03",
+      "route_declared": 0,
+      "endpoint_pass": 0,
+      "endpoint_fail": 0,
+      "render_sha256": "79a076e1bc8507bc85e9735112278f7f12b0adfde633c633fba08dad43173555",
+      "pair": "pair_20_latest_v03_v04_local.png",
+      "pixel_verdict": "PENDING_CODEX_LATEST_REVIEW"
+    }
+  ]
+}

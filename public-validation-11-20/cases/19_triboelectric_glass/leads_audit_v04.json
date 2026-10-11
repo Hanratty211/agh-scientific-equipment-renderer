@@ -1,0 +1,31 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v04.blend",
+  "rows": [
+    {
+      "side": "left",
+      "route": "visible signal to resistance socket",
+      "actual_world_endpoint": [
+        -1.7193037271499634,
+        -0.550000011920929,
+        0.6426558494567871
+      ],
+      "owner_surface_gap": 8.429369557916289e-08,
+      "status": "PASS",
+      "limit": "distance to finite evaluated film mesh, not optical visibility or signal integrity"
+    },
+    {
+      "side": "right",
+      "route": "visible signal to scope socket",
+      "actual_world_endpoint": [
+        0.05468601733446121,
+        -0.550000011920929,
+        1.5662142038345337
+      ],
+      "owner_surface_gap": 3.725290298461914e-09,
+      "status": "PASS",
+      "limit": "distance to finite evaluated film mesh, not optical visibility or signal integrity"
+    }
+  ],
+  "tolerance_world_units": 0.02
+}

@@ -1,0 +1,23 @@
+{
+  "case": "18_electrochemical_stack",
+  "version": "v04",
+  "declared_components": 19,
+  "declared_ports": 0,
+  "declared_routes": 0,
+  "owner_surface": {
+    "PASS": 0,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "endpoints": {
+    "PASS": 0,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "scene_audit": "UNVERIFIED",
+  "limits": [
+    "only declared visible segments",
+    "whole-device/hidden topology and pixels not verified",
+    "exploded display not a connection claim"
+  ]
+}

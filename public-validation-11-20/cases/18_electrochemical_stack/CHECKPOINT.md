@@ -20,3 +20,11 @@
 - R2 external reviewer: Codex actual v02 reference/output pixel comparison requires v03. See user R2 feedback, not AGH own pixel acceptance. v01/v02 retained; v03 build and route QA pending.
 
 - AGH R2 v03 done: Blender build/render exit 0; static UNKNOWN(3); reopened-scene UNVERIFIED(3), zero recorded failures; PNG review NUMERIC_ONLY(0). Declared routes 0 / endpoint PASS 0; zero does not mean all routes absent. See V03_CHECKPOINT.md. Output pixels pending Codex.
+
+- R3 external actual-v03-pixel correction requires v04; scope limited to this case, v01/v02/v03 retained. Source feedback in ../../CODEX_FEEDBACK_R3.md; no user final acceptance.
+
+- v04 initial independent center Y-ray probe exit 2: positions 12–14 FAIL relative to v03 OPEN classification because newly added contrasting panels intentionally occupy the center. Kept `mesh_audit_v04_initial.json/.log`. Do not remove intended panels for a false OPEN PASS. Need classification per v04 R3 design: perimeter aperture and contrasting central panel separately; old v03 checker is not a v04 schema.
+
+- v04 new probe first exit 2 from checker bug: no `basic` mesh for four-bar OPEN layer returns None (no intersection evidence), wrongly compared only to False. Saved `mesh_audit_v04_probe_bug.json/.log`; condition corrected to accept no hit as empty OPEN for this one ray. Re-run exit 3 UNVERIFIED with 17/17 declared center-ray categories, NOT full geometry seal or identity verification. v03-old checker initial v04 mismatch preserved too.
+
+- AGH v04 R3: case-local build/render exit 0, static UNKNOWN(3), reopened scene UNVERIFIED(3) FAIL 0, PNG NUMERIC_ONLY(0). Visible declared endpoint count 0/0; latest pixels pending Codex. See V04_CHECKPOINT.md.

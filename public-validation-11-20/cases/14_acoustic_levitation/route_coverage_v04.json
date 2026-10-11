@@ -1,0 +1,23 @@
+{
+  "case": "14_acoustic_levitation",
+  "version": "v04",
+  "declared_components": 10,
+  "declared_ports": 6,
+  "declared_routes": 3,
+  "owner_surface": {
+    "PASS": 6,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "endpoints": {
+    "PASS": 3,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "scene_audit": "UNVERIFIED",
+  "limits": [
+    "only declared visible segments",
+    "whole-device/hidden topology and pixels not verified",
+    "exploded display not a connection claim"
+  ]
+}

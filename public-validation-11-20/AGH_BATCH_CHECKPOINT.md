@@ -25,3 +25,9 @@
 - v03 审计修正：12/17/19 初次路由/所有者表面拒绝已保存 `audit_scene_v03_initial.json/.log`（12/17/19）；独立读取三例真实 mesh 最近面定位而非调宽容差。12 将 pump owner 指向实际 syringe 表面、waste mouth 锚移到实体开口 rim、route 终点同锚；17 owner 指向 fixture top 和实际 syringe interface；19 原玻璃锚落错倾斜侧，按旋转后的真实表面重定位。重建 12/17/19 并重新记录，12/17/19 audit exit 3、无分项 FAIL；仍不意味着功能拓扑或全路径已证。
 
 - v03 / AGH：十例 `build_v03.py`、saved `.blend`、no-text low-cost PNG 全批后台 Blender exit 0。十例 v0.6 static UNKNOWN exit 3、独立 saved-scene audit UNVERIFIED exit 3，PNG 数值审查 NUMERIC_ONLY exit 0。11/12/16/17/19 仅对声明的源图可见片段加入 10/3/2/2/2 条端点路由；owner 最近面与 route 端点分项已重开实际场景查。13/14/20 缺源核对的端点未冒充通过；15/18 拆解展示不强加工作连接。18 独立网格 Y 射线对 1–17 面孔类别 17/17 分项符合脚本建模分类，总体 UNVERIFIED；11 二色镜实际评估网格面法向反射 -X→+Z dot 1.0、总体 UNVERIFIED。v03 仍待 Codex 实际读 PNG 并独立复核。
+
+- R3 / 2026-10-12：本轮读 Codex `CODEX_FEEDBACK_R3.md`，Codex 已实际看十例 v03 像素并独立只读几何 probe；11/12/13/16/17/20 仅有限整体示意预览水平（且 11/12/17 端点最终修复/重读仍有条件），不是用户最终验收。14/15/18/19 指定 v04。核对当前 v03 10 张 PNG SHA 与本轮 `review_numeric_v03.json` 完全一致；Codex 早先捕获部分配对图在 12/17/19 端点修复前，必须用最终已刷新 PNG 重新对照，不能把旧截图当最后版本复核。历史失败 JSON `audit_scene_v03_initial.json` 留档，不删除。
+
+- R3 限定 v04 / AGH：仅 14/15/18/19 运行 Blender 5.1.2 build/render exit 0，原 v01/v02/v03 未动。四例 static UNKNOWN(3)，独立重开场景终版 UNVERIFIED(3)，PNG NUMERIC_ONLY(0)；已声明可见线 14=3/3、19=2/2；15/18 拆解 0（不强求假连接）。19 首轮 QA marker 隐藏导致 PORT_RENDER FAIL，初始 JSON/log 保留；改极小黑色表面标而非金块、复审未有 FAIL（仍不证像素）。18 v03 中央孔 checker 直接套到 v04 内板会误报 12–14 封口 FAIL，旧报告保留；新 checker 首轮空 basic mesh 的 None 判断错误又 FAIL，保留 probe_bug 报告，修逻辑后对 1–17 中央孔/内板模型分类 17/17，综合 UNVERIFIED；不是全板或密封认证。19 独立 film 实网格最近面 lead 两端约 8.43e-8 与 3.73e-9 世界单位，非视觉/电路验收。混合六例 v03＋四例 v04 并排已本地落盘，全部等待 Codex 最终像素重读。
+
+- 14 额外自查：第一份 v04 审计虽然 PASS，其 array 锚点曾处 top holder 体内部距最近实网格面 0.07 展示世界单位；报告 `audit_scene_v04_pre_surface.*` 留档。没有扩大容差，而是移向真实顶面，重建/重开/重做数值，最终最近面 0.0050001，PNG hash 已重新写进 V04_CHECKPOINT，混合总图已更新。
