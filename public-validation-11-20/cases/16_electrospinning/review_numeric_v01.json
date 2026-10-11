@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v01",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v01.png",
+      "sha256": "edf8f686de018c927215be727549ecd53773a6635c4dcf4ed503e081546e6978",
+      "width": 1100,
+      "height": 720,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.2,
+            0.18,
+            0.8,
+            0.82
+          ],
+          "pixel_xyxy": [
+            220,
+            130,
+            880,
+            590
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/qa_center_v01.png",
+          "size": [
+            660,
+            460
+          ],
+          "source_sha256": "edf8f686de018c927215be727549ecd53773a6635c4dcf4ed503e081546e6978"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/qa_numeric_sheet_v01.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

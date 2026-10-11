@@ -1,0 +1,139 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "device",
+    "scope": "Reconstruct the ordered exploded stack and assembled four-cell stack shown in c. Consult caption for material/layer names and repeats; do not merge panels b cabinet or d tubing into the target. Exploded spacings are presentation choices, not working contact gaps. Panel Fig.6(c); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "exploded presentation and assembled comparison",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 1280,
+      "height": 700
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "exploded end plate 1",
+      "object": "exploded 1 end plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c2",
+      "label": "exploded gasket 2",
+      "object": "exploded 2 silicone gasket",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c3",
+      "label": "exploded bipolar plate 3",
+      "object": "exploded 3 bipolar self-breathing plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c4",
+      "label": "exploded GDE 4",
+      "object": "exploded 4 GDE",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c5",
+      "label": "exploded cathode flow 6",
+      "object": "exploded 6 cathode flow plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c6",
+      "label": "exploded membrane 7",
+      "object": "exploded 7 proton exchange membrane",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c7",
+      "label": "exploded anode 8",
+      "object": "exploded 8 anode",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c8",
+      "label": "exploded anode flow 10",
+      "object": "exploded 10 anode flow plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c9",
+      "label": "exploded collector 16",
+      "object": "exploded 12 anode current collector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c10",
+      "label": "exploded end plate 17",
+      "object": "exploded 13 end plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    },
+    {
+      "id": "c11",
+      "label": "four-cell assembled",
+      "object": "assembled rear end plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation and assembled comparison"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/s41467-026-68436-x",
+    "figure_url": "https://www.nature.com/articles/s41467-026-68436-x/figures/6",
+    "input_sha256": "8fe9073f1d220f2e3f83bbd0e495d4c784d696cf8346f3f94cb80563014841a4"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability"
+  ]
+}

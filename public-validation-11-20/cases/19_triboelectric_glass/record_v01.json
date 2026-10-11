@@ -1,0 +1,86 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the g-panel tilted glass/drop delivery test and electrical readout instruments. Do not turn droplet time-series states e/f into simultaneous hardware or invent concealed electrode routes. Panel Fig.2(g); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "one illustrated setup",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 990,
+      "height": 690
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "tilted test fixture",
+      "object": "tilted glass support",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c2",
+      "label": "TeRC glass",
+      "object": "transparent TeRC glass",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c3",
+      "label": "film",
+      "object": "thin film on glass",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c4",
+      "label": "drop dispenser",
+      "object": "drop dispenser",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c5",
+      "label": "electrical readout",
+      "object": "electrical readout",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/s41467-024-50872-2",
+    "figure_url": "https://www.nature.com/articles/s41467-024-50872-2/figures/2",
+    "input_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability",
+    "required visible routes not independently mapped to actual world-face ports in v01"
+  ]
+}

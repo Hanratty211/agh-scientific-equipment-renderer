@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v01",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v01.png",
+      "sha256": "855c4a2a4ba5eea0ceb4c9645888e6bc6070425405c8dae73b5061676197bff9",
+      "width": 990,
+      "height": 690,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.2,
+            0.18,
+            0.8,
+            0.82
+          ],
+          "pixel_xyxy": [
+            198,
+            124,
+            792,
+            566
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/qa_center_v01.png",
+          "size": [
+            594,
+            442
+          ],
+          "source_sha256": "855c4a2a4ba5eea0ceb4c9645888e6bc6070425405c8dae73b5061676197bff9"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/qa_numeric_sheet_v01.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

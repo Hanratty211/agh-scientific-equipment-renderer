@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v01",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/20_thermoelectric_measurement/overview_v01.png",
+      "sha256": "f0faedd1baa2129e16e3819ab306b02ec17a49efbb370518c9a2a9d31bc64bd4",
+      "width": 1000,
+      "height": 700,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.2,
+            0.18,
+            0.8,
+            0.82
+          ],
+          "pixel_xyxy": [
+            200,
+            126,
+            800,
+            574
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/20_thermoelectric_measurement/qa_center_v01.png",
+          "size": [
+            600,
+            448
+          ],
+          "source_sha256": "f0faedd1baa2129e16e3819ab306b02ec17a49efbb370518c9a2a9d31bc64bd4"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/20_thermoelectric_measurement/qa_numeric_sheet_v01.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

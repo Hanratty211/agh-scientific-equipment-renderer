@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v01",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v01.png",
+      "sha256": "8781dbf56e6d4ce6b60944d72da1c38c253b39c87592f952c21978b03aef7099",
+      "width": 1100,
+      "height": 660,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.2,
+            0.18,
+            0.8,
+            0.82
+          ],
+          "pixel_xyxy": [
+            220,
+            119,
+            880,
+            541
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/qa_center_v01.png",
+          "size": [
+            660,
+            422
+          ],
+          "source_sha256": "8781dbf56e6d4ce6b60944d72da1c38c253b39c87592f952c21978b03aef7099"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/qa_numeric_sheet_v01.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

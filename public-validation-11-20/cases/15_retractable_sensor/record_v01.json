@@ -1,0 +1,94 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "device",
+    "scope": "Reconstruct only the main left exploded sensor assembly: lid, rotor, coil spring/rope, stator and visible electrode rings. Exploded layers are intentionally separated; do not invent supports joining them. Exclude human/application scenes, inset electrode/SEM/photos and legend graphics. Panel Fig.1(c), main left exploded assembly; SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "exploded presentation",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 780,
+      "height": 980
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "lid",
+      "object": "lid cap",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    },
+    {
+      "id": "c2",
+      "label": "rotor",
+      "object": "rotor shell",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    },
+    {
+      "id": "c3",
+      "label": "stator",
+      "object": "stator exterior",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    },
+    {
+      "id": "c4",
+      "label": "spring",
+      "object": "coil spring illustrated",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    },
+    {
+      "id": "c5",
+      "label": "retractable cord",
+      "object": "visible retractable cord",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    },
+    {
+      "id": "c6",
+      "label": "electrode rings",
+      "object": "stator electrode outer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/s41467-021-23207-8",
+    "figure_url": "https://www.nature.com/articles/s41467-021-23207-8/figures/1",
+    "input_sha256": "cffb3896399a7f4abcf70748db6e33bb4be8d185ad50b549d1841d98fb76b57d"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the entire b-panel experiment including the two pumps, transparent capillary sample region, microscope/camera, visible fluid tubes, waste vessel and computer. Sealed branch state follows caption; hidden fluid topology stays unknown. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "during experiment, flush needle sealed",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 1100,
+      "height": 660
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "pump 1",
+      "object": "syringe pump",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c2",
+      "label": "pump 2",
+      "object": "syringe pump.001",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c3",
+      "label": "capillary",
+      "object": "glass capillary",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c4",
+      "label": "inverted microscope",
+      "object": "microscope base",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c5",
+      "label": "high-speed camera",
+      "object": "high speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c6",
+      "label": "waste vessel",
+      "object": "waste vessel",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    },
+    {
+      "id": "c7",
+      "label": "computer",
+      "object": "computer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "during experiment, flush needle sealed"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/srep11102",
+    "figure_url": "https://www.nature.com/articles/srep11102/figures/1",
+    "input_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability",
+    "required visible routes not independently mapped to actual world-face ports in v01"
+  ]
+}

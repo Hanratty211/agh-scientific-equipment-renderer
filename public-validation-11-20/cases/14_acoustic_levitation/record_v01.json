@@ -1,0 +1,112 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel apparatus with opposed array and reflector, probe, camera/light and readout instruments. Draw sound/wavefront arrows only as explanatory layers if needed, not as physical rods. Panel Fig.5(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "one illustrated setup",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 1020,
+      "height": 750
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "transducer array",
+      "object": "ultrasonic array element",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c2",
+      "label": "reflector",
+      "object": "facing reflector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c3",
+      "label": "probe",
+      "object": "probe microphone",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c4",
+      "label": "camera",
+      "object": "high-speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c5",
+      "label": "LED",
+      "object": "LED lamp",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c6",
+      "label": "amplifier",
+      "object": "amplifier",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c7",
+      "label": "oscilloscope",
+      "object": "oscilloscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c8",
+      "label": "computer",
+      "object": "computer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/s41598-019-53281-4",
+    "figure_url": "https://www.nature.com/articles/s41598-019-53281-4/figures/5",
+    "input_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability"
+  ]
+}

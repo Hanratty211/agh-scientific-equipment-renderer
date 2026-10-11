@@ -1,0 +1,103 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the visible printer frame, gantry/head, bed, display/sensors and adjacent laptop. Scope is the photo a, not the printed channel in b. Hidden electronics and emission flow paths stay unknown. Panel Fig.1(a); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted.",
+    "operating_state": "one illustrated setup",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "background": "opaque",
+      "width": 1120,
+      "height": 660
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "printer frame",
+      "object": "printer plinth",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c2",
+      "label": "gantry",
+      "object": "gantry crossbar",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c3",
+      "label": "extruder head",
+      "object": "extruder carriage",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c4",
+      "label": "print bed",
+      "object": "heated bed",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c5",
+      "label": "display",
+      "object": "display module",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c6",
+      "label": "sensor",
+      "object": "visible sensor",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    },
+    {
+      "id": "c7",
+      "label": "laptop",
+      "object": "laptop base",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one illustrated setup"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender units, no measured unit scale; no geometric tolerance asserted",
+  "source": {
+    "doi": "10.1038/s41598-025-17304-7",
+    "figure_url": "https://www.nature.com/articles/s41598-025-17304-7/figures/1",
+    "input_sha256": "da2332cc9fae68ab58c2ce89a3710460bb4290c4e2697530b17565019a594a4e"
+  },
+  "unverified": [
+    "complete visual scope vs reference",
+    "interface identity",
+    "hidden fluid/electric/optical topology",
+    "functional contact",
+    "occlusion/readability"
+  ]
+}

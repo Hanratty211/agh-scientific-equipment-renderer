@@ -1,0 +1,340 @@
+{
+  "papers": [
+    {
+      "id": 11,
+      "slug": "optical_binding",
+      "title": "The primeval optical evolving matter by optical binding inside and outside the photon beam",
+      "doi": "10.1038/s41467-022-33070-w",
+      "date": "2022/09/10",
+      "article_url": "https://www.nature.com/articles/s41467-022-33070-w",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/s41467-022-33070-w/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-022-33070-w/MediaObjects/41467_2022_33070_Fig1_HTML.png",
+      "source_file": "sources/11_optical_binding/figure_original.png",
+      "size": [
+        1348,
+        965
+      ],
+      "sha256": "b18aeaa099e488402ecbafe5e2d957ebd5997e3aa929140c76d1a1d26a1451ba",
+      "caption": "Fig. 1: Experimental setup for optical trapping of Au NPs at the upper glass/solution interface.           Full size image          The upper dashed-line inset shows the illustration of the sample conditions at the trapping spot.",
+      "panel": "Fig.1 main optical apparatus; exclude the upper-right nanoparticle sample inset",
+      "crop_xyxy": null,
+      "domain": "optical setup",
+      "scope": "Reconstruct the main optical apparatus, its visible beam paths and component directions. The micro-scale sample inset is context, not additional macro hardware.",
+      "target_file": "inputs/11_optical_binding.png",
+      "target_size": [
+        1348,
+        965
+      ],
+      "target_sha256": "ee50331c2fb26e4d7593f6dec095a3455ee759c857400b482b131f8e96ee4d24",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 12,
+      "slug": "capillary_microfluidics",
+      "title": "Tip-multi-breaking in Capillary Microfluidic Devices",
+      "doi": "10.1038/srep11102",
+      "date": "2015/06/16",
+      "article_url": "https://www.nature.com/articles/srep11102",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/srep11102/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fsrep11102/MediaObjects/41598_2015_Article_BFsrep11102_Fig1_HTML.jpg",
+      "source_file": "sources/12_capillary_microfluidics/figure_original.png",
+      "size": [
+        1575,
+        905
+      ],
+      "sha256": "ccd06e62a974c2c8bf7f5c5a973ee6b6b58d0c3ab4e424879f6718a7c0a30cd2",
+      "caption": "Figure 1           Full size image          Experimental setup.  ( a ) The location of injecting and focusing orifice.  D   i   and  D   f   are the inner diameters of the injecting and focusing orifice, respectively, with the distance between them being  L . Scale bar, 200  μm . ( b ) Experimental setup. Fluids are driven by Syringe pumps. The right hand side needle is open before experiments, through which air and liquid wastes can be flushed away, while it is sealed during experiments. The process is visualized, monitored and recorded (in terms of images and videos) with a high speed digital imaging system equipped with an inverted microscope.",
+      "panel": "Fig.1(b)",
+      "crop_xyxy": [
+        0,
+        370,
+        1575,
+        905
+      ],
+      "domain": "capillary microfluidic setup",
+      "scope": "Reconstruct the entire b-panel experiment including the two pumps, transparent capillary sample region, microscope/camera, visible fluid tubes, waste vessel and computer. Sealed branch state follows caption; hidden fluid topology stays unknown.",
+      "target_file": "inputs/12_capillary_microfluidics.png",
+      "target_size": [
+        1575,
+        535
+      ],
+      "target_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 13,
+      "slug": "fff_printer",
+      "title": "Multi-objective optimization of surface finish and VOC emissions in FFF 3D printing using ANN–NSGA-II approach",
+      "doi": "10.1038/s41598-025-17304-7",
+      "date": "2025/10/02",
+      "article_url": "https://www.nature.com/articles/s41598-025-17304-7",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/s41598-025-17304-7/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-025-17304-7/MediaObjects/41598_2025_17304_Fig1_HTML.png",
+      "source_file": "sources/13_fff_printer/figure_original.png",
+      "size": [
+        1881,
+        486
+      ],
+      "sha256": "d6e2b77e647293dc1af000375422622234a359e38486c0deae0cc4c41bacf0f8",
+      "caption": "Fig. 1           Full size image          ( a ). Experimental setup of the customized FFF 3D printer, ( b ). 3D-printed microfluidic channel.",
+      "panel": "Fig.1(a)",
+      "crop_xyxy": [
+        0,
+        0,
+        1098,
+        486
+      ],
+      "domain": "FFF printer photo",
+      "scope": "Reconstruct the visible printer frame, gantry/head, bed, display/sensors and adjacent laptop. Scope is the photo a, not the printed channel in b. Hidden electronics and emission flow paths stay unknown.",
+      "target_file": "inputs/13_fff_printer.png",
+      "target_size": [
+        1098,
+        486
+      ],
+      "target_sha256": "da2332cc9fae68ab58c2ce89a3710460bb4290c4e2697530b17565019a594a4e",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 14,
+      "slug": "acoustic_levitation",
+      "title": "Acoustic Manipulation of Droplets under Reduced Gravity",
+      "doi": "10.1038/s41598-019-53281-4",
+      "date": "2019/11/12",
+      "article_url": "https://www.nature.com/articles/s41598-019-53281-4",
+      "figure_id": "Fig5",
+      "figure_url": "https://www.nature.com/articles/s41598-019-53281-4/figures/5",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-019-53281-4/MediaObjects/41598_2019_53281_Fig5_HTML.png",
+      "source_file": "sources/14_acoustic_levitation/figure_original.png",
+      "size": [
+        1493,
+        658
+      ],
+      "sha256": "5b9cd61be216a121107dbbfb8d888587d211767782399df4c9226a3388ee3a16",
+      "caption": "Figure 5           Full size image          Schematic diagram of experimental apparatus. ( a ) Concept of focused ultrasound transmitted from an ultrasonic transducer array. ( b ) Schematic of experimental setup: (1) probe microphone, (2) high-speed video camera). (3) LED light, (4) amplifier, (5) oscilloscope, and (6) computer.",
+      "panel": "Fig.5(b)",
+      "crop_xyxy": [
+        760,
+        0,
+        1493,
+        658
+      ],
+      "domain": "acoustic levitation setup",
+      "scope": "Reconstruct the b-panel apparatus with opposed array and reflector, probe, camera/light and readout instruments. Draw sound/wavefront arrows only as explanatory layers if needed, not as physical rods.",
+      "target_file": "inputs/14_acoustic_levitation.png",
+      "target_size": [
+        733,
+        658
+      ],
+      "target_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 15,
+      "slug": "retractable_sensor",
+      "title": "Sensing of joint and spinal bending or stretching via a retractable and wearable badge reel",
+      "doi": "10.1038/s41467-021-23207-8",
+      "date": "2021/05/19",
+      "article_url": "https://www.nature.com/articles/s41467-021-23207-8",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/s41467-021-23207-8/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-021-23207-8/MediaObjects/41467_2021_23207_Fig1_HTML.png",
+      "source_file": "sources/15_retractable_sensor/figure_original.png",
+      "size": [
+        1734,
+        2142
+      ],
+      "sha256": "d430f6212b2a163ce74bcda5c6e0875fe5b08bc81e8a453d160121ab35dd2639",
+      "caption": "Fig. 1: Concept illustrations, schematic diagrams, photographs, and exploded view of the stretch sensor.           Full size image           a  Illustration of the thin, lightweight, and wearable stretch sensor placed around the full body to monitor the joint and spinal motions, with continuous, wireless monitoring ability.  b  Images from a top view showing (i) the representative stretch sensors made up of two different 3D printing materials, i.e., photosensitive resin (1) and white resin material (2), and (3) displays a commercial retractable badge reel. In addition, the diameter (ii) and height (iii) of the sensor are shown.  c  Exploded view of the stretch sensor, consisting of (1) lid, (2) rotor, and (3) stator, and enlarged images: (i) the rotor electrode, (ii) etched nanorods on the surface of Kapton film, and (iii) the stator electrode.",
+      "panel": "Fig.1(c), main left exploded assembly",
+      "crop_xyxy": [
+        0,
+        1130,
+        670,
+        2142
+      ],
+      "domain": "retractable sensor exploded assembly",
+      "scope": "Reconstruct only the main left exploded sensor assembly: lid, rotor, coil spring/rope, stator and visible electrode rings. Exploded layers are intentionally separated; do not invent supports joining them. Exclude human/application scenes, inset electrode/SEM/photos and legend graphics.",
+      "target_file": "inputs/15_retractable_sensor.png",
+      "target_size": [
+        670,
+        1012
+      ],
+      "target_sha256": "cffb3896399a7f4abcf70748db6e33bb4be8d185ad50b549d1841d98fb76b57d",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 16,
+      "slug": "electrospinning",
+      "title": "Electro-spinning of highly-aligned polyacrylonitrile nano-fibres with continuous spooling",
+      "doi": "10.1038/s41598-021-99890-w",
+      "date": "2021/11/05",
+      "article_url": "https://www.nature.com/articles/s41598-021-99890-w",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/s41598-021-99890-w/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-99890-w/MediaObjects/41598_2021_99890_Fig1_HTML.png",
+      "source_file": "sources/16_electrospinning/figure_original.png",
+      "size": [
+        1773,
+        1349
+      ],
+      "sha256": "f5d598fb1daa6c417467a83a2970d449cab9329139e11a13b51bdba8c641f505",
+      "caption": "Figure 1           Full size image          ( a ) Schematic illustration of a conventional electro-spinning setup; ( b ) the new Vee-shield experimental setup; ( c ) a magnified view of the Vee-shield; and ( d ) the motorised spooling rig for continuous production of aligned fibres. The coded items are as follows: (i) controller for the liquid dispensing system; (ii) screw-driven drive mechanism on the liquid dispenser; (iii) plunger of the syringe; (iv) barrel of the syringe; (v) Perspex chamber (with doors); (vi) PTFE tube that connects the tip of the syringe to the needle (via Luer Lock connectors); (vii) Perspex support arm for the needle; (viii) metal needle; (ix) infrared heat source; (x) circular grounded metal collector; (xi) Perspex support arm for the grounded collector; (xii) storage heater; (xiii) vertical Perspex support arm; (xiv) high-voltage DC power supply; (xv) PTFE Vee-shield; (xvi and xvi’) back and front edges of the ground electrode respectively; (xvii) strip of cellulose paper; (xviii) perimeter where the majority of the aligned fibres are deposited; and (xix) slot in the PTFE where the cellulose substrate is fed through when spooling (a similar slot is present on the opposite end); (xx) motorised spooling rig for the continuous production of aligned electro-spun fibres.",
+      "panel": "Fig.1(b)",
+      "crop_xyxy": [
+        875,
+        0,
+        1773,
+        675
+      ],
+      "domain": "Vee-shield electrospinning setup",
+      "scope": "Reconstruct the b-panel Vee-shield apparatus, chamber, syringe dispenser, tube/needle support, collector/shield and shown instruments. Do not combine the conventional setup a with the motorized spooling setup d.",
+      "target_file": "inputs/16_electrospinning.png",
+      "target_size": [
+        898,
+        675
+      ],
+      "target_sha256": "f0ef21593d70bd63fa12d876a295ad2bcc1ca7c63b6f713ed4b4716761998128",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 17,
+      "slug": "magnetic_shell",
+      "title": "Magneto-active elastic shells with tunable buckling strength",
+      "doi": "10.1038/s41467-021-22776-y",
+      "date": "2021/05/14",
+      "article_url": "https://www.nature.com/articles/s41467-021-22776-y",
+      "figure_id": "Fig1",
+      "figure_url": "https://www.nature.com/articles/s41467-021-22776-y/figures/1",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-021-22776-y/MediaObjects/41467_2021_22776_Fig1_HTML.png",
+      "source_file": "sources/17_magnetic_shell/figure_original.png",
+      "size": [
+        1995,
+        1405
+      ],
+      "sha256": "65be9ddc3bf9d039aefcf465b1b92b33e16b34b830a9634e7414ae14b7d33f07",
+      "caption": "Fig. 1: Buckling of a magnetic shell under combined pressure and magnetic loading.           Full size image           a  Photograph of the experimental apparatus: (1) a magnetic shell is positioned in between (2) a set of Helmholtz coils and depressurized using a pneumatic-loading system, comprising (3) a syringe pump and (4) a pressure sensor. The Helmholtz coils are driven by the current  I  in the direction shown in  b , output from (5) a DC power supply .  b  Computed field of the vector (arrow) and magnitude (contour line) of the magnetic flux density  \\({\\hat{{\\bf{B}}}}^{{\\rm{a}}}\\)  generated by the coils, under current || I || = 1 A (Supplementary Note  2 ). The field is uniaxial and uniform in the central region with a flux density of  B  a  =  B  a  e  3 . Given axisymmetry, the field is represented in the  x – z  plane ( y  = 0). Coordinates  x  and  z  are normalized by the coil radius  R  c  = 46.5 mm.  c  Photograph of the representative imperfect shell specimen (top left). Image of its cross-section (top right) scanned through x-ray  μ CT and the reconstructed 3D view (bottom, one quarter was artificially hidden to aid with visualization). Scale bars are 5 mm.  d  Loading curves of pressure,  \\(\\overline{p}=p/{p}_{{\\rm{c}}}\\) , versus volume change,  \\({{\\Delta }}\\overline{V}={{\\Delta }}V/{{\\Delta }}{V}_{{\\rm{c}}}\\) , for the shell shown in  c . The peak value represented by the open circle on each curve is the critical buckling pressure. The buckling test is performed at different levels of external flux density  B  a . Inset: schematic of a shell subjected to a magnetic field  B  a , which is opposite (left) or parallel (right) to the shell magnetization  B  r .",
+      "panel": "Fig.1(a)",
+      "crop_xyxy": [
+        0,
+        0,
+        1155,
+        550
+      ],
+      "domain": "magnetic-shell experimental photo",
+      "scope": "Reconstruct the visible whole a-panel apparatus: paired coils/frame, centered shell/sample, syringe pump, pressure sensor, supply and visible tubes/supports. Do not substitute field plots or a generic two-ring cartoon for the photograph.",
+      "target_file": "inputs/17_magnetic_shell.png",
+      "target_size": [
+        1155,
+        550
+      ],
+      "target_sha256": "4b39a5df39dad8ebd9a4a690bb7664e52c86dabc88a67e728972444b0e2cde8d",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 18,
+      "slug": "electrochemical_stack",
+      "title": "A self-breathing electrode enabled by interface regulation and gradient wettability engineering for industrial H2O2 electrosynthesis",
+      "doi": "10.1038/s41467-026-68436-x",
+      "date": "2026/01/15",
+      "article_url": "https://www.nature.com/articles/s41467-026-68436-x",
+      "figure_id": "Fig6",
+      "figure_url": "https://www.nature.com/articles/s41467-026-68436-x/figures/6",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-68436-x/MediaObjects/41467_2026_68436_Fig6_HTML.png",
+      "source_file": "sources/18_electrochemical_stack/figure_original.png",
+      "size": [
+        1999,
+        1407
+      ],
+      "sha256": "36855141f5cde8d492661c55979d50d6046701e873c40f7934980434dfbf8877",
+      "caption": "Fig. 6: Industrial validation and scale-up of self-breathing electrodes under demanding conditions.           Full size image           a  Long-term stability of PPE-T at 15, 300, and 400 mA cm –2  (Tests at 15 and 100 mA cm –2  were conducted in 0.1 mol L –1  Na 2 SO 4 , pH = 5.84 ± 0.01, while tests at 200, 300, and 400 mA cm –2  were carried out in 1 mol L –1  Na 2 SO 4 , pH = 6.92 ± 0.06, mass loading of 8 mg cm –2 ).  b  Photograph of a fully integrated, pilot-scale electrolyzer system with four serially connected cells, incorporating electronic, fluidic, and thermal subsystems.  c  Exploded schematic of the four-cell modular stack. Key components include: 1/17, end plates; 2/5/9/11/16, silicone gaskets; 3, multifunctional bipolar plate enabling both self-breathing and structural support; 4, self-breathing GDE; 6, cathode flow plate; 7, proton-exchange membrane; 8, anode; 10, anode flow plate; 12–14, serially connected electrochemical cells, each assembled from components 3–11; 16, anode current collector.  d  Internal view of the fluid and thermal management subsystem within the H 2 O 2  electrosynthesis platform. The platform comprises anodic and cathodic circulation loops driven by peristaltic pumps, using 5 mol L −1  NaOH (anolyte, pH = 14 ± 0.02) and deionized water (catholyte). Each loop integrates flow, pressure, and level/pH monitoring. Electrolyte temperature is regulated by built-in water-jacket heat exchangers in both reservoirs. A modular power supply is mounted above the unit (not shown).  e  Long-term stability of the scaled system. Electrolysis was operated at 100 mA cm –2  under ambient-pressure self-breathing conditions. Each durability test was performed once.",
+      "panel": "Fig.6(c)",
+      "crop_xyxy": [
+        600,
+        925,
+        1999,
+        1407
+      ],
+      "domain": "four-cell electrolyzer exploded stack",
+      "scope": "Reconstruct the ordered exploded stack and assembled four-cell stack shown in c. Consult caption for material/layer names and repeats; do not merge panels b cabinet or d tubing into the target. Exploded spacings are presentation choices, not working contact gaps.",
+      "target_file": "inputs/18_electrochemical_stack.png",
+      "target_size": [
+        1399,
+        482
+      ],
+      "target_sha256": "8fe9073f1d220f2e3f83bbd0e495d4c784d696cf8346f3f94cb80563014841a4",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 19,
+      "slug": "triboelectric_glass",
+      "title": "Integrated triboelectric nanogenerator and radiative cooler for all-weather transparent glass surfaces",
+      "doi": "10.1038/s41467-024-50872-2",
+      "date": "2024/08/02",
+      "article_url": "https://www.nature.com/articles/s41467-024-50872-2",
+      "figure_id": "Fig2",
+      "figure_url": "https://www.nature.com/articles/s41467-024-50872-2/figures/2",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-50872-2/MediaObjects/41467_2024_50872_Fig2_HTML.png",
+      "source_file": "sources/19_triboelectric_glass/figure_original.png",
+      "size": [
+        1740,
+        1766
+      ],
+      "sha256": "8eb6b22b7adb73e010d6c223f1fc4ab41db0acb371f26c356361bde46d351e54",
+      "caption": "Fig. 2: Design and mechanism of triboelectric nanogenerator (TENG) part in the proposed raindrop triboelectric nanogenerator and radiative cooler (TeRC) system.           Full size image           a  Schematic of the hybrid electric double layer (EDL) model for explaining the liquid–solid triboelectrification. The measured ( b ) contact angle, ( c ) scanning electron microscope (SEM), and ( d ) atomic force microscope (AFM) images of the fluorinated-ethylene-propylene (FEP) film.  e  Schematic of the electricity generation process during the droplet flow sequence and ( f ) snapshots corresponding to each stage.  g  Experimental setup for investigating TENG performance of TeRC.  h  Self-cleaning and antifouling results between TeRC and the glass sample.",
+      "panel": "Fig.2(g)",
+      "crop_xyxy": [
+        0,
+        1098,
+        866,
+        1766
+      ],
+      "domain": "raindrop-glass test apparatus",
+      "scope": "Reconstruct the g-panel tilted glass/drop delivery test and electrical readout instruments. Do not turn droplet time-series states e/f into simultaneous hardware or invent concealed electrode routes.",
+      "target_file": "inputs/19_triboelectric_glass.png",
+      "target_size": [
+        866,
+        668
+      ],
+      "target_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    },
+    {
+      "id": 20,
+      "slug": "thermoelectric_measurement",
+      "title": "Seebeck-driven transverse thermoelectric generation",
+      "doi": "10.1038/s41563-020-00884-2",
+      "date": "2021/01/18",
+      "article_url": "https://www.nature.com/articles/s41563-020-00884-2",
+      "figure_id": "ExtendedDataFig1",
+      "figure_url": "https://www.nature.com/articles/s41563-020-00884-2/figures/5",
+      "image_url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41563-020-00884-2/MediaObjects/41563_2020_884_Fig5_ESM.jpg",
+      "source_file": "sources/20_thermoelectric_measurement/figure_original.png",
+      "size": [
+        1636,
+        1198
+      ],
+      "sha256": "f31ac4e537f75135028e98f1fa692b88d28275d95ec23a2e8d9ea7ecad6dcfe2",
+      "caption": "Extended Data Fig. 1 Transverse thermopower measurements.     a , Schematic illustration of the experimental setup for the measurement of the transverse thermopower. A Peltier module was thermally connected to two Cu blocks. When a charge current was applied to the Peltier module, heat was carried from one side of the module to the other side, leading to a temperature difference between the two Cu blocks. As the sample was bridged between the Cu blocks, the in-plane ∇ T  was generated along the  x  direction. To improve the thermal contact between the sample and the Cu blocks and to mimic the ideal thermal boundary condition depicted in Fig.  1c , thermal grease with a high thermal conductivity of > 8 W m −1  K −1  was applied to both ends of the sample. The direction of ∇ T  can be reversed by changing the sign of the charge current applied to the Peltier module.  V  1  and  V  2  represent the outputs of the two nanovoltmeters.  b ,  V  1  signals with different charge currents applied to the Peltier module as a function of the temperature difference (∆ T ) at the corresponding positions of the electrodes, which was measured using an infrared camera. The gray dashed line is a linear fitting of the data.  c ,  H  dependence of  \\(E_{\\mathrm{M}}^y\\)  measured from  V  2  with different charge currents applied to the Peltier module.  H  was varied from negative to positive along the direction perpendicular to the sample plane. The colored dashed lines represent the linear extrapolation with the data at high  H , where  M  of Co 2 MnGa was saturated. The hollow circles denote the values of  \\(E_{\\mathrm{M}}^y\\)  at zero  H  obtained from the linear extrapolation.  d ,  \\(E_{\\mathrm{M}}^y\\)  at zero  H  obtained from  c  plotted as a function of the temperature gradient (∇ T ). The gray dashed line is a linear fitting of the data.   Source data",
+      "panel": "Extended Data Fig.1(a)",
+      "crop_xyxy": [
+        0,
+        0,
+        910,
+        650
+      ],
+      "domain": "thermoelectric thermal/electrical fixture",
+      "scope": "Reconstruct the a-panel two copper blocks, grease contacts, bridging sample and electrodes, Peltier module and visible measurement wiring. Field/temperature arrows are annotations, not extra physical rods. Hidden power/measurement topology stays unknown.",
+      "target_file": "inputs/20_thermoelectric_measurement.png",
+      "target_size": [
+        910,
+        650
+      ],
+      "target_sha256": "5df5525c7046e6fd1a19f347a8565bf5a504df01d8009f5e872b4ca317363d90",
+      "source_review": "Codex actual pixel inspection of original and target crop; this is input selection, not output acceptance"
+    }
+  ],
+  "errors": []
+}
