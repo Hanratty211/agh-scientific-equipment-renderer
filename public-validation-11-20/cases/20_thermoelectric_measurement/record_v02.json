@@ -1,0 +1,102 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the a-panel two copper blocks, grease contacts, bridging sample and electrodes, Peltier module and visible measurement wiring. Field/temperature arrows are annotations, not extra physical rods. Hidden power/measurement topology stays unknown. Panel Extended Data Fig.1(a); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1020,
+      "height": 720,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "Peltier",
+      "object": "Peltier module fixture",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "left Cu",
+      "object": "copper heat block",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "right Cu",
+      "object": "copper heat block.001",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "grease contact",
+      "object": "thermal grease inner face",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "sample",
+      "object": "bridging thermoelectric sample",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "edge electrodes",
+      "object": "sample-edge electrode pad",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "visible leads",
+      "object": "sample edge measurement lead",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41563-020-00884-2",
+    "figure_url": "https://www.nature.com/articles/s41563-020-00884-2/figures/5",
+    "target_sha256": "5df5525c7046e6fd1a19f347a8565bf5a504df01d8009f5e872b4ca317363d90"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}

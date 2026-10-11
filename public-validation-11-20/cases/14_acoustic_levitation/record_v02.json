@@ -1,0 +1,120 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel apparatus with opposed array and reflector, probe, camera/light and readout instruments. Draw sound/wavefront arrows only as explanatory layers if needed, not as physical rods. Panel Fig.5(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1120,
+      "height": 800,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "top array",
+      "object": "downward ultrasound transducer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "bottom reflector",
+      "object": "horizontal reflector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "gap droplet",
+      "object": "levitated droplet",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "probe",
+      "object": "angled microphone probe",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "camera",
+      "object": "side high-speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "LED",
+      "object": "opposed LED light",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "amplifier",
+      "object": "amplifier",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "oscilloscope",
+      "object": "oscilloscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "computer",
+      "object": "computer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41598-019-53281-4",
+    "figure_url": "https://www.nature.com/articles/s41598-019-53281-4/figures/5",
+    "target_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}

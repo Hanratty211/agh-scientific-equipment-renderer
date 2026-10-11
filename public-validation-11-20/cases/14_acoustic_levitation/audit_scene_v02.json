@@ -1,0 +1,607 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v02.blend",
+  "record": "public-validation-11-20/cases/14_acoustic_levitation/record_v02.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "NO_PORTS",
+        "where": "ports"
+      },
+      {
+        "code": "NO_CONNECTIONS",
+        "where": "connections"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "downward ultrasound transducer"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "horizontal reflector"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "levitated droplet"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "angled microphone probe"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "side high-speed camera"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "opposed LED light"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "amplifier"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "oscilloscope"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "computer"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "downward ultrasound transducer"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "horizontal reflector"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "levitated droplet"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "angled microphone probe"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "side high-speed camera"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "opposed LED light"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "amplifier"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "oscilloscope"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "computer"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          12.374415397644043,
+          12.653623580932617
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.2658326029777527,
+          0.28801700472831726
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.6812547445297241,
+          0.713714063167572
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          12.729962348937988,
+          14.11526107788086
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.2668267786502838,
+          0.4054792523384094
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.42750084400177,
+          0.5194976925849915
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          12.976699829101562,
+          13.149807929992676
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.3281111717224121,
+          0.34419485926628113
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.5621219873428345,
+          0.5845838785171509
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          11.446420669555664,
+          12.718025207519531
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.33792877197265625,
+          0.38505229353904724
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.5722312331199646,
+          0.5859882235527039
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          11.536486625671387,
+          12.468666076660156
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.44676950573921204,
+          0.5283059477806091
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4642813801765442,
+          0.5627192258834839
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          13.335066795349121,
+          13.920231819152832
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.15531793236732483,
+          0.20330549776554108
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.5861756205558777,
+          0.6516799330711365
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          11.770105361938477,
+          13.043987274169922
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.5856977105140686,
+          0.7015907168388367
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.31963953375816345,
+          0.4644758105278015
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          11.241232872009277,
+          12.515114784240723
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.6916189789772034,
+          0.8075119853019714
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.29051709175109863,
+          0.4353533685207367
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          10.415438652038574,
+          11.871113777160645
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.8033328652381897,
+          0.9192259311676025
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.2837558686733246,
+          0.4791063666343689
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "STATIC_RECORD",
+    "NO_PORTS_DECLARED:interface_geometry_not_covered",
+    "NO_CONNECTIONS_DECLARED:route_geometry_not_covered",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

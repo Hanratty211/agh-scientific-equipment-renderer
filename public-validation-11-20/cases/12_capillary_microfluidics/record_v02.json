@@ -1,0 +1,129 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the entire b-panel experiment including the two pumps, transparent capillary sample region, microscope/camera, visible fluid tubes, waste vessel and computer. Sealed branch state follows caption; hidden fluid topology stays unknown. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "experiment (flush branch sealed)",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1120,
+      "height": 690,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "pump upper",
+      "object": "upper syringe pump",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c2",
+      "label": "pump lower",
+      "object": "lower syringe pump",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c3",
+      "label": "capillary",
+      "object": "horizontal capillary shell",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c4",
+      "label": "upper inlet",
+      "object": "upper inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c5",
+      "label": "lower inlet",
+      "object": "lower inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c6",
+      "label": "high-speed camera",
+      "object": "high-speed digital camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c7",
+      "label": "inverted microscope",
+      "object": "inverted microscope body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c8",
+      "label": "sealed flush branch tip",
+      "object": "sealed flush tip",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c9",
+      "label": "waste",
+      "object": "waste vessel",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c10",
+      "label": "computer",
+      "object": "computer monitor",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/srep11102",
+    "figure_url": "https://www.nature.com/articles/srep11102/figures/1",
+    "target_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}

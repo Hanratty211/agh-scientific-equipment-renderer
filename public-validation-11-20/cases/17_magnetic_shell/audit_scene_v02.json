@@ -1,0 +1,545 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v02.blend",
+  "record": "public-validation-11-20/cases/17_magnetic_shell/record_v02.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "NO_PORTS",
+        "where": "ports"
+      },
+      {
+        "code": "NO_CONNECTIONS",
+        "where": "connections"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "structural frame post"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "upper coil housing"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "lower coil housing"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "hemispherical shell specimen"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "hemisphere loading fixture top"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "left DC supply"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "right red syringe pump"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "front pressure sensor"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "structural frame post"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "upper coil housing"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "lower coil housing"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "hemispherical shell specimen"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "hemisphere loading fixture top"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "left DC supply"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "right red syringe pump"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "front pressure sensor"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          11.931927680969238,
+          13.172751426696777
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.3152058720588684,
+          0.3299809992313385
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.30803391337394714,
+          0.6825109124183655
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          11.392834663391113,
+          13.291629791259766
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.39245617389678955,
+          0.6075439453125
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.5443429946899414,
+          0.700202465057373
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          12.042972564697266,
+          13.941766738891602
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.39245617389678955,
+          0.6075439453125
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.3324032723903656,
+          0.48826274275779724
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          12.4363374710083,
+          12.988731384277344
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.4685417711734772,
+          0.53145831823349
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.4792558550834656,
+          0.5405811667442322
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          12.352574348449707,
+          13.107053756713867
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4542878568172455,
+          0.5457122921943665
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4653775990009308,
+          0.5264704823493958
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          13.8634672164917,
+          15.251965522766113
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.15554179251194,
+          0.2966679632663727
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.39491939544677734,
+          0.5777864456176758
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          10.867315292358398,
+          12.413707733154297
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.7243844270706177,
+          0.8694783449172974
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.21563288569450378,
+          0.43292558193206787
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          11.051473617553711,
+          11.630837440490723
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.656093955039978,
+          0.7121085524559021
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.18095189332962036,
+          0.26545554399490356
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "STATIC_RECORD",
+    "NO_PORTS_DECLARED:interface_geometry_not_covered",
+    "NO_CONNECTIONS_DECLARED:route_geometry_not_covered",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

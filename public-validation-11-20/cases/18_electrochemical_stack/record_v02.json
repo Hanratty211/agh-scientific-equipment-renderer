@@ -1,0 +1,211 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "device",
+    "scope": "Reconstruct the ordered exploded stack and assembled four-cell stack shown in c. Consult caption for material/layer names and repeats; do not merge panels b cabinet or d tubing into the target. Exploded spacings are presentation choices, not working contact gaps. Panel Fig.6(c); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "exploded presentation + assembled comparison",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1350,
+      "height": 760,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11",
+      "c12",
+      "c13",
+      "c14",
+      "c15",
+      "c16",
+      "c17",
+      "c18",
+      "c19"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "1 end plate",
+      "object": "position 01 endplate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c2",
+      "label": "2 gasket",
+      "object": "position 02 gasket left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c3",
+      "label": "3 bipolar plate",
+      "object": "position 03 self-breathing bipolar plate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c4",
+      "label": "4 GDE",
+      "object": "position 04 GDE left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c5",
+      "label": "5 gasket",
+      "object": "position 05 gasket left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c6",
+      "label": "6 cathode flow plate",
+      "object": "position 06 cathode flow plate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c7",
+      "label": "7 membrane",
+      "object": "position 07 proton exchange membrane left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c8",
+      "label": "8 anode",
+      "object": "position 08 anode left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c9",
+      "label": "9 gasket",
+      "object": "position 09 gasket left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c10",
+      "label": "10 anode flow plate",
+      "object": "position 10 anode flow plate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c11",
+      "label": "11 gasket",
+      "object": "position 11 gasket left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c12",
+      "label": "12 cell A",
+      "object": "position 12 grouped cell unit A left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c13",
+      "label": "13 cell B",
+      "object": "position 13 grouped cell unit B left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c14",
+      "label": "14 cell C",
+      "object": "position 14 grouped cell unit C left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c15",
+      "label": "15 unresolved",
+      "object": "position 15 unresolved identity left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c16",
+      "label": "16 caption conflict",
+      "object": "position 16 caption-conflicted gasket or collector left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c17",
+      "label": "17 end plate",
+      "object": "position 17 endplate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c18",
+      "label": "assembled four-cell",
+      "object": "assembled rear endplate left",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    },
+    {
+      "id": "c19",
+      "label": "tie rods",
+      "object": "visible assembled tie rod",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation + assembled comparison"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41467-026-68436-x",
+    "figure_url": "https://www.nature.com/articles/s41467-026-68436-x/figures/6",
+    "target_sha256": "8fe9073f1d220f2e3f83bbd0e495d4c784d696cf8346f3f94cb80563014841a4"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass.",
+  "source_ambiguity": "Publisher caption assigns 16 to both silicone gasket list and anode current collector; visible 15 not resolved. Visual layers are generic, not authoritative identity."
+}

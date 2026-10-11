@@ -1,0 +1,131 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "NO_PORTS",
+      "where": "ports"
+    },
+    {
+      "code": "NO_CONNECTIONS",
+      "where": "connections"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "laser housing"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "half wave plate 1"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "half wave plate 2"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "power-control BS optical face"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "collimating lens 1"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "collimating lens 2"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "tilted dichroic active face"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "objective body"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "sample and upper glass cell"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "halogen lamp"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "dark field condenser"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "short-pass filter"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "imaging lens"
+    },
+    "component:c14": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "sCMOS camera"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

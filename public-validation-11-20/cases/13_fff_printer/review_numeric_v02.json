@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v02",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v02.png",
+      "sha256": "76a0bfb2f3ca4628a854673cf7d04baa05f782833fccdd4069226804b8cfc3c0",
+      "width": 1130,
+      "height": 690,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.18,
+            0.17,
+            0.82,
+            0.83
+          ],
+          "pixel_xyxy": [
+            203,
+            117,
+            927,
+            573
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/qa_center_v02.png",
+          "size": [
+            724,
+            456
+          ],
+          "source_sha256": "76a0bfb2f3ca4628a854673cf7d04baa05f782833fccdd4069226804b8cfc3c0"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/qa_numeric_sheet_v02.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

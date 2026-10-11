@@ -13,3 +13,7 @@
 - 重要范围不足：十例 `record_v01.json` 仅 5–11 件存在证据组件，**ports=connections=supports=0**。这不是充分的第二阶段实物系统核查：尤其 11/12/16/17/19/20 原需求可见路径尚未逐端绑定世界作用面，不能宣称真正核过功能链。工具 UNKNOWN/UNVERIFIED 的具体原因被保存于 case 报告；后续 Codex 出图审查应要求重建与路径修订，而不是拿这次静态分数当通过。
 
 - Git staging policy: curated 87 light text/data files only (`SOURCE_LEDGER.md`, `targets.json`, AGH-authored scene helpers/scripts, per-case records/reports/notes/checkpoints); all `inputs/`, `sources/`, PNG, `.blend`, HTML, PDF, raw logs, `.blend1` excluded from Git. New paper images are Codex source artifacts and remain local.
+
+- R1：本轮实际读取 Codex `CODEX_FEEDBACK_R1.md`，十个真实 v01 像素审查结果均需修订。原版 v01 不覆盖，下一阶段批量 v02 结构修正；外部输入反馈不是 AGH 亲自打开输出 PNG，也不等于用户验收。
+
+- R1 v02 / AGH：10 个独立 `build_v02.py` 批量后台 Blender 5.1.2 exit 0，`scene_v02.blend` 与无字 `overview_v02.png` 均落盘且 v01 未覆盖。按 Codex v01 实际像素反馈纠正装置方向/装配与缺件；本轮没有 AGH v02 输出像素验收。10 个源范围组件清单 `record_v02.json`，静态全部 UNKNOWN(exit 3)，独立读盘场景全部 UNVERIFIED(exit 3)，图片数值全部 NUMERIC_ONLY(exit 0)。v02 ports/routes/supports 仍未实际绑定：是诚实的不完整 QA，用户范围还没通过；每例 `V02_CHECKPOINT.md` 与全批 `BATCH_STATUS_v02.md`。参考–v01–v02 图已落盘给 Codex/用户外审，v02 状态 pending，不宣称认可。

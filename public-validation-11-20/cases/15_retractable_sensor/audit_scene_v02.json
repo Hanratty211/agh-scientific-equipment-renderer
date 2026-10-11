@@ -1,0 +1,425 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/15_retractable_sensor/scene_v02.blend",
+  "record": "public-validation-11-20/cases/15_retractable_sensor/record_v02.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "NO_PORTS",
+        "where": "ports"
+      },
+      {
+        "code": "NO_CONNECTIONS",
+        "where": "connections"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "lid with genuine center aperture"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "rotor transparent disk"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "flat spiral spring"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "retractable rope"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "stator transparent tray"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "stator vertical electrode strip"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "rotor vertical electrode strip"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "lid with genuine center aperture"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "rotor transparent disk"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "flat spiral spring"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "retractable rope"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "stator transparent tray"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "stator vertical electrode strip"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "rotor vertical electrode strip"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          9.300289154052734,
+          11.145809173583984
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.15571023523807526,
+          0.7578563690185547
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.5976343154907227,
+          0.8574416637420654
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          10.06417179107666,
+          11.564979553222656
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.21071398258209229,
+          0.7028526663780212
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.4156329035758972,
+          0.6253326535224915
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "PROJECTION",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": "unsupported/nonmesh geometry"
+    },
+    {
+      "code": "PROJECTION",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": "unsupported/nonmesh geometry"
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          10.469586372375488,
+          12.38449478149414
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.1528153121471405,
+          0.7607513666152954
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.16590699553489685,
+          0.4462893605232239
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          10.817741394042969,
+          10.952486991882324
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.6370328068733215,
+          0.6462790369987488
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.297563761472702,
+          0.3405364751815796
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          10.38512134552002,
+          10.491900444030762
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.6160022020339966,
+          0.6240926384925842
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.479181706905365,
+          0.5128890872001648
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "PROJECTION:c3",
+    "PROJECTION:c4",
+    "STATIC_RECORD",
+    "NO_PORTS_DECLARED:interface_geometry_not_covered",
+    "NO_CONNECTIONS_DECLARED:route_geometry_not_covered",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

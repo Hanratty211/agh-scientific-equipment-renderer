@@ -1,0 +1,669 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v02.blend",
+  "record": "public-validation-11-20/cases/16_electrospinning/record_v02.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "NO_PORTS",
+        "where": "ports"
+      },
+      {
+        "code": "NO_CONNECTIONS",
+        "where": "connections"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "Perspex chamber side"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "top dispenser drive"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "syringe barrel"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "PTFE vertical feed"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "metal needle"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "circular copper collector"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "upright angled PTFE Vee shield"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "front lower heater support"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "side infrared heat source"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "black high-voltage DC supply"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "Perspex chamber side"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "top dispenser drive"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "syringe barrel"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "PTFE vertical feed"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "metal needle"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "circular copper collector"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "upright angled PTFE Vee shield"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "front lower heater support"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "side infrared heat source"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "object": "black high-voltage DC supply"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c10",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          10.807026863098145,
+          13.468523025512695
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.16463635861873627,
+          0.3226746618747711
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.30368298292160034,
+          0.7846007943153381
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          10.074153900146484,
+          11.208723068237305
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.38603511452674866,
+          0.5041030049324036
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.6412426233291626,
+          0.8481097221374512
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          10.764739990234375,
+          11.26928424835205
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.4281676411628723,
+          0.46197041869163513
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.5529342293739319,
+          0.6749666333198547
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          11.114401817321777,
+          11.380146980285645
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.43957608938217163,
+          0.4505620002746582
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.4954286217689514,
+          0.572177529335022
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          11.336172103881836,
+          11.587603569030762
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.44140705466270447,
+          0.448731005191803
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4201832115650177,
+          0.49802204966545105
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          11.167000770568848,
+          12.387203216552734
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.3507029116153717,
+          0.5394351482391357
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.2922731041908264,
+          0.4064997434616089
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          11.309720039367676,
+          12.252650260925293
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.3432005047798157,
+          0.44195836782455444
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.33690008521080017,
+          0.525971531867981
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          10.187873840332031,
+          11.791991233825684
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.19087405502796173,
+          0.5517169237136841
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.18101239204406738,
+          0.35750266909599304
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          10.823773384094238,
+          11.418157577514648
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.5757136940956116,
+          0.6397803425788879
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.4030083417892456,
+          0.5045260190963745
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          9.548973083496094,
+          10.9047269821167
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.7241692543029785,
+          0.8940950632095337
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.15675535798072815,
+          0.37351906299591064
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "COMPONENT_RENDER:c10",
+    "STATIC_RECORD",
+    "NO_PORTS_DECLARED:interface_geometry_not_covered",
+    "NO_CONNECTIONS_DECLARED:route_geometry_not_covered",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

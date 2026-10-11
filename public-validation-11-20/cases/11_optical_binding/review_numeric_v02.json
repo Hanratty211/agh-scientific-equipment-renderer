@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v02",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/overview_v02.png",
+      "sha256": "09481b06de3afd503317c4cf280ffbf6efec0a36c5f3a37f3efb40288a3f55df",
+      "width": 950,
+      "height": 800,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.18,
+            0.17,
+            0.82,
+            0.83
+          ],
+          "pixel_xyxy": [
+            171,
+            136,
+            779,
+            664
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/qa_center_v02.png",
+          "size": [
+            608,
+            528
+          ],
+          "source_sha256": "09481b06de3afd503317c4cf280ffbf6efec0a36c5f3a37f3efb40288a3f55df"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/qa_numeric_sheet_v02.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

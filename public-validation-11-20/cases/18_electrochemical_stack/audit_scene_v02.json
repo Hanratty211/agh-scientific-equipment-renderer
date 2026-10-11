@@ -1,0 +1,1227 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v02.blend",
+  "record": "public-validation-11-20/cases/18_electrochemical_stack/record_v02.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "NO_PORTS",
+        "where": "ports"
+      },
+      {
+        "code": "NO_CONNECTIONS",
+        "where": "connections"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 01 endplate left"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 02 gasket left"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 03 self-breathing bipolar plate left"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 04 GDE left"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 05 gasket left"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 06 cathode flow plate left"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 07 proton exchange membrane left"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 08 anode left"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 09 gasket left"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 10 anode flow plate left"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 11 gasket left"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 12 grouped cell unit A left"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 13 grouped cell unit B left"
+    },
+    "component:c14": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 14 grouped cell unit C left"
+    },
+    "component:c15": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 15 unresolved identity left"
+    },
+    "component:c16": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 16 caption-conflicted gasket or collector left"
+    },
+    "component:c17": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "position 17 endplate left"
+    },
+    "component:c18": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "assembled rear endplate left"
+    },
+    "component:c19": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "visible assembled tie rod"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "position 01 endplate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "position 02 gasket left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "position 03 self-breathing bipolar plate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "position 04 GDE left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "position 05 gasket left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "position 06 cathode flow plate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "position 07 proton exchange membrane left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "position 08 anode left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "position 09 gasket left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "object": "position 10 anode flow plate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c10",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "object": "position 11 gasket left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c11",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "object": "position 12 grouped cell unit A left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c12",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "object": "position 13 grouped cell unit B left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c13",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "object": "position 14 grouped cell unit C left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c14",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c15",
+      "detail": {
+        "object": "position 15 unresolved identity left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c15",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c16",
+      "detail": {
+        "object": "position 16 caption-conflicted gasket or collector left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c16",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c17",
+      "detail": {
+        "object": "position 17 endplate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c17",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c18",
+      "detail": {
+        "object": "assembled rear endplate left"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c18",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c19",
+      "detail": {
+        "object": "visible assembled tie rod"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c19",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          11.39572525024414,
+          12.302513122558594
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.1126011535525322,
+          0.15692445635795593
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.2552241384983063,
+          0.4653732180595398
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          11.882899284362793,
+          12.539289474487305
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.14063462615013123,
+          0.16337846219539642
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.3008551597595215,
+          0.47513362765312195
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          12.218731880187988,
+          12.927407264709473
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.15663298964500427,
+          0.1818675845861435
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.3265506327152252,
+          0.5048295855522156
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          12.610690116882324,
+          13.259400367736816
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.17530299723148346,
+          0.19768501818180084
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.356469064950943,
+          0.5303025245666504
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          12.96922779083252,
+          13.624812126159668
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.1923849880695343,
+          0.21509049832820892
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.38397306203842163,
+          0.5581899881362915
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          13.30063533782959,
+          14.017354011535645
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.20817258954048157,
+          0.23379038274288177
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.40933001041412354,
+          0.5882244110107422
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          13.696999549865723,
+          14.344940185546875
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.22704902291297913,
+          0.24940137565135956
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.4394608736038208,
+          0.6134849786758423
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          14.058424949645996,
+          14.707465171813965
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.24427159130573273,
+          0.26666632294654846
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.46729275584220886,
+          0.6410444974899292
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          14.416726112365723,
+          15.073115348815918
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.26134076714515686,
+          0.28408461809158325
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.4947251081466675,
+          0.6690035462379456
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          14.748536109924316,
+          15.465254783630371
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.2771475315093994,
+          0.3027653098106384
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.5201128125190735,
+          0.6990072727203369
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          15.141480445861816,
+          15.796260833740234
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          0.29586654901504517,
+          0.3185337483882904
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          0.550178050994873,
+          0.7243334650993347
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          15.460420608520508,
+          16.201271057128906
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          0.31106019020080566,
+          0.33782756328582764
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          0.5745810866355896,
+          0.7553218603134155
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          15.822395324707031,
+          16.56324577331543
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          0.3283039331436157,
+          0.3550713062286377
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          0.6022767424583435,
+          0.7830175757408142
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          16.184370040893555,
+          16.925220489501953
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          0.3455476760864258,
+          0.37231504917144775
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          0.6299724578857422,
+          0.8107132911682129
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c15",
+      "detail": {
+        "bounds": [
+          16.590587615966797,
+          17.24295425415039
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c15",
+      "detail": {
+        "bounds": [
+          0.3648989796638489,
+          0.3874512016773224
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c15",
+      "detail": {
+        "bounds": [
+          0.6610531806945801,
+          0.8350239396095276
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c16",
+      "detail": {
+        "bounds": [
+          16.94451904296875,
+          17.612974166870117
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c16",
+      "detail": {
+        "bounds": [
+          0.38175952434539795,
+          0.40507814288139343
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c16",
+      "detail": {
+        "bounds": [
+          0.6881334781646729,
+          0.8633350729942322
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c17",
+      "detail": {
+        "bounds": [
+          17.183305740356445,
+          18.09813690185547
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c17",
+      "detail": {
+        "bounds": [
+          0.3883092701435089,
+          0.4330157935619354
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c17",
+      "detail": {
+        "bounds": [
+          0.6980476975440979,
+          0.9088122844696045
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c18",
+      "detail": {
+        "bounds": [
+          11.411436080932617,
+          12.408119201660156
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c18",
+      "detail": {
+        "bounds": [
+          0.5302330255508423,
+          0.5796017050743103
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c18",
+      "detail": {
+        "bounds": [
+          0.251725971698761,
+          0.4781535565853119
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c19",
+      "detail": {
+        "bounds": [
+          12.075634002685547,
+          14.820051193237305
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c19",
+      "detail": {
+        "bounds": [
+          0.5327175855636597,
+          0.6663162112236023
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c19",
+      "detail": {
+        "bounds": [
+          0.27144482731819153,
+          0.4869491159915924
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "COMPONENT_RENDER:c10",
+    "COMPONENT_RENDER:c11",
+    "COMPONENT_RENDER:c12",
+    "COMPONENT_RENDER:c13",
+    "COMPONENT_RENDER:c14",
+    "COMPONENT_RENDER:c15",
+    "COMPONENT_RENDER:c16",
+    "COMPONENT_RENDER:c17",
+    "COMPONENT_RENDER:c18",
+    "COMPONENT_RENDER:c19",
+    "STATIC_RECORD",
+    "NO_PORTS_DECLARED:interface_geometry_not_covered",
+    "NO_CONNECTIONS_DECLARED:route_geometry_not_covered",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

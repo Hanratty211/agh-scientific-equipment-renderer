@@ -1,0 +1,102 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the visible printer frame, gantry/head, bed, display/sensors and adjacent laptop. Scope is the photo a, not the printed channel in b. Hidden electronics and emission flow paths stay unknown. Panel Fig.1(a); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1130,
+      "height": 690,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "printer front frame",
+      "object": "silver vertical rail",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "gantry",
+      "object": "gantry crossbar",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "mounted head",
+      "object": "head carriage",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "print bed",
+      "object": "heated build bed",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "emissions display",
+      "object": "left emission display",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "front sensor/display",
+      "object": "front sensor display",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "laptop",
+      "object": "laptop screen",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41598-025-17304-7",
+    "figure_url": "https://www.nature.com/articles/s41598-025-17304-7/figures/1",
+    "target_sha256": "da2332cc9fae68ab58c2ce89a3710460bb4290c4e2697530b17565019a594a4e"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}

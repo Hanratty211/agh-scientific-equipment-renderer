@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "id": "overview_v02",
+      "path": "overview_v02.png",
+      "regions": [
+        {
+          "id": "center",
+          "xyxy": [
+            0.18,
+            0.17,
+            0.82,
+            0.83
+          ],
+          "output": "qa_center_v02.png"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "qa_numeric_sheet_v02.png"
+}

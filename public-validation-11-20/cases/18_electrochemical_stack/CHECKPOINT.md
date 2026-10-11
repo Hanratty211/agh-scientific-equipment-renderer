@@ -10,3 +10,9 @@
 - AGH stage-2 independent re-open: first scene audit exit 2, `VERTICAL:c11` for assembled stack. Preserved `audit_scene_v01_initial.json/.log`; changed only overview camera scale/position in `build_v01.py`, rebuilt scene/PNG exit 0, independent audit now exit 3 UNVERIFIED with no recorded FAIL. Render not visually accepted.
 
 - AGH stage-2: static validator exit 3 UNKNOWN; reopened saved-scene auditor exit 3 UNVERIFIED (0 FAIL, 15 UNVERIFIED); PNG numeric review exit 0 NUMERIC_ONLY. Logs+JSON saved. Visual output comparison NOT done by AGH; paired image generated for Codex/user.
+
+- R1 external actual-pixel reviewer Codex 2026-10-12: `../../CODEX_FEEDBACK_R1.md` per-case 18 verdict **requires revision**. Reviewer opened `../../codex-review/pair_18_v01.png`; this is external pixel evidence, not AGH self-review/user acceptance. v01 retained. v02 pending structural correction.
+
+- AGH R1 build_v02.py executed via Blender 5.1.2 background, exit 0, saved scene_v02.blend / overview_v02.png (1350×760), log build_v02.log. v01 preserved. Geometry/file creation only, v02 pixels not externally reviewed.
+
+- AGH v02 QA: source-derived components 19; validator UNKNOWN exit 3, reopened scene UNVERIFIED exit 3 (FAIL 0), PNG numeric NUMERIC_ONLY exit 0. Ports/routes/supports still unbound: no whole-scope QA success. Pair image generated; output pixel review by Codex pending. See V02_CHECKPOINT.md.

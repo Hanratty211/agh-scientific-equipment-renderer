@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v02",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v02.png",
+      "sha256": "4cdc59bbde232f5001a7bc710218be9d4d8882a766bb1938d55c46a8a5ecf419",
+      "width": 1120,
+      "height": 800,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "center",
+          "normalized_xyxy": [
+            0.18,
+            0.17,
+            0.82,
+            0.83
+          ],
+          "pixel_xyxy": [
+            202,
+            136,
+            918,
+            664
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/qa_center_v02.png",
+          "size": [
+            716,
+            528
+          ],
+          "source_sha256": "4cdc59bbde232f5001a7bc710218be9d4d8882a766bb1938d55c46a8a5ecf419"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/qa_numeric_sheet_v02.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

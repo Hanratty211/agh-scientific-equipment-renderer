@@ -1,0 +1,96 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "NO_PORTS",
+      "where": "ports"
+    },
+    {
+      "code": "NO_CONNECTIONS",
+      "where": "connections"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "downward ultrasound transducer"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "horizontal reflector"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "levitated droplet"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "angled microphone probe"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "side high-speed camera"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "opposed LED light"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "amplifier"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "oscilloscope"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "computer"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "device",
+    "scope": "Reconstruct only the main left exploded sensor assembly: lid, rotor, coil spring/rope, stator and visible electrode rings. Exploded layers are intentionally separated; do not invent supports joining them. Exclude human/application scenes, inset electrode/SEM/photos and legend graphics. Panel Fig.1(c), main left exploded assembly; SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "exploded presentation only",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 780,
+      "height": 1050,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "aperture lid",
+      "object": "lid with genuine center aperture",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c2",
+      "label": "rotor",
+      "object": "rotor transparent disk",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c3",
+      "label": "spring",
+      "object": "flat spiral spring",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c4",
+      "label": "cord",
+      "object": "retractable rope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c5",
+      "label": "stator",
+      "object": "stator transparent tray",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c6",
+      "label": "stator grating",
+      "object": "stator vertical electrode strip",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c7",
+      "label": "rotor grating",
+      "object": "rotor vertical electrode strip",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41467-021-23207-8",
+    "figure_url": "https://www.nature.com/articles/s41467-021-23207-8/figures/1",
+    "target_sha256": "cffb3896399a7f4abcf70748db6e33bb4be8d185ad50b549d1841d98fb76b57d"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}

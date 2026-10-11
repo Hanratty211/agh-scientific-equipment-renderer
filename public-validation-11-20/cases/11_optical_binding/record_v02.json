@@ -1,0 +1,165 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the main optical apparatus, its visible beam paths and component directions. The micro-scale sample inset is context, not additional macro hardware. Panel Fig.1 main optical apparatus; exclude the upper-right nanoparticle sample inset; SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 950,
+      "height": 800,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11",
+      "c12",
+      "c13",
+      "c14"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "laser",
+      "object": "laser housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "waveplate A",
+      "object": "half wave plate 1",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "waveplate B",
+      "object": "half wave plate 2",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "power BS",
+      "object": "power-control BS optical face",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "collimating lens A",
+      "object": "collimating lens 1",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "collimating lens B",
+      "object": "collimating lens 2",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "tilted dichroic",
+      "object": "tilted dichroic active face",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "objective",
+      "object": "objective body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "sample",
+      "object": "sample and upper glass cell",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "halogen lamp",
+      "object": "halogen lamp",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c11",
+      "label": "dark-field condenser",
+      "object": "dark field condenser",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c12",
+      "label": "short-pass filter",
+      "object": "short-pass filter",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c13",
+      "label": "imaging lens",
+      "object": "imaging lens",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c14",
+      "label": "sCMOS",
+      "object": "sCMOS camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender world units; no measured scale; no arbitrary tolerance chosen",
+  "source": {
+    "doi": "10.1038/s41467-022-33070-w",
+    "figure_url": "https://www.nature.com/articles/s41467-022-33070-w/figures/1",
+    "target_sha256": "ee50331c2fb26e4d7593f6dec095a3455ee759c857400b482b131f8e96ee4d24"
+  },
+  "unverified": [
+    "actual interface/port owner and route geometry not bound",
+    "occlusion and output-vs-source pixels unreviewed",
+    "true material/physical operation unverified"
+  ],
+  "coverage_gap": "Task asks to trace visible relations. v02 mesh record has only source/Codex-required components; NOT a complete task pass."
+}
