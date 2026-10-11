@@ -1,0 +1,11 @@
+T1 solid_inter_mm3(两重合 scale=2 立方体) = 8.000 m³ -> PASS (期望 8 m³)
+T2 clip_check(对象在相机后方11m) -> in_range=False; msg:   t2_cam -> t2_far: 有符号轴向深度=[10.9500,11.0500]m clip=[0.001,2.0] in_range=False front=8/8角 behind_cam=0角点
+T3 平移前 beam_crosses_point(原点) = (0.0, 0.5, True, True)
+T3 平移+5m后 beam_crosses_point(原点) = (5.0, 0.5, False, True)
+T3 无端点属性 beam_crosses_point(原点) = (False, False) -> 应 (False, False)
+
+==== 行为验证汇总 ====
+  [PASS] T1: 重合 scale=2 单位立方体 重叠=8.000 m³ (期望 8.0 m³)
+  [PASS] T2: 相机后方11m 对象: in_range=False（应 False，不得报通过）
+  [PASS] T3: 平移前 known=True/passed=True(应T/T)；平移+5m后 passed=False(应F，不再误报)；无端点属性 passed=False/known=False(应F/F)
+总体: 全部 PASS

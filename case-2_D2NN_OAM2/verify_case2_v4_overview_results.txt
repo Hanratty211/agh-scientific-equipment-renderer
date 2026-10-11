@@ -1,0 +1,67 @@
+PASS M1 optical hit on evaluated mesh 0.0000 mm
+PASS M2 optical hit on evaluated mesh 0.0000 mm
+PASS DMD optical hit on evaluated mesh 0.0000 mm
+PASS BS optical hit on evaluated mesh 0.0000 mm
+PASS SLM optical hit on evaluated mesh 0.0000 mm
+PASS M3 optical hit on evaluated mesh 0.0000 mm
+PASS M1 actual plane matches intended |dot|=1.00000
+PASS M2 actual plane matches intended |dot|=1.00000
+PASS M3 actual plane matches intended |dot|=1.00000
+PASS SLM actual plane matches intended |dot|=1.00000
+PASS BS actual plane matches intended |dot|=1.00000
+PASS M1 specular direction dot=1.00000
+PASS M2 specular direction dot=1.00000
+PASS M3 specular direction dot=0.99995
+PASS SLM return toward BS dot=1.00000
+PASS MMF_delay_2m_visual_turns bevelled curve bevel=0.003100000089034438
+PASS MMF_delay_4m_visual_turns bevelled curve bevel=0.003100000089034438
+PASS MMF_delay_6m_visual_turns bevelled curve bevel=0.003100000089034438
+PASS MMF_BC_to_PD bevelled curve bevel=0.0031999999191612005
+PASS PD_to_oscilloscope_electrical bevelled curve bevel=0.002199999988079071
+PASS laser_housing above ground bottom=0.123, ground=-0.015
+PASS L1 above ground bottom=0.138, ground=-0.015
+PASS L2 above ground bottom=0.138, ground=-0.015
+PASS M1 above ground bottom=0.135, ground=-0.015
+PASS M2 above ground bottom=0.135, ground=-0.015
+PASS DMD above ground bottom=0.130, ground=-0.015
+PASS L3 above ground bottom=0.138, ground=-0.015
+PASS Iris1 above ground bottom=0.141, ground=-0.015
+PASS L4 above ground bottom=0.138, ground=-0.015
+PASS HWP above ground bottom=0.144, ground=-0.015
+PASS polarizer above ground bottom=0.144, ground=-0.015
+PASS BS above ground bottom=0.138, ground=-0.015
+PASS SLM above ground bottom=0.122, ground=-0.015
+PASS M3 above ground bottom=0.135, ground=-0.015
+PASS L5 above ground bottom=0.143, ground=-0.015
+PASS Iris2 above ground bottom=0.141, ground=-0.015
+PASS L6 above ground bottom=0.143, ground=-0.015
+PASS L7 above ground bottom=0.143, ground=-0.015
+PASS Holder above ground bottom=0.148, ground=-0.015
+PASS BC_3x1 above ground bottom=0.153, ground=-0.015
+PASS PD_housing above ground bottom=0.141, ground=-0.015
+PASS Oscilloscope above ground bottom=0.108, ground=-0.015
+PASS saved overview camera overview_camera
+PASS laser_housing all corners projected and depth xy=True depth=True
+PASS L1 all corners projected and depth xy=True depth=True
+PASS L2 all corners projected and depth xy=True depth=True
+PASS M1 all corners projected and depth xy=True depth=True
+PASS M2 all corners projected and depth xy=True depth=True
+PASS DMD all corners projected and depth xy=True depth=True
+PASS L3 all corners projected and depth xy=True depth=True
+PASS Iris1 all corners projected and depth xy=True depth=True
+PASS L4 all corners projected and depth xy=True depth=True
+PASS HWP all corners projected and depth xy=True depth=True
+PASS polarizer all corners projected and depth xy=True depth=True
+PASS BS all corners projected and depth xy=True depth=True
+PASS SLM all corners projected and depth xy=True depth=True
+PASS M3 all corners projected and depth xy=True depth=True
+PASS L5 all corners projected and depth xy=True depth=True
+PASS Iris2 all corners projected and depth xy=True depth=True
+PASS L6 all corners projected and depth xy=True depth=True
+PASS L7 all corners projected and depth xy=True depth=True
+PASS Holder all corners projected and depth xy=True depth=True
+PASS BC_3x1 all corners projected and depth xy=True depth=True
+PASS PD_housing all corners projected and depth xy=True depth=True
+PASS Oscilloscope all corners projected and depth xy=True depth=True
+NOTE: occlusion/readability/reference visual match require inspection of PNG; not established by geometry.
+GEOMETRY 0 failed: []

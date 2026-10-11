@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="760" viewBox="0 0 1360 760" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#444"/></marker>
+<marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#b02a37"/></marker>
+<marker id="ag" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1a6b52"/></marker>
+<marker id="ap" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7c5cbf"/></marker>
+<marker id="ab" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2b6ca3"/></marker>
+<marker id="ao" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c56a1f"/></marker>
+</defs>
+<rect x="0" y="0" width="1360" height="760" fill="#fbfcfd"/>
+<text x="20" y="34" font-size="20" fill="#222" text-anchor="start" font-weight="bold">171Yb Spin-1/2 Optical Lattice Clock - Apparatus &amp; Experimental Sequence</text>
+<text x="20" y="54" font-size="11" fill="#777" text-anchor="start" font-weight="normal">NIST (Lemke et al., PRL 2009, arXiv:0906.1219); dashed outlines = not described in this paper</text>
+<rect x="60" y="100" width="620" height="480" rx="8" fill="#f4f7f9" stroke="#9aa5ad" stroke-width="2"/>
+<text x="72" y="122" font-size="12" fill="#5a656d" text-anchor="start" font-weight="normal">Main vacuum system (UHV)</text>
+<rect x="90" y="140" width="150" height="80" rx="8" fill="#fff" stroke="#8a8f94" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="165" y="168" font-size="13" fill="#222" text-anchor="middle" font-weight="normal">Heated Yb oven</text>
+<text x="165" y="186" font-size="11" fill="#8a8f94" text-anchor="middle" font-weight="normal">thermal 171Yb beam</text>
+<text x="165" y="201" font-size="9" fill="#b04a4a" text-anchor="middle" font-weight="normal">not described in [ref]</text>
+<line x1="240" y1="180" x2="330" y2="180" stroke="#8a8f94" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<text x="285" y="170" font-size="10" fill="#8a8f94" text-anchor="middle" font-weight="normal">beam</text>
+<rect x="330" y="150" width="130" height="60" rx="8" fill="#fff" stroke="#8a8f94" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="395" y="176" font-size="12" fill="#222" text-anchor="middle" font-weight="normal">Zeeman slower</text>
+<text x="395" y="193" font-size="9" fill="#b04a4a" text-anchor="middle" font-weight="normal">not described in [ref]</text>
+<line x1="460" y1="180" x2="560" y2="180" stroke="#8a8f94" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<rect x="560" y="140" width="230" height="200" rx="8" fill="#eef3f8" stroke="#2b6ca3" stroke-width="2"/>
+<text x="675" y="163" font-size="14" fill="#1d4e79" text-anchor="middle" font-weight="bold">MOT region</text>
+<line x1="580" y1="320" x2="770" y2="320" stroke="#1a6b52" stroke-width="2.5" marker-end="url(#ag)"/>
+<text x="675" y="338" font-size="11" fill="#145241" text-anchor="middle" font-weight="normal">399 nm 1S0-1P1 cooling / trapping beams (6-beam MOT)</text>
+<line x1="675" y1="355" x2="675" y2="430" stroke="#1a6b52" stroke-width="2.5" marker-end="url(#ag)"/>
+<text x="683" y="428" font-size="11" fill="#145241" text-anchor="start" font-weight="normal">repump 556 nm (1S0-3P1)</text>
+<text x="568" y="445" font-size="11" fill="#5a656d" text-anchor="start" font-weight="normal">atoms: 3e4, T ~15 uK after 399+556 nm cooling</text>
+<text x="568" y="462" font-size="11" fill="#5a656d" text-anchor="start" font-weight="normal">99% optical pumping to a single mF (+-1/2, alternating)</text>
+<line x1="675" y1="470" x2="675" y2="560" stroke="#444" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="683" y="520" font-size="11" fill="#5a656d" text-anchor="start" font-weight="normal">slow-down + load into 1D lattice</text>
+<rect x="560" y="570" width="230" height="70" rx="8" fill="#f3ecfa" stroke="#7c5cbf" stroke-width="2"/>
+<text x="675" y="594" font-size="13" fill="#4f3d8f" text-anchor="middle" font-weight="bold">1D optical lattice (horizontal)</text>
+<text x="675" y="612" font-size="11" fill="#4f3d8f" text-anchor="middle" font-weight="normal">counter-propagating 759 nm beams</text>
+<text x="675" y="628" font-size="10" fill="#4f3d8f" text-anchor="middle" font-weight="normal">magic frequency 394 798 329(10) MHz; depth 500 E_R (50 uK)</text>
+<line x1="770" y1="545" x2="580" y2="545" stroke="#7c5cbf" stroke-width="2" stroke-dasharray="2 0" marker-end="url(#ap)"/>
+<line x1="580" y1="650" x2="770" y2="650" stroke="#7c5cbf" stroke-width="2" stroke-dasharray="2 0" marker-end="url(#ap)"/>
+<rect x="330" y="380" width="150" height="130" rx="8" fill="#fdf6e8" stroke="#c56a1f" stroke-width="2"/>
+<text x="405" y="404" font-size="12" fill="#8a4a10" text-anchor="middle" font-weight="bold">Applied B field</text>
+<text x="405" y="422" font-size="11" fill="#8a4a10" text-anchor="middle" font-weight="normal">0.11 mT, vertical</text>
+<text x="405" y="440" font-size="10" fill="#8a4a10" text-anchor="middle" font-weight="normal">first-order Zeeman effect</text>
+<text x="405" y="454" font-size="10" fill="#8a4a10" text-anchor="middle" font-weight="normal">canceled by mF=+-1/2 averaging</text>
+<line x1="405" y1="380" x2="405" y2="510" stroke="#c56a1f" stroke-width="2" marker-end="url(#ao)"/>
+<line x1="405" y1="510" x2="405" y2="380" stroke="#c56a1f" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#ao)"/>
+<text x="740" y="92" font-size="15" fill="#333" text-anchor="start" font-weight="bold">Laser &amp; detection systems</text>
+<rect x="740" y="110" width="250" height="70" rx="8" fill="#fff" stroke="#1a6b52" stroke-width="2"/>
+<text x="865" y="134" font-size="13" fill="#145241" text-anchor="middle" font-weight="bold">399 nm laser (1S0-1P1)</text>
+<text x="865" y="154" font-size="11" fill="#145241" text-anchor="middle" font-weight="normal">cooling, slowing beam, and detection pulses</text>
+<text x="865" y="170" font-size="11" fill="#145241" text-anchor="middle" font-weight="normal">3 x 5 ms pulses for state readout</text>
+<rect x="740" y="196" width="250" height="58" rx="8" fill="#fff" stroke="#1a6b52" stroke-width="2"/>
+<text x="865" y="218" font-size="13" fill="#145241" text-anchor="middle" font-weight="bold">556 nm laser (1S0-3P1)</text>
+<text x="865" y="238" font-size="11" fill="#145241" text-anchor="middle" font-weight="normal">narrow-line cooling + optical pumping (99%)</text>
+<rect x="740" y="270" width="250" height="58" rx="8" fill="#fff" stroke="#7c5cbf" stroke-width="2"/>
+<text x="865" y="292" font-size="13" fill="#4f3d8f" text-anchor="middle" font-weight="bold">Magic-wavelength lattice laser</text>
+<text x="865" y="312" font-size="11" fill="#4f3d8f" text-anchor="middle" font-weight="normal">759 nm; 394 798 329(10) MHz (magic)</text>
+<rect x="740" y="344" width="250" height="58" rx="8" fill="#fff" stroke="#b02a37" stroke-width="2"/>
+<text x="865" y="366" font-size="13" fill="#7d1a24" text-anchor="middle" font-weight="bold">578 nm clock laser (1S0-3P0)</text>
+<text x="865" y="386" font-size="11" fill="#7d1a24" text-anchor="middle" font-weight="normal">pi-pulse 80 ms; Fourier-limited 10 Hz</text>
+<rect x="740" y="418" width="250" height="58" rx="8" fill="#fff" stroke="#2b6ca3" stroke-width="2"/>
+<text x="865" y="440" font-size="13" fill="#1d4e79" text-anchor="middle" font-weight="bold">High-finesse pre-stabilization cavity</text>
+<text x="865" y="460" font-size="11" fill="#1d4e79" text-anchor="middle" font-weight="normal">578 nm pre-stabilized (env. isolated)</text>
+<rect x="740" y="492" width="250" height="58" rx="8" fill="#fff" stroke="#c56a1f" stroke-width="2"/>
+<text x="865" y="514" font-size="13" fill="#8a4a10" text-anchor="middle" font-weight="bold">1388 nm repump laser</text>
+<text x="865" y="534" font-size="11" fill="#8a4a10" text-anchor="middle" font-weight="normal">3P0-3D1: returns excited clock atoms to 1S0</text>
+<rect x="740" y="566" width="250" height="76" rx="8" fill="#f4f7f9" stroke="#444" stroke-width="2"/>
+<text x="865" y="588" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">Fluorescence detection (399 nm scattered)</text>
+<text x="865" y="606" font-size="11" fill="#222" text-anchor="middle" font-weight="normal">photomultiplier tube (PMT)</text>
+<text x="865" y="624" font-size="10" fill="#5a656d" text-anchor="middle" font-weight="normal">3-pulse seq -&gt; microproc -&gt; normalized fraction</text>
+<line x1="740" y1="145" x2="500" y2="250" stroke="#1a6b52" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ag)"/>
+<line x1="740" y1="225" x2="500" y2="290" stroke="#1a6b52" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ag)"/>
+<line x1="740" y1="299" x2="520" y2="600" stroke="#7c5cbf" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ap)"/>
+<line x1="740" y1="373" x2="520" y2="590" stroke="#b02a37" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<line x1="740" y1="447" x2="500" y2="560" stroke="#2b6ca3" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ab)"/>
+<line x1="740" y1="521" x2="540" y2="565" stroke="#c56a1f" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ao)"/>
+<line x1="560" y1="590" x2="740" y2="590" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+<text x="650" y="582" font-size="10" fill="#555" text-anchor="start" font-weight="normal">scattered 399 nm</text>
+<text x="60" y="664" font-size="13" fill="#222" text-anchor="start" font-weight="bold">Experimental sequence (per cycle):</text>
+<rect x="60" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#8a8f94" stroke-width="1.6" stroke-dasharray="5 3"/>
+<text x="135.0" y="692" font-size="10" fill="#8a8f94" text-anchor="middle" font-weight="normal">1  oven / thermal Yb beam</text>
+<text x="135.0" y="710" font-size="9" fill="#b04a4a" text-anchor="middle" font-weight="normal">(uncertain)</text>
+<line x1="212" y1="698" x2="226" y2="698" stroke="#666" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="228" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#1a6b52" stroke-width="1.6"/>
+<text x="303.0" y="692" font-size="10" fill="#1a6b52" text-anchor="middle" font-weight="normal">2  MOT cooling 399+556 nm</text>
+<line x1="380" y1="698" x2="394" y2="698" stroke="#666" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="396" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#7c5cbf" stroke-width="1.6"/>
+<text x="471.0" y="692" font-size="10" fill="#7c5cbf" text-anchor="middle" font-weight="normal">3  load into 1D lattice</text>
+<line x1="548" y1="698" x2="562" y2="698" stroke="#666" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="564" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#1a6b52" stroke-width="1.6"/>
+<text x="639.0" y="692" font-size="10" fill="#1a6b52" text-anchor="middle" font-weight="normal">4  optical pump to mF=+-1/2</text>
+<line x1="716" y1="698" x2="730" y2="698" stroke="#666" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="732" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#b02a37" stroke-width="1.6"/>
+<text x="807.0" y="692" font-size="10" fill="#b02a37" text-anchor="middle" font-weight="normal">5  578 nm pi-pulse on clock line</text>
+<line x1="884" y1="698" x2="898" y2="698" stroke="#666" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="900" y="672" width="150" height="52" rx="8" fill="#fff" stroke="#555" stroke-width="1.6"/>
+<text x="975.0" y="692" font-size="10" fill="#555" text-anchor="middle" font-weight="normal">6  399 nm 3-pulse readout to PMT</text>
+<rect x="1010" y="672" width="330" height="76" rx="8" fill="#f7f8fa" stroke="#bbb" stroke-width="1.2"/>
+<text x="1024" y="692" font-size="12" fill="#222" text-anchor="start" font-weight="bold">Legend</text>
+<line x1="1024" y1="706" x2="1064" y2="706" stroke="#1a6b52" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1070" y="710" font-size="11" fill="#555" text-anchor="start" font-weight="normal">solid = described in paper</text>
+<line x1="1024" y1="726" x2="1064" y2="726" stroke="#8a8f94" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<text x="1070" y="730" font-size="11" fill="#b04a4a" text-anchor="start" font-weight="normal">dashed = not described in paper</text>
+</svg>

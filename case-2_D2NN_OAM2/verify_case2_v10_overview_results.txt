@@ -1,0 +1,284 @@
+PASS v9 nonbeam scene geometry, camera and all beam centerlines frozen v9=4b18b8d7231e68a0 v10=4b18b8d7231e68a0
+PASS M1 optical hit on evaluated mesh 0.0000 mm
+PASS M2 optical hit on evaluated mesh 0.0000 mm
+PASS DMD optical hit on evaluated mesh 0.0000 mm
+PASS BS optical hit on evaluated mesh 0.0000 mm
+PASS SLM optical hit on evaluated mesh 0.0000 mm
+PASS M3 optical hit on evaluated mesh 0.0000 mm
+PASS M1 actual plane matches intended |dot|=1.00000
+PASS M2 actual plane matches intended |dot|=1.00000
+PASS M3 actual plane matches intended |dot|=1.00000
+PASS SLM actual plane matches intended |dot|=1.00000
+PASS BS actual plane matches intended |dot|=1.00000
+PASS M1 specular direction dot=1.00000
+PASS M2 specular direction dot=1.00000
+PASS M3 specular direction dot=0.99997
+PASS SLM return toward BS dot=1.00000
+PASS MMF_delay_2m_visual_turns bevelled curve bevel=0.0032999999821186066
+PASS MMF_delay_4m_visual_turns bevelled curve bevel=0.0032999999821186066
+PASS MMF_delay_6m_visual_turns bevelled curve bevel=0.0032999999821186066
+PASS MMF_BC_to_PD bevelled curve bevel=0.0031999999191612005
+PASS PD_to_oscilloscope_electrical bevelled curve bevel=0.002199999988079071
+PASS laser_housing above ground bottom=0.123, ground=-0.015
+PASS L1 above ground bottom=0.138, ground=-0.015
+PASS L2 above ground bottom=0.138, ground=-0.015
+PASS M1 above ground bottom=0.135, ground=-0.015
+PASS M2 above ground bottom=0.135, ground=-0.015
+PASS DMD above ground bottom=0.130, ground=-0.015
+PASS L3 above ground bottom=0.138, ground=-0.015
+PASS Iris1 above ground bottom=0.141, ground=-0.015
+PASS L4 above ground bottom=0.138, ground=-0.015
+PASS HWP above ground bottom=0.144, ground=-0.015
+PASS polarizer above ground bottom=0.144, ground=-0.015
+PASS BS above ground bottom=0.138, ground=-0.015
+PASS SLM above ground bottom=0.121, ground=-0.015
+PASS M3 above ground bottom=0.135, ground=-0.015
+PASS L5 above ground bottom=0.143, ground=-0.015
+PASS Iris2 above ground bottom=0.141, ground=-0.015
+PASS L6 above ground bottom=0.143, ground=-0.015
+PASS L7 above ground bottom=0.143, ground=-0.015
+PASS Holder above ground bottom=0.148, ground=-0.015
+PASS BC_3x1 above ground bottom=0.153, ground=-0.015
+PASS PD_housing above ground bottom=0.141, ground=-0.015
+PASS Oscilloscope above ground bottom=0.108, ground=-0.015
+PASS saved overview camera overview_camera
+PASS only one camera and one image render configured
+PASS laser_housing all corners projected and depth xy=True depth=True
+PASS L1 all corners projected and depth xy=True depth=True
+PASS L2 all corners projected and depth xy=True depth=True
+PASS M1 all corners projected and depth xy=True depth=True
+PASS M2 all corners projected and depth xy=True depth=True
+PASS DMD all corners projected and depth xy=True depth=True
+PASS L3 all corners projected and depth xy=True depth=True
+PASS Iris1 all corners projected and depth xy=True depth=True
+PASS L4 all corners projected and depth xy=True depth=True
+PASS HWP all corners projected and depth xy=True depth=True
+PASS polarizer all corners projected and depth xy=True depth=True
+PASS BS all corners projected and depth xy=True depth=True
+PASS SLM all corners projected and depth xy=True depth=True
+PASS M3 all corners projected and depth xy=True depth=True
+PASS L5 all corners projected and depth xy=True depth=True
+PASS Iris2 all corners projected and depth xy=True depth=True
+PASS L6 all corners projected and depth xy=True depth=True
+PASS L7 all corners projected and depth xy=True depth=True
+PASS Holder all corners projected and depth xy=True depth=True
+PASS BC_3x1 all corners projected and depth xy=True depth=True
+PASS PD_housing all corners projected and depth xy=True depth=True
+PASS Oscilloscope all corners projected and depth xy=True depth=True
+PASS vertical frame occupancy improved while whole parts fit v10_y_range=0.1052..0.8501; occupancy=0.7449
+PASS table footprint covers camera corner 0 ground_hit=(0.897,1.311)
+PASS table footprint covers camera corner 1 ground_hit=(0.977,-0.352)
+PASS table footprint covers camera corner 2 ground_hit=(-0.921,-0.443)
+PASS table footprint covers camera corner 3 ground_hit=(-1.001,1.219)
+PASS lens material really transmits trans=0.940 IOR=1.470
+PASS L1 plano-convex mesh valid vertices=386
+PASS L1 entry real surface 0.0000 mm
+PASS L1 exit real surface 0.0000 mm
+PASS L2 plano-convex mesh valid vertices=386
+PASS L2 entry real surface 0.0000 mm
+PASS L2 exit real surface 0.0000 mm
+PASS L3 plano-convex mesh valid vertices=386
+PASS L3 entry real surface 0.0000 mm
+PASS L3 exit real surface 0.0000 mm
+PASS L4 plano-convex mesh valid vertices=386
+PASS L4 entry real surface 0.0000 mm
+PASS L4 exit real surface 0.0000 mm
+PASS L5 plano-convex mesh valid vertices=386
+PASS L5 entry real surface 0.0000 mm
+PASS L5 exit real surface 0.0000 mm
+PASS L6 plano-convex mesh valid vertices=386
+PASS L6 entry real surface 0.0000 mm
+PASS L6 exit real surface 0.0000 mm
+PASS L7 plano-convex mesh valid vertices=386
+PASS L7 entry real surface 0.0000 mm
+PASS L7 exit real surface 0.0000 mm
+PASS beam_00_laser_to_L1 exists
+PASS beam_00_laser_to_L1 source anchor 0.0000 mm
+PASS beam_00_laser_to_L1 target anchor 0.0000 mm
+PASS beam_00_laser_to_L1 tapered-end radii 2.0→4.5 mm
+PASS beam_00_laser_to_L1 continues at L1
+PASS beam_01_L1_to_L2 exists
+PASS beam_01_L1_to_L2 source anchor 0.0000 mm
+PASS beam_01_L1_to_L2 target anchor 0.0000 mm
+PASS beam_01_L1_to_L2 tapered-end radii 4.5→9.0 mm
+PASS beam_01_L1_to_L2 continues at L2
+PASS beam_02_L2_to_M1 exists
+PASS beam_02_L2_to_M1 source anchor 0.0000 mm
+PASS beam_02_L2_to_M1 target anchor 0.0000 mm
+PASS beam_02_L2_to_M1 tapered-end radii 9.0→9.0 mm
+PASS beam_02_L2_to_M1 continues at M1
+PASS beam_03_M1_to_M2 exists
+PASS beam_03_M1_to_M2 source anchor 0.0000 mm
+PASS beam_03_M1_to_M2 target anchor 0.0000 mm
+PASS beam_03_M1_to_M2 tapered-end radii 9.0→9.2 mm
+PASS beam_03_M1_to_M2 continues at M2
+PASS beam_04_M2_to_DMD exists
+PASS beam_04_M2_to_DMD source anchor 0.0000 mm
+PASS beam_04_M2_to_DMD target anchor 0.0000 mm
+PASS beam_04_M2_to_DMD tapered-end radii 9.2→11.0 mm
+PASS beam_04_M2_to_DMD continues at DMD
+PASS beam_05_DMD_to_L3 exists
+PASS beam_05_DMD_to_L3 source anchor 0.0000 mm
+PASS beam_05_DMD_to_L3 target anchor 0.0000 mm
+PASS beam_05_DMD_to_L3 tapered-end radii 11.0→10.0 mm
+PASS beam_05_DMD_to_L3 continues at L3
+PASS beam_06_L3_to_Iris1 exists
+PASS beam_06_L3_to_Iris1 source anchor 0.0000 mm
+PASS beam_06_L3_to_Iris1 target anchor 0.0000 mm
+PASS beam_06_L3_to_Iris1 tapered-end radii 10.0→3.5 mm
+PASS beam_06_L3_to_Iris1 continues at Iris1
+PASS beam_07_Iris1_to_L4 exists
+PASS beam_07_Iris1_to_L4 source anchor 0.0000 mm
+PASS beam_07_Iris1_to_L4 target anchor 0.0000 mm
+PASS beam_07_Iris1_to_L4 tapered-end radii 3.5→10.0 mm
+PASS beam_07_Iris1_to_L4 continues at L4
+PASS beam_08_L4_to_HWP exists
+PASS beam_08_L4_to_HWP source anchor 0.0000 mm
+PASS beam_08_L4_to_HWP target anchor 0.0000 mm
+PASS beam_08_L4_to_HWP tapered-end radii 10.0→10.0 mm
+PASS beam_08_L4_to_HWP continues at HWP
+PASS beam_09_HWP_to_polarizer exists
+PASS beam_09_HWP_to_polarizer source anchor 0.0000 mm
+PASS beam_09_HWP_to_polarizer target anchor 0.0000 mm
+PASS beam_09_HWP_to_polarizer tapered-end radii 10.0→10.0 mm
+PASS beam_09_HWP_to_polarizer continues at polarizer
+PASS beam_10_polarizer_to_BS exists
+PASS beam_10_polarizer_to_BS source anchor 0.0000 mm
+PASS beam_10_polarizer_to_BS target anchor 0.0000 mm
+PASS beam_10_polarizer_to_BS tapered-end radii 10.0→10.0 mm
+PASS beam_10_polarizer_to_BS continues at BS
+PASS beam_11_BS_to_SLM exists
+PASS beam_11_BS_to_SLM source anchor 0.0000 mm
+PASS beam_11_BS_to_SLM target anchor 0.0000 mm
+PASS beam_11_BS_to_SLM tapered-end radii 10.0→10.0 mm
+PASS beam_11_BS_to_SLM continues at SLM
+PASS beam_12_SLM_to_BS exists
+PASS beam_12_SLM_to_BS source anchor 0.0000 mm
+PASS beam_12_SLM_to_BS target anchor 0.0000 mm
+PASS beam_12_SLM_to_BS tapered-end radii 10.0→10.0 mm
+PASS beam_12_SLM_to_BS continues at BS
+PASS beam_13_BS_to_M3 exists
+PASS beam_13_BS_to_M3 source anchor 0.0000 mm
+PASS beam_13_BS_to_M3 target anchor 0.0000 mm
+PASS beam_13_BS_to_M3 tapered-end radii 10.0→10.0 mm
+PASS beam_13_BS_to_M3 continues at M3
+PASS beam_14_M3_to_L5 exists
+PASS beam_14_M3_to_L5 source anchor 0.0000 mm
+PASS beam_14_M3_to_L5 target anchor 0.0000 mm
+PASS beam_14_M3_to_L5 tapered-end radii 10.0→9.0 mm
+PASS beam_14_M3_to_L5 continues at L5
+PASS beam_15_L5_to_Iris2 exists
+PASS beam_15_L5_to_Iris2 source anchor 0.0000 mm
+PASS beam_15_L5_to_Iris2 target anchor 0.0000 mm
+PASS beam_15_L5_to_Iris2 tapered-end radii 9.0→3.4 mm
+PASS beam_15_L5_to_Iris2 continues at Iris2
+PASS beam_16_Iris2_to_L6 exists
+PASS beam_16_Iris2_to_L6 source anchor 0.0000 mm
+PASS beam_16_Iris2_to_L6 target anchor 0.0000 mm
+PASS beam_16_Iris2_to_L6 tapered-end radii 3.4→9.0 mm
+PASS beam_16_Iris2_to_L6 continues at L6
+PASS beam_17_L6_to_L7 exists
+PASS beam_17_L6_to_L7 source anchor 0.0000 mm
+PASS beam_17_L6_to_L7 target anchor 0.0000 mm
+PASS beam_17_L6_to_L7 tapered-end radii 9.0→9.0 mm
+PASS beam_17_L6_to_L7 continues at L7
+PASS beam_18_L7_to_Holder exists
+PASS beam_18_L7_to_Holder source anchor 0.0000 mm
+PASS beam_18_L7_to_Holder target anchor 0.0000 mm
+PASS beam_18_L7_to_Holder tapered-end radii 9.0→1.6 mm
+PASS MMF_delay_2m_visual_turns start port surface 0.0000 mm
+PASS MMF_delay_2m_visual_turns end port surface 0.0000 mm
+PASS MMF_delay_4m_visual_turns start port surface 0.0000 mm
+PASS MMF_delay_4m_visual_turns end port surface 0.0000 mm
+PASS MMF_delay_6m_visual_turns start port surface 0.0000 mm
+PASS MMF_delay_6m_visual_turns end port surface 0.0000 mm
+PASS MMF_BC_to_PD start port surface 0.0001 mm
+PASS MMF_BC_to_PD end port surface 0.0000 mm
+PASS PD_to_oscilloscope_electrical start port surface 0.0000 mm
+PASS PD_to_oscilloscope_electrical end port surface 0.0000 mm
+PASS MMF_delay_2m_visual_turns every curve point in frame
+PASS MMF_delay_4m_visual_turns every curve point in frame
+PASS MMF_delay_6m_visual_turns every curve point in frame
+PASS MMF_BC_to_PD every curve point in frame
+PASS PD_to_oscilloscope_electrical every curve point in frame
+PASS laser→M1 L1 collinear 0.00001 mm
+PASS laser→M1 L2 collinear 0.00006 mm
+PASS laser→M1 L1 entry collinear 0.00001 mm
+PASS laser→M1 L1 exit collinear 0.00003 mm
+PASS laser→M1 L2 entry collinear 0.00006 mm
+PASS laser→M1 L2 exit collinear 0.00000 mm
+PASS DMD→BS L3 collinear 0.00006 mm
+PASS DMD→BS Iris1 collinear 0.00006 mm
+PASS DMD→BS L4 collinear 0.00000 mm
+PASS DMD→BS HWP collinear 0.00000 mm
+PASS DMD→BS polarizer collinear 0.00012 mm
+PASS DMD→BS L3 entry collinear 0.00001 mm
+PASS DMD→BS L3 exit collinear 0.00006 mm
+PASS DMD→BS L4 entry collinear 0.00012 mm
+PASS DMD→BS L4 exit collinear 0.00001 mm
+PASS DMD→BS HWP entry collinear 0.00003 mm
+PASS DMD→BS HWP exit collinear 0.00012 mm
+PASS DMD→BS polarizer entry collinear 0.00003 mm
+PASS DMD→BS polarizer exit collinear 0.00012 mm
+PASS M3→Holder L5 collinear 0.00002 mm
+PASS M3→Holder Iris2 collinear 0.00003 mm
+PASS M3→Holder L6 collinear 0.00006 mm
+PASS M3→Holder L7 collinear 0.00012 mm
+PASS M3→Holder L5 entry collinear 0.00002 mm
+PASS M3→Holder L5 exit collinear 0.00001 mm
+PASS M3→Holder L6 entry collinear 0.00006 mm
+PASS M3→Holder L6 exit collinear 0.00006 mm
+PASS M3→Holder L7 entry collinear 0.00012 mm
+PASS M3→Holder L7 exit collinear 0.00012 mm
+PASS L1 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L2 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L3 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L4 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L5 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L6 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS L7 real plano-convex profile front flatness=0.000000 mm rear sag=4.500 mm
+PASS BS active mesh is one quad
+PASS BS forward ray hits SAVED active quad offset mm=0.00000
+PASS BS return ray hits SAVED active quad offset mm=0.00001
+PASS BS reflection from actual quad polygon normal dot=1.00000001
+PASS BS has four separate open frame rails
+PASS BS forward frame-clear sample 0
+PASS BS forward frame-clear sample 1
+PASS BS forward frame-clear sample 2
+PASS BS forward frame-clear sample 3
+PASS BS forward frame-clear sample 4
+PASS BS return frame-clear sample 0
+PASS BS return frame-clear sample 1
+PASS BS return frame-clear sample 2
+PASS BS return frame-clear sample 3
+PASS BS return frame-clear sample 4
+PASS laser nozzle open valid mesh
+PASS beam starts at actual open mouth centre offset mm=0.00003
+PASS nozzle axis matches emitted ray dot=0.99999990
+PASS outlet→L1→L2→M1 same axis
+PASS real opening clears red beam inner radius=4.50mm beam radius=2.00mm
+PASS mount collar on actual housing face gap=0.0000mm
+PASS nozzle mounted externally not floating tip-to-shell=29.000mm
+PASS laser outgoing ray does not cross solid metal sample 0
+PASS laser outgoing ray does not cross solid metal sample 1
+PASS laser outgoing ray does not cross solid metal sample 2
+PASS laser outgoing ray does not cross solid metal sample 3
+PASS laser outgoing ray does not cross solid metal sample 4
+PASS visible lip ring centred at opening offset=0.00003mm
+PASS L4 to BS downstream widths are collimated
+PASS Iris2 narrows then expands to L6 3.40→9.00 mm radii
+PASS L6→L7 approximately constant wide radius 9.00→9.00 mm radii
+PASS L7→Holder focuses at fiber entrance 9.00→1.60 mm radii
+PASS Iris2→L6 saved envelope has intended interpolated radii
+PASS L6→L7 saved envelope has intended interpolated radii
+PASS L7→Holder saved envelope has intended interpolated radii
+PASS beam shader neutral transparent, moderate red display and no glossy rod
+PASS cosmetic outline exists laser_camera_side_lower_edge
+PASS cosmetic outline exists PD_front_lower_seam
+PASS cosmetic outline exists Oscilloscope_top_front_edge
+PASS cosmetic outline exists M1_dark_rear_support
+PASS cosmetic outline exists M2_dark_rear_support
+NOTE: v5/v6 laser interface pass is retracted; the v10 nozzle position is schematic.
+NOTE: schematic red is not the visible colour of 1064 nm; radii/foci and exit position are modeling assumptions.
+NOTE: no Preview, screenshot or new PNG pixel reading was performed; geometry is not a visual pass.
+GEOMETRY 0 failed: []

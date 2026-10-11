@@ -1,0 +1,41 @@
+=== v3 saved scene 实际核查 ===
+
+[1] 镜面法向（mirror_normal 属性，按入/出射线段求，非预设 90°）
+  mirror_M1: 法向=(0.6310473084449768, -0.7757443785667419, 0.0)
+  mirror_M2: 法向=(0.6310473084449768, -0.7757443785667419, 0.0)
+  mirror_M3: 法向=(0.7071067690849304, 0.7071067690849304, 0.0)
+
+[2] 镜面反射方向验证（入射 +x 经 M3 是否折 -y）
+  M3 入射 +x，反射方向 = (0.0, -1.0, 0.0)（应≈(0,-1,0) 即 -y）
+
+[3] 光束端点 → 下游真实表面 射线距离（非 bbox）
+  [GAP] beam_laser_L1→lens_L1: 8.00 mm 漂浮
+  [?] beam_L2_M1→mirror_M1: 射线 5m 内未命中 mirror_M1（p1=(0.4707, 0.0, 0.0)）
+  [?] beam_M2_dmd→dmd: 射线 5m 内未命中 dmd（p1=(0.7, 0.0, 0.0)）
+  [GAP] beam_dmd_L3→lens_L3: 8.00 mm 漂浮
+  [?] beam_slm_M3→mirror_M3: 射线 5m 内未命中 mirror_M3（p1=(1.2207, 0.0, 0.0)）
+  [?] beam_L7_holder→holder: 射线 5m 内未命中 holder（p1=(1.54, 0.0, -0.15)）
+  [?] beam_bc_mmf→mmf_single: 射线 5m 内未命中 mmf_single（p1=(1.675, 0.0, -0.15)）
+  [?] beam_mmf_pd→pd: 射线 5m 内未命中 pd（p1=(1.695, 0.0, -0.15)）
+
+[4] MMF 可渲染几何（曲线 bevel，非 0 面 mesh）
+  mmf_delay_1: type=CURVE bevel_depth=0.004000000189989805 splines=1 可渲染=是(CURVE+bevel)
+  mmf_delay_2: type=CURVE bevel_depth=0.004000000189989805 splines=1 可渲染=是(CURVE+bevel)
+  mmf_delay_3: type=CURVE bevel_depth=0.004000000189989805 splines=1 可渲染=是(CURVE+bevel)
+
+[5] Iris 真实通孔（实体体积 vs 实心圆盘）
+  iris1: faces=100 实体体积≈14210 mm³（带孔 < 实心圆盘≈π·30²·6≈17000 mm³）
+  iris2: faces=100 实体体积≈14210 mm³（带孔 < 实心圆盘≈π·30²·6≈17000 mm³）
+
+[6] 电信号线（PD→示波器，非光纤/光束）
+  elec_pd_scope: 存在 材质=mat_elec
+
+[7] 相机入框（clip_check 修复版世界坐标，分层报告）
+  [cam_overview] pulse_laser:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M1:{'exists': True, 'renders': True, 'in_frame': True}; dmd:{'exists': True, 'renders': True, 'in_frame': True}; slm:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M3:{'exists': True, 'renders': True, 'in_frame': True}; holder:{'exists': True, 'renders': True, 'in_frame': True}; bc_combiner:{'exists': True, 'renders': True, 'in_frame': True}; pd:{'exists': True, 'renders': True, 'in_frame': True}; oscilloscope:{'exists': True, 'renders': True, 'in_frame': True}
+  [cam_link_fiber] pulse_laser:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M1:{'exists': True, 'renders': True, 'in_frame': True}; dmd:{'exists': True, 'renders': True, 'in_frame': True}; slm:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M3:{'exists': True, 'renders': True, 'in_frame': True}; holder:{'exists': True, 'renders': True, 'in_frame': True}; bc_combiner:{'exists': True, 'renders': True, 'in_frame': True}; pd:{'exists': True, 'renders': True, 'in_frame': True}; oscilloscope:{'exists': True, 'renders': True, 'in_frame': True}
+  [cam_m1_slm_bs] pulse_laser:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M1:{'exists': True, 'renders': True, 'in_frame': True}; dmd:{'exists': True, 'renders': True, 'in_frame': True}; slm:{'exists': True, 'renders': True, 'in_frame': True}; mirror_M3:{'exists': True, 'renders': True, 'in_frame': True}; holder:{'exists': True, 'renders': True, 'in_frame': True}; bc_combiner:{'exists': True, 'renders': True, 'in_frame': True}; pd:{'exists': True, 'renders': True, 'in_frame': True}; oscilloscope:{'exists': True, 'renders': True, 'in_frame': True}
+
+[8] 结论
+  端点贴合（射线法）: 存在缺口/漂浮
+  注意：本核查**不用部件数量或非黑统计**证明复刻通过；仅报告端点/方向/连接/几何实测。
+  视觉对应（与 Fig.2(a) 一致/差异/假设）仍须外部读图核实，本脚本不作像素判定。

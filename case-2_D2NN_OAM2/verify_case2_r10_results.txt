@@ -1,0 +1,28 @@
+Synthetic five-way classifier, all dimensions metres
+PASS surface: expected=接触; got=('接触', 'lens', 0.0)
+PASS 0.3mm: expected=接触; got=('接触', 'lens', 0.00030001997799672993)
+PASS 10mm: expected=间隙; got=('间隙', 'lens', 0.010000020246350199)
+PASS inside: expected=穿入; got=('穿入', 'lens', 0.0009999871520424237)
+PASS miss: ('未命中', None, None)
+PASS own illustrative beam excluded: ('间隙', 'lens', 0.010000020246350199)
+PASS other obstruction retained: ('先碰其他对象', 'real_obstacle', 0.004500001570144911)
+PASS inverse-transpose under nonuniform scale: abs dot=0.99999996
+PASS opposite sign same plane: abs dot=1
+PASS genuinely perpendicular: abs dot=0
+PASS wrong recorded normal rejected: abs dot=0.707
+PASS ground from world vertices, not origin: top=0.155000001, origin=0.100000001
+PASS object hidden below opaque plane: object upper bound < ground top=0.155
+PASS all corners in frame: (True, True, True)
+PASS offscreen horizontal rejected: (True, False, True)
+PASS behind camera rejected: (False, True, True)
+
+Read-only saved v3 diagnostics; NOT a claim of case-2 correctness
+beam_laser_L1 → lens_L1: axis=(1.0, 0.0, -0.0), endpoint=(0.366, 0.0, -0.0), classification=('接触', 'lens_L1', 2.9197534754847244e-09)
+beam_L2_M1 → mirror_M1: axis=(-1.0, 0.0, -0.0), endpoint=(0.4707, 0.0, -0.0), classification=('先碰其他对象', 'lens_L1', 0.09669995336344105)
+beam_M2_dmd → dmd: axis=(0.8944, 0.4472, -0.0), endpoint=(0.7, 0.0, -0.0), classification=('穿入', 'dmd', 0.0019999963603830307)
+beam_slm_M3 → mirror_M3: axis=(1.0, 0.0, -0.0), endpoint=(1.2207, 0.0, -0.0), classification=('先碰其他对象', 'slm', 0.014299988909123972)
+mirror_M1 face world n=(0.7757, 0.631, 0.0); recorded abs dot=0.0
+mirror_M2 face world n=(0.7757, 0.631, 0.0); recorded abs dot=0.0
+mirror_M3 face world n=(0.7071, -0.7071, -0.0); recorded abs dot=0.0
+
+ASSERTIONS PASS; failures=[]

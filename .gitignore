@@ -1,0 +1,7 @@
+# Local system and Python cache; research sources, failed drafts and Blender backups stay versioned.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*

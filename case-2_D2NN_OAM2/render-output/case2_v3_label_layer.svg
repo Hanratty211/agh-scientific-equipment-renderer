@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Helvetica,Arial" font-size="22" fill="white" stroke="white" stroke-width="1.5">
+  <!-- 可编辑标签层 v3：锚点=对象世界几何位置；3D 场景无字 -->
+  <line x1="138" y1="377" x2="138" y2="359" opacity="0.6"/>
+  <text x="142" y="355" data-target="pulse_laser">Pulse laser</text>
+  <line x1="347" y1="374" x2="347" y2="356" opacity="0.6"/>
+  <text x="351" y="352" data-target="lens_L1">L1</text>
+  <line x1="459" y1="372" x2="459" y2="354" opacity="0.6"/>
+  <text x="463" y="350" data-target="lens_L2">L2</text>
+  <line x1="459" y1="372" x2="459" y2="354" opacity="0.6"/>
+  <text x="463" y="350" data-target="mirror_M1">M1</text>
+  <line x1="562" y1="371" x2="562" y2="353" opacity="0.6"/>
+  <text x="566" y="349" data-target="mirror_M2">M2</text>
+  <line x1="647" y1="370" x2="647" y2="352" opacity="0.6"/>
+  <text x="651" y="348" data-target="dmd">DMD / Hologram</text>
+  <line x1="775" y1="368" x2="775" y2="350" opacity="0.6"/>
+  <text x="779" y="346" data-target="lens_L3">L3</text>
+  <line x1="775" y1="368" x2="775" y2="350" opacity="0.6"/>
+  <text x="779" y="346" data-target="iris1">Iris</text>
+  <line x1="834" y1="367" x2="834" y2="349" opacity="0.6"/>
+  <text x="838" y="345" data-target="lens_L4">L4</text>
+  <line x1="884" y1="366" x2="884" y2="348" opacity="0.6"/>
+  <text x="888" y="344" data-target="bs_dichroic">BS(dichroic)</text>
+  <line x1="935" y1="365" x2="935" y2="347" opacity="0.6"/>
+  <text x="939" y="343" data-target="hwp">HWP</text>
+  <line x1="985" y1="365" x2="985" y2="347" opacity="0.6"/>
+  <text x="989" y="343" data-target="polarizer">Polarizer</text>
+  <line x1="1044" y1="364" x2="1044" y2="346" opacity="0.6"/>
+  <text x="1048" y="342" data-target="slm">Phase / SLM</text>
+  <line x1="1094" y1="363" x2="1094" y2="345" opacity="0.6"/>
+  <text x="1098" y="341" data-target="mirror_M3">M3</text>
+  <line x1="1128" y1="473" x2="1128" y2="455" opacity="0.6"/>
+  <text x="1132" y="451" data-target="lens_L5">L5</text>
+  <line x1="1176" y1="472" x2="1176" y2="454" opacity="0.6"/>
+  <text x="1180" y="450" data-target="iris2">Iris</text>
+  <line x1="1223" y1="471" x2="1223" y2="453" opacity="0.6"/>
+  <text x="1227" y="449" data-target="lens_L6">L6</text>
+  <line x1="1278" y1="470" x2="1278" y2="452" opacity="0.6"/>
+  <text x="1282" y="448" data-target="lens_L7">L7</text>
+  <line x1="1326" y1="469" x2="1326" y2="451" opacity="0.6"/>
+  <text x="1330" y="447" data-target="holder">Holder</text>
+  <line x1="1332" y1="477" x2="1332" y2="459" opacity="0.6"/>
+  <text x="1336" y="455" data-target="mmf_delay_1">MMF 2m</text>
+  <line x1="1326" y1="469" x2="1326" y2="451" opacity="0.6"/>
+  <text x="1330" y="447" data-target="mmf_delay_2">MMF 4m</text>
+  <line x1="1319" y1="462" x2="1319" y2="444" opacity="0.6"/>
+  <text x="1323" y="440" data-target="mmf_delay_3">MMF 6m</text>
+  <line x1="1373" y1="469" x2="1373" y2="451" opacity="0.6"/>
+  <text x="1377" y="447" data-target="bc_combiner">BC (3×1)</text>
+  <line x1="1427" y1="468" x2="1427" y2="450" opacity="0.6"/>
+  <text x="1431" y="446" data-target="mmf_single">MMF</text>
+  <line x1="1451" y1="467" x2="1451" y2="449" opacity="0.6"/>
+  <text x="1455" y="445" data-target="pd">PD</text>
+  <line x1="1474" y1="467" x2="1474" y2="449" opacity="0.6"/>
+  <text x="1478" y="445" data-target="oscilloscope">Oscilloscope</text>
+</svg>
