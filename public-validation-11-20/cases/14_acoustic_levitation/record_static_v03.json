@@ -1,0 +1,96 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "NO_PORTS",
+      "where": "ports"
+    },
+    {
+      "code": "NO_CONNECTIONS",
+      "where": "connections"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "down-facing transducer"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "flat rectangular reflector"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "working-gap droplet"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "angled microphone stem"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "side imaging camera"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "opposite LED light"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "amplifier electronics"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "oscilloscope instrument"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "laptop open screen"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

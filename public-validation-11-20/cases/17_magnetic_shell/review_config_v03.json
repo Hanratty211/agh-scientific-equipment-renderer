@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "id": "overview_v03",
+      "path": "overview_v03.png",
+      "regions": [
+        {
+          "id": "central_geometry",
+          "xyxy": [
+            0.17,
+            0.14,
+            0.83,
+            0.86
+          ],
+          "output": "qa_center_v03.png"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "qa_numeric_sheet_v03.png"
+}

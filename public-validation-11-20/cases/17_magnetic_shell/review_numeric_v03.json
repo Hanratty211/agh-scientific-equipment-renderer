@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v03",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v03.png",
+      "sha256": "337a7707941fba4fd8998a3f3555778470a4214a28b4f5f8985afa3ba01a912c",
+      "width": 1120,
+      "height": 800,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "central_geometry",
+          "normalized_xyxy": [
+            0.17,
+            0.14,
+            0.83,
+            0.86
+          ],
+          "pixel_xyxy": [
+            190,
+            112,
+            930,
+            688
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/qa_center_v03.png",
+          "size": [
+            740,
+            576
+          ],
+          "source_sha256": "337a7707941fba4fd8998a3f3555778470a4214a28b4f5f8985afa3ba01a912c"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/qa_numeric_sheet_v03.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

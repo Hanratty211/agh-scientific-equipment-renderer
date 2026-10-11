@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v03",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/overview_v03.png",
+      "sha256": "7b28177d7f2757fee53a3c3b633d9beaee2c8ac687cad17bad6a37b8f2cab11b",
+      "width": 1380,
+      "height": 800,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "central_geometry",
+          "normalized_xyxy": [
+            0.17,
+            0.14,
+            0.83,
+            0.86
+          ],
+          "pixel_xyxy": [
+            235,
+            112,
+            1145,
+            688
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/qa_center_v03.png",
+          "size": [
+            910,
+            576
+          ],
+          "source_sha256": "7b28177d7f2757fee53a3c3b633d9beaee2c8ac687cad17bad6a37b8f2cab11b"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/qa_numeric_sheet_v03.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

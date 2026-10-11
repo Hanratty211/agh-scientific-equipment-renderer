@@ -1,0 +1,23 @@
+{
+  "case": "11_optical_binding",
+  "declared_components": 14,
+  "declared_ports": 20,
+  "declared_routes": 10,
+  "owner_surface_checks": {
+    "PASS": 20,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "visible_route_endpoint_checks": {
+    "PASS": 10,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "audit_status": "UNVERIFIED",
+  "audit_failures": [],
+  "limits": [
+    "route endpoint proximity does not prove optical law, physical transport or hidden topology",
+    "routes omitted from record have NOT been audited",
+    "current render inclusion and visual resemblance UNVERIFIED"
+  ]
+}

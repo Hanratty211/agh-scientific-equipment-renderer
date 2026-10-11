@@ -1,0 +1,23 @@
+{
+  "case": "18_electrochemical_stack",
+  "declared_components": 19,
+  "declared_ports": 0,
+  "declared_routes": 0,
+  "owner_surface_checks": {
+    "PASS": 0,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "visible_route_endpoint_checks": {
+    "PASS": 0,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "audit_status": "UNVERIFIED",
+  "audit_failures": [],
+  "limits": [
+    "route endpoint proximity does not prove optical law, physical transport or hidden topology",
+    "routes omitted from record have NOT been audited",
+    "current render inclusion and visual resemblance UNVERIFIED"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "device",
+    "scope": "Reconstruct only the main left exploded sensor assembly: lid, rotor, coil spring/rope, stator and visible electrode rings. Exploded layers are intentionally separated; do not invent supports joining them. Exclude human/application scenes, inset electrode/SEM/photos and legend graphics. Panel Fig.1(c), main left exploded assembly; SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope.",
+    "operating_state": "exploded presentation only",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 820,
+      "height": 1070,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "aperture lid",
+      "object": "aperture lid thin resin",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c2",
+      "label": "rotor",
+      "object": "rotor clear body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c3",
+      "label": "spring ribbon",
+      "object": "flat spiral spring ribbon",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c4",
+      "label": "cord",
+      "object": "single retractable rope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c5",
+      "label": "stator",
+      "object": "stator translucent housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c6",
+      "label": "stator stripe band",
+      "object": "stator alternating stripe band 0",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    },
+    {
+      "id": "c7",
+      "label": "rotor stripe band",
+      "object": "rotor alternating stripe band 0",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "exploded presentation only"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41467-021-23207-8",
+    "figure_url": "https://www.nature.com/articles/s41467-021-23207-8/figures/1",
+    "target_sha256": "cffb3896399a7f4abcf70748db6e33bb4be8d185ad50b549d1841d98fb76b57d",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success.",
+  "not_applicable_routes": "Exploded display state; no source warranted working contact/pipe between separated pieces. No false required connection."
+}

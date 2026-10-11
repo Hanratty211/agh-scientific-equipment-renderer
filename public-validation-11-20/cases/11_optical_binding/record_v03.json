@@ -1,0 +1,489 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the main optical apparatus, its visible beam paths and component directions. The micro-scale sample inset is context, not additional macro hardware. Panel Fig.1 main optical apparatus; exclude the upper-right nanoparticle sample inset; SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1000,
+      "height": 820,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11",
+      "c12",
+      "c13",
+      "c14"
+    ],
+    "required_connections": [
+      "laser-hwp1",
+      "hwp1-bs",
+      "bs-hwp2",
+      "hwp2-lens1",
+      "lens1-lens2",
+      "lens2-dich",
+      "dich-objective",
+      "dich-filter",
+      "filter-imaging",
+      "imaging-scmos"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "laser",
+      "object": "laser housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "HWP 1",
+      "object": "half wave plate 1",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "power BS",
+      "object": "power BS cube",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "HWP 2",
+      "object": "half wave plate 2",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "lens 1",
+      "object": "collimating lens 1",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "lens 2",
+      "object": "collimating lens 2",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "dichroic",
+      "object": "tilted dichroic active plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "objective",
+      "object": "objective",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "sample",
+      "object": "glass sample",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "dark field condenser",
+      "object": "dark-field condenser",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c11",
+      "label": "halogen",
+      "object": "halogen source",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c12",
+      "label": "shortpass",
+      "object": "short pass filter",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c13",
+      "label": "imaging lens",
+      "object": "imaging lens",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c14",
+      "label": "sCMOS",
+      "object": "sCMOS camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "laser-out",
+      "owner": "c1",
+      "object": "laser output face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "hwp1-right",
+      "owner": "c2",
+      "object": "HWP 1 right port",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "hwp1-left",
+      "owner": "c2",
+      "object": "HWP 1 left port",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "bs-right",
+      "owner": "c3",
+      "object": "BS incoming surface",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "bs-left",
+      "owner": "c3",
+      "object": "BS exiting surface",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "hwp2-right",
+      "owner": "c4",
+      "object": "HWP 2 right port",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "hwp2-left",
+      "owner": "c4",
+      "object": "HWP 2 left port",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lens1-right",
+      "owner": "c5",
+      "object": "lens 1 right face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lens1-left",
+      "owner": "c5",
+      "object": "lens 1 left face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lens2-right",
+      "owner": "c6",
+      "object": "lens 2 right face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lens2-left",
+      "owner": "c6",
+      "object": "lens 2 left face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "dich-in",
+      "owner": "c7",
+      "object": "dichroic incoming interface",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "dich-up",
+      "owner": "c7",
+      "object": "dichroic upper interface",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "dich-down",
+      "owner": "c7",
+      "object": "dichroic lower interface",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "objective-in",
+      "owner": "c8",
+      "object": "objective lower face",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "filter-top",
+      "owner": "c12",
+      "object": "filter upper",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "filter-bottom",
+      "owner": "c12",
+      "object": "filter lower",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "imaging-top",
+      "owner": "c13",
+      "object": "imaging upper",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "imaging-bottom",
+      "owner": "c13",
+      "object": "imaging lower",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "scmos-top",
+      "owner": "c14",
+      "object": "sCMOS sensor top",
+      "medium": "optical",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    }
+  ],
+  "connections": [
+    {
+      "id": "laser-hwp1",
+      "a": "laser-out",
+      "b": "hwp1-right",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "laser-HWP1 axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "hwp1-bs",
+      "a": "hwp1-left",
+      "b": "bs-right",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "HWP1-BS axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "bs-hwp2",
+      "a": "bs-left",
+      "b": "hwp2-right",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "BS-HWP2 axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "hwp2-lens1",
+      "a": "hwp2-left",
+      "b": "lens1-right",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "HWP2-lens1 axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "lens1-lens2",
+      "a": "lens1-left",
+      "b": "lens2-right",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "lens1-lens2 axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "lens2-dich",
+      "a": "lens2-left",
+      "b": "dich-in",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "lens2-dichroic axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "dich-objective",
+      "a": "dich-up",
+      "b": "objective-in",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "dichroic to objective axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "dich-filter",
+      "a": "dich-down",
+      "b": "filter-top",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "dichroic-filter imaging axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "filter-imaging",
+      "a": "filter-bottom",
+      "b": "imaging-top",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "filter-imaging lens axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "imaging-scmos",
+      "a": "imaging-bottom",
+      "b": "scmos-top",
+      "kind": "optical",
+      "medium": "optical",
+      "object": "imaging lens-sCMOS axis",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41467-022-33070-w",
+    "figure_url": "https://www.nature.com/articles/s41467-022-33070-w/figures/1",
+    "target_sha256": "ee50331c2fb26e4d7593f6dec095a3455ee759c857400b482b131f8e96ee4d24",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success."
+}

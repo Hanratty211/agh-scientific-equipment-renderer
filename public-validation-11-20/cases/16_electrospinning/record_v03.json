@@ -1,0 +1,206 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel Vee-shield apparatus, chamber, syringe dispenser, tube/needle support, collector/shield and shown instruments. Do not combine the conventional setup a with the motorized spooling setup d. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1090,
+      "height": 850,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11"
+    ],
+    "required_connections": [
+      "red-lead",
+      "green-lead"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "chamber",
+      "object": "clear Perspex side",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "top drive",
+      "object": "drive upper red housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "syringe",
+      "object": "syringe barrel",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "PTFE feed",
+      "object": "visible PTFE feed",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "needle",
+      "object": "vertical metal needle",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "needle support",
+      "object": "needle Perspex support",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "collector",
+      "object": "copper collector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "Vee plates",
+      "object": "upright PTFE Vee plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "front heater",
+      "object": "horizontal front heater",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "IR source",
+      "object": "angled IR red source",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c11",
+      "label": "external DC supply",
+      "object": "external LEFT high voltage DC supply",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "dc-red",
+      "owner": "c11",
+      "object": "DC red output terminal",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "dc-green",
+      "owner": "c11",
+      "object": "DC green output terminal",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "chamber-red",
+      "owner": "c1",
+      "object": "chamber red boundary",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "chamber-green",
+      "owner": "c1",
+      "object": "chamber green boundary",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    }
+  ],
+  "connections": [
+    {
+      "id": "red-lead",
+      "a": "dc-red",
+      "b": "chamber-red",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "visible red DC lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "green-lead",
+      "a": "dc-green",
+      "b": "chamber-green",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "visible green DC lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41598-021-99890-w",
+    "figure_url": "https://www.nature.com/articles/s41598-021-99890-w/figures/1",
+    "target_sha256": "f0ef21593d70bd63fa12d876a295ad2bcc1ca7c63b6f713ed4b4716761998128",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success."
+}

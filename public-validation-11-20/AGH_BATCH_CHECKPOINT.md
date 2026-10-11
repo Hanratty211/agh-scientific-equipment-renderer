@@ -17,3 +17,11 @@
 - R1：本轮实际读取 Codex `CODEX_FEEDBACK_R1.md`，十个真实 v01 像素审查结果均需修订。原版 v01 不覆盖，下一阶段批量 v02 结构修正；外部输入反馈不是 AGH 亲自打开输出 PNG，也不等于用户验收。
 
 - R1 v02 / AGH：10 个独立 `build_v02.py` 批量后台 Blender 5.1.2 exit 0，`scene_v02.blend` 与无字 `overview_v02.png` 均落盘且 v01 未覆盖。按 Codex v01 实际像素反馈纠正装置方向/装配与缺件；本轮没有 AGH v02 输出像素验收。10 个源范围组件清单 `record_v02.json`，静态全部 UNKNOWN(exit 3)，独立读盘场景全部 UNVERIFIED(exit 3)，图片数值全部 NUMERIC_ONLY(exit 0)。v02 ports/routes/supports 仍未实际绑定：是诚实的不完整 QA，用户范围还没通过；每例 `V02_CHECKPOINT.md` 与全批 `BATCH_STATUS_v02.md`。参考–v01–v02 图已落盘给 Codex/用户外审，v02 状态 pending，不宣称认可。
+
+- R2 / AGH：接收 Codex 于 2026-10-12 逐幅阅读 `codex-review/pair_11_v02.png`…`pair_20_v02.png` 的十例修订意见，均非 v02 接受。目标 v03：按意见做局部结构与可证路线修正，分项独立审计，保留 v01/v02，v03 仍待 Codex 实际输出像素复核。未读取原 Scientific-System-Renderer Skill 或脚本；本地 Skill 维持 v0.6。
+
+- v03 第一轮真实路由审计：11/16 所列可见端点核查无 FAIL；12/17/19 被真实网格 surface-gap 拒绝（泵锚不在外壳、废液口锚在孔中心而非壁面、17 样品/泵锚离所属表面、19 玻璃倾角面与拟定锚错位），12 outlet-to-waste 终点与口锚相差 0.10 > 声明 0.08。报告 `cases/*/audit_scene_v03.json/.log` 保留，不能调大容差、改 required 或宣称 route PASS；需移动表面锚或标未证，重审独立保存场景。
+
+- v03 审计修正：12/17/19 初次路由/所有者表面拒绝已保存 `audit_scene_v03_initial.json/.log`（12/17/19）；独立读取三例真实 mesh 最近面定位而非调宽容差。12 将 pump owner 指向实际 syringe 表面、waste mouth 锚移到实体开口 rim、route 终点同锚；17 owner 指向 fixture top 和实际 syringe interface；19 原玻璃锚落错倾斜侧，按旋转后的真实表面重定位。重建 12/17/19 并重新记录，12/17/19 audit exit 3、无分项 FAIL；仍不意味着功能拓扑或全路径已证。
+
+- v03 / AGH：十例 `build_v03.py`、saved `.blend`、no-text low-cost PNG 全批后台 Blender exit 0。十例 v0.6 static UNKNOWN exit 3、独立 saved-scene audit UNVERIFIED exit 3，PNG 数值审查 NUMERIC_ONLY exit 0。11/12/16/17/19 仅对声明的源图可见片段加入 10/3/2/2/2 条端点路由；owner 最近面与 route 端点分项已重开实际场景查。13/14/20 缺源核对的端点未冒充通过；15/18 拆解展示不强加工作连接。18 独立网格 Y 射线对 1–17 面孔类别 17/17 分项符合脚本建模分类，总体 UNVERIFIED；11 二色镜实际评估网格面法向反射 -X→+Z dot 1.0、总体 UNVERIFIED。v03 仍待 Codex 实际读 PNG 并独立复核。

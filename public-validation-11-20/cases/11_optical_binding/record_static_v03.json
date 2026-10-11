@@ -1,0 +1,405 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.laser-out"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.hwp1-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.hwp1-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.bs-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.bs-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.hwp2-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.hwp2-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lens1-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lens1-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lens2-right"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lens2-left"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.dich-in"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.dich-up"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.dich-down"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.objective-in"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.filter-top"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.filter-bottom"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.imaging-top"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.imaging-bottom"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.scmos-top"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "laser-out"
+      ],
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "object": "laser housing"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [
+        "hwp1-right",
+        "hwp1-left"
+      ],
+      "connections": [
+        "laser-hwp1",
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "object": "half wave plate 1"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [
+        "bs-right",
+        "bs-left"
+      ],
+      "connections": [
+        "hwp1-bs",
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "object": "power BS cube"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "hwp2-right",
+        "hwp2-left"
+      ],
+      "connections": [
+        "bs-hwp2",
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "object": "half wave plate 2"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "lens1-right",
+        "lens1-left"
+      ],
+      "connections": [
+        "hwp2-lens1",
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "object": "collimating lens 1"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "lens2-right",
+        "lens2-left"
+      ],
+      "connections": [
+        "lens1-lens2",
+        "lens2-dich"
+      ],
+      "labels": [],
+      "object": "collimating lens 2"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [
+        "dich-in",
+        "dich-up",
+        "dich-down"
+      ],
+      "connections": [
+        "lens2-dich",
+        "dich-objective",
+        "dich-filter"
+      ],
+      "labels": [],
+      "object": "tilted dichroic active plate"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [
+        "objective-in"
+      ],
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "object": "objective"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "glass sample"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "dark-field condenser"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "halogen source"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [
+        "filter-top",
+        "filter-bottom"
+      ],
+      "connections": [
+        "dich-filter",
+        "filter-imaging"
+      ],
+      "labels": [],
+      "object": "short pass filter"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [
+        "imaging-top",
+        "imaging-bottom"
+      ],
+      "connections": [
+        "filter-imaging",
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "object": "imaging lens"
+    },
+    "component:c14": {
+      "supports": [],
+      "ports": [
+        "scmos-top"
+      ],
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "object": "sCMOS camera"
+    },
+    "port:laser-out": {
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:hwp1-right": {
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:hwp1-left": {
+      "connections": [
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:bs-right": {
+      "connections": [
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:bs-left": {
+      "connections": [
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:hwp2-right": {
+      "connections": [
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:hwp2-left": {
+      "connections": [
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:lens1-right": {
+      "connections": [
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:lens1-left": {
+      "connections": [
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:lens2-right": {
+      "connections": [
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:lens2-left": {
+      "connections": [
+        "lens2-dich"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:dich-in": {
+      "connections": [
+        "lens2-dich"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:dich-up": {
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:dich-down": {
+      "connections": [
+        "dich-filter"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:objective-in": {
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "owner": "c8"
+    },
+    "port:filter-top": {
+      "connections": [
+        "dich-filter"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:filter-bottom": {
+      "connections": [
+        "filter-imaging"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:imaging-top": {
+      "connections": [
+        "filter-imaging"
+      ],
+      "labels": [],
+      "owner": "c13"
+    },
+    "port:imaging-bottom": {
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "owner": "c13"
+    },
+    "port:scmos-top": {
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "owner": "c14"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

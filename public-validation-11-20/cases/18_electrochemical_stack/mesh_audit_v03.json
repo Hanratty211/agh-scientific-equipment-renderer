@@ -1,0 +1,268 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v03.blend",
+  "rows": [
+    {
+      "position": 1,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 632,
+      "polygons": 542,
+      "ray_origin": [
+        -2.1,
+        -4.3,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 2,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -3.845,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 3,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -3.39,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 4,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 56,
+      "polygons": 54,
+      "ray_origin": [
+        -2.1,
+        -2.935,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 5,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -2.48,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 6,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -2.025,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 7,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 56,
+      "polygons": 54,
+      "ray_origin": [
+        -2.1,
+        -1.57,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 8,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 56,
+      "polygons": 54,
+      "ray_origin": [
+        -2.1,
+        -1.115,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 9,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -0.66,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 10,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        -0.205,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 11,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        0.25,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 12,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        0.705,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 13,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        1.16,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 14,
+      "expected": "OPEN",
+      "actual": "OPEN",
+      "status": "PASS",
+      "evaluated_mesh_objects": 4,
+      "vertices": 224,
+      "polygons": 216,
+      "ray_origin": [
+        -2.1,
+        1.615,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 15,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 56,
+      "polygons": 54,
+      "ray_origin": [
+        -2.1,
+        2.07,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 16,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 56,
+      "polygons": 54,
+      "ray_origin": [
+        -2.1,
+        2.525,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    },
+    {
+      "position": 17,
+      "expected": "SOLID",
+      "actual": "SOLID",
+      "status": "PASS",
+      "evaluated_mesh_objects": 1,
+      "vertices": 632,
+      "polygons": 542,
+      "ray_origin": [
+        -2.1,
+        2.98,
+        0.66
+      ],
+      "meaning": "central Y ray only; no crack/seal, noncentral channels or contact verified"
+    }
+  ],
+  "not_checked": [
+    "physical_layer_identity_15_16",
+    "complete_fluid_window_topology",
+    "seals",
+    "functional_contact",
+    "visual_similarity"
+  ]
+}

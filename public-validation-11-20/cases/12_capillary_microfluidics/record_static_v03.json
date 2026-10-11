@@ -1,0 +1,185 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.upper-pump"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lower-pump"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.upper-inlet"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lower-inlet"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.capillary-out"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.waste-mouth"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "upper-pump"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper syringe"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [
+        "lower-pump"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower syringe"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [
+        "capillary-out"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "horizontal clear capillary"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "upper-inlet"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper inlet fitting"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "lower-inlet"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower inlet fitting"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "high speed camera"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "inverted microscope"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "sealed branch cap"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [
+        "waste-mouth"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "waste vessel rim"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "laptop open screen"
+    },
+    "port:upper-pump": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:lower-pump": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:upper-inlet": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:lower-inlet": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:capillary-out": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:waste-mouth": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c9"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

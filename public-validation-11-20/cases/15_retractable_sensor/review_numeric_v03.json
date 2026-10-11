@@ -1,0 +1,45 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v03",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/15_retractable_sensor/overview_v03.png",
+      "sha256": "0aa0ab8b6fea3eb350af5051762c629b1e1a44bc527a0d5c1239c6c7187c8462",
+      "width": 820,
+      "height": 1070,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "central_geometry",
+          "normalized_xyxy": [
+            0.17,
+            0.14,
+            0.83,
+            0.86
+          ],
+          "pixel_xyxy": [
+            139,
+            150,
+            681,
+            920
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/15_retractable_sensor/qa_center_v03.png",
+          "size": [
+            542,
+            770
+          ],
+          "source_sha256": "0aa0ab8b6fea3eb350af5051762c629b1e1a44bc527a0d5c1239c6c7187c8462"
+        }
+      ]
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/15_retractable_sensor/qa_numeric_sheet_v03.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}

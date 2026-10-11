@@ -1,0 +1,23 @@
+{
+  "case": "19_triboelectric_glass",
+  "declared_components": 8,
+  "declared_ports": 4,
+  "declared_routes": 2,
+  "owner_surface_checks": {
+    "PASS": 4,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "visible_route_endpoint_checks": {
+    "PASS": 2,
+    "FAIL": 0,
+    "UNVERIFIED": 0
+  },
+  "audit_status": "UNVERIFIED",
+  "audit_failures": [],
+  "limits": [
+    "route endpoint proximity does not prove optical law, physical transport or hidden topology",
+    "routes omitted from record have NOT been audited",
+    "current render inclusion and visual resemblance UNVERIFIED"
+  ]
+}

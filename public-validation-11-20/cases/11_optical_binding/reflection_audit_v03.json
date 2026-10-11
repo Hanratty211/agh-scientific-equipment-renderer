@@ -1,0 +1,32 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/scene_v03.blend",
+  "checks": [
+    {
+      "status": "PASS",
+      "normal_world": [
+        -0.707107,
+        0.0,
+        -0.707107
+      ],
+      "incident_world": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "computed_reflection_world": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "desired_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "dot": 1.0,
+      "face_area_evaluated": 0.22472499310970306,
+      "scope": "one broad evaluated panel face only; no beam propagation through remaining optics"
+    }
+  ]
+}

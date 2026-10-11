@@ -1,0 +1,229 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the entire b-panel experiment including the two pumps, transparent capillary sample region, microscope/camera, visible fluid tubes, waste vessel and computer. Sealed branch state follows caption; hidden fluid topology stays unknown. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope.",
+    "operating_state": "experiment (flush branch sealed)",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1140,
+      "height": 720,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [
+      "upper-feed",
+      "lower-feed",
+      "outlet-waste"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "upper pump",
+      "object": "upper syringe",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c2",
+      "label": "lower pump",
+      "object": "lower syringe",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c3",
+      "label": "sample capillary",
+      "object": "horizontal clear capillary",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c4",
+      "label": "upper inlet",
+      "object": "upper inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c5",
+      "label": "lower inlet",
+      "object": "lower inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c6",
+      "label": "imaging camera",
+      "object": "high speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c7",
+      "label": "inverted microscope",
+      "object": "inverted microscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c8",
+      "label": "flush cap",
+      "object": "sealed branch cap",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c9",
+      "label": "waste vessel",
+      "object": "waste vessel rim",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c10",
+      "label": "laptop",
+      "object": "laptop open screen",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    }
+  ],
+  "ports": [
+    {
+      "id": "upper-pump",
+      "owner": "c1",
+      "object": "upper pump exit",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lower-pump",
+      "owner": "c2",
+      "object": "lower pump exit",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "upper-inlet",
+      "owner": "c4",
+      "object": "upper inlet contact",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lower-inlet",
+      "owner": "c5",
+      "object": "lower inlet contact",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "capillary-out",
+      "owner": "c3",
+      "object": "capillary outlet face",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "waste-mouth",
+      "owner": "c9",
+      "object": "waste mouth boundary",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    }
+  ],
+  "connections": [
+    {
+      "id": "upper-feed",
+      "a": "upper-pump",
+      "b": "upper-inlet",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "upper pump to capillary",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "lower-feed",
+      "a": "lower-pump",
+      "b": "lower-inlet",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "lower pump to capillary",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "outlet-waste",
+      "a": "capillary-out",
+      "b": "waste-mouth",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "capillary outlet to waste",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/srep11102",
+    "figure_url": "https://www.nature.com/articles/srep11102/figures/1",
+    "target_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success."
+}
