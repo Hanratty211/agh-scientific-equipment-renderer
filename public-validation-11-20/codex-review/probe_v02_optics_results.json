@@ -1,0 +1,42 @@
+{
+  "reviewer": "Codex",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/scene_v02.blend",
+  "limitations": "geometry only; no optical physics or pixel verdict",
+  "objects": [
+    [
+      "BS to dichroic axis",
+      "CURVE"
+    ],
+    [
+      "dichroic to objective axis",
+      "CURVE"
+    ],
+    [
+      "tilted dichroic active face",
+      "MESH"
+    ],
+    [
+      "tilted dichroic holder",
+      "MESH"
+    ]
+  ],
+  "actual_surface": {
+    "object": "tilted dichroic active face",
+    "normal": [
+      0.7071067690849304,
+      -0.7071067690849304,
+      0.0
+    ],
+    "reflected_minus_x": [
+      -5.960464477539063e-08,
+      -0.9999999403953552,
+      0.0
+    ],
+    "desired_plus_z": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "direction_error": 1.4142135202262471
+  }
+}

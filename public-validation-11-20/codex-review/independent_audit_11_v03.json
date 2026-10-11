@@ -1,0 +1,2039 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/scene_v03.blend",
+  "record": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/record_v03.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.laser-out"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.hwp1-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.hwp1-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.bs-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.bs-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.hwp2-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.hwp2-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lens1-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lens1-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lens2-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lens2-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.dich-in"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.dich-up"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.dich-down"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.objective-in"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.filter-top"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.filter-bottom"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.imaging-top"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.imaging-bottom"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.scmos-top"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "laser-out"
+      ],
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "object": "laser housing"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [
+        "hwp1-right",
+        "hwp1-left"
+      ],
+      "connections": [
+        "laser-hwp1",
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "object": "half wave plate 1"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [
+        "bs-right",
+        "bs-left"
+      ],
+      "connections": [
+        "hwp1-bs",
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "object": "power BS cube"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "hwp2-right",
+        "hwp2-left"
+      ],
+      "connections": [
+        "bs-hwp2",
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "object": "half wave plate 2"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "lens1-right",
+        "lens1-left"
+      ],
+      "connections": [
+        "hwp2-lens1",
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "object": "collimating lens 1"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "lens2-right",
+        "lens2-left"
+      ],
+      "connections": [
+        "lens1-lens2",
+        "lens2-dich"
+      ],
+      "labels": [],
+      "object": "collimating lens 2"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [
+        "dich-in",
+        "dich-up",
+        "dich-down"
+      ],
+      "connections": [
+        "lens2-dich",
+        "dich-objective",
+        "dich-filter"
+      ],
+      "labels": [],
+      "object": "tilted dichroic active plate"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [
+        "objective-in"
+      ],
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "object": "objective"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "glass sample"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "dark-field condenser"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "halogen source"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [
+        "filter-top",
+        "filter-bottom"
+      ],
+      "connections": [
+        "dich-filter",
+        "filter-imaging"
+      ],
+      "labels": [],
+      "object": "short pass filter"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [
+        "imaging-top",
+        "imaging-bottom"
+      ],
+      "connections": [
+        "filter-imaging",
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "object": "imaging lens"
+    },
+    "component:c14": {
+      "supports": [],
+      "ports": [
+        "scmos-top"
+      ],
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "object": "sCMOS camera"
+    },
+    "port:laser-out": {
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:hwp1-right": {
+      "connections": [
+        "laser-hwp1"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:hwp1-left": {
+      "connections": [
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:bs-right": {
+      "connections": [
+        "hwp1-bs"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:bs-left": {
+      "connections": [
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:hwp2-right": {
+      "connections": [
+        "bs-hwp2"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:hwp2-left": {
+      "connections": [
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:lens1-right": {
+      "connections": [
+        "hwp2-lens1"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:lens1-left": {
+      "connections": [
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:lens2-right": {
+      "connections": [
+        "lens1-lens2"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:lens2-left": {
+      "connections": [
+        "lens2-dich"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:dich-in": {
+      "connections": [
+        "lens2-dich"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:dich-up": {
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:dich-down": {
+      "connections": [
+        "dich-filter"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:objective-in": {
+      "connections": [
+        "dich-objective"
+      ],
+      "labels": [],
+      "owner": "c8"
+    },
+    "port:filter-top": {
+      "connections": [
+        "dich-filter"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:filter-bottom": {
+      "connections": [
+        "filter-imaging"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:imaging-top": {
+      "connections": [
+        "filter-imaging"
+      ],
+      "labels": [],
+      "owner": "c13"
+    },
+    "port:imaging-bottom": {
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "owner": "c13"
+    },
+    "port:scmos-top": {
+      "connections": [
+        "imaging-scmos"
+      ],
+      "labels": [],
+      "owner": "c14"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "laser housing"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "half wave plate 1"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "power BS cube"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "half wave plate 2"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "collimating lens 1"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "collimating lens 2"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "tilted dichroic active plate"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "objective"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "glass sample"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "object": "dark-field condenser"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c10",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "object": "halogen source"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c11",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "object": "short pass filter"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c12",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "object": "imaging lens"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c13",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "object": "sCMOS camera"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c14",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "laser-out",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "laser-out",
+      "detail": {
+        "gap": 0.030000925229875276,
+        "tolerance": 0.09,
+        "point": [
+          3.099999189376831,
+          3.193106223875475e-09,
+          1.0500001907348633
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp1-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "hwp1-right",
+      "detail": {
+        "gap": 4.768371767642424e-07,
+        "tolerance": 0.09,
+        "point": [
+          2.632500410079956,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp1-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "hwp1-left",
+      "detail": {
+        "gap": 4.768371767642424e-07,
+        "tolerance": 0.09,
+        "point": [
+          2.5875003337860107,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "bs-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "bs-right",
+      "detail": {
+        "gap": 7.152557496787659e-07,
+        "tolerance": 0.09,
+        "point": [
+          2.3000006675720215,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "bs-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "bs-left",
+      "detail": {
+        "gap": 3.5762789340049977e-07,
+        "tolerance": 0.09,
+        "point": [
+          1.9400001764297485,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp2-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "hwp2-right",
+      "detail": {
+        "gap": 1.1920936379522885e-07,
+        "tolerance": 0.09,
+        "point": [
+          1.6025002002716064,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp2-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "hwp2-left",
+      "detail": {
+        "gap": 1.3304608679646057e-10,
+        "tolerance": 0.09,
+        "point": [
+          1.5575000047683716,
+          -1.3304608803554885e-10,
+          1.0499995946884155
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens1-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "lens1-right",
+      "detail": {
+        "gap": 1.1944397266055208e-07,
+        "tolerance": 0.09,
+        "point": [
+          1.1339999437332153,
+          3.326152200888721e-11,
+          1.0499999523162842
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens1-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "lens1-left",
+      "detail": {
+        "gap": 3.326152169911514e-11,
+        "tolerance": 0.09,
+        "point": [
+          1.0859999656677246,
+          3.326152200888721e-11,
+          1.0499999523162842
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens2-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "lens2-right",
+      "detail": {
+        "gap": 6.007263577148258e-08,
+        "tolerance": 0.09,
+        "point": [
+          0.6940000653266907,
+          3.326152200888721e-11,
+          1.0499999523162842
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens2-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "lens2-left",
+      "detail": {
+        "gap": 3.326152169911514e-11,
+        "tolerance": 0.09,
+        "point": [
+          0.6460000276565552,
+          3.326152200888721e-11,
+          1.0499999523162842
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "dich-in",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "dich-in",
+      "detail": {
+        "gap": 0.004065145256209589,
+        "tolerance": 0.09,
+        "point": [
+          0.018999997526407242,
+          -3.326152131499782e-10,
+          1.049999713897705
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "dich-up",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "dich-up",
+      "detail": {
+        "gap": 0.004064758184988994,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          1.069000244140625
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "dich-down",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "dich-down",
+      "detail": {
+        "gap": 0.004064652461122585,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          1.0309995412826538
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "objective-in",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "objective-in",
+      "detail": {
+        "gap": 2.3853609072503577e-07,
+        "tolerance": 0.09,
+        "point": [
+          -1.9956913899221718e-10,
+          3.326152200888721e-11,
+          1.6750003099441528
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "filter-top",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "filter-top",
+      "detail": {
+        "gap": 1.0688601522369244e-08,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          0.7550000548362732
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "filter-bottom",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "filter-bottom",
+      "detail": {
+        "gap": 6.05042514820982e-08,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          0.6850000619888306
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "imaging-top",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "imaging-top",
+      "detail": {
+        "gap": 1.1966162912066043e-07,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          0.424999862909317
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "imaging-bottom",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "imaging-bottom",
+      "detail": {
+        "gap": 1.490120353633461e-07,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          0.354999840259552
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "scmos-top",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "scmos-top",
+      "detail": {
+        "gap": 5.599215408569014e-09,
+        "tolerance": 0.09,
+        "point": [
+          -1.2473071187013574e-10,
+          -3.326152131499782e-10,
+          0.005000000819563866
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "laser-hwp1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "laser-hwp1",
+      "detail": {
+        "gaps": [
+          0.024999141726085753,
+          0.001499652905191266
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            3.075000047683716,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            2.634000062942505,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp1-bs",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "hwp1-bs",
+      "detail": {
+        "gaps": [
+          0.0004997254697648636,
+          0.011999368405280044
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            2.5880000591278076,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            2.312000036239624,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "bs-hwp2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "bs-hwp2",
+      "detail": {
+        "gaps": [
+          0.012000203336314864,
+          0.0014997721476411264
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            1.9279999732971191,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            1.6039999723434448,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "hwp2-lens1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "hwp2-lens1",
+      "detail": {
+        "gaps": [
+          0.0015000105283128336,
+          0.0010000467229364092
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            1.555999994277954,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            1.1349999904632568,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens1-lens2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "lens1-lens2",
+      "detail": {
+        "gaps": [
+          0.0009999275207519536,
+          0.0009999275207519536
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            1.0850000381469727,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            0.6949999928474426,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lens2-dich",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "lens2-dich",
+      "detail": {
+        "gaps": [
+          0.0010000467229364092,
+          2.3842608695491703e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.6449999809265137,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            0.01899999938905239,
+            0.0,
+            1.0499999523162842
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "dich-objective",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "dich-objective",
+      "detail": {
+        "gaps": [
+          2.384188437423351e-07,
+          0.005000352808341608
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.0,
+            0.0,
+            1.069000005722046
+          ],
+          [
+            0.0,
+            0.0,
+            1.6699999570846558
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "dich-filter",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "dich-filter",
+      "detail": {
+        "gaps": [
+          4.768372905235664e-07,
+          5.960570332966867e-08
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.0,
+            0.0,
+            1.031000018119812
+          ],
+          [
+            0.0,
+            0.0,
+            0.7549999952316284
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "filter-imaging",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "filter-imaging",
+      "detail": {
+        "gaps": [
+          5.960570332966867e-08,
+          1.490120353633461e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.0,
+            0.0,
+            0.6850000023841858
+          ],
+          [
+            0.0,
+            0.0,
+            0.42500001192092896
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "imaging-scmos",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "imaging-scmos",
+      "detail": {
+        "gaps": [
+          1.490120353633461e-07,
+          9.967709676563362e-10
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.0,
+            0.0,
+            0.35499998927116394
+          ],
+          [
+            0.0,
+            0.0,
+            0.004999999888241291
+          ]
+        ]
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          8.953254699707031,
+          9.844253540039062
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.704075276851654,
+          0.8224526047706604
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.30362626910209656,
+          0.4244541525840759
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          9.593814849853516,
+          9.99387264251709
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.6423177123069763,
+          0.6750093102455139
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.36011946201324463,
+          0.43124181032180786
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          9.72463607788086,
+          10.298094749450684
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.5688851475715637,
+          0.6332640051841736
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.37049663066864014,
+          0.4557046592235565
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          10.051053047180176,
+          10.451111793518066
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.5212633609771729,
+          0.5539549589157104
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.3967370092868805,
+          0.4678593873977661
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          10.285909652709961,
+          10.633541107177734
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4678495526313782,
+          0.49689194560050964
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4182201325893402,
+          0.4797942638397217
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          10.481234550476074,
+          10.828866004943848
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.4161370098590851,
+          0.44517937302589417
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.433862566947937,
+          0.49543672800064087
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          10.759819030761719,
+          11.145135879516602
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.31373661756515503,
+          0.39009153842926025
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.43896740674972534,
+          0.5379703044891357
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          10.308281898498535,
+          10.906092643737793
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.3167799115180969,
+          0.38704824447631836
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.5635437965393066,
+          0.6475881934165955
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          9.98147964477539,
+          10.848267555236816
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.2893112003803253,
+          0.4145169258117676
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.6260588765144348,
+          0.7155104279518127
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          9.889612197875977,
+          10.529284477233887
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.31002330780029297,
+          0.39380478858947754
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.702978789806366,
+          0.7779213190078735
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          9.634174346923828,
+          10.303936958312988
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          0.31137463450431824,
+          0.39245349168777466
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c11",
+      "detail": {
+        "bounds": [
+          0.7770700454711914,
+          0.8668767213821411
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          10.86362075805664,
+          11.329804420471191
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          0.3181312084197998,
+          0.3856969177722931
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c12",
+      "detail": {
+        "bounds": [
+          0.4175221025943756,
+          0.4615876376628876
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          11.016850471496582,
+          11.465044975280762
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          0.3194825351238251,
+          0.3843456208705902
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c13",
+      "detail": {
+        "bounds": [
+          0.3693283796310425,
+          0.4119533598423004
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          11.00001335144043,
+          12.023856163024902
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          0.28823140263557434,
+          0.41559675335884094
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c14",
+      "detail": {
+        "bounds": [
+          0.23187634348869324,
+          0.3656073808670044
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "COMPONENT_RENDER:c10",
+    "COMPONENT_RENDER:c11",
+    "COMPONENT_RENDER:c12",
+    "COMPONENT_RENDER:c13",
+    "COMPONENT_RENDER:c14",
+    "PORT_RENDER:laser-out",
+    "PORT_RENDER:hwp1-right",
+    "PORT_RENDER:hwp1-left",
+    "PORT_RENDER:bs-right",
+    "PORT_RENDER:bs-left",
+    "PORT_RENDER:hwp2-right",
+    "PORT_RENDER:hwp2-left",
+    "PORT_RENDER:lens1-right",
+    "PORT_RENDER:lens1-left",
+    "PORT_RENDER:lens2-right",
+    "PORT_RENDER:lens2-left",
+    "PORT_RENDER:dich-in",
+    "PORT_RENDER:dich-up",
+    "PORT_RENDER:dich-down",
+    "PORT_RENDER:objective-in",
+    "PORT_RENDER:filter-top",
+    "PORT_RENDER:filter-bottom",
+    "PORT_RENDER:imaging-top",
+    "PORT_RENDER:imaging-bottom",
+    "PORT_RENDER:scmos-top",
+    "ROUTE_RENDER:laser-hwp1",
+    "ROUTE_RENDER:hwp1-bs",
+    "ROUTE_RENDER:bs-hwp2",
+    "ROUTE_RENDER:hwp2-lens1",
+    "ROUTE_RENDER:lens1-lens2",
+    "ROUTE_RENDER:lens2-dich",
+    "ROUTE_RENDER:dich-objective",
+    "ROUTE_RENDER:dich-filter",
+    "ROUTE_RENDER:filter-imaging",
+    "ROUTE_RENDER:imaging-scmos",
+    "STATIC_RECORD",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

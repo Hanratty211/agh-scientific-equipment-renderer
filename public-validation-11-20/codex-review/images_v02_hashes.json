@@ -1,0 +1,92 @@
+[
+  {
+    "id": 11,
+    "version": "v02",
+    "source_sha256": "ee50331c2fb26e4d7593f6dec095a3455ee759c857400b482b131f8e96ee4d24",
+    "render_sha256": "09481b06de3afd503317c4cf280ffbf6efec0a36c5f3a37f3efb40288a3f55df",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/11_optical_binding.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/11_optical_binding/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 12,
+    "version": "v02",
+    "source_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769",
+    "render_sha256": "e1af9ff83d7fc721552b7a5ec0ef9814b6a66f1f59cfafb38ee9643ae2f92fc6",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/12_capillary_microfluidics.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 13,
+    "version": "v02",
+    "source_sha256": "da2332cc9fae68ab58c2ce89a3710460bb4290c4e2697530b17565019a594a4e",
+    "render_sha256": "76a0bfb2f3ca4628a854673cf7d04baa05f782833fccdd4069226804b8cfc3c0",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/13_fff_printer.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 14,
+    "version": "v02",
+    "source_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8",
+    "render_sha256": "4cdc59bbde232f5001a7bc710218be9d4d8882a766bb1938d55c46a8a5ecf419",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/14_acoustic_levitation.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 15,
+    "version": "v02",
+    "source_sha256": "cffb3896399a7f4abcf70748db6e33bb4be8d185ad50b549d1841d98fb76b57d",
+    "render_sha256": "bda1d2c200e17d028bdf7bd70e0815927e82432bea00ec7b69c805cfc1b97a63",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/15_retractable_sensor.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/15_retractable_sensor/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 16,
+    "version": "v02",
+    "source_sha256": "f0ef21593d70bd63fa12d876a295ad2bcc1ca7c63b6f713ed4b4716761998128",
+    "render_sha256": "147267dd3f5e4eb3c0f4fa18d8d6e9195e31107d958d8d73724007d086ebda75",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/16_electrospinning.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 17,
+    "version": "v02",
+    "source_sha256": "4b39a5df39dad8ebd9a4a690bb7664e52c86dabc88a67e728972444b0e2cde8d",
+    "render_sha256": "080943b5ff92457122a9df3326e68772ebd453565553f170d4f1d4adb716693e",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/17_magnetic_shell.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 18,
+    "version": "v02",
+    "source_sha256": "8fe9073f1d220f2e3f83bbd0e495d4c784d696cf8346f3f94cb80563014841a4",
+    "render_sha256": "846ab6a013f411db3b996c524ef09f4a2f68ad1aa82270e307de62ec3fca184f",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/18_electrochemical_stack.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 19,
+    "version": "v02",
+    "source_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e",
+    "render_sha256": "1cc0cfc2490269d6d8016483646f18bb5ca6349b6cc81254f1c6dedc1758677d",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/19_triboelectric_glass.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  },
+  {
+    "id": 20,
+    "version": "v02",
+    "source_sha256": "5df5525c7046e6fd1a19f347a8565bf5a504df01d8009f5e872b4ca317363d90",
+    "render_sha256": "4615d61eaebf9a95f2517e8613f34804b02c55768005641132db8f7e44441cd0",
+    "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/20_thermoelectric_measurement.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/20_thermoelectric_measurement/overview_v02.png",
+    "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
+  }
+]

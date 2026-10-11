@@ -1,0 +1,142 @@
+{
+  "reviewer": "Codex",
+  "version": "v03",
+  "units": "illustrative Blender world units (not metres/mm)",
+  "checks": [
+    {
+      "case": 11,
+      "check": "actual largest dichroic mesh face reflection",
+      "normal": [
+        -0.7071067690849304,
+        0.0,
+        -0.7071067690849304
+      ],
+      "reflected_minus_x": [
+        -5.960464477539063e-08,
+        0.0,
+        0.9999999403953552
+      ],
+      "error_to_plus_z": 8.429369702178807e-08
+    },
+    {
+      "case": 11,
+      "check": "real endpoint to owner mesh distance",
+      "route": "laser-HWP1 axis",
+      "owners": [
+        "laser output face",
+        "half wave plate 1"
+      ],
+      "endpoints": [
+        [
+          3.075000047683716,
+          0.0,
+          1.0499999523162842
+        ],
+        [
+          2.634000062942505,
+          0.0,
+          1.0499999523162842
+        ]
+      ],
+      "distances": [
+        2.384185791015625e-07,
+        0.0015001296997070312
+      ]
+    },
+    {
+      "case": 11,
+      "check": "real endpoint to owner mesh distance",
+      "route": "lens2-dichroic axis",
+      "owners": [
+        "collimating lens 2",
+        "tilted dichroic active plate"
+      ],
+      "endpoints": [
+        [
+          0.6449999809265137,
+          0.0,
+          1.0499999523162842
+        ],
+        [
+          0.01899999938905239,
+          0.0,
+          1.0499999523162842
+        ]
+      ],
+      "distances": [
+        0.0010000467229641628,
+        0.004064993788295183
+      ]
+    },
+    {
+      "case": 11,
+      "check": "real endpoint to owner mesh distance",
+      "route": "dichroic to objective axis",
+      "owners": [
+        "tilted dichroic active plate",
+        "objective"
+      ],
+      "endpoints": [
+        [
+          0.0,
+          0.0,
+          1.069000005722046
+        ],
+        [
+          0.0,
+          0.0,
+          1.6699999570846558
+        ]
+      ],
+      "distances": [
+        0.004064964142872246,
+        0.0050001143499761305
+      ]
+    },
+    {
+      "case": 15,
+      "check": "spring actual world extents",
+      "object": "flat spiral spring ribbon",
+      "extents": [
+        1.257646381855011,
+        1.3205267786979675,
+        0.012000083923339844
+      ]
+    },
+    {
+      "case": 18,
+      "check": "gasket center along Y opening and child mesh topology",
+      "group": "assembled cell 1 gasket",
+      "center_ray_hit_objects": [],
+      "topology": [
+        {
+          "object": "assembled cell 1 gasket bottom",
+          "nonmanifold_edges": 0
+        },
+        {
+          "object": "assembled cell 1 gasket left",
+          "nonmanifold_edges": 0
+        },
+        {
+          "object": "assembled cell 1 gasket right",
+          "nonmanifold_edges": 0
+        },
+        {
+          "object": "assembled cell 1 gasket top",
+          "nonmanifold_edges": 0
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "check": "actual Peltier world extents",
+      "object": "thin vertical Peltier module",
+      "extents": [
+        0.15000000596046448,
+        0.949999988079071,
+        0.9200000464916229
+      ]
+    }
+  ],
+  "limitations": "targeted checks only; not physics/collision/complete visual acceptance"
+}

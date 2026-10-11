@@ -1,0 +1,24 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v01.blend",
+  "object": "exploded 2 silicone gasket",
+  "world_extent": [
+    1.5000001192092896,
+    0.6999998092651367,
+    1.4999999403953552
+  ],
+  "probe_meaning": "For the vertical plate silhouette, the intended thin normal is y. A central y ray should be open for a window gasket; this is a directional aperture check only.",
+  "central_ray_(0, 1, 0)": {
+    "hits_surface": true,
+    "hit": [
+      -1.899999976158142,
+      -3.2099997997283936,
+      0.5600000023841858
+    ]
+  },
+  "central_ray_(0, 0, 1)": {
+    "hits_surface": false,
+    "hit": null
+  },
+  "nonmanifold_edges": 192,
+  "edge_count": 384
+}
