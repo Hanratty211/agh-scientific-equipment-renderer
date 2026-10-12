@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-12",
+  "scope": "Six current R4 representative previews and editable final scenes",
+  "visual_review": "public-validation-11-20/codex-review/physical_r4_actual_pixel_review.json",
+  "assets": [
+    {
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/scene_v06.blend",
+      "bytes": 189807,
+      "sha256": "d4c544b818dcf3a4a8cacedb37b9faf9f9f61bda222bf41efffa509cd58f814e"
+    },
+    {
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/overview_v06_reloaded_r4.png",
+      "bytes": 535306,
+      "sha256": "11becb82a9d60d50c85f22a866089970215144613193b8cded0d0eeecfb0cccd"
+    },
+    {
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_rear_v06_reloaded_r4.png",
+      "bytes": 908945,
+      "sha256": "9e8408134b2a6625790f1c82762b9d5ee6539ff4073a0ba3fcf6326e8a1dfd53"
+    },
+    {
+      "path": "public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+      "bytes": 140161,
+      "sha256": "eeb4962fa38457b43f28e1ec04dbd24b8fff4def8ed32591707998959a5817be"
+    },
+    {
+      "path": "public-validation-11-20/cases/13_fff_printer/overview_v04_reloaded_r2.png",
+      "bytes": 562763,
+      "sha256": "a1a07729845405d9a15f896b3aa1f31494b7c6d7e62cecebf264b12ad8ee2a7e"
+    },
+    {
+      "path": "public-validation-11-20/cases/13_fff_printer/detail_laptop_mechanical_hinge_v04_reloaded_r2.png",
+      "bytes": 683001,
+      "sha256": "ab182d1b2807e1524324dae8edd5b6003e2b7f5fdbedf0b3c014291e1836c7ce"
+    },
+    {
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/scene_v06.blend",
+      "bytes": 192813,
+      "sha256": "edaf133295f73136fa8231645f00ff2a9eb26cf5d97738e9b410919b7c67e53d"
+    },
+    {
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/overview_v06_reloaded_r2.png",
+      "bytes": 553820,
+      "sha256": "0c4bab61edc2a5cca25ed7db7a5ccaa5c04e84a2fd19feac6793bd1f3858acd1"
+    },
+    {
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_amp_output_scope_analog_input_v06_reloaded_r2.png",
+      "bytes": 676687,
+      "sha256": "d355e29dcef52dcf26c3af51eb5bd1055cd7b516997af4e0575d260d29f2efa8"
+    },
+    {
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_scope_bnc_mating_boot_v06_reloaded_r2.png",
+      "bytes": 627495,
+      "sha256": "d5eaef502cac4c0294fa6594f3155edf29ef7134ae3681f1c6a7944df24546d5"
+    },
+    {
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_laptop_real_data_aperture_v06_reloaded_r2.png",
+      "bytes": 578488,
+      "sha256": "132fead3ae8ca0bf069ef83138fbfbf2cc09277be8b8b3ac9ec9e57a0158c600"
+    },
+    {
+      "path": "public-validation-11-20/cases/16_electrospinning/scene_v07.blend",
+      "bytes": 166912,
+      "sha256": "ebcd079340dec26426a675a8b742ebfaf9123289b81ff66c77be7d735c1a35f5"
+    },
+    {
+      "path": "public-validation-11-20/cases/16_electrospinning/overview_v07_reloaded_r4.png",
+      "bytes": 600755,
+      "sha256": "4dc42ee2e0c64376dfc93ddc10c3f9fb06c83d4ed8987b5bbe9f03402d5b5e38"
+    },
+    {
+      "path": "public-validation-11-20/cases/16_electrospinning/detail_both_insulated_entries_v07_reloaded_r4.png",
+      "bytes": 877048,
+      "sha256": "5c56a6a20b945376caed18a90209ffbcdfa9843aadb1d21de2a28345bd10032c"
+    },
+    {
+      "path": "public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+      "bytes": 157260,
+      "sha256": "9ca48fcc4ce44e805d9fc8ac30d137bb5232b1223a4113eaafdc1593bf7e98c2"
+    },
+    {
+      "path": "public-validation-11-20/cases/17_magnetic_shell/overview_v05_reloaded_r2.png",
+      "bytes": 598679,
+      "sha256": "9278a33a0d8c60ed195029a1bcf2be6e1360aa997a4220f7553dd27906df368b"
+    },
+    {
+      "path": "public-validation-11-20/cases/17_magnetic_shell/detail_pump_barrel_action_end_v05_reloaded_r2.png",
+      "bytes": 593553,
+      "sha256": "cde8f65c49598590101b3763f6acf39e5d85a13ddeb500dc79be37833ea1a1c4"
+    },
+    {
+      "path": "public-validation-11-20/cases/17_magnetic_shell/detail_pump_tube_and_sample_interface_v05_reloaded_r2.png",
+      "bytes": 652890,
+      "sha256": "6bd2c9c159ba3b970d376d8c91f7ed194ea8ada724134b095241f03d007f2acc"
+    },
+    {
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/scene_v06.blend",
+      "bytes": 155292,
+      "sha256": "8e9e4f6fdcfcda31f764e974611c1dfea6f3dbab8bd7676bac36c5c990c7321b"
+    },
+    {
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/overview_v06_reloaded_r2.png",
+      "bytes": 513508,
+      "sha256": "734366cdbf406cd878445aa8cc7e3456477bd56a1e34c412fa570f156d5e9e2d"
+    },
+    {
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/detail_analog_bnc_mating_boot_v06_reloaded_r2.png",
+      "bytes": 560964,
+      "sha256": "b058dc6115d5e6987d73896cd63a2c1fcd322292dcf1c0c2b0354b303d1ed49a"
+    },
+    {
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/detail_resistor_terminal_and_boot_v06_reloaded_r2.png",
+      "bytes": 426977,
+      "sha256": "7d0a2fa3f78a10c44307ce905eaa00f5ad5e238f493ff4904562bfea3fff9a8c"
+    },
+    {
+      "path": "public-validation-11-20/physical_feedback_r4_six_overviews.png",
+      "bytes": 1126059,
+      "sha256": "f1e382b3ef09bab69fe7db52067f3c22d946832ad1717245f35cb9b4501b607b"
+    }
+  ]
+}
