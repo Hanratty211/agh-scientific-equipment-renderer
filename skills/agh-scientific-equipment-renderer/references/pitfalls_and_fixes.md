@@ -188,7 +188,7 @@
 ## P30｜接口链、真实孔与整段曲线轴向同时成立
 - **触发**：插头与黑电缆之间有空气断口、彩色线在黑缓冲件旁折出圆头、实心装饰块盖住插座，或 tube 只接独立 tip 而非真实 barrel。
 - **行动**：检查 `真实主体面 → 孔/座 → 入座插头 → 缓冲 → 外缆` 和 `barrel 实端面 → hub/nozzle → tube`；在所属实际壁开轴向孔并保留孔壁。世界曲线端点及最后**整段 Bezier 采样与切向**沿缓冲件轴；物理开口/插合、径向误差、入座深度分别查。环形表面的中心在洞里时不要扩大容差假装中心贴面；代理点、bbox 重叠和对象原点均非安装证据。
-- **证据**：[R1](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R1.md)指出 12/17 barrel 与 tip 间隙、数据口实心；[R3 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R3_AGH_CHECKPOINT.md)记 16 两壁真实开孔及环形审计局限；[R4 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R4_AGH_CHECKPOINT.md)记后板法向和两入线座终点修复；[Codex 独立像素记录](../../../public-validation-11-20/codex-review/physical_r4_actual_pixel_review.json)仅证明阶段图像可辨。用户另外确认代表性低成本阶段收口。
+- **证据**：[R1](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R1.md)指出 12/17 barrel 与 tip 间隙、数据口实心；[R3 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R3_AGH_CHECKPOINT.md)记 16 两壁真实开孔及环形审计局限；[R4 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R4_AGH_CHECKPOINT.md)记后板法向和两入线座终点修复；[Codex 独立像素记录](../../../public-validation-11-20/codex-review/physical_r4_actual_pixel_review.json)仅支持阶段图像可辨。会话转达外部模型的代表性低成本预览阶段反馈，非人类最终验收。
 - **边界**：上述有限网格近接/像素不证明电接触、HV 额定、密封/内部回流、厂家接口标准，不能为审计主动增粗容差。
 
 ## P31｜修复范围守恒与独立重开出图
