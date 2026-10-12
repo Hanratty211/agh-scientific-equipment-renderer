@@ -1,0 +1,286 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the entire b-panel experiment including the two pumps, transparent capillary sample region, microscope/camera, visible fluid tubes, waste vessel and computer. Sealed branch state follows caption; hidden fluid topology stays unknown. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim.",
+    "operating_state": "experiment (flush branch sealed)",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1140,
+      "height": 720,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [
+      "upper-feed",
+      "lower-feed",
+      "outlet-waste",
+      "camera-data"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "upper pump",
+      "object": "upper visible syringe tip",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c2",
+      "label": "lower pump",
+      "object": "lower visible syringe tip",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c3",
+      "label": "sample capillary",
+      "object": "horizontal clear capillary",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c4",
+      "label": "upper inlet",
+      "object": "upper inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c5",
+      "label": "lower inlet",
+      "object": "lower inlet fitting",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c6",
+      "label": "imaging camera",
+      "object": "high speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c7",
+      "label": "inverted microscope",
+      "object": "inverted microscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c8",
+      "label": "flush cap",
+      "object": "sealed branch cap",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c9",
+      "label": "waste vessel",
+      "object": "waste vessel rim",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    },
+    {
+      "id": "c10",
+      "label": "laptop",
+      "object": "laptop base",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "experiment (flush branch sealed)"
+    }
+  ],
+  "ports": [
+    {
+      "id": "upper-pump",
+      "owner": "c1",
+      "object": "upper pump exit",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "lower-pump",
+      "owner": "c2",
+      "object": "lower pump exit",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "upper-inlet",
+      "owner": "c4",
+      "object": "upper inlet contact",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "lower-inlet",
+      "owner": "c5",
+      "object": "lower inlet contact",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "capillary-out",
+      "owner": "c3",
+      "object": "capillary outlet face",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "waste-mouth",
+      "owner": "c9",
+      "object": "waste mouth boundary",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "cam-data",
+      "owner": "c6",
+      "object": "camera representative DATA data socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative visible exterior connector; actual type and hidden system path not validated."
+    },
+    {
+      "id": "laptop-data",
+      "owner": "c10",
+      "object": "laptop DATA data socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative visible exterior connector; actual type and hidden system path not validated."
+    }
+  ],
+  "connections": [
+    {
+      "id": "upper-feed",
+      "a": "upper-pump",
+      "b": "upper-inlet",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "upper pump to capillary",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "lower-feed",
+      "a": "lower-pump",
+      "b": "lower-inlet",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "lower pump to capillary",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "outlet-waste",
+      "a": "capillary-out",
+      "b": "waste-mouth",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "capillary outlet to waste",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "camera-data",
+      "a": "cam-data",
+      "b": "laptop-data",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "camera to laptop exterior DATA cable",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "Illustrative exterior signal segment; actual interface/connection not proven by source alone."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/srep11102",
+    "figure_url": "https://www.nature.com/articles/srep11102/figures/1",
+    "target_sha256": "3adb351624f594291c1afb820a64ae6e3f142dcc242a4dc434758c19a8185769",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [
+    {
+      "id": "camera-data",
+      "source": "MotionPro X4 camera representative DATA exterior",
+      "output": "camera representative DATA data socket",
+      "medium": "image-data role, physical connector unknown",
+      "input": "laptop DATA data socket",
+      "destination": "coherent laptop, source figure",
+      "coverage": "representative only; exact IDT interface not verified"
+    }
+  ],
+  "unknown_interfaces": [
+    "MotionPro X4 proprietary signal connector: NOT assigned USB or RJ45",
+    "C-mount identity source-supported; mounted coupler geometry illustrative",
+    "pump controls unspecified"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v05.blend",
+  "case": 19,
+  "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "scope input is on FRONT not screen",
+      "status": "PASS",
+      "detail": {
+        "input_y": -0.2939999997615814,
+        "chassis_front_y": -0.2800000011920929
+      }
+    },
+    {
+      "name": "scope input and plug coaxial",
+      "status": "PASS",
+      "detail": {
+        "ring": [
+          2.5799999237060547,
+          -0.2939999997615814,
+          0.3400000035762787
+        ],
+        "shell": [
+          2.5799999237060547,
+          -0.35899999737739563,
+          0.3400000035762787
+        ]
+      }
+    },
+    {
+      "name": "scope plug and boot inline",
+      "status": "PASS",
+      "detail": {
+        "boot_to_shell": 0.07100000960977919
+      }
+    },
+    {
+      "name": "scope final cable tangent along connector axis",
+      "status": "PASS",
+      "detail": {
+        "approach_vector": [
+          0.31999993324279785,
+          0.3540000021457672,
+          -0.06000000238418579
+        ]
+      }
+    },
+    {
+      "name": "scope cable enters actual socket",
+      "status": "PASS",
+      "detail": {
+        "gap": 0.0
+      }
+    },
+    {
+      "name": "glass to resistance exterior lead endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "QA glass left contact",
+        "end": "resistance actual terminal ring"
+      }
+    },
+    {
+      "name": "glass to analog input exterior coax endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "QA glass right contact",
+        "end": "representative Keysight DSOX1204A front ANALOG INPUT BNC input ring"
+      }
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

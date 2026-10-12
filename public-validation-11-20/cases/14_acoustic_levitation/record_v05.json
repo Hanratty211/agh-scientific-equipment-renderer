@@ -1,0 +1,314 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel apparatus with opposed array and reflector, probe, camera/light and readout instruments. Draw sound/wavefront arrows only as explanatory layers if needed, not as physical rods. Panel Fig.5(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. R3 Codex targeted pixel correction; original panel scope retained. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1140,
+      "height": 830,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [
+      "camera-to-laptop",
+      "microphone-to-amp",
+      "array-to-amp",
+      "amp-to-scope"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "upper array",
+      "object": "downward transducer",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "reflector",
+      "object": "flat rectangular reflector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "gap droplet",
+      "object": "single working-gap drop",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "microphone",
+      "object": "microphone exterior body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "left camera",
+      "object": "LEFT high speed camera",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "right LED",
+      "object": "RIGHT LED housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "amplifier",
+      "object": "microphone/array amplifier",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "oscilloscope",
+      "object": "representative oscilloscope",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "laptop",
+      "object": "laptop base",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "array support",
+      "object": "top array support",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "camera",
+      "owner": "c5",
+      "object": "camera DATA output data socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "microphone",
+      "owner": "c4",
+      "object": "microphone cable surface",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "array",
+      "owner": "c10",
+      "object": "array upper signal boundary",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "amp-mic",
+      "owner": "c7",
+      "object": "amplifier microphone representative input ring",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "amp-array",
+      "owner": "c7",
+      "object": "amplifier array representative input ring",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "computer",
+      "owner": "c9",
+      "object": "laptop DATA data socket",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "amp-output",
+      "owner": "c7",
+      "object": "amp representative signal output ring",
+      "medium": "unknown",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative visible exterior connector; actual type and hidden system path not validated."
+    },
+    {
+      "id": "scope-signal",
+      "owner": "c8",
+      "object": "representative oscilloscope ANALOG INPUT BNC input ring",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative visible exterior connector; actual type and hidden system path not validated."
+    }
+  ],
+  "connections": [
+    {
+      "id": "camera-to-laptop",
+      "a": "camera",
+      "b": "computer",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "camera-to-laptop exterior DATA cable",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "microphone-to-amp",
+      "a": "microphone",
+      "b": "amp-mic",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "microphone-to-amplifier exterior cable",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "array-to-amp",
+      "a": "array",
+      "b": "amp-array",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "array-to-amplifier exterior cable",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "amp-to-scope",
+      "a": "amp-output",
+      "b": "scope-signal",
+      "kind": "electric",
+      "medium": "unknown",
+      "object": "representative amplifier-to-scope signal lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "Illustrative exterior signal segment; actual interface/connection not proven by source alone."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units; port tolerance 0.09 / route endpoint 0.08 limited to visible model marker rounding; never engineering fit.",
+  "source": {
+    "doi": "10.1038/s41598-019-53281-4",
+    "figure_url": "https://www.nature.com/articles/s41598-019-53281-4/figures/5",
+    "target_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "v04 source-output visual comparison pending",
+    "hidden signal or fluid topology",
+    "physical operation and occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only declared source-visible segments audited; no complete system path approval.",
+  "route_coverage": "Visible wiring/electrode/stage details remain unbound or source topology ambiguous; do not interpret zero as absent routes in real device.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [
+    {
+      "id": "camera-to-laptop",
+      "source": "FASTCAM Mini UX100",
+      "output": "camera DATA output data socket",
+      "medium": "image data, type unverified",
+      "input": "laptop DATA data socket",
+      "destination": "laptop",
+      "coverage": "representative exterior"
+    },
+    {
+      "id": "microphone-to-amp",
+      "source": "microphone exterior",
+      "output": "microphone cable surface",
+      "medium": "signal role unspecified",
+      "input": "amplifier microphone representative input ring",
+      "destination": "amp",
+      "coverage": "source visible segment"
+    },
+    {
+      "id": "array-to-amp",
+      "source": "top array boundary",
+      "output": "array upper signal boundary",
+      "medium": "role unspecified",
+      "input": "amplifier array representative input ring",
+      "destination": "amp",
+      "coverage": "source visible segment"
+    },
+    {
+      "id": "amp-to-scope",
+      "source": "amplifier",
+      "output": "amp representative signal output ring",
+      "medium": "illustrative analog signal",
+      "input": "representative oscilloscope ANALOG INPUT BNC input ring",
+      "destination": "oscilloscope",
+      "coverage": "representative connectivity, NOT confirmed source wiring"
+    }
+  ],
+  "unknown_interfaces": [
+    "Photron product Gigabit Ethernet claim from user prompt not independently opened due web_fetch block: data port unspecified",
+    "Unnamed amp/scope are not Keysight19; analog BNC representative; amp output→scope line explicitly illustrative",
+    "Microphone/array signal protocol and internal circuit unknown"
+  ]
+}

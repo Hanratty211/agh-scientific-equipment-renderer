@@ -1,0 +1,213 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the g-panel tilted glass/drop delivery test and electrical readout instruments. Do not turn droplet time-series states e/f into simultaneous hardware or invent concealed electrode routes. Panel Fig.2(g); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. R3 Codex targeted pixel correction; original panel scope retained. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1100,
+      "height": 800,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ],
+    "required_connections": [
+      "glass-to-resistor",
+      "glass-to-scope"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "glass",
+      "object": "TeRC transparent coating",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "reservoir",
+      "object": "raised clear reservoir",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "U regulator",
+      "object": "continuous U regulator",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "down nozzle",
+      "object": "downward nozzle",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "resistance substituter",
+      "object": "resistance substituter",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "oscilloscope",
+      "object": "representative Keysight DSOX1204A front",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "lead one",
+      "object": "glass to resistance exterior lead",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "lead two",
+      "object": "glass to analog input exterior coax",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "glass-left",
+      "owner": "c1",
+      "object": "QA glass left contact",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "glass-right",
+      "owner": "c1",
+      "object": "QA glass right contact",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R3 source-visible terminal; geometry QA only, no hidden wiring identity."
+    },
+    {
+      "id": "resistor",
+      "owner": "c5",
+      "object": "resistance actual terminal ring",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "scope",
+      "owner": "c6",
+      "object": "representative Keysight DSOX1204A front ANALOG INPUT BNC input ring",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    }
+  ],
+  "connections": [
+    {
+      "id": "glass-to-resistor",
+      "a": "glass-left",
+      "b": "resistor",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "glass to resistance exterior lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    },
+    {
+      "id": "glass-to-scope",
+      "a": "glass-right",
+      "b": "scope",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "glass to analog input exterior coax",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "visible segment only; actual optics/acoustics/internal electricity unverified"
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units; port tolerance 0.09 / route endpoint 0.08 limited to visible model marker rounding; never engineering fit.",
+  "source": {
+    "doi": "10.1038/s41467-024-50872-2",
+    "figure_url": "https://www.nature.com/articles/s41467-024-50872-2/figures/2",
+    "target_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "v04 source-output visual comparison pending",
+    "hidden signal or fluid topology",
+    "physical operation and occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only declared source-visible segments audited; no complete system path approval.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [
+    {
+      "id": "glass-to-resistor",
+      "source": "tilted film left electrode",
+      "output": "QA glass left contact",
+      "medium": "electrical exterior",
+      "input": "resistance actual terminal ring",
+      "destination": "resistance substituter",
+      "coverage": "representative terminal"
+    },
+    {
+      "id": "glass-to-scope",
+      "source": "tilted film right electrode",
+      "output": "QA glass right contact",
+      "medium": "analog exterior/probe attenuator role",
+      "input": "representative Keysight DSOX1204A front ANALOG INPUT BNC input ring",
+      "destination": "DSOX1204A",
+      "coverage": "BNC channel family given by user-provided official manual link, live fetch blocked; channel number assumption"
+    }
+  ],
+  "unknown_interfaces": [
+    "GTP-100A-4 1:10 attenuator is Methods-named, but exact exterior location/mating wiring unknown",
+    "BNC analog input is source-provided manufacturer manual clue; official page blocked live this turn",
+    "Ground return and CH number unknown; chosen port demonstrative only"
+  ]
+}

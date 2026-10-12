@@ -1,0 +1,109 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+  "record": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/record_v04.json",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "component_exists",
+      "item": "c1",
+      "status": "PASS",
+      "detail": {
+        "object": "printer upright"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c2",
+      "status": "PASS",
+      "detail": {
+        "object": "anchored gantry beam"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c3",
+      "status": "PASS",
+      "detail": {
+        "object": "red extruder carriage"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c4",
+      "status": "PASS",
+      "detail": {
+        "object": "heated print bed"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c5",
+      "status": "PASS",
+      "detail": {
+        "object": "attached emissions display"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c6",
+      "status": "PASS",
+      "detail": {
+        "object": "front-center sensor display"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c7",
+      "status": "PASS",
+      "detail": {
+        "object": "adjacent laptop base"
+      }
+    },
+    {
+      "check": "clamshell_presence",
+      "item": "adjacent laptop",
+      "status": "PASS",
+      "detail": {
+        "base": true,
+        "lid": true,
+        "axle": true
+      }
+    },
+    {
+      "check": "hinge_root_height",
+      "item": "adjacent laptop",
+      "status": "PASS",
+      "detail": {
+        "lid_min_z": 0.3528551459312439,
+        "axle_z": 0.35499998927116394,
+        "delta": -0.002144843339920044
+      }
+    },
+    {
+      "check": "hinge_on_base",
+      "item": "adjacent laptop",
+      "status": "PASS",
+      "detail": {
+        "axle_point": [
+          3.0399999618530273,
+          -0.35499998927116394,
+          0.35499998927116394
+        ],
+        "gap_to_base": 0.018999964347124764
+      }
+    },
+    {
+      "check": "keys_touchpad_display",
+      "item": "adjacent laptop",
+      "status": "PASS",
+      "detail": {}
+    }
+  ],
+  "not_checked": [
+    "actual pixels",
+    "hidden circuits",
+    "manufacturer CAD",
+    "electrical or pneumatic functionality",
+    "unmodeled support contacts"
+  ]
+}

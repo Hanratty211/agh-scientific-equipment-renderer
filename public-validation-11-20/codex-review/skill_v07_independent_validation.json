@@ -1,0 +1,672 @@
+{
+  "reviewer": "Codex",
+  "copy": "/var/folders/hr/v0mmk5nd50n8_89pkxpsx6180000gn/T/codex-v07-independent-_1hson16/agh-scientific-equipment-renderer",
+  "checks": [
+    {
+      "check": "quick_validate",
+      "exit": 0,
+      "stdout_tail": "Skill is valid!\n",
+      "stderr_tail": ""
+    },
+    {
+      "check": "structure",
+      "exit": 0,
+      "stdout_tail": "=== 结构检查 ===\n  [OK] SKILL.md\n  [OK] references/pitfalls_and_fixes.md\n  [OK] references/workflow_checklist.md\n  [OK] references/evidence_index.md\n  [OK] scripts/blender_core.py\n\n=== SKILL.md frontmatter ===\n  [OK] name: agh-scientific-equipment-renderer\n  [OK] description: 根据公开论文、图版、图注和正文制作有依据的实物三维科研装置场景、低成本预览及按需渲染；先按来源锁完整装置范围/装配状态，…\n  其他 frontmatter 键: 无\n\n=== 引用文件存在性 ===\n  [OK] PROVENANCE.md\n  [OK] references/domain_checks.md\n  [OK] references/evidence_index.md\n  [OK] references/pitfalls_and_fixes.md\n  [OK] references/project_record.md\n  [OK] references/public_validation_11_20.md\n  [OK] references/workflow_checklist.md\n  [OK] scripts/blender_core.py\n  [OK] scripts/check_structure.py\n\n=== 通用性检查（case-1 对象名/硬编码坐标 是否混入通用默认）===\n  SKILL.md: 无混入\n  scripts/blender_core.py: 无混入\n\n=== 反例行为验证（真实 Blender 运行 behavior_tests.py）===\n  | T3 missing_endpoint: axis=None known=False pass=False -> PASS\n  | T4 clip-only key vs independent XY projection: 10/10 horizontal=(53.34390640258789, 59.05263900756836, 0.3700454533100128, 0.6299545168876648) vertical=(0.42690056562423706, 0.5730994343757629, 94.4447250366211, 104.59358215332031) -> PASS\n  | ==== 行为验证汇总 ====\n  |   [PASS] T1: 重合 scale=2 单位立方体 重叠=8.000 m³ (期望 8.0 m³)\n  |   [PASS] T2: 四类前后/裁剪组合通过=4/4\n  |   [PASS] T3: 网格轴/创建/平移/旋转/父级/旧点/篡改/缺失通过=8/8\n  |   [PASS] T4: 裁剪与投影分离=10/10\n  | 总体: 全部 PASS\n  行为结果已保留: /var/folders/hr/v0mmk5nd50n8_89pkxpsx6180000gn/T/codex-v07-independent-_1hson16/agh-scientific-equipment-renderer/behavior_results.txt\n  行为验证: 全 PASS\n\n=== 结论 ===\n全部通过（结构完整 + frontmatter 有效 + 引用文件存在 + 通用文件无 case-1 默认 + 反例行为验证 PASS）\n",
+      "stderr_tail": ""
+    },
+    {
+      "check": "existing_regression",
+      "exit": 0,
+      "stdout_tail": "PASS valid PASS\nPASS empty_scope UNKNOWN\nPASS empty_record FAIL\nPASS missing_component FAIL\nPASS wrong_port_owner FAIL\nPASS medium_mismatch FAIL\nPASS required_connection_missing FAIL\nPASS support_missing FAIL\nPASS no_text_with_label FAIL\nPASS kind_medium_mismatch FAIL\nPASS nan_support_tolerance FAIL\nPASS infinite_port_tolerance FAIL\nPASS bool_connection_tolerance FAIL\nPASS bad_owner_type FAIL\nPASS bad_required_type FAIL\nPASS bad_kind_type FAIL\nPASS task_kind_list FAIL\nPASS port_medium_dict FAIL\nPASS task_outputs_list FAIL\nPASS single_component_no_interfaces UNKNOWN\nPASS unknown_size_basis UNKNOWN\nPASS nonphysical_medium_not_inferred UNKNOWN\nPASS make_scene \nPASS valid_scene UNVERIFIED\nPASS world_endpoint_mismatch FAIL\nPASS horizontal_outside FAIL\nPASS vertical_outside FAIL\nPASS support_gap FAIL\nPASS face_interior_contact FAIL\nPASS viewport_hidden \nPASS object_render_hidden \nPASS single_excluded \nPASS alternate_included \nPASS port_tolerance_absent UNVERIFIED\nPASS route_tolerance_absent UNVERIFIED\nPASS route_tolerance_nan FAIL\nPASS route_tolerance_bool FAIL\nPASS required_route_missing FAIL\nPASS single_component_no_interfaces_audit \nPASS audit_bad_task_kind FAIL\nPASS audit_bad_port_medium FAIL\nPASS audit_bad_outputs FAIL\nPASS svg_real_label \nPASS no_text_svg_rejected \nRESULT PASS\n",
+      "stderr_tail": ""
+    }
+  ],
+  "regression": {
+    "status": "PASS",
+    "cases": [
+      {
+        "name": "valid",
+        "expected": "PASS",
+        "actual": "PASS",
+        "codes": [],
+        "pass": true
+      },
+      {
+        "name": "empty_scope",
+        "expected": "UNKNOWN",
+        "actual": "UNKNOWN",
+        "codes": [
+          "REQUIRED_SCOPE_EMPTY"
+        ],
+        "pass": true
+      },
+      {
+        "name": "empty_record",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "REQUIRED_MISSING",
+          "REQUIRED_MISSING",
+          "REQUIRED_MISSING",
+          "REQUIRED_MISSING",
+          "LABEL_TARGET_MISSING",
+          "REQUIRED_CONNECTIONS_EMPTY",
+          "REQUIRED_SUPPORTS_EMPTY",
+          "NO_COMPONENTS",
+          "NO_PORTS",
+          "NO_CONNECTIONS",
+          "NO_SUPPORTS"
+        ],
+        "pass": true
+      },
+      {
+        "name": "missing_component",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "REQUIRED_MISSING",
+          "PORT_OWNER_MISSING",
+          "SUPPORT_COMPONENT_MISSING",
+          "LABEL_TARGET_MISSING"
+        ],
+        "pass": true
+      },
+      {
+        "name": "wrong_port_owner",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "PORT_OWNER_MISSING"
+        ],
+        "pass": true
+      },
+      {
+        "name": "medium_mismatch",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "MEDIUM_CONTRADICTION"
+        ],
+        "pass": true
+      },
+      {
+        "name": "required_connection_missing",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "REQUIRED_MISSING",
+          "DECLARED_CONNECTED_UNUSED",
+          "DECLARED_CONNECTED_UNUSED",
+          "REQUIRED_CONNECTIONS_EMPTY",
+          "NO_CONNECTIONS"
+        ],
+        "pass": true
+      },
+      {
+        "name": "support_missing",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "REQUIRED_MISSING",
+          "REQUIRED_SUPPORTS_EMPTY",
+          "NO_SUPPORTS"
+        ],
+        "pass": true
+      },
+      {
+        "name": "no_text_with_label",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "LABELS_FORBIDDEN"
+        ],
+        "pass": true
+      },
+      {
+        "name": "kind_medium_mismatch",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "KIND_MEDIUM_CONTRADICTION"
+        ],
+        "pass": true
+      },
+      {
+        "name": "nan_support_tolerance",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "SUPPORT_TOLERANCE_INVALID"
+        ],
+        "pass": true
+      },
+      {
+        "name": "infinite_port_tolerance",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "PORT_TOLERANCE_INVALID"
+        ],
+        "pass": true
+      },
+      {
+        "name": "bool_connection_tolerance",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "CONNECTION_TOLERANCE_INVALID"
+        ],
+        "pass": true
+      },
+      {
+        "name": "bad_owner_type",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "PORT_OWNER_BAD_ID"
+        ],
+        "pass": true
+      },
+      {
+        "name": "bad_required_type",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "REQUIRED_BAD_ID"
+        ],
+        "pass": true
+      },
+      {
+        "name": "bad_kind_type",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "CONNECTION_KIND"
+        ],
+        "pass": true
+      },
+      {
+        "name": "task_kind_list",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "TASK_KIND"
+        ],
+        "pass": true
+      },
+      {
+        "name": "port_medium_dict",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "PORT_MEDIUM",
+          "MEDIUM_CONTRADICTION"
+        ],
+        "pass": true
+      },
+      {
+        "name": "task_outputs_list",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "codes": [
+          "OUTPUTS_TYPE",
+          "VIEWS_UNDECLARED",
+          "ANNOTATION_MODE_UNDECLARED"
+        ],
+        "pass": true
+      },
+      {
+        "name": "single_component_no_interfaces",
+        "expected": "UNKNOWN",
+        "actual": "UNKNOWN",
+        "codes": [
+          "NO_PORTS",
+          "NO_CONNECTIONS",
+          "NO_SUPPORTS"
+        ],
+        "pass": true
+      },
+      {
+        "name": "unknown_size_basis",
+        "expected": "UNKNOWN",
+        "actual": "UNKNOWN",
+        "codes": [
+          "SIZE_BASIS_UNKNOWN"
+        ],
+        "pass": true
+      },
+      {
+        "name": "nonphysical_medium_not_inferred",
+        "expected": "UNKNOWN",
+        "actual": "UNKNOWN",
+        "codes": [
+          "NONPHYSICAL_ROUTE_OBJECT"
+        ],
+        "pass": true
+      },
+      {
+        "name": "make_scene",
+        "expected_exit": 0,
+        "actual_exit": 0,
+        "pass": true
+      },
+      {
+        "name": "valid_scene",
+        "expected": "UNVERIFIED",
+        "actual": "UNVERIFIED",
+        "exit": 3,
+        "target_checks": [
+          {
+            "code": "ENDPOINTS",
+            "status": "PASS",
+            "subject": "rod",
+            "detail": {
+              "gaps": [
+                1.1920928955078125e-07,
+                5.960464477539063e-08
+              ],
+              "tolerance": 0.03,
+              "actual_world_endpoints": [
+                [
+                  -1.0,
+                  0.0,
+                  0.15000000596046448
+                ],
+                [
+                  0.6000000238418579,
+                  0.0,
+                  0.3799999952316284
+                ]
+              ]
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                6.7516865730285645,
+                8.124480247497559
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "world_endpoint_mismatch",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "exit": 2,
+        "target_checks": [
+          {
+            "code": "ENDPOINTS",
+            "status": "FAIL",
+            "subject": "rod",
+            "detail": {
+              "gaps": [
+                0.49999988079069624,
+                0.49999994039535167
+              ],
+              "tolerance": 0.03,
+              "actual_world_endpoints": [
+                [
+                  -0.5,
+                  0.0,
+                  0.15000000596046448
+                ],
+                [
+                  1.100000023841858,
+                  0.0,
+                  0.3799999952316284
+                ]
+              ]
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                6.7516865730285645,
+                8.124480247497559
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "horizontal_outside",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "exit": 2,
+        "target_checks": [
+          {
+            "code": "HORIZONTAL",
+            "status": "FAIL",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                1.7353613376617432,
+                2.064638376235962
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                6.7516865730285645,
+                8.124480247497559
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "vertical_outside",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "exit": 2,
+        "target_checks": [
+          {
+            "code": "VERTICAL",
+            "status": "FAIL",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                2.3351259231567383,
+                2.662696123123169
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                6.7516865730285645,
+                8.124479293823242
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "support_gap",
+        "expected": "UNVERIFIED",
+        "actual": "FAIL",
+        "exit": 2,
+        "target_checks": [
+          {
+            "code": "SUPPORT",
+            "status": "UNVERIFIED",
+            "subject": "stack",
+            "detail": {
+              "sampled_vertex_to_surface_min": 0.9999999403953534,
+              "tolerance": 0.03,
+              "observation": "no sampled vertex proximity observed",
+              "limitation": "vertex sampling may miss face-interior contact; proximity does not prove support or load bearing"
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                6.116133689880371,
+                7.488927364349365
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "face_interior_contact",
+        "expected": "UNVERIFIED",
+        "actual": "FAIL",
+        "exit": 2,
+        "target_checks": [
+          {
+            "code": "SUPPORT",
+            "status": "UNVERIFIED",
+            "subject": "stack",
+            "detail": {
+              "sampled_vertex_to_surface_min": 1.4142135623730951,
+              "tolerance": 0.03,
+              "observation": "no sampled vertex proximity observed",
+              "limitation": "vertex sampling may miss face-interior contact; proximity does not prove support or load bearing"
+            }
+          }
+        ],
+        "clip_depth": [
+          {
+            "code": "CLIP_DEPTH",
+            "status": "PASS",
+            "subject": "plate",
+            "detail": {
+              "bounds": [
+                5.268730640411377,
+                9.607436180114746
+              ],
+              "camera": "overview_camera"
+            }
+          }
+        ],
+        "pass": true
+      },
+      {
+        "name": "viewport_hidden",
+        "expected_render": "UNVERIFIED",
+        "actual_render": [
+          {
+            "code": "COMPONENT_RENDER",
+            "status": "UNVERIFIED",
+            "subject": "plate",
+            "detail": {
+              "view_layer": "ViewLayer",
+              "included_paths_checked": 1,
+              "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+            }
+          }
+        ],
+        "audit_status": "FAIL",
+        "pass": true
+      },
+      {
+        "name": "object_render_hidden",
+        "expected_render": "FAIL",
+        "actual_render": [
+          {
+            "code": "COMPONENT_RENDER",
+            "status": "FAIL",
+            "subject": "plate",
+            "detail": {
+              "known_exclusion": "object.hide_render",
+              "limits": "no pixel/occlusion check"
+            }
+          }
+        ],
+        "audit_status": "FAIL",
+        "pass": true
+      },
+      {
+        "name": "single_excluded",
+        "expected_render": "FAIL",
+        "actual_render": [
+          {
+            "code": "COMPONENT_RENDER",
+            "status": "FAIL",
+            "subject": "plate",
+            "detail": {
+              "known_exclusion": "all collection paths excluded or collection.hide_render",
+              "view_layer": "ViewLayer",
+              "path_count": 1,
+              "limits": "no pixel/occlusion check"
+            }
+          }
+        ],
+        "audit_status": "FAIL",
+        "pass": true
+      },
+      {
+        "name": "alternate_included",
+        "expected_render": "UNVERIFIED",
+        "actual_render": [
+          {
+            "code": "COMPONENT_RENDER",
+            "status": "UNVERIFIED",
+            "subject": "plate",
+            "detail": {
+              "view_layer": "ViewLayer",
+              "included_paths_checked": 1,
+              "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+            }
+          }
+        ],
+        "audit_status": "UNVERIFIED",
+        "pass": true
+      },
+      {
+        "name": "port_tolerance_absent",
+        "expected": "UNVERIFIED",
+        "actual": "UNVERIFIED",
+        "target_checks": [
+          {
+            "code": "PORT_OWNER_SURFACE",
+            "status": "UNVERIFIED",
+            "subject": "a",
+            "detail": "explicit surface_tolerance absent; Blender scene world units"
+          }
+        ],
+        "exit": 3,
+        "pass": true
+      },
+      {
+        "name": "route_tolerance_absent",
+        "expected": "UNVERIFIED",
+        "actual": "UNVERIFIED",
+        "target_checks": [
+          {
+            "code": "ENDPOINTS",
+            "status": "UNVERIFIED",
+            "subject": "rod",
+            "detail": "explicit tolerance absent; Blender scene world units"
+          }
+        ],
+        "exit": 3,
+        "pass": true
+      },
+      {
+        "name": "route_tolerance_nan",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "target_checks": [
+          {
+            "code": "CONNECTION_TOLERANCE_INVALID",
+            "where": "connections.rod"
+          }
+        ],
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "route_tolerance_bool",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "target_checks": [
+          {
+            "code": "CONNECTION_TOLERANCE_INVALID",
+            "where": "connections.rod"
+          }
+        ],
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "required_route_missing",
+        "expected": "FAIL",
+        "actual": "FAIL",
+        "target_checks": [
+          {
+            "code": "ROUTE_OBJECT",
+            "status": "FAIL",
+            "subject": "rod",
+            "detail": "route object missing"
+          }
+        ],
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "single_component_no_interfaces_audit",
+        "pass": true
+      },
+      {
+        "name": "audit_bad_task_kind",
+        "expected": "FAIL_STATIC_NO_GEOMETRY",
+        "actual": "FAIL",
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "audit_bad_port_medium",
+        "expected": "FAIL_STATIC_NO_GEOMETRY",
+        "actual": "FAIL",
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "audit_bad_outputs",
+        "expected": "FAIL_STATIC_NO_GEOMETRY",
+        "actual": "FAIL",
+        "exit": 2,
+        "pass": true
+      },
+      {
+        "name": "svg_real_label",
+        "pass": true
+      },
+      {
+        "name": "no_text_svg_rejected",
+        "pass": true
+      }
+    ],
+    "not_covered": [
+      "visual_similarity",
+      "scientific_function",
+      "fluid_seal",
+      "true_mechanical_load",
+      "occlusion"
+    ]
+  },
+  "changed_script_or_example_files": [],
+  "limits": "frontmatter/structure and unchanged synthetic helpers only; not installed runtime/visual/generalization test"
+}

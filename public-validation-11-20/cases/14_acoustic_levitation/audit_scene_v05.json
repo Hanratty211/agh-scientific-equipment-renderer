@@ -1,0 +1,1147 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v05.blend",
+  "record": "public-validation-11-20/cases/14_acoustic_levitation/record_v05.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.camera"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.microphone"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.array"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.amp-mic"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.amp-array"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.computer"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.amp-output"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.scope-signal"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.camera-to-laptop.camera"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.camera-to-laptop.computer"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.microphone-to-amp.microphone"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.microphone-to-amp.amp-mic"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.array-to-amp.array"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.array-to-amp.amp-array"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.amp-to-scope.amp-output"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.amp-to-scope.scope-signal"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "downward transducer"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "flat rectangular reflector"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "single working-gap drop"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "microphone"
+      ],
+      "connections": [
+        "microphone-to-amp"
+      ],
+      "labels": [],
+      "object": "microphone exterior body"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "camera"
+      ],
+      "connections": [
+        "camera-to-laptop"
+      ],
+      "labels": [],
+      "object": "LEFT high speed camera"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "RIGHT LED housing"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [
+        "amp-mic",
+        "amp-array",
+        "amp-output"
+      ],
+      "connections": [
+        "microphone-to-amp",
+        "array-to-amp",
+        "amp-to-scope"
+      ],
+      "labels": [],
+      "object": "microphone/array amplifier"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [
+        "scope-signal"
+      ],
+      "connections": [
+        "amp-to-scope"
+      ],
+      "labels": [],
+      "object": "representative oscilloscope"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [
+        "computer"
+      ],
+      "connections": [
+        "camera-to-laptop"
+      ],
+      "labels": [],
+      "object": "laptop base"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [
+        "array"
+      ],
+      "connections": [
+        "array-to-amp"
+      ],
+      "labels": [],
+      "object": "top array support"
+    },
+    "port:camera": {
+      "connections": [
+        "camera-to-laptop"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:microphone": {
+      "connections": [
+        "microphone-to-amp"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:array": {
+      "connections": [
+        "array-to-amp"
+      ],
+      "labels": [],
+      "owner": "c10"
+    },
+    "port:amp-mic": {
+      "connections": [
+        "microphone-to-amp"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:amp-array": {
+      "connections": [
+        "array-to-amp"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:computer": {
+      "connections": [
+        "camera-to-laptop"
+      ],
+      "labels": [],
+      "owner": "c9"
+    },
+    "port:amp-output": {
+      "connections": [
+        "amp-to-scope"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:scope-signal": {
+      "connections": [
+        "amp-to-scope"
+      ],
+      "labels": [],
+      "owner": "c8"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "downward transducer"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "flat rectangular reflector"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "single working-gap drop"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "microphone exterior body"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "LEFT high speed camera"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "RIGHT LED housing"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "microphone/array amplifier"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "representative oscilloscope"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "laptop base"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "object": "top array support"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c10",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "camera",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "camera",
+      "detail": {
+        "gap": 0.011999990510944561,
+        "tolerance": 0.09,
+        "point": [
+          -3.1000001430511475,
+          0.03699999675154686,
+          1.6300004720687866
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "microphone",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "microphone",
+      "detail": {
+        "gap": 0.009999998054699782,
+        "tolerance": 0.09,
+        "point": [
+          0.07999999821186066,
+          -1.3499997854232788,
+          2.419999599456787
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "array",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "array",
+      "detail": {
+        "gap": 0.005000114350021135,
+        "tolerance": 0.09,
+        "point": [
+          -0.5799998641014099,
+          -1.3304608803554885e-10,
+          2.745000123977661
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "amp-mic",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "amp-mic",
+      "detail": {
+        "gap": 0.013999730558169457,
+        "tolerance": 0.09,
+        "point": [
+          1.6800000667572021,
+          0.11600026488304138,
+          0.7000003457069397
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "amp-array",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "amp-array",
+      "detail": {
+        "gap": 0.01399973055870872,
+        "tolerance": 0.09,
+        "point": [
+          1.9499999284744263,
+          0.11600026488304138,
+          0.4300001263618469
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "computer",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "computer",
+      "detail": {
+        "gap": 0.019001483932177887,
+        "tolerance": 0.09,
+        "point": [
+          4.115998268127441,
+          -0.11999998241662979,
+          0.17400000989437103
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "amp-output",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "amp-output",
+      "detail": {
+        "gap": 0.014000177511318924,
+        "tolerance": 0.09,
+        "point": [
+          2.2699995040893555,
+          0.11599981784820557,
+          0.4300001263618469
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "scope-signal",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "scope-signal",
+      "detail": {
+        "gap": 0.03600010310627648,
+        "tolerance": 0.09,
+        "point": [
+          3.5899999141693115,
+          0.07899987697601318,
+          0.3500001132488251
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "camera-to-laptop",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "camera-to-laptop",
+      "detail": {
+        "gaps": [
+          5.331331654397876e-07,
+          1.90746504458183e-06
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            -3.0999999046325684,
+            0.03700000047683716,
+            1.6299999952316284
+          ],
+          [
+            4.116000175476074,
+            -0.11999999731779099,
+            0.17399999499320984
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "microphone-to-amp",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "microphone-to-amp",
+      "detail": {
+        "gaps": [
+          5.331201499700045e-07,
+          4.626564591008432e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.07999999821186066,
+            -1.350000023841858,
+            2.4200000762939453
+          ],
+          [
+            1.6799999475479126,
+            0.11599999666213989,
+            0.699999988079071
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "array-to-amp",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "array-to-amp",
+      "detail": {
+        "gaps": [
+          2.6656010818813686e-07,
+          3.1680303253932744e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            -0.5799999833106995,
+            0.0,
+            2.744999885559082
+          ],
+          [
+            1.9500000476837158,
+            0.11599999666213989,
+            0.4300000071525574
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "amp-to-scope",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "amp-to-scope",
+      "detail": {
+        "gaps": [
+          5.230286352272107e-07,
+          1.739355553676002e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            2.2699999809265137,
+            0.11599999666213989,
+            0.4300000071525574
+          ],
+          [
+            3.5899999141693115,
+            0.07900000363588333,
+            0.3499999940395355
+          ]
+        ]
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          11.968871116638184,
+          12.245965957641602
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.2768281102180481,
+          0.2988463044166565
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.6601701378822327,
+          0.6913226246833801
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          12.30692195892334,
+          13.856914520263672
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.24962854385375977,
+          0.4312020242214203
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.42134976387023926,
+          0.5294827222824097
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          12.624722480773926,
+          12.78356647491455
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.3331352174282074,
+          0.34769535064697266
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.5570729970932007,
+          0.577176570892334
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          10.494823455810547,
+          11.011358261108398
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.39002493023872375,
+          0.4311213791370392
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.5239772200584412,
+          0.5878830552101135
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          12.575480461120605,
+          13.482501983642578
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.152303084731102,
+          0.23200549185276031
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.5438226461410522,
+          0.64143967628479
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          11.608675003051758,
+          12.244844436645508
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.45809459686279297,
+          0.5110071301460266
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.4854893982410431,
+          0.555586040019989
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          11.787313461303711,
+          13.043678283691406
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.591309666633606,
+          0.701850950717926
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.3323636054992676,
+          0.4773421585559845
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          11.283154487609863,
+          12.642302513122559
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.6939234733581543,
+          0.8182417154312134
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.3026158809661865,
+          0.4592195451259613
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          10.587959289550781,
+          11.62047290802002
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.7974880337715149,
+          0.9166027307510376
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.23457123339176178,
+          0.3070599138736725
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          11.308143615722656,
+          13.040534019470215
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.23103012144565582,
+          0.44980043172836304
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.6338297128677368,
+          0.757651150226593
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "COMPONENT_RENDER:c10",
+    "PORT_RENDER:camera",
+    "PORT_RENDER:microphone",
+    "PORT_RENDER:array",
+    "PORT_RENDER:amp-mic",
+    "PORT_RENDER:amp-array",
+    "PORT_RENDER:computer",
+    "PORT_RENDER:amp-output",
+    "PORT_RENDER:scope-signal",
+    "ROUTE_RENDER:camera-to-laptop",
+    "ROUTE_RENDER:microphone-to-amp",
+    "ROUTE_RENDER:array-to-amp",
+    "ROUTE_RENDER:amp-to-scope",
+    "STATIC_RECORD",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

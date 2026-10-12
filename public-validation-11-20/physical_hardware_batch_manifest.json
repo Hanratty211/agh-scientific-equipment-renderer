@@ -1,0 +1,221 @@
+{
+  "author": "AGH",
+  "purpose": "submission to external pixel review, no acceptance claim",
+  "skill_revision": "abb77ac96ab535210c9cbe9ec4e644385136f35464afe43b445d9a11a4eab0c4",
+  "cases": [
+    {
+      "case": 12,
+      "version": "v04",
+      "scene": "public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+      "scene_sha256": "c686fcce9a1ec56c76a816156bc91692541fa36321a8a8ba6f9e30bb97202202",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/overview_v04.png",
+          "sha256": "ba980091e3b20fd7010233253d832d466eb7e9650a2163a017e6cb863c3c4879"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_v04.png",
+          "sha256": "07492544272f7d8380e6a85f25c57b3f3e56a8a8cb908a95639c1d604fa88cf7"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_laptop_data_hinge_v04.png",
+          "sha256": "3c07c92bd0b1abc013af1f6ad87b0728b2ca43365ee2c552c04a112a3190ac8c"
+        }
+      ],
+      "record": "public-validation-11-20/cases/12_capillary_microfluidics/record_v04.json",
+      "declared_ports": 8,
+      "declared_routes": 4,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    },
+    {
+      "case": 13,
+      "version": "v04",
+      "scene": "public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+      "scene_sha256": "eeb4962fa38457b43f28e1ec04dbd24b8fff4def8ed32591707998959a5817be",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/13_fff_printer/overview_v04.png",
+          "sha256": "4a2125701533fd76872096529b8fda3b3fda2ac3896c1f0eafea927b11c361dd"
+        },
+        {
+          "path": "public-validation-11-20/cases/13_fff_printer/detail_laptop_hinge_v04.png",
+          "sha256": "dd58c97baecede69d74a27317cd51d2817c334a414ce1cfe0474ac418c350911"
+        }
+      ],
+      "record": "public-validation-11-20/cases/13_fff_printer/record_v04.json",
+      "declared_ports": 0,
+      "declared_routes": 0,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    },
+    {
+      "case": 14,
+      "version": "v05",
+      "scene": "public-validation-11-20/cases/14_acoustic_levitation/scene_v05.blend",
+      "scene_sha256": "3ced7dcce9431260970f2dac9221f6797a1680f9c5c5739f9caf4d6f34aa90e4",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/overview_v05.png",
+          "sha256": "a4ebffe6db9170c1d9847097c4ab671633a3345264388c4a5a09e56a723b9737"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_camera_data_v05.png",
+          "sha256": "d2fc251ff74299004097844e15d8a20bb6d192e5f81f8a2e6adb317730846b0a"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_laptop_data_hinge_v05.png",
+          "sha256": "8941e69c690535243d3436f83db0e952bbde06804af186635a642927b5ec3e1f"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_scope_signal_v05.png",
+          "sha256": "027f86ddfbd58c282f000d65856a9491e01a869d2b3c8ac5bbfabcb26ab606b3"
+        }
+      ],
+      "record": "public-validation-11-20/cases/14_acoustic_levitation/record_v05.json",
+      "declared_ports": 8,
+      "declared_routes": 4,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    },
+    {
+      "case": 16,
+      "version": "v04",
+      "scene": "public-validation-11-20/cases/16_electrospinning/scene_v04.blend",
+      "scene_sha256": "e16dbf13476df386725fec72221de48a80e0ca6e00d47fc5a6352aac2466c017",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/16_electrospinning/overview_v04.png",
+          "sha256": "4c1b1445e6e7b45631cdc1e21e144ad6208c064276f581cc49407ff9f68d046f"
+        },
+        {
+          "path": "public-validation-11-20/cases/16_electrospinning/detail_hv_source_terminal_v04.png",
+          "sha256": "bfb12bef96d9894757a6eab228f3f1643b6c98d764a27ad54df2385777693aa2"
+        }
+      ],
+      "record": "public-validation-11-20/cases/16_electrospinning/record_v04.json",
+      "declared_ports": 4,
+      "declared_routes": 2,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    },
+    {
+      "case": 17,
+      "version": "v04",
+      "scene": "public-validation-11-20/cases/17_magnetic_shell/scene_v04.blend",
+      "scene_sha256": "95185df1573169ba216a04e5f3b42bc7e3fe18803a5d9af5743fbc704f1774cd",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/17_magnetic_shell/overview_v04.png",
+          "sha256": "4ba92605c5718c3fee4e0f3850fdb688e509f0f27401c8b2584d23802a9ccefe"
+        },
+        {
+          "path": "public-validation-11-20/cases/17_magnetic_shell/detail_supply_pump_v04.png",
+          "sha256": "23ef52242c519ab9c4ba5ad24c45db15e545928338b0cc0c122fbfe89fdac093"
+        }
+      ],
+      "record": "public-validation-11-20/cases/17_magnetic_shell/record_v04.json",
+      "declared_ports": 3,
+      "declared_routes": 2,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    },
+    {
+      "case": 19,
+      "version": "v05",
+      "scene": "public-validation-11-20/cases/19_triboelectric_glass/scene_v05.blend",
+      "scene_sha256": "5a0a1f8a9d6714c8a2b2e3dbe05a2a733f5209490e2985ab01fe44ace628eb1f",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/19_triboelectric_glass/overview_v05.png",
+          "sha256": "d13f527073353d575ef0947d8892213ca4aeffbe7b7166c97b0ff3a5bce33543"
+        },
+        {
+          "path": "public-validation-11-20/cases/19_triboelectric_glass/detail_resistance_terminal_v05.png",
+          "sha256": "6367afc1d5df6f5b5ae2029ac0228fc87491a1f987957c094d68035a375bf1fc"
+        },
+        {
+          "path": "public-validation-11-20/cases/19_triboelectric_glass/detail_scope_signal_v05.png",
+          "sha256": "cf9f34d1d04107e4dda7782dc68449fd1a657c1cd909f18b49b2b6eef5e9a998"
+        }
+      ],
+      "record": "public-validation-11-20/cases/19_triboelectric_glass/record_v05.json",
+      "declared_ports": 4,
+      "declared_routes": 2,
+      "saved_scene_audit": {
+        "status": "UNVERIFIED",
+        "fail_count": 0
+      },
+      "AGH_interface_check": {
+        "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "AGH_mesh_check": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "fail_count": 0
+      },
+      "pixel_review": "NOT_PERFORMED",
+      "external_review": "NOT_PERFORMED"
+    }
+  ]
+}

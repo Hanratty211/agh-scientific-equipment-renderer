@@ -1,0 +1,117 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the visible printer frame, gantry/head, bed, display/sensors and adjacent laptop. Scope is the photo a, not the printed channel in b. Hidden electronics and emission flow paths stay unknown. Panel Fig.1(a); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1130,
+      "height": 700,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7"
+    ],
+    "required_connections": [],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "printer front rail",
+      "object": "printer upright",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "gantry",
+      "object": "anchored gantry beam",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "extruder",
+      "object": "red extruder carriage",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "bed",
+      "object": "heated print bed",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "mounted emission display",
+      "object": "attached emissions display",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "front-center sensor display",
+      "object": "front-center sensor display",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "laptop",
+      "object": "adjacent laptop base",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [],
+  "connections": [],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41598-025-17304-7",
+    "figure_url": "https://www.nature.com/articles/s41598-025-17304-7/figures/1",
+    "target_sha256": "da2332cc9fae68ab58c2ce89a3710460bb4290c4e2697530b17565019a594a4e",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success.",
+  "route_coverage": "Visible wiring/electrode/stage details remain unbound or source topology ambiguous; do not interpret zero as absent routes in real device.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [],
+  "unknown_interfaces": [
+    "Laptop model, connector and printer control wiring not shown; no added cable"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+  "case": 13,
+  "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "adjacent laptop hinge contacts base",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.018999964347124764
+      }
+    },
+    {
+      "name": "adjacent laptop lid meets hinge",
+      "status": "PASS",
+      "detail": {
+        "bottom_z": 0.3528551459312439,
+        "hinge_z": 0.35499998927116394
+      }
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

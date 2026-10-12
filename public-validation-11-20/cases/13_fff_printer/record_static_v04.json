@@ -1,0 +1,82 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "NO_PORTS",
+      "where": "ports"
+    },
+    {
+      "code": "NO_CONNECTIONS",
+      "where": "connections"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "printer upright"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "anchored gantry beam"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "red extruder carriage"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "heated print bed"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "attached emissions display"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "front-center sensor display"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "adjacent laptop base"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+  "record": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/record_v04.json",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "component_exists",
+      "item": "c1",
+      "status": "PASS",
+      "detail": {
+        "object": "upper visible syringe tip"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c2",
+      "status": "PASS",
+      "detail": {
+        "object": "lower visible syringe tip"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c3",
+      "status": "PASS",
+      "detail": {
+        "object": "horizontal clear capillary"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c4",
+      "status": "PASS",
+      "detail": {
+        "object": "upper inlet fitting"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c5",
+      "status": "PASS",
+      "detail": {
+        "object": "lower inlet fitting"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c6",
+      "status": "PASS",
+      "detail": {
+        "object": "high speed camera"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c7",
+      "status": "PASS",
+      "detail": {
+        "object": "inverted microscope"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c8",
+      "status": "PASS",
+      "detail": {
+        "object": "sealed branch cap"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c9",
+      "status": "PASS",
+      "detail": {
+        "object": "waste vessel rim"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c10",
+      "status": "PASS",
+      "detail": {
+        "object": "laptop base"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "upper-pump",
+      "status": "PASS",
+      "detail": {
+        "object": "upper pump exit"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "lower-pump",
+      "status": "PASS",
+      "detail": {
+        "object": "lower pump exit"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "upper-inlet",
+      "status": "PASS",
+      "detail": {
+        "object": "upper inlet contact"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "lower-inlet",
+      "status": "PASS",
+      "detail": {
+        "object": "lower inlet contact"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "capillary-out",
+      "status": "PASS",
+      "detail": {
+        "object": "capillary outlet face"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "waste-mouth",
+      "status": "PASS",
+      "detail": {
+        "object": "waste mouth boundary"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "cam-data",
+      "status": "PASS",
+      "detail": {
+        "object": "camera representative DATA data socket"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "laptop-data",
+      "status": "PASS",
+      "detail": {
+        "object": "laptop DATA data socket"
+      }
+    },
+    {
+      "check": "clamshell_presence",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "base": true,
+        "lid": true,
+        "axle": true
+      }
+    },
+    {
+      "check": "hinge_root_height",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "lid_min_z": 0.28372085094451904,
+        "axle_z": 0.2849999964237213,
+        "delta": -0.0012791454792022705
+      }
+    },
+    {
+      "check": "hinge_on_base",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "axle_point": [
+          3.5,
+          0.17000000178813934,
+          0.2849999964237213
+        ],
+        "gap_to_base": 0.018999993451040132
+      }
+    },
+    {
+      "check": "keys_touchpad_display",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "check": "laptop_seated_plug_exists",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "socket": "laptop representative DATA receptacle",
+        "plug": "laptop DATA seated data plug"
+      }
+    },
+    {
+      "check": "socket_plug_proximity",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.02049994459677179
+      }
+    }
+  ],
+  "not_checked": [
+    "actual pixels",
+    "hidden circuits",
+    "manufacturer CAD",
+    "electrical or pneumatic functionality",
+    "unmodeled support contacts"
+  ]
+}

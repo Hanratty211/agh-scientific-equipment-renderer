@@ -1,0 +1,236 @@
+{
+  "author": "AGH",
+  "immutable_final_outputs_note": "Intermediate failures listed; raw logs remain local not synced",
+  "entries": [
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/audit_scene_v04_initial.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/audit_scene_v04_initial.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/audit_scene_v04_second_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/audit_scene_v04_second_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/build_v04_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/build_v04_initial_success_before_audit_repair.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/build_v04_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/interface_v04_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/interface_v04_center_sample_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 12,
+      "path": "public-validation-11-20/cases/12_capillary_microfluidics/interface_v04_center_sample_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 13,
+      "path": "public-validation-11-20/cases/13_fff_printer/build_v04_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 13,
+      "path": "public-validation-11-20/cases/13_fff_printer/build_v04_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 13,
+      "path": "public-validation-11-20/cases/13_fff_printer/interface_v04_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/audit_scene_v05_initial.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/audit_scene_v05_initial.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/build_v05_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/build_v05_initial_success_before_audit_repair.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/build_v05_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/interface_v05_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/interface_v05_center_sample_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/interface_v05_center_sample_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/physical_mesh_v05_initial_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 14,
+      "path": "public-validation-11-20/cases/14_acoustic_levitation/physical_mesh_v05_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_fourth_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_fourth_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_initial.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_initial.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_second_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_second_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_stale_record.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_third_fail.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/audit_scene_v04_third_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/build_v04_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/build_v04_initial_success_before_audit_repair.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/build_v04_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 16,
+      "path": "public-validation-11-20/cases/16_electrospinning/interface_v04_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 17,
+      "path": "public-validation-11-20/cases/17_magnetic_shell/build_v04_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 17,
+      "path": "public-validation-11-20/cases/17_magnetic_shell/build_v04_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 17,
+      "path": "public-validation-11-20/cases/17_magnetic_shell/interface_v04_before_script_fix.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 17,
+      "path": "public-validation-11-20/cases/17_magnetic_shell/interface_v04_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/audit_scene_v05_initial.json",
+      "kind": "preserved pre-final audit/probe report; interpret with exact staged record, may be stale"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/audit_scene_v05_initial.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/build_v05_initial_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/build_v05_initial_success_before_audit_repair.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/build_v05_material_rebind_fail.log",
+      "kind": "preserved pre-final build/probe execution log"
+    },
+    {
+      "case": 19,
+      "path": "public-validation-11-20/cases/19_triboelectric_glass/interface_v05_before_script_fix.log",
+      "kind": "preserved pre-final build/probe execution log"
+    }
+  ]
+}

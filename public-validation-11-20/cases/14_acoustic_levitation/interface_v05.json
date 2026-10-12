@@ -1,0 +1,159 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v05.blend",
+  "case": 14,
+  "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "laptop hinge contacts base",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.018999993451010916
+      }
+    },
+    {
+      "name": "laptop lid meets hinge",
+      "status": "PASS",
+      "detail": {
+        "bottom_z": 0.22372086346149445,
+        "hinge_z": 0.22499999403953552
+      }
+    },
+    {
+      "name": "laptop socket occupies sidewall",
+      "status": "PASS",
+      "detail": {
+        "gap_to_base_mesh": 0.00599956514688896
+      }
+    },
+    {
+      "name": "laptop plug meets socket",
+      "status": "PASS",
+      "detail": {
+        "sampled_mesh_gap": 0.0175004009005062
+      }
+    },
+    {
+      "name": "laptop data not on display",
+      "status": "PASS",
+      "detail": {
+        "separation_to_display_center": 0.7948925753355756
+      }
+    },
+    {
+      "name": "camera socket at housing",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.011999994755255775
+      }
+    },
+    {
+      "name": "camera plug mating",
+      "status": "PASS",
+      "detail": {
+        "sampled_mesh_gap": 0.001999998519545804
+      }
+    },
+    {
+      "name": "camera-to-laptop exterior DATA cable endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "camera DATA output data socket",
+        "end": "laptop DATA data socket"
+      }
+    },
+    {
+      "name": "microphone-to-amplifier exterior cable endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "microphone cable surface",
+        "end": "amplifier microphone representative input ring"
+      }
+    },
+    {
+      "name": "array-to-amplifier exterior cable endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "array upper signal boundary",
+        "end": "amplifier array representative input ring"
+      }
+    },
+    {
+      "name": "representative amplifier-to-scope signal lead endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "amp representative signal output ring",
+        "end": "representative oscilloscope ANALOG INPUT BNC input ring"
+      }
+    },
+    {
+      "name": "scope input is on FRONT not screen",
+      "status": "PASS",
+      "detail": {
+        "input_y": 0.07900000363588333,
+        "chassis_front_y": 0.11499997973442078
+      }
+    },
+    {
+      "name": "scope input and plug coaxial",
+      "status": "PASS",
+      "detail": {
+        "ring": [
+          3.5899999141693115,
+          0.07900000363588333,
+          0.3499999940395355
+        ],
+        "shell": [
+          3.5899999141693115,
+          0.014000000432133675,
+          0.3499999940395355
+        ]
+      }
+    },
+    {
+      "name": "scope plug and boot inline",
+      "status": "PASS",
+      "detail": {
+        "boot_to_shell": 0.0710000030511701
+      }
+    },
+    {
+      "name": "scope final cable tangent along connector axis",
+      "status": "PASS",
+      "detail": {
+        "approach_vector": [
+          0.0,
+          0.21700000762939453,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "scope cable enters actual socket",
+      "status": "PASS",
+      "detail": {
+        "gap": 0.0
+      }
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

@@ -1,0 +1,1074 @@
+{
+  "status": "FAIL",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+  "record": "public-validation-11-20/cases/12_capillary_microfluidics/record_v04.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.upper-pump"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lower-pump"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.upper-inlet"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.lower-inlet"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.capillary-out"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.waste-mouth"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.cam-data"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.laptop-data"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.camera-data.cam-data"
+      },
+      {
+        "code": "MEDIUM_UNKNOWN",
+        "where": "connections.camera-data.laptop-data"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "upper-pump"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper syringe pump"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [
+        "lower-pump"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower syringe pump"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [
+        "capillary-out"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "horizontal clear capillary"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "upper-inlet"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper inlet fitting"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "lower-inlet"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower inlet fitting"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "cam-data"
+      ],
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "object": "high speed camera"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "inverted microscope"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "sealed branch cap"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [
+        "waste-mouth"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "waste vessel rim"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [
+        "laptop-data"
+      ],
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "object": "laptop base"
+    },
+    "port:upper-pump": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:lower-pump": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c2"
+    },
+    "port:upper-inlet": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:lower-inlet": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:capillary-out": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:waste-mouth": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c9"
+    },
+    "port:cam-data": {
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:laptop-data": {
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "owner": "c10"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "upper syringe pump"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "lower syringe pump"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "horizontal clear capillary"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "upper inlet fitting"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "lower inlet fitting"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "high speed camera"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "inverted microscope"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "sealed branch cap"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "object": "waste vessel rim"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c9",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "object": "laptop base"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c10",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "upper-pump",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "FAIL",
+      "subject": "upper-pump",
+      "detail": {
+        "gap": 0.14499974356620582,
+        "tolerance": 0.09,
+        "point": [
+          -2.489999771118164,
+          0.0,
+          2.419999837875366
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lower-pump",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "FAIL",
+      "subject": "lower-pump",
+      "detail": {
+        "gap": 0.14500003902048547,
+        "tolerance": 0.09,
+        "point": [
+          -2.489999771118164,
+          0.0,
+          0.9700000286102295
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "upper-inlet",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "upper-inlet",
+      "detail": {
+        "gap": 0.08356382743353899,
+        "tolerance": 0.09,
+        "point": [
+          -0.7799999117851257,
+          -1.3304608803554885e-10,
+          1.0999996662139893
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "lower-inlet",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "lower-inlet",
+      "detail": {
+        "gap": 0.08356374010162128,
+        "tolerance": 0.09,
+        "point": [
+          -0.4300001561641693,
+          -1.3304608803554885e-10,
+          1.0999996662139893
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "capillary-out",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "capillary-out",
+      "detail": {
+        "gap": 2.384482031219308e-07,
+        "tolerance": 0.09,
+        "point": [
+          1.049999713897705,
+          3.326152200888721e-11,
+          1.0999999046325684
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "waste-mouth",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "waste-mouth",
+      "detail": {
+        "gap": 0.015000060049279614,
+        "tolerance": 0.09,
+        "point": [
+          2.099998950958252,
+          -0.2550000548362732,
+          0.4599998891353607
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "cam-data",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "cam-data",
+      "detail": {
+        "gap": 0.013000011435355204,
+        "tolerance": 0.09,
+        "point": [
+          0.23499996960163116,
+          0.27799999713897705,
+          2.5899994373321533
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "laptop-data",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "laptop-data",
+      "detail": {
+        "gap": 0.018999099684352094,
+        "tolerance": 0.09,
+        "point": [
+          2.891000986099243,
+          -0.18000000715255737,
+          0.23400002717971802
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_OBJECT",
+      "status": "FAIL",
+      "subject": "upper-feed",
+      "detail": "route object missing"
+    },
+    {
+      "code": "ROUTE_OBJECT",
+      "status": "FAIL",
+      "subject": "lower-feed",
+      "detail": "route object missing"
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "outlet-waste",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "outlet-waste",
+      "detail": {
+        "gaps": [
+          2.665600770601983e-07,
+          9.629425061585611e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            1.0499999523162842,
+            0.0,
+            1.100000023841858
+          ],
+          [
+            2.0999999046325684,
+            -0.2549999952316284,
+            0.46000000834465027
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "camera-data",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "PASS",
+      "subject": "camera-data",
+      "detail": {
+        "gaps": [
+          4.777675730550706e-07,
+          9.541398640621973e-07
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.23499999940395355,
+            0.27799999713897705,
+            2.5899999141693115
+          ],
+          [
+            2.8910000324249268,
+            -0.18000000715255737,
+            0.23399999737739563
+          ]
+        ]
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          13.709506034851074,
+          14.920491218566895
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.13267967104911804,
+          0.2754027843475342
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.6262776851654053,
+          0.7783195972442627
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          14.231447219848633,
+          15.442432403564453
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.13267967104911804,
+          0.2754027843475342
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.3882845342159271,
+          0.5403264164924622
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          12.840718269348145,
+          13.811771392822266
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.4078107476234436,
+          0.6069872975349426
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "bounds": [
+          0.4196239113807678,
+          0.5037864446640015
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          13.608805656433105,
+          13.777685165405273
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.4136161208152771,
+          0.432485431432724
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.4717481732368469,
+          0.5014835000038147
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          13.458571434020996,
+          13.627450942993164
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.4481446444988251,
+          0.467013955116272
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.46155083179473877,
+          0.49128612875938416
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          12.393354415893555,
+          13.279637336730957
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.45370084047317505,
+          0.5462992787361145
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.6375807523727417,
+          0.7661861777305603
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          12.923994064331055,
+          14.368817329406738
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.41603782773017883,
+          0.5839623212814331
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "bounds": [
+          0.25980278849601746,
+          0.4053646922111511
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          12.328033447265625,
+          12.536778450012207
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.6666387319564819,
+          0.6845659017562866
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "bounds": [
+          0.4683302640914917,
+          0.5034487247467041
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          12.398538589477539,
+          12.976271629333496
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.6738406419754028,
+          0.740501880645752
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c9",
+      "detail": {
+        "bounds": [
+          0.27456134557724,
+          0.32076066732406616
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          11.323076248168945,
+          12.617827415466309
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.7513188123703003,
+          0.9147142171859741
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c10",
+      "detail": {
+        "bounds": [
+          0.1573573350906372,
+          0.25389617681503296
+        ],
+        "camera": "overview_camera_v02"
+      }
+    }
+  ],
+  "failures": [
+    "PORT_OWNER_SURFACE:upper-pump",
+    "PORT_OWNER_SURFACE:lower-pump",
+    "ROUTE_OBJECT:upper-feed",
+    "ROUTE_OBJECT:lower-feed"
+  ],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "COMPONENT_RENDER:c9",
+    "COMPONENT_RENDER:c10",
+    "PORT_RENDER:upper-pump",
+    "PORT_RENDER:lower-pump",
+    "PORT_RENDER:upper-inlet",
+    "PORT_RENDER:lower-inlet",
+    "PORT_RENDER:capillary-out",
+    "PORT_RENDER:waste-mouth",
+    "PORT_RENDER:cam-data",
+    "PORT_RENDER:laptop-data",
+    "ROUTE_RENDER:outlet-waste",
+    "ROUTE_RENDER:camera-data",
+    "STATIC_RECORD",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

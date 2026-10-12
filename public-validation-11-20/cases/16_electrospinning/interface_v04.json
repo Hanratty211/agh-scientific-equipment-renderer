@@ -1,0 +1,40 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v04.blend",
+  "case": 16,
+  "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "positive HV plug on supply",
+      "status": "PASS",
+      "detail": {
+        "gap_to_housing": 0.09800002148840253
+      }
+    },
+    {
+      "name": "positive HV cable starts at plug",
+      "status": "PASS",
+      "detail": {
+        "gap": 0.025000005541368706
+      }
+    },
+    {
+      "name": "return/ground plug on supply",
+      "status": "PASS",
+      "detail": {
+        "gap_to_housing": 0.0980000214883844
+      }
+    },
+    {
+      "name": "return/ground cable starts at plug",
+      "status": "PASS",
+      "detail": {
+        "gap": 0.025000005541368706
+      }
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

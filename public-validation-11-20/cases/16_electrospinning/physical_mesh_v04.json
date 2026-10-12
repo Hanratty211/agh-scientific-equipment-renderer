@@ -1,0 +1,150 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v04.blend",
+  "record": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/record_v04.json",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "component_exists",
+      "item": "c1",
+      "status": "PASS",
+      "detail": {
+        "object": "clear Perspex side"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c2",
+      "status": "PASS",
+      "detail": {
+        "object": "drive upper red housing"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c3",
+      "status": "PASS",
+      "detail": {
+        "object": "syringe barrel"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c4",
+      "status": "PASS",
+      "detail": {
+        "object": "visible PTFE feed"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c5",
+      "status": "PASS",
+      "detail": {
+        "object": "vertical metal needle"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c6",
+      "status": "PASS",
+      "detail": {
+        "object": "needle Perspex support"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c7",
+      "status": "PASS",
+      "detail": {
+        "object": "copper collector"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c8",
+      "status": "PASS",
+      "detail": {
+        "object": "upright PTFE Vee plate"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c9",
+      "status": "PASS",
+      "detail": {
+        "object": "horizontal front heater"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c10",
+      "status": "PASS",
+      "detail": {
+        "object": "angled IR red source"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c11",
+      "status": "PASS",
+      "detail": {
+        "object": "representative Genvolt 73030 body"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c12",
+      "status": "PASS",
+      "detail": {
+        "object": "positive HV insulated source plug"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c13",
+      "status": "PASS",
+      "detail": {
+        "object": "return/ground insulated source plug"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "dc-red",
+      "status": "PASS",
+      "detail": {
+        "object": "HV positive HV QA owner"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "dc-green",
+      "status": "PASS",
+      "detail": {
+        "object": "HV return/ground QA owner"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "chamber-red",
+      "status": "PASS",
+      "detail": {
+        "object": "chamber red boundary"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "chamber-green",
+      "status": "PASS",
+      "detail": {
+        "object": "chamber green boundary"
+      }
+    }
+  ],
+  "not_checked": [
+    "actual pixels",
+    "hidden circuits",
+    "manufacturer CAD",
+    "electrical or pneumatic functionality",
+    "unmodeled support contacts"
+  ]
+}

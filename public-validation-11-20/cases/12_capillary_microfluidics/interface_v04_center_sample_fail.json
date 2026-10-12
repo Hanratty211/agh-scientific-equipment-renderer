@@ -1,0 +1,112 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+  "case": 12,
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "laptop hinge contacts base",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.018999993451040132
+      }
+    },
+    {
+      "name": "laptop lid meets hinge",
+      "status": "PASS",
+      "detail": {
+        "bottom_z": 0.28372085094451904,
+        "hinge_z": 0.2849999964237213
+      }
+    },
+    {
+      "name": "laptop socket occupies sidewall",
+      "status": "PASS",
+      "detail": {
+        "gap_to_base_mesh": 0.006000042097948843
+      }
+    },
+    {
+      "name": "laptop plug meets socket",
+      "status": "FAIL",
+      "detail": {
+        "mesh_gap_to_socket": 0.05999994321723576
+      }
+    },
+    {
+      "name": "laptop data not on display",
+      "status": "PASS",
+      "detail": {
+        "separation_to_display_center": 0.9105983364466639
+      }
+    },
+    {
+      "name": "camera socket at housing",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.013000011435355204
+      }
+    },
+    {
+      "name": "camera plug mating",
+      "status": "FAIL",
+      "detail": {
+        "mesh_gap": 0.04399999951037832
+      }
+    },
+    {
+      "name": "camera to laptop exterior DATA cable endpoints",
+      "status": "PASS",
+      "detail": {
+        "distances": [
+          0.0,
+          0.0
+        ],
+        "start": "camera representative DATA data socket",
+        "end": "laptop DATA data socket"
+      }
+    },
+    {
+      "name": "upper pump tube tip",
+      "status": "PASS",
+      "detail": {
+        "distance": 0.009999990414939883,
+        "limit": 0.03,
+        "parts": [
+          "upper pump exit",
+          "upper visible syringe tip"
+        ]
+      }
+    },
+    {
+      "name": "upper feed at syringe tip",
+      "status": "PASS",
+      "detail": {
+        "delta": 0.0
+      }
+    },
+    {
+      "name": "lower pump tube tip",
+      "status": "PASS",
+      "detail": {
+        "distance": 0.009999990414939883,
+        "limit": 0.03,
+        "parts": [
+          "lower pump exit",
+          "lower visible syringe tip"
+        ]
+      }
+    },
+    {
+      "name": "lower feed at syringe tip",
+      "status": "PASS",
+      "detail": {
+        "delta": 0.0
+      }
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

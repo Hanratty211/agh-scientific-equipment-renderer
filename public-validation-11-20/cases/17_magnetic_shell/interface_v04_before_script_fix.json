@@ -1,0 +1,27 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v04.blend",
+  "case": 17,
+  "status": "LIMITED_INTERFACE_GEOMETRY_PASS",
+  "checks": [
+    {
+      "name": "DC supply panel and pneumatic pump distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source pneumatic route preserved sample to pump visible pneumatic segment",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source pneumatic route preserved sample to pressure sensor visible segment",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "unverified": [
+    "pixel legibility and occlusion",
+    "exact commercial connector ID if unknown",
+    "electrical/flow function and hidden topology"
+  ]
+}

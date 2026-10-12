@@ -1,0 +1,679 @@
+{
+  "status": "FAIL",
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v05.blend",
+  "record": "public-validation-11-20/cases/19_triboelectric_glass/record_v05.json",
+  "record_status": "UNKNOWN",
+  "record_issues": {
+    "errors": [],
+    "unknown": [
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.glass-left"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.glass-right"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.resistor"
+      },
+      {
+        "code": "PORT_UNKNOWN",
+        "where": "ports.scope"
+      },
+      {
+        "code": "NO_SUPPORTS",
+        "where": "supports"
+      }
+    ]
+  },
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [
+        "glass-left",
+        "glass-right"
+      ],
+      "connections": [
+        "glass-to-resistor",
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "object": "TeRC transparent coating"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "raised clear reservoir"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "continuous U regulator"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "downward nozzle"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "resistor"
+      ],
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "object": "resistance substituter"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "scope"
+      ],
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "object": "representative Keysight DSOX1204A front"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "glass to resistance exterior lead"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "glass to analog input exterior coax"
+    },
+    "port:glass-left": {
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:glass-right": {
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "owner": "c1"
+    },
+    "port:resistor": {
+      "connections": [
+        "glass-to-resistor"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:scope": {
+      "connections": [
+        "glass-to-scope"
+      ],
+      "labels": [],
+      "owner": "c6"
+    }
+  },
+  "checks": [
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "object": "TeRC transparent coating"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c1",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "object": "raised clear reservoir"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c2",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c3",
+      "detail": {
+        "object": "continuous U regulator"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "object": "downward nozzle"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c4",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "object": "resistance substituter"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c5",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "object": "representative Keysight DSOX1204A front"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c6",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c7",
+      "detail": {
+        "object": "glass to resistance exterior lead"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "COMPONENT_OBJECT",
+      "status": "PASS",
+      "subject": "c8",
+      "detail": {
+        "object": "glass to analog input exterior coax"
+      }
+    },
+    {
+      "code": "COMPONENT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "glass-left",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "glass-left",
+      "detail": {
+        "gap": 4.3392836387637365e-07,
+        "tolerance": 0.09,
+        "point": [
+          -1.7193044424057007,
+          -0.5499998927116394,
+          0.6426559686660767
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "glass-right",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "glass-right",
+      "detail": {
+        "gap": 6.631016731262207e-07,
+        "tolerance": 0.09,
+        "point": [
+          0.054686039686203,
+          -0.5499998927116394,
+          1.566214919090271
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "resistor",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "resistor",
+      "detail": {
+        "gap": 0.012000173621292255,
+        "tolerance": 0.09,
+        "point": [
+          1.0,
+          -0.2870001792907715,
+          0.7699999809265137
+        ]
+      }
+    },
+    {
+      "code": "PORT_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "scope",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "PORT_OWNER_SURFACE",
+      "status": "PASS",
+      "subject": "scope",
+      "detail": {
+        "gap": 0.014000326148126943,
+        "tolerance": 0.09,
+        "point": [
+          2.580000162124634,
+          -0.2940003275871277,
+          0.33999988436698914
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "glass-to-resistor",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "FAIL",
+      "subject": "glass-to-resistor",
+      "detail": {
+        "gaps": [
+          7.348554137908192e-07,
+          0.09299981455758792
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            -1.7193037271499634,
+            -0.550000011920929,
+            0.6426558494567871
+          ],
+          [
+            1.0,
+            -0.3799999952316284,
+            0.7699999809265137
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ROUTE_RENDER",
+      "status": "UNVERIFIED",
+      "subject": "glass-to-scope",
+      "detail": {
+        "view_layer": "ViewLayer",
+        "included_paths_checked": 1,
+        "limits": "viewport hide_viewport ignored; complete render inclusion and pixel occlusion not proven"
+      }
+    },
+    {
+      "code": "ENDPOINTS",
+      "status": "FAIL",
+      "subject": "glass-to-scope",
+      "detail": {
+        "gaps": [
+          7.254662120481942e-07,
+          0.17199966396240607
+        ],
+        "tolerance": 0.08,
+        "actual_world_endpoints": [
+          [
+            0.05468601733446121,
+            -0.550000011920929,
+            1.5662142038345337
+          ],
+          [
+            2.5799999237060547,
+            -0.4659999907016754,
+            0.3400000035762787
+          ]
+        ]
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          10.835124015808105,
+          13.123298645019531
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.2488647699356079,
+          0.534170389175415
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c1",
+      "detail": {
+        "bounds": [
+          0.4117944836616516,
+          0.5833662748336792
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          11.691905975341797,
+          12.453522682189941
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.18079426884651184,
+          0.24827852845191956
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c2",
+      "detail": {
+        "bounds": [
+          0.7417941093444824,
+          0.8821122646331787
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "PROJECTION",
+      "status": "UNVERIFIED",
+      "subject": "c3",
+      "detail": "unsupported/nonmesh geometry"
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          11.944190979003906,
+          12.104168891906738
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.31059956550598145,
+          0.32009732723236084
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c4",
+      "detail": {
+        "bounds": [
+          0.6363559365272522,
+          0.6767069697380066
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          10.65677261352539,
+          12.105557441711426
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.5435269474983215,
+          0.7227242588996887
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c5",
+      "detail": {
+        "bounds": [
+          0.23117168247699738,
+          0.44450968503952026
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "CLIP_DEPTH",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          9.808734893798828,
+          11.414589881896973
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "HORIZONTAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.7223868370056152,
+          0.9120476841926575
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "VERTICAL",
+      "status": "PASS",
+      "subject": "c6",
+      "detail": {
+        "bounds": [
+          0.16401658952236176,
+          0.4198616147041321
+        ],
+        "camera": "overview_camera_v02"
+      }
+    },
+    {
+      "code": "PROJECTION",
+      "status": "UNVERIFIED",
+      "subject": "c7",
+      "detail": "unsupported/nonmesh geometry"
+    },
+    {
+      "code": "PROJECTION",
+      "status": "UNVERIFIED",
+      "subject": "c8",
+      "detail": "unsupported/nonmesh geometry"
+    }
+  ],
+  "failures": [
+    "ENDPOINTS:glass-to-resistor",
+    "ENDPOINTS:glass-to-scope"
+  ],
+  "unverified": [
+    "COMPONENT_RENDER:c1",
+    "COMPONENT_RENDER:c2",
+    "COMPONENT_RENDER:c3",
+    "COMPONENT_RENDER:c4",
+    "COMPONENT_RENDER:c5",
+    "COMPONENT_RENDER:c6",
+    "COMPONENT_RENDER:c7",
+    "COMPONENT_RENDER:c8",
+    "PORT_RENDER:glass-left",
+    "PORT_RENDER:glass-right",
+    "PORT_RENDER:resistor",
+    "PORT_RENDER:scope",
+    "ROUTE_RENDER:glass-to-resistor",
+    "ROUTE_RENDER:glass-to-scope",
+    "PROJECTION:c3",
+    "PROJECTION:c7",
+    "PROJECTION:c8",
+    "STATIC_RECORD",
+    "NO_SUPPORTS_DECLARED:support_geometry_not_covered"
+  ],
+  "not_covered": [
+    "occlusion",
+    "collision",
+    "force",
+    "fluid_seal",
+    "signal_integrity",
+    "physical_transport",
+    "material_identity",
+    "visual_quality"
+  ],
+  "units": {
+    "tolerances": "Blender scene world units; scene unit scale must be interpreted by the task owner",
+    "projection": "normalized camera coordinates"
+  },
+  "meaning": "PASS only for declared checks; render inclusion/occlusion not proven; no scientific/visual acceptance"
+}

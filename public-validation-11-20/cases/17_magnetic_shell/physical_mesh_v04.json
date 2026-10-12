@@ -1,0 +1,118 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v04.blend",
+  "record": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/record_v04.json",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "component_exists",
+      "item": "c1",
+      "status": "PASS",
+      "detail": {
+        "object": "mechanical frame post"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c2",
+      "status": "PASS",
+      "detail": {
+        "object": "upper coil housing"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c3",
+      "status": "PASS",
+      "detail": {
+        "object": "lower coil housing"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c4",
+      "status": "PASS",
+      "detail": {
+        "object": "hemispherical sample"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c5",
+      "status": "PASS",
+      "detail": {
+        "object": "supported loading stage"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c6",
+      "status": "PASS",
+      "detail": {
+        "object": "sample fixture top"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c7",
+      "status": "PASS",
+      "detail": {
+        "object": "red pump syringe interface"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c8",
+      "status": "PASS",
+      "detail": {
+        "object": "representative EA-PSI9200-25T body"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c9",
+      "status": "PASS",
+      "detail": {
+        "object": "right syringe pump"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c10",
+      "status": "PASS",
+      "detail": {
+        "object": "front pressure sensor"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "sample-pneumatic",
+      "status": "PASS",
+      "detail": {
+        "object": "sample tube fitting"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "pump-pneumatic",
+      "status": "PASS",
+      "detail": {
+        "object": "pump visible tube fitting"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "sensor-pneumatic",
+      "status": "PASS",
+      "detail": {
+        "object": "sensor tube fitting"
+      }
+    }
+  ],
+  "not_checked": [
+    "actual pixels",
+    "hidden circuits",
+    "manufacturer CAD",
+    "electrical or pneumatic functionality",
+    "unmodeled support contacts"
+  ]
+}

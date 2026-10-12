@@ -1,0 +1,258 @@
+{
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v05.blend",
+  "record": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/record_v05.json",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "component_exists",
+      "item": "c1",
+      "status": "PASS",
+      "detail": {
+        "object": "downward transducer"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c2",
+      "status": "PASS",
+      "detail": {
+        "object": "flat rectangular reflector"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c3",
+      "status": "PASS",
+      "detail": {
+        "object": "single working-gap drop"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c4",
+      "status": "PASS",
+      "detail": {
+        "object": "microphone exterior body"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c5",
+      "status": "PASS",
+      "detail": {
+        "object": "LEFT high speed camera"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c6",
+      "status": "PASS",
+      "detail": {
+        "object": "RIGHT LED housing"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c7",
+      "status": "PASS",
+      "detail": {
+        "object": "microphone/array amplifier"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c8",
+      "status": "PASS",
+      "detail": {
+        "object": "representative oscilloscope"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c9",
+      "status": "PASS",
+      "detail": {
+        "object": "laptop base"
+      }
+    },
+    {
+      "check": "component_exists",
+      "item": "c10",
+      "status": "PASS",
+      "detail": {
+        "object": "top array support"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "camera",
+      "status": "PASS",
+      "detail": {
+        "object": "camera DATA output data socket"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "microphone",
+      "status": "PASS",
+      "detail": {
+        "object": "microphone cable surface"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "array",
+      "status": "PASS",
+      "detail": {
+        "object": "array upper signal boundary"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "amp-mic",
+      "status": "PASS",
+      "detail": {
+        "object": "amplifier microphone representative input ring"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "amp-array",
+      "status": "PASS",
+      "detail": {
+        "object": "amplifier array representative input ring"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "computer",
+      "status": "PASS",
+      "detail": {
+        "object": "laptop DATA data socket"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "amp-output",
+      "status": "PASS",
+      "detail": {
+        "object": "amp representative signal output ring"
+      }
+    },
+    {
+      "check": "port_exists",
+      "item": "scope-signal",
+      "status": "PASS",
+      "detail": {
+        "object": "representative oscilloscope ANALOG INPUT BNC input ring"
+      }
+    },
+    {
+      "check": "clamshell_presence",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "base": true,
+        "lid": true,
+        "axle": true
+      }
+    },
+    {
+      "check": "hinge_root_height",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "lid_min_z": 0.22372086346149445,
+        "axle_z": 0.22499999403953552,
+        "delta": -0.0012791305780410767
+      }
+    },
+    {
+      "check": "hinge_on_base",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "axle_point": [
+          4.679999828338623,
+          0.1550000011920929,
+          0.22499999403953552
+        ],
+        "gap_to_base": 0.018999993451010916
+      }
+    },
+    {
+      "check": "keys_touchpad_display",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "check": "laptop_seated_plug_exists",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "socket": "laptop representative DATA receptacle",
+        "plug": "laptop DATA seated data plug"
+      }
+    },
+    {
+      "check": "socket_plug_proximity",
+      "item": "laptop",
+      "status": "PASS",
+      "detail": {
+        "mesh_gap": 0.02050018310546875
+      }
+    },
+    {
+      "check": "analog_parts",
+      "item": "representative oscilloscope",
+      "status": "PASS",
+      "detail": {
+        "ring": "representative oscilloscope ANALOG INPUT BNC input ring",
+        "plug": "representative oscilloscope ANALOG INPUT coax mating shell"
+      }
+    },
+    {
+      "check": "analog_coaxial",
+      "item": "representative oscilloscope",
+      "status": "PASS",
+      "detail": {
+        "axial": 0.0650000050663948,
+        "lateral": 0.0
+      }
+    },
+    {
+      "check": "input_at_front_not_screen",
+      "item": "representative oscilloscope",
+      "status": "PASS",
+      "detail": {
+        "input_y": 0.07900000363588333,
+        "body_front_y": 0.11499997973442078
+      }
+    },
+    {
+      "check": "coax_approaches_input_axis",
+      "item": "representative oscilloscope",
+      "status": "PASS",
+      "detail": {
+        "approach": [
+          0.0,
+          0.21700000762939453,
+          0.0
+        ],
+        "final_to_socket": [
+          0.0,
+          0.1720000058412552,
+          0.0
+        ]
+      }
+    }
+  ],
+  "not_checked": [
+    "actual pixels",
+    "hidden circuits",
+    "manufacturer CAD",
+    "electrical or pneumatic functionality",
+    "unmodeled support contacts"
+  ]
+}
