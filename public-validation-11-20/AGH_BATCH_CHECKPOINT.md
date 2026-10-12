@@ -35,3 +35,7 @@
 - R4 2026-10-12 独立审查：`EXTERNAL_VALIDATION_STATUS.md` 由 Codex 著述，真实像素读图及独立十例保存场景审计为 Codex 执行，AGH 不冒领；九例 11/12/13/14/15/16/17/19/20 仅有限 schematic-preview 阶段批准，非用户最终/工程验收，冻结本轮不重做。18 v04 实际高分辨率审阅 FAIL：12–14 内板被前层遮住，几何存在不等于可读；仅 case18 制作 v05 展示间距/视角与同几何补充细节；不改 Skill v0.6，最终视觉仍待 Codex。
 
 - R4 AGH 仅 case18 v05：source/审查作者 Codex；v04 R4 否决理由重复单元前侧挡内板。前三次 v05 展示/探针尝试分别是0/9遮挡、0/9遮挡、16/17入框 FAIL（历史 JSON 留档）；第三次探针也发现射线终点错误，修探针并重跑。最终只改展示 X/Y 错层与主镜头、同 mesh 补充细节镜头，v01–v04 和九例不动。最终 build0/static UNKNOWN3/saved-audit UNVERIFIED3（0 FAIL）/numeric NUMERIC_ONLY0，sampled 12–14 面各9/9且入框，17位置中心类别采样 17/17；像素尚未给 Codex 重读，所以不称 v05 通过。附本地 case18_reference_v04_v05_detail_local.png；原图、场景、PNG、日志不提交。Skill v0.6 不变。
+
+- R5 Codex 独立实际读 v05 overview/detail 全分辨率，12–14 本体面彩色板/黑纹局部可读，但整图 FAIL：前 1–11 多数遮住，assembled 堆叠不在相对右侧，极平正面/空白过多且 detail 第一单元被端板部分遮挡。Codex 修复自己的 MeshVertex.co.y 探针后另证 12–14 内面/肋条各9/9 本体先命中（Codex 独立工具，非 AGH 执行）；局部几何不替代整体通过。仅 case18 v06，九例冻结、Skill v0.6 暂不改。
+
+- R5 AGH v06（仅 18）：保存 v04 主总图完整状态并重渲，PIL RGB/RGBA 像素逐项对比无差异（PNG 文件 hash 不同）；从同一 .blend 几何临时对 12/13/14 各做单元面隔离补图，每次复原所有 hide_render；最终 scene_v06.blend 主镜头及无隐藏 primary。首轮 import 错误保留初始 log，改用 Blender --python-exit-code1 后 build0，static UNKNOWN3，独立重开审计 UNVERIFIED3 零 FAIL；17/17 中心 Y 射线类别/组装体存在/无隐藏已采样，NUMERIC_ONLY0 四张。v04 主图内部 12–14 面仍遮挡，改以补图展示，真实 v06 像素尚待 Codex 判断，这不是自认整图验收；九例冻结、Skill v0.6 未动。

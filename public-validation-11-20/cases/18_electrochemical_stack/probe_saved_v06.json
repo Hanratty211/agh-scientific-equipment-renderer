@@ -1,0 +1,181 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v06.blend",
+  "active_overview_camera": {
+    "location": [
+      5.400000095367432,
+      -11.0,
+      7.0
+    ],
+    "rotation": [
+      1.0946277379989624,
+      1.3685017563602742e-08,
+      0.4563485383987427
+    ],
+    "ortho_scale": 11.399999618530273,
+    "name": "overview_camera_v02"
+  },
+  "sampled_layers": [
+    {
+      "position": 1,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 2,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 3,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 4,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 5,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 6,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 7,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 8,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 9,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 10,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 11,
+      "expected": "OPEN_FRAME",
+      "frame_bars": 4,
+      "inner_panels": 0,
+      "center_frame_hit": false,
+      "center_base_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 12,
+      "expected": "FRAMED_PANEL",
+      "frame_bars": 4,
+      "inner_panels": 1,
+      "center_frame_hit": false,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 13,
+      "expected": "FRAMED_PANEL",
+      "frame_bars": 4,
+      "inner_panels": 1,
+      "center_frame_hit": false,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 14,
+      "expected": "FRAMED_PANEL",
+      "frame_bars": 4,
+      "inner_panels": 1,
+      "center_frame_hit": false,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 15,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 16,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 17,
+      "expected": "SOLID",
+      "frame_bars": 0,
+      "inner_panels": 0,
+      "center_frame_hit": null,
+      "center_base_hit": true,
+      "status": "PASS"
+    }
+  ],
+  "assembled_object_count": 70,
+  "hidden_primary_in_saved_main": [],
+  "limits": [
+    "one center Y ray per layer",
+    "no pixel visibility proof",
+    "same meshes but separate detail render states not saved",
+    "material identity/assembled sealing unknown"
+  ]
+}

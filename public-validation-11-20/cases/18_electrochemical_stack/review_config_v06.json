@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "id": "whole_overview_v06",
+      "path": "overview_v06.png",
+      "regions": []
+    },
+    {
+      "id": "supplement_cell_12",
+      "path": "cell_12_detail_v06.png",
+      "regions": []
+    },
+    {
+      "id": "supplement_cell_13",
+      "path": "cell_13_detail_v06.png",
+      "regions": []
+    },
+    {
+      "id": "supplement_cell_14",
+      "path": "cell_14_detail_v06.png",
+      "regions": []
+    }
+  ],
+  "contact_sheet": "qa_numeric_sheet_v06.png"
+}
