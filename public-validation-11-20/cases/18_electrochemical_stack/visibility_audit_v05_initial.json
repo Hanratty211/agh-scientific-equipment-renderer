@@ -1,0 +1,383 @@
+{
+  "status": "FAIL",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v05.blend",
+  "camera": "overview_camera_v02",
+  "rows": [
+    {
+      "position": 12,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            -2.34,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.33849474787712097,
+            0.5402835011482239
+          ],
+          "nearest_mesh": "position 07 thin proton membrane",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.33849474787712097,
+            0.568061113357544
+          ],
+          "nearest_mesh": "position 08 thin anode",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.33849474787712097,
+            0.5971614718437195
+          ],
+          "nearest_mesh": "position 09 gasket top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.35527196526527405,
+            0.5388033986091614
+          ],
+          "nearest_mesh": "position 08 thin anode",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.35527196526527405,
+            0.5665810108184814
+          ],
+          "nearest_mesh": "position 08 thin anode",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.35527196526527405,
+            0.595681369304657
+          ],
+          "nearest_mesh": "position 09 gasket top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.3720492124557495,
+            0.5373232960700989
+          ],
+          "nearest_mesh": "position 09 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.3720492124557495,
+            0.565100908279419
+          ],
+          "nearest_mesh": "position 09 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.3720492124557495,
+            0.5942012667655945
+          ],
+          "nearest_mesh": "position 09 gasket right",
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "position": 13,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            -2.34,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.3557797074317932,
+            0.5674677491188049
+          ],
+          "nearest_mesh": "position 09 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.3557797074317932,
+            0.595245361328125
+          ],
+          "nearest_mesh": "position 09 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.3557797074317932,
+            0.6243457198143005
+          ],
+          "nearest_mesh": "position 11 gasket top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.3725569248199463,
+            0.5659876465797424
+          ],
+          "nearest_mesh": "position 10 anode patterned flow right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.3725569248199463,
+            0.5937652587890625
+          ],
+          "nearest_mesh": "position 10 anode patterned flow right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.3725569248199463,
+            0.622865617275238
+          ],
+          "nearest_mesh": "position 11 gasket top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.38933420181274414,
+            0.5645075440406799
+          ],
+          "nearest_mesh": "position 11 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.38933420181274414,
+            0.59228515625
+          ],
+          "nearest_mesh": "position 11 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.38933420181274414,
+            0.6213855147361755
+          ],
+          "nearest_mesh": "position 11 gasket right",
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "position": 14,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            -2.34,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.37306469678878784,
+            0.5946519374847412
+          ],
+          "nearest_mesh": "position 10 anode patterned flow right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.37306469678878784,
+            0.6224295496940613
+          ],
+          "nearest_mesh": "position 11 gasket top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.34,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.37306469678878784,
+            0.6515299677848816
+          ],
+          "nearest_mesh": "position 12 framed cell A top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.3898419141769409,
+            0.5931718945503235
+          ],
+          "nearest_mesh": "position 11 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.3898419141769409,
+            0.6209495067596436
+          ],
+          "nearest_mesh": "position 11 gasket right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -2.14,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.3898419141769409,
+            0.6500498652458191
+          ],
+          "nearest_mesh": "position 12 framed cell A top",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.4066191613674164,
+            0.591691792011261
+          ],
+          "nearest_mesh": "position 12 framed cell A right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.4066191613674164,
+            0.619469404220581
+          ],
+          "nearest_mesh": "position 12 framed cell A right",
+          "same_module": false
+        },
+        {
+          "target_world": [
+            -1.94,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.4066191613674164,
+            0.6485697627067566
+          ],
+          "nearest_mesh": "position 12 framed cell A right",
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    }
+  ],
+  "limits": "mesh-ray sample visibility only, not pixels, contrast, source identity or reader approval"
+}

@@ -1,0 +1,386 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v05.blend",
+  "camera": "overview_camera_v02",
+  "rows": [
+    {
+      "position": 12,
+      "same_module_first_hit": 9,
+      "inside_overview_frame": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.44668149948120117,
+            0.5053777098655701
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.44668149948120117,
+            0.5251051187515259
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.44668149948120117,
+            0.5457719564437866
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.4562039077281952,
+            0.505324125289917
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.4562039077281952,
+            0.5250515341758728
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.4562039077281952,
+            0.5457183122634888
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.4657263457775116,
+            0.5052705407142639
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.4657263457775116,
+            0.5249979496002197
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.4657263457775116,
+            0.5456647276878357
+          ],
+          "nearest_mesh": "position 12 framed cell A inner panel",
+          "same_module": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "position": 13,
+      "same_module_first_hit": 9,
+      "inside_overview_frame": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.5321395397186279,
+            0.5185322761535645
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.5321395397186279,
+            0.5382596850395203
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.5321395397186279,
+            0.5589264631271362
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.5416619777679443,
+            0.5184786915779114
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.5416619777679443,
+            0.5382061004638672
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.5416619777679443,
+            0.5588728785514832
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.551184356212616,
+            0.5184251070022583
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.551184356212616,
+            0.5381525158882141
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.551184356212616,
+            0.5588192939758301
+          ],
+          "nearest_mesh": "position 13 framed cell B inner panel",
+          "same_module": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "position": 14,
+      "same_module_first_hit": 9,
+      "inside_overview_frame": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.6175975799560547,
+            0.5316868424415588
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.6175975799560547,
+            0.5514142513275146
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.6175975799560547,
+            0.5720810890197754
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.6271200180053711,
+            0.5316332578659058
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.6271200180053711,
+            0.5513606667518616
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.6271200180053711,
+            0.5720274448394775
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.6366423964500427,
+            0.5315796732902527
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.6366423964500427,
+            0.5513070821762085
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.6366423964500427,
+            0.5719738602638245
+          ],
+          "nearest_mesh": "position 14 framed cell C inner panel",
+          "same_module": true
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "limits": "mesh-ray sample visibility only, not pixels, contrast, source identity or reader approval"
+}

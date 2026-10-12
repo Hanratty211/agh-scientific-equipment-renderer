@@ -31,3 +31,7 @@
 - R3 限定 v04 / AGH：仅 14/15/18/19 运行 Blender 5.1.2 build/render exit 0，原 v01/v02/v03 未动。四例 static UNKNOWN(3)，独立重开场景终版 UNVERIFIED(3)，PNG NUMERIC_ONLY(0)；已声明可见线 14=3/3、19=2/2；15/18 拆解 0（不强求假连接）。19 首轮 QA marker 隐藏导致 PORT_RENDER FAIL，初始 JSON/log 保留；改极小黑色表面标而非金块、复审未有 FAIL（仍不证像素）。18 v03 中央孔 checker 直接套到 v04 内板会误报 12–14 封口 FAIL，旧报告保留；新 checker 首轮空 basic mesh 的 None 判断错误又 FAIL，保留 probe_bug 报告，修逻辑后对 1–17 中央孔/内板模型分类 17/17，综合 UNVERIFIED；不是全板或密封认证。19 独立 film 实网格最近面 lead 两端约 8.43e-8 与 3.73e-9 世界单位，非视觉/电路验收。混合六例 v03＋四例 v04 并排已本地落盘，全部等待 Codex 最终像素重读。
 
 - 14 额外自查：第一份 v04 审计虽然 PASS，其 array 锚点曾处 top holder 体内部距最近实网格面 0.07 展示世界单位；报告 `audit_scene_v04_pre_surface.*` 留档。没有扩大容差，而是移向真实顶面，重建/重开/重做数值，最终最近面 0.0050001，PNG hash 已重新写进 V04_CHECKPOINT，混合总图已更新。
+
+- R4 2026-10-12 独立审查：`EXTERNAL_VALIDATION_STATUS.md` 由 Codex 著述，真实像素读图及独立十例保存场景审计为 Codex 执行，AGH 不冒领；九例 11/12/13/14/15/16/17/19/20 仅有限 schematic-preview 阶段批准，非用户最终/工程验收，冻结本轮不重做。18 v04 实际高分辨率审阅 FAIL：12–14 内板被前层遮住，几何存在不等于可读；仅 case18 制作 v05 展示间距/视角与同几何补充细节；不改 Skill v0.6，最终视觉仍待 Codex。
+
+- R4 AGH 仅 case18 v05：source/审查作者 Codex；v04 R4 否决理由重复单元前侧挡内板。前三次 v05 展示/探针尝试分别是0/9遮挡、0/9遮挡、16/17入框 FAIL（历史 JSON 留档）；第三次探针也发现射线终点错误，修探针并重跑。最终只改展示 X/Y 错层与主镜头、同 mesh 补充细节镜头，v01–v04 和九例不动。最终 build0/static UNKNOWN3/saved-audit UNVERIFIED3（0 FAIL）/numeric NUMERIC_ONLY0，sampled 12–14 面各9/9且入框，17位置中心类别采样 17/17；像素尚未给 Codex 重读，所以不称 v05 通过。附本地 case18_reference_v04_v05_detail_local.png；原图、场景、PNG、日志不提交。Skill v0.6 不变。

@@ -1,0 +1,41 @@
+{
+  "case": 18,
+  "version": "v05",
+  "source_review_author": "Codex (R4, v04 rejected); v05 not yet externally reviewed",
+  "scene_sha256": "b7a0a0cd913906f525d4ba162ab119fce9139b08230e2f4fa5406a188b3c150d",
+  "record_sha256": "af3a5fe53ae2c8ffae7fb36cd49312980a8780f3f4d88d32f66f2768ebbb9123",
+  "output_sha256": {
+    "overview_v05": "3bff081ade10bbc3274dbfddad7bb5c414bfdc3f9fb6a97a66f3b74502982170",
+    "repeated_cell_detail_v05": "53c445fcb8e5c6788509f20f0907d3de0727d7a48b5d5c30f0ef96ceaf527cd6"
+  },
+  "build_exit": 0,
+  "static_exit": 3,
+  "audit_exit": 3,
+  "numeric_exit": 0,
+  "mesh_probe_exit": 3,
+  "visibility_probe_exit": 3,
+  "audit_status": "UNVERIFIED",
+  "audit_failures": [],
+  "declared_routes": 0,
+  "declared_ports": 0,
+  "ordered_layer_positions": 17,
+  "layer_center_samples_pass": 17,
+  "sampled_visible_panels": {
+    "12": {
+      "first_hit": 9,
+      "in_frame": 9,
+      "sampled": 9
+    },
+    "13": {
+      "first_hit": 9,
+      "in_frame": 9,
+      "sampled": 9
+    },
+    "14": {
+      "first_hit": 9,
+      "in_frame": 9,
+      "sampled": 9
+    }
+  },
+  "coverage_limit": "Mesh ray sampling of 9 face points per module, not PNG read or visual acceptance; no hidden fluid route asserted. No whole-scene visibility proof."
+}

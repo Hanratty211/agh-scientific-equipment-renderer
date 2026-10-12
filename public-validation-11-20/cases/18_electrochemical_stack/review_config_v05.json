@@ -1,0 +1,26 @@
+{
+  "images": [
+    {
+      "id": "overview_v05",
+      "path": "overview_v05.png",
+      "regions": [
+        {
+          "id": "exploded-region",
+          "xyxy": [
+            0.15,
+            0.19,
+            0.92,
+            0.83
+          ],
+          "output": "qa_exploded_crop_v05.png"
+        }
+      ]
+    },
+    {
+      "id": "repeated_cell_detail_v05",
+      "path": "repeated_cell_detail_v05.png",
+      "regions": []
+    }
+  ],
+  "contact_sheet": "qa_numeric_sheet_v05.png"
+}

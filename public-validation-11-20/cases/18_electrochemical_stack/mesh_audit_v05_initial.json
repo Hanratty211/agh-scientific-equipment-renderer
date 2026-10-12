@@ -1,0 +1,200 @@
+{
+  "status": "UNVERIFIED",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v05.blend",
+  "rows": [
+    {
+      "position": 1,
+      "world_y": -4.0,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 2,
+      "world_y": -3.5,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 3,
+      "world_y": -3.0,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 4,
+      "world_y": -2.5,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 5,
+      "world_y": -2.0,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 6,
+      "world_y": -1.5,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 7,
+      "world_y": -1.0,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 8,
+      "world_y": -0.5,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 9,
+      "world_y": 0.0,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 10,
+      "world_y": 0.5,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 11,
+      "world_y": 1.0,
+      "expected": "OPEN_FRAME",
+      "bars": 4,
+      "face_panels": 0,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": null,
+      "status": "PASS"
+    },
+    {
+      "position": 12,
+      "world_y": 1.87,
+      "expected": "FRAME_WITH_FACE",
+      "bars": 4,
+      "face_panels": 1,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 13,
+      "world_y": 2.74,
+      "expected": "FRAME_WITH_FACE",
+      "bars": 4,
+      "face_panels": 1,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 14,
+      "world_y": 3.61,
+      "expected": "FRAME_WITH_FACE",
+      "bars": 4,
+      "face_panels": 1,
+      "frame_center_ray_hit": false,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 15,
+      "world_y": 4.48,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 16,
+      "world_y": 5.35,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    },
+    {
+      "position": 17,
+      "world_y": 6.22,
+      "expected": "SOLID",
+      "bars": 0,
+      "face_panels": 0,
+      "frame_center_ray_hit": null,
+      "panel_or_base_ray_hit": true,
+      "status": "PASS"
+    }
+  ],
+  "ordered": true,
+  "adjacent_exploded_display_spacings_world_units": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.87,
+    0.87,
+    0.87,
+    0.87,
+    0.87,
+    0.87
+  ],
+  "sampling_limit": "one center ray per position; no seal, out-of-center channel, true assembly distance, or image occlusion proof",
+  "ambiguous": [
+    "position15 unresolved",
+    "position16 caption conflict"
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "status": "FAIL",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v05.blend",
+  "camera": "overview_camera_v02",
+  "rows": [
+    {
+      "position": 12,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.5896508693695068,
+            0.5035040378570557
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.5896508693695068,
+            0.5275920033454895
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.0,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.5896508693695068,
+            0.5528270602226257
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.6012377738952637,
+            0.5031839609146118
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.6012377738952637,
+            0.5272719860076904
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.1999999999999997,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.6012377738952637,
+            0.5525069832801819
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.42
+          ],
+          "screen_uv": [
+            0.6128246784210205,
+            0.5028639435768127
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.63
+          ],
+          "screen_uv": [
+            0.6128246784210205,
+            0.5269519090652466
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            3.4,
+            1.7510000000000001,
+            0.85
+          ],
+          "screen_uv": [
+            0.6128246784210205,
+            0.5521869659423828
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "position": 13,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.6970187425613403,
+            0.5171880722045898
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.6970187425613403,
+            0.5412760376930237
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            4.779999999999999,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.6970187425613403,
+            0.5665110349655151
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.7086055874824524,
+            0.516867995262146
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.7086055874824524,
+            0.5409559607505798
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            4.9799999999999995,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.7086055874824524,
+            0.5661910176277161
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.42
+          ],
+          "screen_uv": [
+            0.7201924920082092,
+            0.5165479779243469
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.63
+          ],
+          "screen_uv": [
+            0.7201924920082092,
+            0.5406359434127808
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            5.18,
+            2.6210000000000004,
+            0.85
+          ],
+          "screen_uv": [
+            0.7201924920082092,
+            0.5658709406852722
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "position": 14,
+      "same_module_first_hit": 0,
+      "sample_count": 9,
+      "samples": [
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.8043864965438843,
+            0.5308720469474792
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.8043864965438843,
+            0.5549600124359131
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.5600000000000005,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.8043864965438843,
+            0.5801950693130493
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.8159734010696411,
+            0.5305520296096802
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.8159734010696411,
+            0.554639995098114
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.760000000000001,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.8159734010696411,
+            0.5798749923706055
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.42
+          ],
+          "screen_uv": [
+            0.827560305595398,
+            0.5302319526672363
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.63
+          ],
+          "screen_uv": [
+            0.827560305595398,
+            0.5543199181556702
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        },
+        {
+          "target_world": [
+            6.960000000000001,
+            3.4909999999999997,
+            0.85
+          ],
+          "screen_uv": [
+            0.827560305595398,
+            0.5795549750328064
+          ],
+          "nearest_mesh": null,
+          "same_module": false
+        }
+      ],
+      "status": "FAIL"
+    }
+  ],
+  "limits": "mesh-ray sample visibility only, not pixels, contrast, source identity or reader approval"
+}

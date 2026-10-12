@@ -28,3 +28,13 @@
 - v04 new probe first exit 2 from checker bug: no `basic` mesh for four-bar OPEN layer returns None (no intersection evidence), wrongly compared only to False. Saved `mesh_audit_v04_probe_bug.json/.log`; condition corrected to accept no hit as empty OPEN for this one ray. Re-run exit 3 UNVERIFIED with 17/17 declared center-ray categories, NOT full geometry seal or identity verification. v03-old checker initial v04 mismatch preserved too.
 
 - AGH v04 R3: case-local build/render exit 0, static UNKNOWN(3), reopened scene UNVERIFIED(3) FAIL 0, PNG NUMERIC_ONLY(0). Visible declared endpoint count 0/0; latest pixels pending Codex. See V04_CHECKPOINT.md.
+
+- Codex R4 independent v04 full-pixel verdict requires revision: repeated positions12–14 inner faces obscured by preceding layers. Nine other cases frozen with limited external schematic-preview stage approval; only case18 v05 presentation repair permitted. Preserve v04 and source ambiguities.
+
+- v05 first candidate FAILED independent camera ray sampling on actual saved exploded meshes: 12/13/14 each 0/9 sampled face-first hits, preceding layers occluded them. Retained `visibility_audit_v05_initial.json/.log`; build/renders of first candidate also kept in `build_v05_initial.*`/`overview_v05_initial.png`/`repeated_cell_detail_v05_initial.png`/`scene_v05_initial.blend` locally. Adjust presentation camera/spacing only; no tolerance inflation or false visual PASS.
+
+- v05 second candidate X-stair display and shallower camera still FAILED saved-scene face-first sampled visibility 12/13/14 = 0/9; prior layer12/13 hit on later samples. Kept `visibility_audit_v05_stair.json`, `scene_v05_stair.blend`, `overview_v05_stair.png` and logs locally. Next: present module 12–14 in supplementary same-mesh face camera, and make overview show front face by reducing projection overlap, not asserting geometry-only success.
+
+- v05 third display candidate wide X-stair (1.78 each) still independent face ray 0/9 all three; additionally saved-scene camera projection FAIL for positions16/17; preserved `visibility_audit_v05_widestair.json` and `audit_scene_v05_widestair.json` + binary scene locally. Investigate face ray depth/normals instead of claiming achieved visibility.
+
+- AGH v05 final build exit0; static UNKNOWN(3), independent reopened scene audit UNVERIFIED(3) zero FAIL, numeric PNG helper NUMERIC_ONLY(0); 17/17 center layer categories and 12/13/14 face ray samples each 9/9 IN FRAME in saved scene, all probes overall UNVERIFIED(3). v05 actual pixels pending Codex. Earlier v05 initial/stair/widestair failed and audit history remains under versioned filenames, not silently overwritten. See V05_CHECKPOINT.md.

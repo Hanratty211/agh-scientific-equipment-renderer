@@ -1,0 +1,55 @@
+{
+  "status": "NUMERIC_ONLY",
+  "images": [
+    {
+      "id": "overview_v05",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/overview_v05.png",
+      "sha256": "3bff081ade10bbc3274dbfddad7bb5c414bfdc3f9fb6a97a66f3b74502982170",
+      "width": 1840,
+      "height": 920,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": [
+        {
+          "id": "exploded-region",
+          "normalized_xyxy": [
+            0.15,
+            0.19,
+            0.92,
+            0.83
+          ],
+          "pixel_xyxy": [
+            276,
+            175,
+            1693,
+            764
+          ],
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/qa_exploded_crop_v05.png",
+          "size": [
+            1417,
+            589
+          ],
+          "source_sha256": "3bff081ade10bbc3274dbfddad7bb5c414bfdc3f9fb6a97a66f3b74502982170"
+        }
+      ]
+    },
+    {
+      "id": "repeated_cell_detail_v05",
+      "source": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/repeated_cell_detail_v05.png",
+      "sha256": "53c445fcb8e5c6788509f20f0907d3de0727d7a48b5d5c30f0ef96ceaf527cd6",
+      "width": 1100,
+      "height": 660,
+      "mode": "RGBA",
+      "alpha_channel": true,
+      "regions": []
+    }
+  ],
+  "contact_sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/qa_numeric_sheet_v05.png",
+  "not_verified": [
+    "clarity",
+    "contact",
+    "topology",
+    "labels_correct",
+    "photographic_similarity"
+  ]
+}
