@@ -1,0 +1,142 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.sample-pneumatic"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.pump-pneumatic"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.sensor-pneumatic"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "mechanical frame post"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "upper coil housing"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "lower coil housing"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "hemispherical sample"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "supported loading stage"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "sample-pneumatic"
+      ],
+      "connections": [
+        "sample-pump",
+        "sample-sensor"
+      ],
+      "labels": [],
+      "object": "sample fixture top"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [
+        "pump-pneumatic"
+      ],
+      "connections": [
+        "sample-pump"
+      ],
+      "labels": [],
+      "object": "right pump coax metal nozzle"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "representative EA-PSI9200-25T body"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "right syringe pump"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [
+        "sensor-pneumatic"
+      ],
+      "connections": [
+        "sample-sensor"
+      ],
+      "labels": [],
+      "object": "front pressure sensor"
+    },
+    "port:sample-pneumatic": {
+      "connections": [
+        "sample-pump",
+        "sample-sensor"
+      ],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:pump-pneumatic": {
+      "connections": [
+        "sample-pump"
+      ],
+      "labels": [],
+      "owner": "c7"
+    },
+    "port:sensor-pneumatic": {
+      "connections": [
+        "sample-sensor"
+      ],
+      "labels": [],
+      "owner": "c10"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

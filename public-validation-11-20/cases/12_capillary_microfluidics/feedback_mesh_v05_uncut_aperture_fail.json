@@ -1,0 +1,335 @@
+{
+  "case": 12,
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+  "status": "FAIL",
+  "checks": [
+    {
+      "code": "upper pump barrel coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -3.365000009536743,
+            -2.705000162124634
+          ],
+          [
+            -0.0729999989271164,
+            0.0729999989271164
+          ],
+          [
+            2.3470001220703125,
+            2.493000030517578
+          ]
+        ]
+      }
+    },
+    {
+      "code": "upper pump collar coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -2.7230000495910645,
+            -2.630000114440918
+          ],
+          [
+            -0.064970001578331,
+            0.064970001578331
+          ],
+          [
+            2.355030059814453,
+            2.4849700927734375
+          ]
+        ]
+      }
+    },
+    {
+      "code": "upper pump nozzle coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -2.6440000534057617,
+            -2.489999771118164
+          ],
+          [
+            -0.03500000387430191,
+            0.03500000387430191
+          ],
+          [
+            2.384999990463257,
+            2.455000162124634
+          ]
+        ]
+      }
+    },
+    {
+      "code": "upper pump barrel action face contacts collar",
+      "status": "PASS",
+      "detail": {
+        "barrel_action_end_x": -2.705000162124634,
+        "collar_range_x": [
+          -2.7230000495910645,
+          -2.630000114440918
+        ]
+      }
+    },
+    {
+      "code": "upper pump collar and nozzle overlap",
+      "status": "PASS",
+      "detail": {
+        "collar_x": [
+          -2.7230000495910645,
+          -2.630000114440918
+        ],
+        "nozzle_x": [
+          -2.6440000534057617,
+          -2.489999771118164
+        ]
+      }
+    },
+    {
+      "code": "upper pump actual nozzle action face and annulus",
+      "status": "PASS",
+      "detail": {
+        "nozzle_action_end_x": -2.489999771118164,
+        "annulus": [
+          -2.490000009536743,
+          0.0,
+          2.4200000762939453
+        ],
+        "distance_x": 2.384185791015625e-07
+      }
+    },
+    {
+      "code": "upper pump tube ends on nozzle seat",
+      "status": "PASS",
+      "detail": {
+        "nearest_spline_end_to_annulus": 0.0,
+        "route_type": "POLY"
+      }
+    },
+    {
+      "code": "upper pump barrel longitudinal X",
+      "status": "PASS",
+      "detail": {
+        "barrel_bounds": [
+          [
+            -3.365000009536743,
+            -2.705000162124634
+          ],
+          [
+            -0.0729999989271164,
+            0.0729999989271164
+          ],
+          [
+            2.3470001220703125,
+            2.493000030517578
+          ]
+        ]
+      }
+    },
+    {
+      "code": "lower pump barrel coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -3.365000009536743,
+            -2.705000162124634
+          ],
+          [
+            -0.0729999989271164,
+            0.0729999989271164
+          ],
+          [
+            0.8970000147819519,
+            1.0429999828338623
+          ]
+        ]
+      }
+    },
+    {
+      "code": "lower pump collar coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -2.7230000495910645,
+            -2.630000114440918
+          ],
+          [
+            -0.064970001578331,
+            0.064970001578331
+          ],
+          [
+            0.9050300121307373,
+            1.0349700450897217
+          ]
+        ]
+      }
+    },
+    {
+      "code": "lower pump nozzle coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            -2.6440000534057617,
+            -2.489999771118164
+          ],
+          [
+            -0.03500000387430191,
+            0.03500000387430191
+          ],
+          [
+            0.9350000023841858,
+            1.0049999952316284
+          ]
+        ]
+      }
+    },
+    {
+      "code": "lower pump barrel action face contacts collar",
+      "status": "PASS",
+      "detail": {
+        "barrel_action_end_x": -2.705000162124634,
+        "collar_range_x": [
+          -2.7230000495910645,
+          -2.630000114440918
+        ]
+      }
+    },
+    {
+      "code": "lower pump collar and nozzle overlap",
+      "status": "PASS",
+      "detail": {
+        "collar_x": [
+          -2.7230000495910645,
+          -2.630000114440918
+        ],
+        "nozzle_x": [
+          -2.6440000534057617,
+          -2.489999771118164
+        ]
+      }
+    },
+    {
+      "code": "lower pump actual nozzle action face and annulus",
+      "status": "PASS",
+      "detail": {
+        "nozzle_action_end_x": -2.489999771118164,
+        "annulus": [
+          -2.490000009536743,
+          0.0,
+          0.9700000286102295
+        ],
+        "distance_x": 2.384185791015625e-07
+      }
+    },
+    {
+      "code": "lower pump tube ends on nozzle seat",
+      "status": "PASS",
+      "detail": {
+        "nearest_spline_end_to_annulus": 0.0,
+        "route_type": "POLY"
+      }
+    },
+    {
+      "code": "lower pump barrel longitudinal X",
+      "status": "PASS",
+      "detail": {
+        "barrel_bounds": [
+          [
+            -3.365000009536743,
+            -2.705000162124634
+          ],
+          [
+            -0.0729999989271164,
+            0.0729999989271164
+          ],
+          [
+            0.8970000147819519,
+            1.0429999828338623
+          ]
+        ]
+      }
+    },
+    {
+      "code": "both capillary feeds preserved",
+      "status": "PASS",
+      "detail": {
+        "names": [
+          "upper pump to capillary",
+          "lower pump to capillary"
+        ]
+      }
+    },
+    {
+      "code": "real Boolean aperture through laptop base",
+      "status": "FAIL",
+      "detail": {
+        "first_surface_depth_from_wall": 0.0,
+        "wall_x": 2.9100000858306885,
+        "socket_center": [
+          2.940999984741211,
+          -0.18000000715255737,
+          0.23399999737739563
+        ]
+      }
+    },
+    {
+      "code": "open socket frame surround vertical",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "code": "open socket frame surround horizontal",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "code": "DATA exterior avoids lid and display",
+      "status": "PASS",
+      "detail": {
+        "minimum_sampled_clearance": 0.39840544222209306,
+        "samples": 102
+      }
+    },
+    {
+      "code": "DATA cable approaches laptop from LEFT",
+      "status": "PASS",
+      "detail": {
+        "last_points": [
+          [
+            2.6059999465942383,
+            -0.18000000715255737,
+            0.23399999737739563
+          ],
+          [
+            2.7860000133514404,
+            -0.18000000715255737,
+            0.23399999737739563
+          ],
+          [
+            2.940999984741211,
+            -0.18000000715255737,
+            0.23399999737739563
+          ]
+        ]
+      }
+    }
+  ],
+  "not_checked": [
+    "source-pixel similarity",
+    "commercial connector pinout",
+    "full smooth curve obstacle collision",
+    "load-bearing and flow/electric function"
+  ]
+}

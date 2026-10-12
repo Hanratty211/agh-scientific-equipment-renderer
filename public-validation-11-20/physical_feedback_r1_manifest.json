@@ -1,0 +1,135 @@
+{
+  "author": "AGH",
+  "source_feedback": "PHYSICAL_FEEDBACK_R1.md",
+  "runtime_skill_revision": "ed51c725de3dd1c46c151900fce32bbc9bd571b3a14c6d3ee1538e219accc48d",
+  "cases": [
+    {
+      "case": 12,
+      "version": "v05",
+      "old_version": "v04",
+      "scene": "public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+      "scene_sha256": "bf4c83bf31463248e5ebe121f5f5532559859aedcd24ba7e8d23724e7063faf2",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/overview_v05.png",
+          "sha256": "7521ec0847d25874bf597cbfdd451b03aab55a04a3a92b593c484d7c6bcd490f"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_both_feeds_v05.png",
+          "sha256": "ad47072ddbc926ad25472649240b23e15345087c79afbf58431dbc7d665c146f"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_to_laptop_path_v05.png",
+          "sha256": "66c0392619118d30d20661fa4352bed1ff66eb5cf1a597918df89b05fc17f863"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_laptop_hinge_open_data_v05.png",
+          "sha256": "f98126db6990da76b0aabc70acd7ed90c11ae874229185a426a36dbe29df9093"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_lower_barrel_tip_v05.png",
+          "sha256": "aa20a3fb9fdada5d4e111f782e368c7773ef42c2610167c30235a5d35d00c8db"
+        },
+        {
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_upper_barrel_tip_v05.png",
+          "sha256": "d7c913923f828d17e813686493c50e1123a0b84fcc60e2c923d0d132c44c92e4"
+        }
+      ],
+      "checks": {
+        "record_static": {
+          "status": "UNKNOWN",
+          "failure_count": 0
+        },
+        "audit_scene": {
+          "status": "UNVERIFIED",
+          "failure_count": 0
+        },
+        "feedback_mesh": {
+          "status": "LIMITED_GEOMETRY_PASS",
+          "failure_count": 0
+        }
+      },
+      "user_pixel_status": "NOT_REVIEWED_NEW_VERSION",
+      "authors": "AGH scene and checks; original user feedback separately saved"
+    },
+    {
+      "case": 14,
+      "version": "v06",
+      "old_version": "v05",
+      "scene": "public-validation-11-20/cases/14_acoustic_levitation/scene_v06.blend",
+      "scene_sha256": "edaf133295f73136fa8231645f00ff2a9eb26cf5d97738e9b410919b7c67e53d",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/overview_v06.png",
+          "sha256": "4cb1226d4b5d24d6cda8a45eab5577e80bac91b1f18d1c995fa6ca5cfe3cc5dc"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_laptop_hinge_open_data_v06.png",
+          "sha256": "19acb7d23213ff749fae85d94d16913466f6bf5838370a8e591e0da9a458f300"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_mic_amp_scope_v06.png",
+          "sha256": "acbcae5a41d4d0eea95832959b4dab3eea54950400c8bd0102e4435d5af2b945"
+        },
+        {
+          "path": "public-validation-11-20/cases/14_acoustic_levitation/detail_scope_amp_signal_v06.png",
+          "sha256": "1467b6e1fc7b0852f96a232c2540f46d305814b6c79cb75a0aa7fcb20816ecbe"
+        }
+      ],
+      "checks": {
+        "record_static": {
+          "status": "UNKNOWN",
+          "failure_count": 0
+        },
+        "audit_scene": {
+          "status": "UNVERIFIED",
+          "failure_count": 0
+        },
+        "feedback_mesh": {
+          "status": "LIMITED_GEOMETRY_PASS",
+          "failure_count": 0
+        }
+      },
+      "user_pixel_status": "NOT_REVIEWED_NEW_VERSION",
+      "authors": "AGH scene and checks; original user feedback separately saved"
+    },
+    {
+      "case": 17,
+      "version": "v05",
+      "old_version": "v04",
+      "scene": "public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+      "scene_sha256": "9ca48fcc4ce44e805d9fc8ac30d137bb5232b1223a4113eaafdc1593bf7e98c2",
+      "images": [
+        {
+          "path": "public-validation-11-20/cases/17_magnetic_shell/overview_v05.png",
+          "sha256": "1c61d439d59be1e792b53e9a1b145c15acf4687a385c687f082d88ac13dee2ca"
+        },
+        {
+          "path": "public-validation-11-20/cases/17_magnetic_shell/detail_pump_barrel_tip_v05.png",
+          "sha256": "091dc35141baa8f70a178593d7ee5d6fd0e338e384f7bfb534fa5edb2c379a45"
+        },
+        {
+          "path": "public-validation-11-20/cases/17_magnetic_shell/detail_pump_tube_fixture_v05.png",
+          "sha256": "74fd797660af1a81dcd130c63f4807e6354199108025f59de8b4a6820f6378da"
+        }
+      ],
+      "checks": {
+        "record_static": {
+          "status": "UNKNOWN",
+          "failure_count": 0
+        },
+        "audit_scene": {
+          "status": "UNVERIFIED",
+          "failure_count": 0
+        },
+        "feedback_mesh": {
+          "status": "LIMITED_GEOMETRY_PASS",
+          "failure_count": 0
+        }
+      },
+      "user_pixel_status": "NOT_REVIEWED_NEW_VERSION",
+      "authors": "AGH scene and checks; original user feedback separately saved"
+    }
+  ],
+  "limited": "Not commercially exact CAD, source image user to review, no functional validation"
+}

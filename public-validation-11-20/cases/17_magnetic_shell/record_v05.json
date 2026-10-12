@@ -1,0 +1,228 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the visible whole a-panel apparatus: paired coils/frame, centered shell/sample, syringe pump, pressure sensor, supply and visible tubes/supports. Do not substitute field plots or a generic two-ring cartoon for the photograph. Panel Fig.1(a); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim. R1 correction after user actual pixel review; use vv05 saved scene; not user-approved yet.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1120,
+      "height": 800,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10"
+    ],
+    "required_connections": [
+      "sample-pump",
+      "sample-sensor"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "frame",
+      "object": "mechanical frame post",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "upper coil",
+      "object": "upper coil housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "lower coil",
+      "object": "lower coil housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "hemisphere",
+      "object": "hemispherical sample",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "supported stage",
+      "object": "supported loading stage",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "sample fixture",
+      "object": "sample fixture top",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "pump syringe interface",
+      "object": "right pump coax metal nozzle",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "left supply",
+      "object": "representative EA-PSI9200-25T body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "right pump",
+      "object": "right syringe pump",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "pressure sensor",
+      "object": "front pressure sensor",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "sample-pneumatic",
+      "owner": "c6",
+      "object": "sample tube fitting",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "pump-pneumatic",
+      "owner": "c7",
+      "object": "right pump open outlet seat",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "sensor-pneumatic",
+      "owner": "c10",
+      "object": "sensor tube fitting",
+      "medium": "fluid",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    }
+  ],
+  "connections": [
+    {
+      "id": "sample-pump",
+      "a": "sample-pneumatic",
+      "b": "pump-pneumatic",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "sample to pump visible pneumatic segment",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "sample-sensor",
+      "a": "sample-pneumatic",
+      "b": "sensor-pneumatic",
+      "kind": "transport",
+      "medium": "fluid",
+      "object": "sample to pressure sensor visible segment",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41467-021-22776-y",
+    "figure_url": "https://www.nature.com/articles/s41467-021-22776-y/figures/1",
+    "target_sha256": "4b39a5df39dad8ebd9a4a690bb7664e52c86dabc88a67e728972444b0e2cde8d",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [
+    {
+      "id": "sample-pump",
+      "source": "sample-pneumatic",
+      "output": "sample-pneumatic",
+      "medium": "visible pneumatic",
+      "input": "pump-pneumatic",
+      "destination": "pump-pneumatic",
+      "coverage": "visible tube boundaries only"
+    },
+    {
+      "id": "sample-sensor",
+      "source": "sample-pneumatic",
+      "output": "sample-pneumatic",
+      "medium": "visible pneumatic",
+      "input": "sensor-pneumatic",
+      "destination": "sensor-pneumatic",
+      "coverage": "visible tube boundaries only"
+    }
+  ],
+  "unknown_interfaces": [
+    "EA-Elektro-Automatik exact terminal positions and coil power leads not visible; no invented DC cable",
+    "Pump syringe/ferrule visually representative; pressure internal path unknown"
+  ],
+  "r1_feedback": "public-validation-11-20/PHYSICAL_FEEDBACK_R1.md",
+  "r1_status": "not visually approved; mesh/interface audit is limited geometry only",
+  "physical_chain_required": {
+    "right_pump": "right syringe pump mounted syringe barrel → right pump barrel-end collar → right pump coax metal nozzle → right pump open outlet seat → sample to pump visible pneumatic segment"
+  },
+  "r1_unverified": [
+    "Actual source pixel similarity, commercial port model, full cable occlusion, electrical/flow operation not certified by record"
+  ]
+}
