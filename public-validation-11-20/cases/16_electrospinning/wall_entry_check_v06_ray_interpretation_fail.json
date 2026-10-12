@@ -1,0 +1,239 @@
+{
+  "author": "AGH",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v06.blend",
+  "scene_sha256": "ebc64d84ec4a0f06f2c0d524c6ef99485a0498a210e93ea38047fac3f8174468",
+  "status": "FAIL",
+  "checks": [
+    {
+      "code": "actual original left wall remains",
+      "status": "PASS",
+      "detail": {
+        "x_bounds": [
+          -1.662500023841858,
+          -1.6174999475479126
+        ]
+      }
+    },
+    {
+      "code": "positive HV wall bore at actual entry",
+      "status": "PASS",
+      "detail": {
+        "central_wall_ray": null,
+        "outside_start": [
+          -1.7000000476837158,
+          -0.5099999904632568,
+          1.159999966621399
+        ]
+      }
+    },
+    {
+      "code": "positive HV intact wall near entry",
+      "status": "PASS",
+      "detail": {
+        "offset_y": -0.38499999046325684,
+        "side_wall_hit": [
+          -1.662500023841858,
+          -0.38499999046325684,
+          1.159999966621399
+        ]
+      }
+    },
+    {
+      "code": "positive HV distinct seat/boot real meshes",
+      "status": "PASS",
+      "detail": {
+        "names": [
+          "positive HV representative insulating mounting sleeve",
+          "positive HV wall-entry strain relief",
+          "chamber red boundary"
+        ]
+      }
+    },
+    {
+      "code": "positive HV insulating sleeve actual axial lumen",
+      "status": "FAIL",
+      "detail": {
+        "outermost_x": -1.7304999828338623,
+        "first_axis_hit": null
+      }
+    },
+    {
+      "code": "positive HV sleeve straddles bored wall",
+      "status": "PASS",
+      "detail": {
+        "sleeve_x": [
+          -1.7304999828338623,
+          -1.6054999828338623
+        ],
+        "wall_x": [
+          -1.662500023841858,
+          -1.6174999475479126
+        ]
+      }
+    },
+    {
+      "code": "positive HV external lead lands inside boot",
+      "status": "PASS",
+      "detail": {
+        "endpoint": [
+          -1.7079999446868896,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "boot_center": [
+          -1.7450000047683716,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "surface_gap": 0.013499975404472762
+      }
+    },
+    {
+      "code": "positive HV guide tangent toward bored sidewall",
+      "status": "PASS",
+      "detail": {
+        "last_pair": [
+          [
+            -1.7899999618530273,
+            -0.6700000166893005,
+            1.159999966621399
+          ],
+          [
+            -1.7079999446868896,
+            -0.5099999904632568,
+            1.159999966621399
+          ]
+        ]
+      }
+    },
+    {
+      "code": "positive HV no lead inside wall",
+      "status": "PASS",
+      "detail": {
+        "endpoint_x": -1.7079999446868896,
+        "wall_outer_x": -1.662500023841858
+      }
+    },
+    {
+      "code": "positive HV no old colored head",
+      "status": "PASS",
+      "detail": {
+        "note": "old colored marker was removed by build script; annular ivory boundary retained"
+      }
+    },
+    {
+      "code": "return/ground wall bore at actual entry",
+      "status": "PASS",
+      "detail": {
+        "central_wall_ray": null,
+        "outside_start": [
+          -1.7000000476837158,
+          -0.5099999904632568,
+          0.5600000023841858
+        ]
+      }
+    },
+    {
+      "code": "return/ground intact wall near entry",
+      "status": "PASS",
+      "detail": {
+        "offset_y": -0.38499999046325684,
+        "side_wall_hit": [
+          -1.662500023841858,
+          -0.38499999046325684,
+          0.5600000023841858
+        ]
+      }
+    },
+    {
+      "code": "return/ground distinct seat/boot real meshes",
+      "status": "PASS",
+      "detail": {
+        "names": [
+          "return/ground representative insulating mounting sleeve",
+          "return/ground wall-entry strain relief",
+          "chamber green boundary"
+        ]
+      }
+    },
+    {
+      "code": "return/ground insulating sleeve actual axial lumen",
+      "status": "FAIL",
+      "detail": {
+        "outermost_x": -1.7304999828338623,
+        "first_axis_hit": null
+      }
+    },
+    {
+      "code": "return/ground sleeve straddles bored wall",
+      "status": "PASS",
+      "detail": {
+        "sleeve_x": [
+          -1.7304999828338623,
+          -1.6054999828338623
+        ],
+        "wall_x": [
+          -1.662500023841858,
+          -1.6174999475479126
+        ]
+      }
+    },
+    {
+      "code": "return/ground external lead lands inside boot",
+      "status": "PASS",
+      "detail": {
+        "endpoint": [
+          -1.7079999446868896,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "boot_center": [
+          -1.7450000047683716,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "surface_gap": 0.013499975404472762
+      }
+    },
+    {
+      "code": "return/ground guide tangent toward bored sidewall",
+      "status": "PASS",
+      "detail": {
+        "last_pair": [
+          [
+            -1.7899999618530273,
+            -0.6700000166893005,
+            0.5600000023841858
+          ],
+          [
+            -1.7079999446868896,
+            -0.5099999904632568,
+            0.5600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "code": "return/ground no lead inside wall",
+      "status": "PASS",
+      "detail": {
+        "endpoint_x": -1.7079999446868896,
+        "wall_outer_x": -1.662500023841858
+      }
+    },
+    {
+      "code": "return/ground no old colored head",
+      "status": "PASS",
+      "detail": {
+        "note": "old colored marker was removed by build script; annular ivory boundary retained"
+      }
+    }
+  ],
+  "not_checked": [
+    "actual seal or pressure rating",
+    "HV insulation/dielectric/safety/creepage",
+    "manufacturer connector specifications",
+    "hidden routing to needle and collector",
+    "pixel readability"
+  ]
+}

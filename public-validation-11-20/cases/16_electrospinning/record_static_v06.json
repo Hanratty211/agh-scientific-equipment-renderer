@@ -1,0 +1,190 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.dc-red"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.dc-green"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.chamber-red"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.chamber-green"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "clear Perspex side"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "drive upper red housing"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "syringe barrel"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "visible PTFE feed"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "vertical metal needle"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "needle Perspex support"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "copper collector"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "upright PTFE Vee plate"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "horizontal front heater"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "angled IR red source"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "representative Genvolt 73030 body"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [
+        "dc-red"
+      ],
+      "connections": [
+        "red-lead"
+      ],
+      "labels": [],
+      "object": "positive HV insulated source plug"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [
+        "dc-green"
+      ],
+      "connections": [
+        "green-lead"
+      ],
+      "labels": [],
+      "object": "return/ground insulated source plug"
+    },
+    "component:c14": {
+      "supports": [],
+      "ports": [
+        "chamber-red"
+      ],
+      "connections": [
+        "red-lead"
+      ],
+      "labels": [],
+      "object": "positive HV representative insulating mounting sleeve"
+    },
+    "component:c15": {
+      "supports": [],
+      "ports": [
+        "chamber-green"
+      ],
+      "connections": [
+        "green-lead"
+      ],
+      "labels": [],
+      "object": "return/ground representative insulating mounting sleeve"
+    },
+    "port:dc-red": {
+      "connections": [
+        "red-lead"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:dc-green": {
+      "connections": [
+        "green-lead"
+      ],
+      "labels": [],
+      "owner": "c13"
+    },
+    "port:chamber-red": {
+      "connections": [
+        "red-lead"
+      ],
+      "labels": [],
+      "owner": "c14"
+    },
+    "port:chamber-green": {
+      "connections": [
+        "green-lead"
+      ],
+      "labels": [],
+      "owner": "c15"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}

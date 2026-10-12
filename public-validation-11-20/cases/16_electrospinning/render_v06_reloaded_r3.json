@@ -1,0 +1,50 @@
+{
+  "case": 16,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v06.blend",
+  "scene_sha256": "ebc64d84ec4a0f06f2c0d524c6ef99485a0498a210e93ea38047fac3f8174468",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v06_reloaded_r3.png",
+      "sha256": "9a7ac8aa6ffb406ea4d75ac9913035e977b838c1ea69a3f6dc09b293943c4d9b",
+      "camera": "overview_camera_v02",
+      "size": [
+        1090,
+        850
+      ]
+    },
+    {
+      "label": "both_insulated_entries",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_both_insulated_entries_v06_reloaded_r3.png",
+      "sha256": "0d3db4a8ca94d101761da463a1b0d4d75ea75c9cbd620f3fffee3008bdeb83da",
+      "camera": "TEMP_R2_both_insulated_entries",
+      "size": [
+        1100,
+        780
+      ]
+    },
+    {
+      "label": "positive_entry_seat",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_positive_entry_seat_v06_reloaded_r3.png",
+      "sha256": "f3b088b3bbf95b27af1657a6f3f6c69f19bb322ac56f226fc5594fa98d0da9f5",
+      "camera": "TEMP_R2_positive_entry_seat",
+      "size": [
+        1080,
+        760
+      ]
+    },
+    {
+      "label": "return_entry_seat",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_return_entry_seat_v06_reloaded_r3.png",
+      "sha256": "75bf9ee21665b4120e812f69af31128b745b8d44688e1dc391bc142e0c22373d",
+      "camera": "TEMP_R2_return_entry_seat",
+      "size": [
+        1080,
+        760
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}
