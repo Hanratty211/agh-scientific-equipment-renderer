@@ -2,7 +2,7 @@
 
 ## 最新交付（2026-10-12）
 
-- [科研装置渲染 Skill v1.0 源码（待外部核查及受管安装）](skills/agh-scientific-equipment-renderer/SKILL.md) · [实物形态与完整接口按需参考](skills/agh-scientific-equipment-renderer/references/physical_equipment_and_interfaces.md) · [源码/安装来源](skills/agh-scientific-equipment-renderer/PROVENANCE.md)
+- [科研装置渲染 Skill v1.0 源码](skills/agh-scientific-equipment-renderer/SKILL.md)（源包 commit `e764812`；已受管安装，后续新轮次 `skill_read` 实际读到 v1.0 入口；[运行时安装与读取记录](public-validation-11-20/RUNTIME_SKILL_V10_RECORD.md)）· [实物形态与完整接口按需参考](skills/agh-scientific-equipment-renderer/references/physical_equipment_and_interfaces.md) · [安装前源码沿革](skills/agh-scientific-equipment-renderer/PROVENANCE.md)
 - [六例实物与接口修订 R4：图件、可编辑场景及审查索引](public-validation-11-20/GITHUB_DELIVERY_R4.md)（该交付时 Skill v0.7；旧档案不改写为 v1.0 渲染）
 
 以下保留项目早期任务与案例记录；当前交付状态以以上索引及各轮检查点为准。
