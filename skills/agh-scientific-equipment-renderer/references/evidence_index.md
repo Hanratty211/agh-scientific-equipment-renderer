@@ -1,4 +1,4 @@
-# v0.7 证据索引｜有限公开案例＋合成工具测试，非跨域验收
+# v1.0 证据索引｜有限公开案例＋实物 R1–R4＋合成工具测试，非跨域验收
 
 新增 [十篇公开论文 11–20 的自包含简表](public_validation_11_20.md)：给 DOI/图版、实际外部多轮阶段结论及技术边界。以下旧案例相对路径是**开发仓库可选档案**；Skill 复制到新目录后缺少这些档案不影响主流程、示例与脚本。每项只支持**指明的判断**；旧文件中有撤回的“通过”声明，必须连同更正阅读。案例尺寸、坐标、对象名、材质权重、视角数、采样数只属于案例证据，不作为 Skill 默认值。
 
@@ -36,3 +36,14 @@
 - [`examples/valid_record.json`](../examples/valid_record.json) 是 2 组件、2 锚点、一条合成机械线与一条支撑的非科学小例；[记录格式](project_record.md) 和 [`scripts/validate_project_record.py`](../scripts/validate_project_record.py) 明确静态检查边界。
 - [`examples/make_synthetic_scene.py`](../examples/make_synthetic_scene.py) 生成临时 `.blend`；[`scripts/audit_saved_scene.py`](../scripts/audit_saved_scene.py) 独立读已存场景，报告世界几何端点/有限支撑近接及横、纵、深度。[`examples/run_v06_regression.py`](../examples/run_v06_regression.py) 的有效与可失败反例只证明这些工具在合成场景的分项行为。前轮纠错回归 31/31；末轮限定复核 44/44，新增非法嵌套类型静态短路、仅单器件、面内接触采样漏报、四类 render 路径反例。render inclusion 仍未完整核实，故有效几何场景总状态为 UNVERIFIED 而非 PASS；support_gap 可能伴随端口/投影等其他 FAIL，但 SUPPORT 分项必须 UNVERIFIED。
 - [`scripts/review_images.py`](../scripts/review_images.py) 和 [`examples/review_config.json`](../examples/review_config.json) 演示 PNG 哈希、归一化裁框、Alpha/分辨率数值；[`scripts/make_svg_labels.py`](../scripts/make_svg_labels.py) 输出有字 SVG 或拒绝无字记录。这些均**不**建立源图观感、照片标签正确性、接触功能、设备身份或用户最终验收。
+
+## v1.0 实物/接口纠错证据索引（仅可选开发仓库档案）
+
+| 来源与作者 | 针对实际缺陷及版本 | 能支持的判断／不能支持的判断 |
+|---|---|---|
+| [R1 外部反馈](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R1.md)；[R1 AGH 结果](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R1_AGH_RESULT.md) | 笔记本机械连贯与类属控制面改善；12 供液管被宽前缀误删、12/17 barrel-tip 断开、数据口实心/线碰屏；14 amp→scope 修复 | 审阅者区分；旧 FAIL 保留，局部几何或相邻关系不证明功能 |
+| [R2 外部反馈](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R2.md)；[R2 AGH 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R2_AGH_CHECKPOINT.md) | 12/17 保存场景与构建进程 PNG 筒方向不一致；16/19 尚有硬折；另进程重载更新图，原图不覆盖 | 已保存场景与 PNG 哈希追踪，独立审图另行进行；缓存 `.pyc` 使运行 revision 漂移并非源码修改 |
+| [R3 AGH 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R3_AGH_CHECKPOINT.md) | 16 两个 Perspex 壁实际开孔/绝缘座，但可见彩色尾在缓冲旁折出；旧中心环审计 FAIL/UNVERIFIED 留档 | 有限实体检查及仍失败/未知的像素问题分开；安装材料/电气安全未知 |
+| [R4 AGH 检查点](../../../public-validation-11-20/PHYSICAL_FEEDBACK_R4_AGH_CHECKPOINT.md)；[Codex 独立实际像素审查](../../../public-validation-11-20/codex-review/physical_r4_actual_pixel_review.json)；[六例最终交付](../../../public-validation-11-20/GITHUB_DELIVERY_R4.md) | 相机后板真 +Y 面→座→插头→缓冲→线、16 两根线轴向入座；旧失败近景保留。用户另确认两项代表性低成本阶段可收口 | Codex 像素审查**不**归 AGH 第一手读图；真实 mesh/曲线有限检查不等于像素；阶段结论不等于人类最终、工业 CAD、安全、密封或隐藏路径验证 |
+
+从 R1–R4 提炼的通用程序参见 [实物与接口方法](physical_equipment_and_interfaces.md)、[故障经验 P29–P32](pitfalls_and_fixes.md)。`agh-equipment/0.6` schema 与现有 helper/API **不变**；v1.0 的新增方法文字不等于旧审计脚本具备每一种孔/装配/Bezier 末段检验。
