@@ -1,0 +1,107 @@
+{
+  "author": "Codex independent runtime package verification and browser observation",
+  "observed_at": "2026-10-12T05:15:14.522937+00:00",
+  "source_commit": "e764812c23e189916487dd203dec83b2f3e0a2f5",
+  "installed_target": "/Users/wht/.agh/skills/agh-scientific-equipment-renderer",
+  "file_count": 22,
+  "extra_files": [],
+  "package_digest_from_agh_tool": "16cfbe2e721d7014ba97a3ef899d74b7ede017cc23120a0f52da3cb813ed37eb",
+  "managed_proposal": "skill-install-10d971fc-dc7d-47e3-8f96-f0391c34c1dc",
+  "managed_status_observed": "ready",
+  "fresh_turn_skill_read_observed": {
+    "resourceId": "skill/user/user-agnes/9c1cae1d1c3aee1a971160ce46dd52ab10785e28ea8577da22cde9ef6a7d4bcf",
+    "revision": "dd9d764a3ec32396818499f03d5deea81121823bcda3dca07fc33dfb29597cde",
+    "title": "科研装置三维渲染｜v1.0"
+  },
+  "evidence_limit": "Independent file hashes and browser-observed AGH tool result; no function or visual generalization claim. Not AGH-authored execution ledger.",
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "2a92a0974e0b02cb266de4d3ac3175320a5da1de99c3da5a54128471d892bf75"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "3ae22360c37635e30ef61a341a5dc9ce111a854864d1212148108c1825dddce3"
+    },
+    {
+      "path": "behavior_results.txt",
+      "sha256": "2123de87433f1a593e3c08a2fa7c0ba5b1c24ca385c7faf57abb53ec49b8997e"
+    },
+    {
+      "path": "behavior_tests.py",
+      "sha256": "1125759fa647e7248f0030190c18f0382244f6bf6a2bedbba96fdc672bc6e44f"
+    },
+    {
+      "path": "examples/make_synthetic_scene.py",
+      "sha256": "88ed0ea2e448dd38b72b2c83f58317d4eea0df1a45c65acb4590cfbd193b8f72"
+    },
+    {
+      "path": "examples/review_config.json",
+      "sha256": "aa3f794d8cda599b949db9ba05ac86ddf6c1a4af5875f3589629071abad506e8"
+    },
+    {
+      "path": "examples/run_v06_regression.py",
+      "sha256": "cee40d68563b3ec232804f0935a5a3b9bc9ff52adb403ae3791b5dd128736d0b"
+    },
+    {
+      "path": "examples/v06_results.json",
+      "sha256": "378be52a87619e7b8ce337e61ec50be461b723fd5d759672f19166809fa30ee4"
+    },
+    {
+      "path": "examples/valid_record.json",
+      "sha256": "cedea8f6f24dbd31dbdb149cacee73de3e3ba893bd2c930b1ee221285bb03842"
+    },
+    {
+      "path": "references/domain_checks.md",
+      "sha256": "eb683cae1aeeb1557e3d5211e04e948bc8916ae97e88cb197f9797024a508029"
+    },
+    {
+      "path": "references/evidence_index.md",
+      "sha256": "4eb59ff370350bb102ab82874d8c9617234479d01f2f2c809938a0ba91a93d45"
+    },
+    {
+      "path": "references/physical_equipment_and_interfaces.md",
+      "sha256": "d8c92d50cc43faf5804eccfc0a84385ea3cb31805919d3b9893b28975a07bfe6"
+    },
+    {
+      "path": "references/pitfalls_and_fixes.md",
+      "sha256": "e3d006c7f1f507f294e447f2bed888ec2f9d90ecb45d9fb056bbe825acd9e43a"
+    },
+    {
+      "path": "references/project_record.md",
+      "sha256": "71d06c42259a53d43edfe4f8584cca3ab2d98e0f850d9ea6ff75d6b5c71426c6"
+    },
+    {
+      "path": "references/public_validation_11_20.md",
+      "sha256": "2303bc130260922261ebd762df4cba432dd574b123bd3d214a44f133a638fd4c"
+    },
+    {
+      "path": "references/workflow_checklist.md",
+      "sha256": "70cfa3d7dda1f6b6e2e0ac3baf05b84986b482563a2e8e22a7ab2c2f3991b300"
+    },
+    {
+      "path": "scripts/audit_saved_scene.py",
+      "sha256": "ecb860af3922d5020e97784268c3fe249b61e7e4cf2c2c6cb774b2f47ddc8b5c"
+    },
+    {
+      "path": "scripts/blender_core.py",
+      "sha256": "0e469b44456861e0c8a02dfa062e8d1426d0d636b63264d1b676a5a4953a9a7e"
+    },
+    {
+      "path": "scripts/check_structure.py",
+      "sha256": "de2ca45e05daa9fffd298c7f40450dd99a41703e2b878aa106a7701f5c9b55bb"
+    },
+    {
+      "path": "scripts/make_svg_labels.py",
+      "sha256": "3176c2f17eb56c8fb0091b4131c74dbf5e2f96c088ba0fe28daaddab0b695da0"
+    },
+    {
+      "path": "scripts/review_images.py",
+      "sha256": "87d99bef0b6c943c81fe0f5b4ef08075e9d167bb3d8a8d03c04742079de4252c"
+    },
+    {
+      "path": "scripts/validate_project_record.py",
+      "sha256": "19c60626d7796057f8d32bd781effa9819bd06b8698b4ddb0296f675fd35cdc2"
+    }
+  ]
+}
