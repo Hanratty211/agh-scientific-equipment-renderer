@@ -1,0 +1,55 @@
+{
+  "case": 17,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+  "scene_sha256": "9ca48fcc4ce44e805d9fc8ac30d137bb5232b1223a4113eaafdc1593bf7e98c2",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v05_reloaded_r2.png",
+      "sha256": "9278a33a0d8c60ed195029a1bcf2be6e1360aa997a4220f7553dd27906df368b",
+      "camera": "overview_camera_v02",
+      "size": [
+        1120,
+        800
+      ]
+    },
+    {
+      "label": "pump_barrel_action_end",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/detail_pump_barrel_action_end_v05_reloaded_r2.png",
+      "sha256": "cde8f65c49598590101b3763f6acf39e5d85a13ddeb500dc79be37833ea1a1c4",
+      "camera": "TEMP_R2_pump_barrel_action_end",
+      "size": [
+        1060,
+        700
+      ]
+    },
+    {
+      "label": "pump_tube_and_sample_interface",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/detail_pump_tube_and_sample_interface_v05_reloaded_r2.png",
+      "sha256": "6bd2c9c159ba3b970d376d8c91f7ed194ea8ada724134b095241f03d007f2acc",
+      "camera": "TEMP_R2_pump_tube_and_sample_interface",
+      "size": [
+        1120,
+        740
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {
+    "right syringe pump mounted syringe barrel": {
+      "x": [
+        2.690000057220459,
+        3.2699999809265137
+      ],
+      "y": [
+        -0.022999998182058334,
+        0.12299999594688416
+      ],
+      "z": [
+        1.347000002861023,
+        1.4929999113082886
+      ]
+    }
+  },
+  "main_camera": "overview_camera_v02"
+}

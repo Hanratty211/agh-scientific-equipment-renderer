@@ -1,0 +1,386 @@
+{
+  "author": "AGH",
+  "scope": "six saved-scene-reloaded low-cost representative previews; no commercial CAD/functional validation",
+  "cases": [
+    {
+      "case": 12,
+      "version": "v05",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+      "scene_sha256": "bf4c83bf31463248e5ebe121f5f5532559859aedcd24ba7e8d23724e7063faf2",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v05_reloaded_r2.png",
+          "sha256": "6e78ca5e70d353cc0f38676a697a66ad73f700ed2cd72ce9e90c1677ab0a7172",
+          "camera": "overview_camera_v02",
+          "size": [
+            1140,
+            720
+          ]
+        },
+        {
+          "label": "upper_real_barrel_action_end",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_upper_real_barrel_action_end_v05_reloaded_r2.png",
+          "sha256": "8bbdaf5f75b581d7487246b1d978310dbba6d14462a9f9823ac602b3d993334c",
+          "camera": "TEMP_R2_upper_real_barrel_action_end",
+          "size": [
+            1000,
+            700
+          ]
+        },
+        {
+          "label": "lower_real_barrel_action_end",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_lower_real_barrel_action_end_v05_reloaded_r2.png",
+          "sha256": "9269d4ddbd03e3ec226c97bf53b76bde9d3bf65194f24d601860b4ae75ad200a",
+          "camera": "TEMP_R2_lower_real_barrel_action_end",
+          "size": [
+            1000,
+            700
+          ]
+        },
+        {
+          "label": "two_fluid_feeds",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_two_fluid_feeds_v05_reloaded_r2.png",
+          "sha256": "52aa4823948cf79716d9adc64529b2acbc320d4547f28fa4315d94430aa0bf09",
+          "camera": "TEMP_R2_two_fluid_feeds",
+          "size": [
+            1120,
+            740
+          ]
+        },
+        {
+          "label": "laptop_hinge_open_data_port",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_laptop_hinge_open_data_port_v05_reloaded_r2.png",
+          "sha256": "a385d51a0408baf505fadbd9b471cf6e88e7dbae676589ff0fc1462ddf8e74b7",
+          "camera": "TEMP_R2_laptop_hinge_open_data_port",
+          "size": [
+            1000,
+            700
+          ]
+        },
+        {
+          "label": "camera_data_socket",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_socket_v05_reloaded_r2.png",
+          "sha256": "41fc106523ef9fed77bedc1f33561823e945e8bfc40428aec633546bfcffaf01",
+          "camera": "TEMP_R2_camera_data_socket",
+          "size": [
+            950,
+            680
+          ]
+        },
+        {
+          "label": "camera_data_rear_positive_Y_oblique",
+          "path": "public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_rear_v05_reloaded_r2.png",
+          "sha256": "d27aeab453254618f78c014760272b981368e5a276a98af0e470aad0428bd4ba",
+          "camera": "rear +Y, oblique +X",
+          "no_hide": true
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/audit_reloaded_r2_v05.json"
+      },
+      "limited_geometry": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "checks": 22,
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/check_r2_reloaded_v05.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v05.png",
+        "sha256": "7521ec0847d25874bf597cbfdd451b03aab55a04a3a92b593c484d7c6bcd490f",
+        "current_reloaded_same_RGB_pixels": true,
+        "RGB_diff_bbox": null,
+        "mean_abs_RGB": 0.0
+      }
+    },
+    {
+      "case": 13,
+      "version": "v04",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+      "scene_sha256": "eeb4962fa38457b43f28e1ec04dbd24b8fff4def8ed32591707998959a5817be",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v04_reloaded_r2.png",
+          "sha256": "a1a07729845405d9a15f896b3aa1f31494b7c6d7e62cecebf264b12ad8ee2a7e",
+          "camera": "overview_camera_v02",
+          "size": [
+            1130,
+            700
+          ]
+        },
+        {
+          "label": "laptop_mechanical_hinge",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/detail_laptop_mechanical_hinge_v04_reloaded_r2.png",
+          "sha256": "ab182d1b2807e1524324dae8edd5b6003e2b7f5fdbedf0b3c014291e1836c7ce",
+          "camera": "TEMP_R2_laptop_mechanical_hinge",
+          "size": [
+            1000,
+            680
+          ]
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/audit_reloaded_r2_v04.json"
+      },
+      "limited_geometry": {
+        "status": "prior check only",
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/physical_mesh_v04.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v04.png",
+        "sha256": "4a2125701533fd76872096529b8fda3b3fda2ac3896c1f0eafea927b11c361dd",
+        "current_reloaded_same_RGB_pixels": true,
+        "RGB_diff_bbox": null,
+        "mean_abs_RGB": 0.0
+      }
+    },
+    {
+      "case": 14,
+      "version": "v06",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v06.blend",
+      "scene_sha256": "edaf133295f73136fa8231645f00ff2a9eb26cf5d97738e9b410919b7c67e53d",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v06_reloaded_r2.png",
+          "sha256": "0c4bab61edc2a5cca25ed7db7a5ccaa5c04e84a2fd19feac6793bd1f3858acd1",
+          "camera": "overview_camera_v02",
+          "size": [
+            1140,
+            830
+          ]
+        },
+        {
+          "label": "amp_output_scope_analog_input",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_amp_output_scope_analog_input_v06_reloaded_r2.png",
+          "sha256": "d355e29dcef52dcf26c3af51eb5bd1055cd7b516997af4e0575d260d29f2efa8",
+          "camera": "TEMP_R2_amp_output_scope_analog_input",
+          "size": [
+            1100,
+            720
+          ]
+        },
+        {
+          "label": "scope_bnc_mating_boot",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_scope_bnc_mating_boot_v06_reloaded_r2.png",
+          "sha256": "d5eaef502cac4c0294fa6594f3155edf29ef7134ae3681f1c6a7944df24546d5",
+          "camera": "TEMP_R2_scope_bnc_mating_boot",
+          "size": [
+            1080,
+            720
+          ]
+        },
+        {
+          "label": "laptop_real_data_aperture",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_laptop_real_data_aperture_v06_reloaded_r2.png",
+          "sha256": "132fead3ae8ca0bf069ef83138fbfbf2cc09277be8b8b3ac9ec9e57a0158c600",
+          "camera": "TEMP_R2_laptop_real_data_aperture",
+          "size": [
+            1000,
+            680
+          ]
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/audit_reloaded_r2_v06.json"
+      },
+      "limited_geometry": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "checks": 11,
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/check_r2_reloaded_v06.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v06.png",
+        "sha256": "4cb1226d4b5d24d6cda8a45eab5577e80bac91b1f18d1c995fa6ca5cfe3cc5dc",
+        "current_reloaded_same_RGB_pixels": true,
+        "RGB_diff_bbox": null,
+        "mean_abs_RGB": 0.0
+      }
+    },
+    {
+      "case": 16,
+      "version": "v05",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v05.blend",
+      "scene_sha256": "2bca91ac180e9658144a47fd9724784424e448e95440a90aebe85d4f97e062da",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v05_reloaded_r2.png",
+          "sha256": "893ae423307e972459977ed315960fc706bff23b286c1ef09a2fc5c10f9d033a",
+          "camera": "overview_camera_v02",
+          "size": [
+            1090,
+            850
+          ]
+        },
+        {
+          "label": "hv_positive_and_return_plugs",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_hv_positive_and_return_plugs_v05_reloaded_r2.png",
+          "sha256": "27d325889383e0611924b4069b91ea04b16abeb2c30402937ae41aac7a553d5e",
+          "camera": "TEMP_R2_hv_positive_and_return_plugs",
+          "size": [
+            1080,
+            720
+          ]
+        },
+        {
+          "label": "hv_external_leads_to_occlusion",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_hv_external_leads_to_occlusion_v05_reloaded_r2.png",
+          "sha256": "27783eca7ecdd0051e4ea9e1f4028a67cbcf984a9bc487c8ff73ac81e32a2f78",
+          "camera": "TEMP_R2_hv_external_leads_to_occlusion",
+          "size": [
+            1050,
+            720
+          ]
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/audit_reloaded_r2_v05.json"
+      },
+      "limited_geometry": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "checks": 13,
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/check_r2_reloaded_v05.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v04.png",
+        "sha256": "4c1b1445e6e7b45631cdc1e21e144ad6208c064276f581cc49407ff9f68d046f",
+        "current_reloaded_same_RGB_pixels": false,
+        "RGB_diff_bbox": [
+          136,
+          283,
+          854,
+          701
+        ],
+        "mean_abs_RGB": 0.16620039575463214
+      }
+    },
+    {
+      "case": 17,
+      "version": "v05",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+      "scene_sha256": "9ca48fcc4ce44e805d9fc8ac30d137bb5232b1223a4113eaafdc1593bf7e98c2",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v05_reloaded_r2.png",
+          "sha256": "9278a33a0d8c60ed195029a1bcf2be6e1360aa997a4220f7553dd27906df368b",
+          "camera": "overview_camera_v02",
+          "size": [
+            1120,
+            800
+          ]
+        },
+        {
+          "label": "pump_barrel_action_end",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/detail_pump_barrel_action_end_v05_reloaded_r2.png",
+          "sha256": "cde8f65c49598590101b3763f6acf39e5d85a13ddeb500dc79be37833ea1a1c4",
+          "camera": "TEMP_R2_pump_barrel_action_end",
+          "size": [
+            1060,
+            700
+          ]
+        },
+        {
+          "label": "pump_tube_and_sample_interface",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/detail_pump_tube_and_sample_interface_v05_reloaded_r2.png",
+          "sha256": "6bd2c9c159ba3b970d376d8c91f7ed194ea8ada724134b095241f03d007f2acc",
+          "camera": "TEMP_R2_pump_tube_and_sample_interface",
+          "size": [
+            1120,
+            740
+          ]
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/audit_reloaded_r2_v05.json"
+      },
+      "limited_geometry": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "checks": 9,
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/check_r2_reloaded_v05.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v05.png",
+        "sha256": "1c61d439d59be1e792b53e9a1b145c15acf4687a385c687f082d88ac13dee2ca",
+        "current_reloaded_same_RGB_pixels": true,
+        "RGB_diff_bbox": null,
+        "mean_abs_RGB": 0.0
+      }
+    },
+    {
+      "case": 19,
+      "version": "v06",
+      "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v06.blend",
+      "scene_sha256": "8e9e4f6fdcfcda31f764e974611c1dfea6f3dbab8bd7676bac36c5c990c7321b",
+      "images": [
+        {
+          "label": "overview",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v06_reloaded_r2.png",
+          "sha256": "734366cdbf406cd878445aa8cc7e3456477bd56a1e34c412fa570f156d5e9e2d",
+          "camera": "overview_camera_v02",
+          "size": [
+            1100,
+            800
+          ]
+        },
+        {
+          "label": "analog_bnc_mating_boot",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/detail_analog_bnc_mating_boot_v06_reloaded_r2.png",
+          "sha256": "b058dc6115d5e6987d73896cd63a2c1fcd322292dcf1c0c2b0354b303d1ed49a",
+          "camera": "TEMP_R2_analog_bnc_mating_boot",
+          "size": [
+            1080,
+            720
+          ]
+        },
+        {
+          "label": "resistor_terminal_and_boot",
+          "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/detail_resistor_terminal_and_boot_v06_reloaded_r2.png",
+          "sha256": "7d0a2fa3f78a10c44307ce905eaa00f5ad5e238f493ff4904562bfea3fff9a8c",
+          "camera": "TEMP_R2_resistor_terminal_and_boot",
+          "size": [
+            1080,
+            720
+          ]
+        }
+      ],
+      "audit": {
+        "status": "UNVERIFIED",
+        "declared_failures": [],
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/audit_reloaded_r2_v06.json"
+      },
+      "limited_geometry": {
+        "status": "LIMITED_GEOMETRY_PASS",
+        "checks": 10,
+        "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/check_r2_reloaded_v06.json"
+      },
+      "prior_overview_observation": {
+        "file": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v05.png",
+        "sha256": "d13f527073353d575ef0947d8892213ca4aeffbe7b7166c97b0ff3a5bce33543",
+        "current_reloaded_same_RGB_pixels": false,
+        "RGB_diff_bbox": [
+          198,
+          122,
+          924,
+          639
+        ],
+        "mean_abs_RGB": 0.5528693181818182
+      }
+    }
+  ],
+  "renderer": "Blender 5.1.2 background, independent subprocess reload for each saved scene",
+  "previous_stage": "R1 first-pass images and user historical observation retained without overwrite",
+  "visual_authority": "user reviewed six reloaded overviews and main details as representative low-cost preview; newly-added rear camera detail still pending user check",
+  "external_probe_authority": "Codex probe and runtime comparison separate from AGH scene checks"
+}

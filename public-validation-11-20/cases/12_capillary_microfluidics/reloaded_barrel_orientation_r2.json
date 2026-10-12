@@ -1,0 +1,65 @@
+{
+  "case": 12,
+  "source_saved_scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+  "checks": [
+    {
+      "name": "upper syringe pump mounted syringe barrel",
+      "world_bounds": [
+        [
+          -3.365000009536743,
+          -2.705000162124634
+        ],
+        [
+          -0.0729999989271164,
+          0.0729999989271164
+        ],
+        [
+          2.3470001220703125,
+          2.493000030517578
+        ]
+      ],
+      "projection_bounds": {
+        "x": [
+          0.16522325575351715,
+          0.2359534651041031
+        ],
+        "y": [
+          0.7474159598350525,
+          0.7905274629592896
+        ]
+      },
+      "longitudinal_x_ratio": 4.520546966521581,
+      "passes_x_longitudinal": true
+    },
+    {
+      "name": "lower syringe pump mounted syringe barrel",
+      "world_bounds": [
+        [
+          -3.365000009536743,
+          -2.705000162124634
+        ],
+        [
+          -0.0729999989271164,
+          0.0729999989271164
+        ],
+        [
+          0.8970000147819519,
+          1.0429999828338623
+        ]
+      ],
+      "projection_bounds": {
+        "x": [
+          0.16522325575351715,
+          0.2359534651041031
+        ],
+        "y": [
+          0.5094227194786072,
+          0.5525343418121338
+        ]
+      },
+      "longitudinal_x_ratio": 4.520546966521581,
+      "passes_x_longitudinal": true
+    }
+  ],
+  "note": "mesh/projection evidence, not pixel acceptance; external user discrepancy remains a preserved observation"
+}

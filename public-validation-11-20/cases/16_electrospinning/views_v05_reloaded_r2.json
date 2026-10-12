@@ -1,0 +1,34 @@
+[
+  {
+    "name": "hv_positive_and_return_plugs",
+    "focus": [
+      -2.8,
+      -0.48,
+      0.68
+    ],
+    "eye": [
+      -2.42,
+      -2.15,
+      1.1
+    ],
+    "scale": 1.2,
+    "width": 1080,
+    "height": 720
+  },
+  {
+    "name": "hv_external_leads_to_occlusion",
+    "focus": [
+      -2.35,
+      -0.45,
+      0.96
+    ],
+    "eye": [
+      -1.48,
+      -3.2,
+      2.25
+    ],
+    "scale": 2.5,
+    "width": 1050,
+    "height": 720
+  }
+]

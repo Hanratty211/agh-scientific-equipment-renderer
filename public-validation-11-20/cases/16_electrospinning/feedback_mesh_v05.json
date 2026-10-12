@@ -1,0 +1,154 @@
+{
+  "case": 16,
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v05.blend",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "code": "positive HV visible external lead BEZIER",
+      "status": "PASS",
+      "detail": {
+        "type": "CURVE"
+      }
+    },
+    {
+      "code": "positive HV source plug and cable",
+      "status": "PASS",
+      "detail": {
+        "plug_center_gap": 0.025000005541368706,
+        "surface_gap": 0.01200002446554027
+      }
+    },
+    {
+      "code": "positive HV boot seated",
+      "status": "PASS",
+      "detail": {
+        "boot_center": [
+          -2.816999912261963,
+          -0.5579999685287476,
+          0.8100000023841858
+        ],
+        "first_pair": [
+          [
+            -2.816999912261963,
+            -0.5080000162124634,
+            0.8100000023841858
+          ],
+          [
+            -2.816999912261963,
+            -0.6079999804496765,
+            0.8100000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "code": "positive HV source tangent axial",
+      "status": "PASS",
+      "detail": {
+        "axial_departure": [
+          0.0,
+          -0.09999996423721313,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "positive HV ends at existing chamber boundary",
+      "status": "PASS",
+      "detail": {
+        "dist": 0.0
+      }
+    },
+    {
+      "code": "positive HV final axis enters boundary",
+      "status": "PASS",
+      "detail": {
+        "final_tangent": [
+          0.6839403510093689,
+          0.7295380234718323,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "return/ground visible external lead BEZIER",
+      "status": "PASS",
+      "detail": {
+        "type": "CURVE"
+      }
+    },
+    {
+      "code": "return/ground source plug and cable",
+      "status": "PASS",
+      "detail": {
+        "plug_center_gap": 0.025000005541368706,
+        "surface_gap": 0.012000024465392238
+      }
+    },
+    {
+      "code": "return/ground boot seated",
+      "status": "PASS",
+      "detail": {
+        "boot_center": [
+          -2.816999912261963,
+          -0.5579999685287476,
+          0.5099999904632568
+        ],
+        "first_pair": [
+          [
+            -2.816999912261963,
+            -0.5080000162124634,
+            0.5099999904632568
+          ],
+          [
+            -2.816999912261963,
+            -0.6079999804496765,
+            0.5099999904632568
+          ]
+        ]
+      }
+    },
+    {
+      "code": "return/ground source tangent axial",
+      "status": "PASS",
+      "detail": {
+        "axial_departure": [
+          0.0,
+          -0.09999996423721313,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "return/ground ends at existing chamber boundary",
+      "status": "PASS",
+      "detail": {
+        "dist": 0.0
+      }
+    },
+    {
+      "code": "return/ground final axis enters boundary",
+      "status": "PASS",
+      "detail": {
+        "final_tangent": [
+          0.6839403510093689,
+          0.7295380234718323,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "two HV exterior leads only",
+      "status": "PASS",
+      "detail": {}
+    }
+  ],
+  "not_checked": [
+    "pixel legibility",
+    "full path-to-all-body collision",
+    "manufacturer terminal pinout",
+    "HV clearance safety",
+    "electrical operation",
+    "hidden flow/electrical paths"
+  ]
+}

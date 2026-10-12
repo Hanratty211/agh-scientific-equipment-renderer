@@ -1,0 +1,50 @@
+{
+  "case": 14,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/scene_v06.blend",
+  "scene_sha256": "edaf133295f73136fa8231645f00ff2a9eb26cf5d97738e9b410919b7c67e53d",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v06_reloaded_r2.png",
+      "sha256": "0c4bab61edc2a5cca25ed7db7a5ccaa5c04e84a2fd19feac6793bd1f3858acd1",
+      "camera": "overview_camera_v02",
+      "size": [
+        1140,
+        830
+      ]
+    },
+    {
+      "label": "amp_output_scope_analog_input",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_amp_output_scope_analog_input_v06_reloaded_r2.png",
+      "sha256": "d355e29dcef52dcf26c3af51eb5bd1055cd7b516997af4e0575d260d29f2efa8",
+      "camera": "TEMP_R2_amp_output_scope_analog_input",
+      "size": [
+        1100,
+        720
+      ]
+    },
+    {
+      "label": "scope_bnc_mating_boot",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_scope_bnc_mating_boot_v06_reloaded_r2.png",
+      "sha256": "d5eaef502cac4c0294fa6594f3155edf29ef7134ae3681f1c6a7944df24546d5",
+      "camera": "TEMP_R2_scope_bnc_mating_boot",
+      "size": [
+        1080,
+        720
+      ]
+    },
+    {
+      "label": "laptop_real_data_aperture",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/detail_laptop_real_data_aperture_v06_reloaded_r2.png",
+      "sha256": "132fead3ae8ca0bf069ef83138fbfbf2cc09277be8b8b3ac9ec9e57a0158c600",
+      "camera": "TEMP_R2_laptop_real_data_aperture",
+      "size": [
+        1000,
+        680
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}

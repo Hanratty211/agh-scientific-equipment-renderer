@@ -1,0 +1,261 @@
+{
+  "schema": "agh-equipment/0.6",
+  "task": {
+    "kind": "physical_setup",
+    "scope": "Reconstruct the b-panel Vee-shield apparatus, chamber, syringe dispenser, tube/needle support, collector/shield and shown instruments. Do not combine the conventional setup a with the motorized spooling setup d. Panel Fig.1(b); SOURCE_LEDGER.md and publisher caption govern. Unclear hidden paths omitted. R1 external visual corrections in CODEX_FEEDBACK_R1.md; retain full panel scope, not a component-only reinterpretation. R2 corrections as user feedback; retain full original scope. Physical hardware batch after installed v0.7: preserve original whole apparatus and add explicit real exterior socket/plug representation; no proprietary connector claim. R2 bounded external lead smoothing only; no added internal topology.",
+    "operating_state": "one diagram/photo state",
+    "outputs": {
+      "views": [
+        "overview"
+      ],
+      "annotations": "none",
+      "width": 1090,
+      "height": 850,
+      "background": "light"
+    },
+    "required_components": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11",
+      "c12",
+      "c13"
+    ],
+    "required_connections": [
+      "red-lead",
+      "green-lead"
+    ],
+    "required_supports": []
+  },
+  "components": [
+    {
+      "id": "c1",
+      "label": "chamber",
+      "object": "clear Perspex side",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c2",
+      "label": "top drive",
+      "object": "drive upper red housing",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c3",
+      "label": "syringe",
+      "object": "syringe barrel",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c4",
+      "label": "PTFE feed",
+      "object": "visible PTFE feed",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c5",
+      "label": "needle",
+      "object": "vertical metal needle",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c6",
+      "label": "needle support",
+      "object": "needle Perspex support",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c7",
+      "label": "collector",
+      "object": "copper collector",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c8",
+      "label": "Vee plates",
+      "object": "upright PTFE Vee plate",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c9",
+      "label": "front heater",
+      "object": "horizontal front heater",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c10",
+      "label": "IR source",
+      "object": "angled IR red source",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c11",
+      "label": "external DC supply",
+      "object": "representative Genvolt 73030 body",
+      "evidence": "paper",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c12",
+      "label": "positive HV source plug",
+      "object": "positive HV insulated source plug",
+      "evidence": "schematic",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    },
+    {
+      "id": "c13",
+      "label": "return/ground source plug",
+      "object": "return/ground insulated source plug",
+      "evidence": "schematic",
+      "size_basis": "illustrative",
+      "state": "one diagram/photo state"
+    }
+  ],
+  "ports": [
+    {
+      "id": "dc-red",
+      "owner": "c12",
+      "object": "HV positive HV QA owner",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "dc-green",
+      "owner": "c13",
+      "object": "HV return/ground QA owner",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "Representative socket/plug on physically shown owner surface; role conditional, exact commercial interface not confirmed."
+    },
+    {
+      "id": "chamber-red",
+      "owner": "c1",
+      "object": "chamber red boundary",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    },
+    {
+      "id": "chamber-green",
+      "owner": "c1",
+      "object": "chamber green boundary",
+      "medium": "electric",
+      "direction": "unknown",
+      "state": "connected",
+      "surface_tolerance": 0.09,
+      "evidence_note": "R2 visible surface marker; owner/route independently audited against saved scene, not source CAD."
+    }
+  ],
+  "connections": [
+    {
+      "id": "red-lead",
+      "a": "dc-red",
+      "b": "chamber-red",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "positive HV visible external lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    },
+    {
+      "id": "green-lead",
+      "a": "dc-green",
+      "b": "chamber-green",
+      "kind": "electric",
+      "medium": "electric",
+      "object": "return/ground visible external lead",
+      "required": true,
+      "tolerance": 0.08,
+      "evidence_note": "R2 source-visible segment only; hidden downstream topology unknown."
+    }
+  ],
+  "supports": [],
+  "labels": [],
+  "world_units": "illustrative Blender scene units. Port tolerance 0.09 around actual marker/owner mesh; route tolerance 0.08 for visible centerline/marker rounding only, not real engineering fit.",
+  "source": {
+    "doi": "10.1038/s41598-021-99890-w",
+    "figure_url": "https://www.nature.com/articles/s41598-021-99890-w/figures/1",
+    "target_sha256": "f0ef21593d70bd63fa12d876a295ad2bcc1ca7c63b6f713ed4b4716761998128",
+    "feedback": "Codex R2 actual pixels; source figure publisher caption"
+  },
+  "unverified": [
+    "user/Codex v03 output pixels",
+    "hidden optical/fluid/electric paths and operation",
+    "true physical support/contact/occlusion",
+    "Current hardware-version output PNG awaits actual external pixel reading",
+    "Manufacturer CAD and exact port identity beyond documented evidence unverified",
+    "Circuit integrity, contact load and hidden paths not implied by mesh nearpoints"
+  ],
+  "coverage_gap": "Only explicit visible relations in connections[] were routed; remaining task scope not certified by validator. Empty route list = no warranted physical route (exploded 15/18) or no supported endpoints in this v03 model, not route success.",
+  "physical_evidence": {
+    "level": "representative exterior geometry unless source explicitly names device/port",
+    "source": "PHYSICAL_HARDWARE_SOURCE_AND_SCOPE.md; figure/caption/method; manufacturer hosts blocked this turn",
+    "hidden_circuits": "UNVERIFIED",
+    "exact_CAD": "NOT_CLAIMED"
+  },
+  "hardware_routes": [
+    {
+      "id": "red-lead",
+      "source": "Genvolt 73030 representative output",
+      "output": "positive HV insulated source plug",
+      "medium": "high voltage positive exterior",
+      "input": "chamber red boundary",
+      "destination": "needle ultimately, internal route not pictured",
+      "coverage": "exterior only"
+    },
+    {
+      "id": "green-lead",
+      "source": "supply return/ground",
+      "output": "return/ground insulated source plug",
+      "medium": "ground/return exterior",
+      "input": "chamber green boundary",
+      "destination": "grounded collector ultimately, internal route not pictured",
+      "coverage": "exterior only"
+    }
+  ],
+  "unknown_interfaces": [
+    "Exact Genvolt 73030 connector identity and chamber feedthrough unverified",
+    "No ordinary USB/low-voltage banana modeled",
+    "Positive to needle / grounded collector cited in paper but not drawn as hidden enclosed circuit",
+    "Bezier exterior run preserves original endpoints; tangent and visible near-shell seating do not verify manufacturer terminal pinout, insulated clearance, circuit or physical load."
+  ],
+  "r2_review": "public-validation-11-20/PHYSICAL_FEEDBACK_R2.md",
+  "r2_status": "not externally pixel-approved after R2; final images rendered from reloaded saved scene"
+}

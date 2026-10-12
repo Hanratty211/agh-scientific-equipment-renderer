@@ -1,0 +1,40 @@
+{
+  "case": 16,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v05.blend",
+  "scene_sha256": "2bca91ac180e9658144a47fd9724784424e448e95440a90aebe85d4f97e062da",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v05_reloaded_r2.png",
+      "sha256": "893ae423307e972459977ed315960fc706bff23b286c1ef09a2fc5c10f9d033a",
+      "camera": "overview_camera_v02",
+      "size": [
+        1090,
+        850
+      ]
+    },
+    {
+      "label": "hv_positive_and_return_plugs",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_hv_positive_and_return_plugs_v05_reloaded_r2.png",
+      "sha256": "27d325889383e0611924b4069b91ea04b16abeb2c30402937ae41aac7a553d5e",
+      "camera": "TEMP_R2_hv_positive_and_return_plugs",
+      "size": [
+        1080,
+        720
+      ]
+    },
+    {
+      "label": "hv_external_leads_to_occlusion",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_hv_external_leads_to_occlusion_v05_reloaded_r2.png",
+      "sha256": "27783eca7ecdd0051e4ea9e1f4028a67cbcf984a9bc487c8ff73ac81e32a2f78",
+      "camera": "TEMP_R2_hv_external_leads_to_occlusion",
+      "size": [
+        1050,
+        720
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}

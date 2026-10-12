@@ -1,0 +1,36 @@
+{
+  "case": 17,
+  "source_saved_scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+  "checks": [
+    {
+      "name": "right syringe pump mounted syringe barrel",
+      "world_bounds": [
+        [
+          2.690000057220459,
+          3.2699999809265137
+        ],
+        [
+          -0.022999998182058334,
+          0.12299999594688416
+        ],
+        [
+          1.347000002861023,
+          1.4929999113082886
+        ]
+      ],
+      "projection_bounds": {
+        "x": [
+          0.7509252429008484,
+          0.811164379119873
+        ],
+        "y": [
+          0.39552250504493713,
+          0.4341103732585907
+        ]
+      },
+      "longitudinal_x_ratio": 3.972602376913916,
+      "passes_x_longitudinal": true
+    }
+  ],
+  "note": "mesh/projection evidence, not pixel acceptance; external user discrepancy remains a preserved observation"
+}

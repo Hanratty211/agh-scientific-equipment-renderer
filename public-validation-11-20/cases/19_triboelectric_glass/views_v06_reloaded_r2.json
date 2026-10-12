@@ -1,0 +1,34 @@
+[
+  {
+    "name": "analog_bnc_mating_boot",
+    "focus": [
+      2.58,
+      -0.32,
+      0.35
+    ],
+    "eye": [
+      2.95,
+      -1.92,
+      0.92
+    ],
+    "scale": 1.04,
+    "width": 1080,
+    "height": 720
+  },
+  {
+    "name": "resistor_terminal_and_boot",
+    "focus": [
+      1.0,
+      -0.31,
+      0.74
+    ],
+    "eye": [
+      1.38,
+      -1.82,
+      1.19
+    ],
+    "scale": 1.01,
+    "width": 1080,
+    "height": 720
+  }
+]

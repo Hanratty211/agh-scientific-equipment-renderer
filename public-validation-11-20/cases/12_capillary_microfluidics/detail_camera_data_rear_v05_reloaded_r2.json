@@ -1,0 +1,24 @@
+{
+  "author": "AGH",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+  "scene_sha256": "bf4c83bf31463248e5ebe121f5f5532559859aedcd24ba7e8d23724e7063faf2",
+  "image": "public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_rear_v05_reloaded_r2.png",
+  "image_sha256": "d27aeab453254618f78c014760272b981368e5a276a98af0e470aad0428bd4ba",
+  "eye": [
+    1.649999976158142,
+    2.0,
+    3.0999999046325684
+  ],
+  "focus": [
+    0.23999999463558197,
+    0.25999999046325684,
+    2.5799999237060547
+  ],
+  "camera": "rear +Y, oblique +X",
+  "no_object_or_render_state_mutations": true,
+  "source_spline": "camera to laptop exterior DATA cable",
+  "camera_port": "camera representative DATA data socket",
+  "mated_plug": "camera representative DATA seated data plug",
+  "boot": "camera representative DATA cable boot",
+  "pixel_status": "user to review"
+}

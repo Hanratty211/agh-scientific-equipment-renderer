@@ -1,0 +1,40 @@
+{
+  "case": 19,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v06.blend",
+  "scene_sha256": "8e9e4f6fdcfcda31f764e974611c1dfea6f3dbab8bd7676bac36c5c990c7321b",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v06_reloaded_r2.png",
+      "sha256": "734366cdbf406cd878445aa8cc7e3456477bd56a1e34c412fa570f156d5e9e2d",
+      "camera": "overview_camera_v02",
+      "size": [
+        1100,
+        800
+      ]
+    },
+    {
+      "label": "analog_bnc_mating_boot",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/detail_analog_bnc_mating_boot_v06_reloaded_r2.png",
+      "sha256": "b058dc6115d5e6987d73896cd63a2c1fcd322292dcf1c0c2b0354b303d1ed49a",
+      "camera": "TEMP_R2_analog_bnc_mating_boot",
+      "size": [
+        1080,
+        720
+      ]
+    },
+    {
+      "label": "resistor_terminal_and_boot",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/detail_resistor_terminal_and_boot_v06_reloaded_r2.png",
+      "sha256": "7d0a2fa3f78a10c44307ce905eaa00f5ad5e238f493ff4904562bfea3fff9a8c",
+      "camera": "TEMP_R2_resistor_terminal_and_boot",
+      "size": [
+        1080,
+        720
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}

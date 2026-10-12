@@ -1,0 +1,7 @@
+# AGH Skill 运行时升级核验（只读新轮次）
+
+- 对象：`agh-scientific-equipment-renderer`，user scope。源码/已安装包未在本轮修改；无建模、再安装或渲染。
+- 历史区分：此前安装的 v0.3 曾由 `skill_read` 返回 revision `d15965f5e5ee534aaea1e5121d35c19b8d64799a1280c6bd4b148fbc8455a962`；第一次 v0.7 受管导入的提案 `skill-install-65152890-d499-4720-9bdf-157010e6de12` 在 publish 阶段 `SKILL_TARGET_CONFLICT`、`retryable:false`，不是升级成功。用户随后说明 Codex 经正常管理页备份并删除仅该旧资源；本会话未自行删除。
+- 第二次受管导入提案 `skill-install-84b80bec-06ad-4c96-a798-fd612baf60f4`：`skill_helper_import` 返回 prepared，32 文件，digest `0b6fa7eb963a18b90d3cab3743fd221e7742521eff7dce9b7aa3dcdf7f76663d`；`skill_helper_install(commit)` 返回 running/phase publish；随后 `skill_helper_install(status)` 返回 **ready/phase complete/effective next-turn**，resourceId `skill/user/user-agnes/9c1cae1d1c3aee1a971160ce46dd52ab10785e28ea8577da22cde9ef6a7d4bcf`，revision `abb77ac96ab535210c9cbe9ec4e644385136f35464afe43b445d9a11a4eab0c4`。这一步证明安装就绪，不等于当轮加载。
+- **本轮实际加载核验**：`tool_search(query="agh-scientific-equipment-renderer")` 返回 Skill 描述明确为 `v0.7 试用版`；紧接 `skill_read(name="agh-scientific-equipment-renderer")` 返回 resourceId `skill/user/user-agnes/9c1cae1d1c3aee1a971160ce46dd52ab10785e28ea8577da22cde9ef6a7d4bcf`、revision **`abb77ac96ab535210c9cbe9ec4e644385136f35464afe43b445d9a11a4eab0c4`**、directory `/Users/wht/.agh/skills/agh-scientific-equipment-renderer`；正文标题 **「科研装置三维渲染｜v0.7 试用版」**，链接 `[11–20 十篇公开论文](references/public_validation_11_20.md)`，并含「先按源图/图注/用户范围建立必需组件与关系清单，再建对象」。这些字段来自运行时工具返回，不是读取本地源码推断。
+- 结论仅限于：受管安装 ready **且**新轮次 `skill_read` 确认加载 v0.7；不将旧十例 coached 阶段评价提升为新运行时的建模验证。加载状态/版本核验与科学装置质量、用户最终验收及盲测泛化相互独立。

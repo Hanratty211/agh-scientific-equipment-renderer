@@ -1,0 +1,99 @@
+{
+  "case": 12,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v05.blend",
+  "scene_sha256": "bf4c83bf31463248e5ebe121f5f5532559859aedcd24ba7e8d23724e7063faf2",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v05_reloaded_r2.png",
+      "sha256": "6e78ca5e70d353cc0f38676a697a66ad73f700ed2cd72ce9e90c1677ab0a7172",
+      "camera": "overview_camera_v02",
+      "size": [
+        1140,
+        720
+      ]
+    },
+    {
+      "label": "upper_real_barrel_action_end",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_upper_real_barrel_action_end_v05_reloaded_r2.png",
+      "sha256": "8bbdaf5f75b581d7487246b1d978310dbba6d14462a9f9823ac602b3d993334c",
+      "camera": "TEMP_R2_upper_real_barrel_action_end",
+      "size": [
+        1000,
+        700
+      ]
+    },
+    {
+      "label": "lower_real_barrel_action_end",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_lower_real_barrel_action_end_v05_reloaded_r2.png",
+      "sha256": "9269d4ddbd03e3ec226c97bf53b76bde9d3bf65194f24d601860b4ae75ad200a",
+      "camera": "TEMP_R2_lower_real_barrel_action_end",
+      "size": [
+        1000,
+        700
+      ]
+    },
+    {
+      "label": "two_fluid_feeds",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_two_fluid_feeds_v05_reloaded_r2.png",
+      "sha256": "52aa4823948cf79716d9adc64529b2acbc320d4547f28fa4315d94430aa0bf09",
+      "camera": "TEMP_R2_two_fluid_feeds",
+      "size": [
+        1120,
+        740
+      ]
+    },
+    {
+      "label": "laptop_hinge_open_data_port",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_laptop_hinge_open_data_port_v05_reloaded_r2.png",
+      "sha256": "a385d51a0408baf505fadbd9b471cf6e88e7dbae676589ff0fc1462ddf8e74b7",
+      "camera": "TEMP_R2_laptop_hinge_open_data_port",
+      "size": [
+        1000,
+        700
+      ]
+    },
+    {
+      "label": "camera_data_socket",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_socket_v05_reloaded_r2.png",
+      "sha256": "41fc106523ef9fed77bedc1f33561823e945e8bfc40428aec633546bfcffaf01",
+      "camera": "TEMP_R2_camera_data_socket",
+      "size": [
+        950,
+        680
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {
+    "upper syringe pump mounted syringe barrel": {
+      "x": [
+        -3.365000009536743,
+        -2.705000162124634
+      ],
+      "y": [
+        -0.0729999989271164,
+        0.0729999989271164
+      ],
+      "z": [
+        2.3470001220703125,
+        2.493000030517578
+      ]
+    },
+    "lower syringe pump mounted syringe barrel": {
+      "x": [
+        -3.365000009536743,
+        -2.705000162124634
+      ],
+      "y": [
+        -0.0729999989271164,
+        0.0729999989271164
+      ],
+      "z": [
+        0.8970000147819519,
+        1.0429999828338623
+      ]
+    }
+  },
+  "main_camera": "overview_camera_v02"
+}

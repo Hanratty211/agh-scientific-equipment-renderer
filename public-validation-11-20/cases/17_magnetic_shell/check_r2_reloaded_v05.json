@@ -1,0 +1,147 @@
+{
+  "case": 17,
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v05.blend",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "code": "right pump barrel coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            2.690000057220459,
+            3.2699999809265137
+          ],
+          [
+            -0.022999998182058334,
+            0.12299999594688416
+          ],
+          [
+            1.347000002861023,
+            1.4929999113082886
+          ]
+        ]
+      }
+    },
+    {
+      "code": "right pump collar coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            2.615000009536743,
+            2.7079999446868896
+          ],
+          [
+            -0.014970001764595509,
+            0.11497000604867935
+          ],
+          [
+            1.3550299406051636,
+            1.484969973564148
+          ]
+        ]
+      }
+    },
+    {
+      "code": "right pump nozzle coax with outlet",
+      "status": "PASS",
+      "detail": {
+        "radial_center_offset": 0.0,
+        "real_bounds": [
+          [
+            2.4700000286102295,
+            2.628999948501587
+          ],
+          [
+            0.014999997802078724,
+            0.08500000089406967
+          ],
+          [
+            1.3849999904632568,
+            1.4549999237060547
+          ]
+        ]
+      }
+    },
+    {
+      "code": "right pump barrel action face contacts collar",
+      "status": "PASS",
+      "detail": {
+        "barrel_action_end_x": 2.690000057220459,
+        "collar_range_x": [
+          2.615000009536743,
+          2.7079999446868896
+        ]
+      }
+    },
+    {
+      "code": "right pump collar and nozzle overlap",
+      "status": "PASS",
+      "detail": {
+        "collar_x": [
+          2.615000009536743,
+          2.7079999446868896
+        ],
+        "nozzle_x": [
+          2.4700000286102295,
+          2.628999948501587
+        ]
+      }
+    },
+    {
+      "code": "right pump actual nozzle action face and annulus",
+      "status": "PASS",
+      "detail": {
+        "nozzle_action_end_x": 2.4700000286102295,
+        "annulus": [
+          2.4700000286102295,
+          0.05000000074505806,
+          1.4199999570846558
+        ],
+        "distance_x": 0.0
+      }
+    },
+    {
+      "code": "right pump tube ends on nozzle seat",
+      "status": "PASS",
+      "detail": {
+        "nearest_spline_end_to_annulus": 0.0,
+        "route_type": "BEZIER"
+      }
+    },
+    {
+      "code": "right pump barrel longitudinal X",
+      "status": "PASS",
+      "detail": {
+        "barrel_bounds": [
+          [
+            2.690000057220459,
+            3.2699999809265137
+          ],
+          [
+            -0.022999998182058334,
+            0.12299999594688416
+          ],
+          [
+            1.347000002861023,
+            1.4929999113082886
+          ]
+        ]
+      }
+    },
+    {
+      "code": "source sample and sensor route preserved",
+      "status": "PASS",
+      "detail": {}
+    }
+  ],
+  "not_checked": [
+    "source-pixel similarity",
+    "commercial connector pinout",
+    "full smooth curve obstacle collision",
+    "load-bearing and flow/electric function"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "case": 13,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/scene_v04.blend",
+  "scene_sha256": "eeb4962fa38457b43f28e1ec04dbd24b8fff4def8ed32591707998959a5817be",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v04_reloaded_r2.png",
+      "sha256": "a1a07729845405d9a15f896b3aa1f31494b7c6d7e62cecebf264b12ad8ee2a7e",
+      "camera": "overview_camera_v02",
+      "size": [
+        1130,
+        700
+      ]
+    },
+    {
+      "label": "laptop_mechanical_hinge",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/detail_laptop_mechanical_hinge_v04_reloaded_r2.png",
+      "sha256": "ab182d1b2807e1524324dae8edd5b6003e2b7f5fdbedf0b3c014291e1836c7ce",
+      "camera": "TEMP_R2_laptop_mechanical_hinge",
+      "size": [
+        1000,
+        680
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}

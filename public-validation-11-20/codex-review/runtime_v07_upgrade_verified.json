@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-12T10:16:54.716414+08:00",
+  "kind": "independent installed-file comparison; AGH runtime load observed separately in UI",
+  "runtime_revision": "abb77ac96ab535210c9cbe9ec4e644385136f35464afe43b445d9a11a4eab0c4",
+  "resource_id": "skill/user/user-agnes/9c1cae1d1c3aee1a971160ce46dd52ab10785e28ea8577da22cde9ef6a7d4bcf",
+  "proposal_id": "skill-install-84b80bec-06ad-4c96-a798-fd612baf60f4",
+  "file_count": 32,
+  "mismatches": [
+    "scripts/__pycache__/validate_project_record.cpython-313.pyc"
+  ],
+  "backup_manifest": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/runtime-backups/v03-d15965f5/BACKUP_MANIFEST.json",
+  "agh_record": "/Users/wht/Desktop/黑客松/agnes-harness/RUNTIME_SKILL_UPGRADE_RECORD.md",
+  "proof_screenshot": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/AGH_RUNTIME_V07_LOADED_PROOF.png",
+  "scope_limit": "Loading v0.7 does not retroactively reclassify prior cases as installed-v0.7 validation."
+}

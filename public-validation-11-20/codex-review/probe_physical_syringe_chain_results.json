@@ -1,0 +1,143 @@
+[
+  {
+    "case": "12_capillary_microfluidics",
+    "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+    "pair": [
+      "upper syringe pump mounted syringe barrel",
+      "upper visible syringe tip"
+    ],
+    "status": "GAP_PROVEN",
+    "evaluated_bounds": [
+      [
+        [
+          -3.434499979019165,
+          -2.939500093460083
+        ],
+        [
+          -0.2549999952316284,
+          -0.10899999737739563
+        ],
+        [
+          2.202000141143799,
+          2.3480000495910645
+        ]
+      ],
+      [
+        [
+          -2.565000057220459,
+          -2.3949999809265137
+        ],
+        [
+          -0.05700000002980232,
+          0.05700000002980232
+        ],
+        [
+          2.3630001544952393,
+          2.4769999980926514
+        ]
+      ]
+    ],
+    "axis_separation_lower_bounds": [
+      0.374500036239624,
+      0.05199999734759331,
+      0.015000104904174805
+    ],
+    "axis_parallel_abs_dot": 0.9999999999999967,
+    "axis_lateral_offset": 0.2326993848281982,
+    "limits": "No physical-unit claim. AABB overlap alone never certifies connection."
+  },
+  {
+    "case": "12_capillary_microfluidics",
+    "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v04.blend",
+    "pair": [
+      "lower syringe pump mounted syringe barrel",
+      "lower visible syringe tip"
+    ],
+    "status": "GAP_PROVEN",
+    "evaluated_bounds": [
+      [
+        [
+          -3.434499979019165,
+          -2.939500093460083
+        ],
+        [
+          -0.2549999952316284,
+          -0.10899999737739563
+        ],
+        [
+          0.7519999742507935,
+          0.8980000019073486
+        ]
+      ],
+      [
+        [
+          -2.565000057220459,
+          -2.3949999809265137
+        ],
+        [
+          -0.05700000002980232,
+          0.05700000002980232
+        ],
+        [
+          0.9130000472068787,
+          1.027000069618225
+        ]
+      ]
+    ],
+    "axis_separation_lower_bounds": [
+      0.374500036239624,
+      0.05199999734759331,
+      0.01500004529953003
+    ],
+    "axis_parallel_abs_dot": 0.9999999999999967,
+    "axis_lateral_offset": 0.23269942084850195,
+    "limits": "No physical-unit claim. AABB overlap alone never certifies connection."
+  },
+  {
+    "case": "17_magnetic_shell",
+    "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/scene_v04.blend",
+    "pair": [
+      "right syringe pump mounted syringe barrel",
+      "red pump syringe interface"
+    ],
+    "status": "GAP_PROVEN",
+    "evaluated_bounds": [
+      [
+        [
+          2.5855000019073486,
+          3.0804998874664307
+        ],
+        [
+          -0.23360000550746918,
+          -0.08760000765323639
+        ],
+        [
+          1.252000093460083,
+          1.3980000019073486
+        ]
+      ],
+      [
+        [
+          2.3500001430511475,
+          2.5299999713897705
+        ],
+        [
+          -0.05000000074505806,
+          0.15000000596046448
+        ],
+        [
+          1.3199999332427979,
+          1.5199999809265137
+        ]
+      ]
+    ],
+    "axis_separation_lower_bounds": [
+      0.055500030517578125,
+      0.03760000690817833,
+      0.0
+    ],
+    "axis_parallel_abs_dot": 0.9999999999999967,
+    "axis_lateral_offset": 0.23103536442808464,
+    "limits": "No physical-unit claim. AABB overlap alone never certifies connection."
+  }
+]

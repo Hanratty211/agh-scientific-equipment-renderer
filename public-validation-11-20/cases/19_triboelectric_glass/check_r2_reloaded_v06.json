@@ -1,0 +1,100 @@
+{
+  "case": 19,
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/scene_v06.blend",
+  "status": "LIMITED_GEOMETRY_PASS",
+  "checks": [
+    {
+      "code": "glass to resistance exterior lead BEZIER",
+      "status": "PASS",
+      "detail": {
+        "type": "CURVE"
+      }
+    },
+    {
+      "code": "glass to resistance exterior lead on actual film contact",
+      "status": "PASS",
+      "detail": {
+        "film_start_gap": 8.429369702178807e-08
+      }
+    },
+    {
+      "code": "glass to resistance exterior lead on actual device input",
+      "status": "PASS",
+      "detail": {
+        "end_gap": 0.0
+      }
+    },
+    {
+      "code": "glass to resistance exterior lead source-facing final tangent",
+      "status": "PASS",
+      "detail": {
+        "tangent": [
+          0.0,
+          0.9999999403953552,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "glass to analog input exterior coax BEZIER",
+      "status": "PASS",
+      "detail": {
+        "type": "CURVE"
+      }
+    },
+    {
+      "code": "glass to analog input exterior coax on actual film contact",
+      "status": "PASS",
+      "detail": {
+        "film_start_gap": 3.725290298461914e-09
+      }
+    },
+    {
+      "code": "glass to analog input exterior coax on actual device input",
+      "status": "PASS",
+      "detail": {
+        "end_gap": 0.0
+      }
+    },
+    {
+      "code": "glass to analog input exterior coax source-facing final tangent",
+      "status": "PASS",
+      "detail": {
+        "tangent": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "code": "resistor boot exists",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "code": "scope ring and plug coaxial",
+      "status": "PASS",
+      "detail": {
+        "ring": [
+          2.5799999237060547,
+          -0.2939999997615814,
+          0.3400000035762787
+        ],
+        "plug": [
+          2.5799999237060547,
+          -0.35899999737739563,
+          0.3400000035762787
+        ]
+      }
+    }
+  ],
+  "not_checked": [
+    "pixel legibility",
+    "full path-to-all-body collision",
+    "manufacturer terminal pinout",
+    "HV clearance safety",
+    "electrical operation",
+    "hidden flow/electrical paths"
+  ]
+}
