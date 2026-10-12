@@ -1,0 +1,175 @@
+{
+  "author": "AGH",
+  "case": 16,
+  "saved_scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v07.blend",
+  "scene_sha256": "ebcd079340dec26426a675a8b742ebfaf9123289b81ff66c77be7d735c1a35f5",
+  "status": "LIMITED_REAL_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "positive HV last segment world +X axial",
+      "status": "PASS",
+      "detail": {
+        "world_endpoint": [
+          -1.7239999771118164,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "world_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "predecessor": [
+          -1.8799999952316284,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "max_radial_curve_offset": 1.3328003749250113e-07
+      }
+    },
+    {
+      "check": "positive HV colored end inside actual black boot",
+      "status": "PASS",
+      "detail": {
+        "world_endpoint": [
+          -1.7239999771118164,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "boot_aabb": [
+          [
+            -1.7955000400543213,
+            -1.6944999694824219
+          ],
+          [
+            -0.5450000166893005,
+            -0.4749999940395355
+          ],
+          [
+            1.125,
+            1.1949999332427979
+          ]
+        ],
+        "penetration": 0.07150006294250488,
+        "boot_surface_gap": 0.029500007737300653,
+        "lead_radius": 0.017999999225139618
+      }
+    },
+    {
+      "check": "positive HV continuous exterior visible path into boot",
+      "status": "PASS",
+      "detail": {
+        "outside_samples": 45,
+        "inside_samples": 52,
+        "predecessor_world": [
+          -1.8799999952316284,
+          -0.5099999904632568,
+          1.159999966621399
+        ],
+        "boot_entrance_x": -1.7955000400543213
+      }
+    },
+    {
+      "check": "positive HV stays outside bored wall; sleeve remains",
+      "status": "PASS",
+      "detail": {
+        "end_x": -1.7239999771118164,
+        "wall_x": [
+          -1.662500023841858,
+          -1.6174999475479126
+        ],
+        "sleeve_x": [
+          -1.7304999828338623,
+          -1.6054999828338623
+        ]
+      }
+    },
+    {
+      "check": "return/ground last segment world +X axial",
+      "status": "PASS",
+      "detail": {
+        "world_endpoint": [
+          -1.7239999771118164,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "world_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "predecessor": [
+          -1.8799999952316284,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "max_radial_curve_offset": 8.429369702178807e-08
+      }
+    },
+    {
+      "check": "return/ground colored end inside actual black boot",
+      "status": "PASS",
+      "detail": {
+        "world_endpoint": [
+          -1.7239999771118164,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "boot_aabb": [
+          [
+            -1.7955000400543213,
+            -1.6944999694824219
+          ],
+          [
+            -0.5450000166893005,
+            -0.4749999940395355
+          ],
+          [
+            0.5249999761581421,
+            0.5950000286102295
+          ]
+        ],
+        "penetration": 0.07150006294250488,
+        "boot_surface_gap": 0.029500007737300653,
+        "lead_radius": 0.017999999225139618
+      }
+    },
+    {
+      "check": "return/ground continuous exterior visible path into boot",
+      "status": "PASS",
+      "detail": {
+        "outside_samples": 45,
+        "inside_samples": 52,
+        "predecessor_world": [
+          -1.8799999952316284,
+          -0.5099999904632568,
+          0.5600000023841858
+        ],
+        "boot_entrance_x": -1.7955000400543213
+      }
+    },
+    {
+      "check": "return/ground stays outside bored wall; sleeve remains",
+      "status": "PASS",
+      "detail": {
+        "end_x": -1.7239999771118164,
+        "wall_x": [
+          -1.662500023841858,
+          -1.6174999475479126
+        ],
+        "sleeve_x": [
+          -1.7304999828338623,
+          -1.6054999828338623
+        ]
+      }
+    }
+  ],
+  "method": "Evaluated real meshes world-space vertices/BVH, actual cubic Bezier world samples and transformed handles; independent reload. No authored metadata trusted.",
+  "not_checked": [
+    "Rendered pixel visual acceptance",
+    "CAD connector specifications",
+    "electrical contact or HV safety",
+    "sealed function",
+    "hidden line paths"
+  ]
+}

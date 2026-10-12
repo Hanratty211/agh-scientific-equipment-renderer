@@ -1,0 +1,30 @@
+{
+  "case": 16,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/scene_v07.blend",
+  "scene_sha256": "ebcd079340dec26426a675a8b742ebfaf9123289b81ff66c77be7d735c1a35f5",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v07_reloaded_r4.png",
+      "sha256": "4dc42ee2e0c64376dfc93ddc10c3f9fb06c83d4ed8987b5bbe9f03402d5b5e38",
+      "camera": "overview_camera_v02",
+      "size": [
+        1090,
+        850
+      ]
+    },
+    {
+      "label": "both_insulated_entries",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/detail_both_insulated_entries_v07_reloaded_r4.png",
+      "sha256": "5c56a6a20b945376caed18a90209ffbcdfa9843aadb1d21de2a28345bd10032c",
+      "camera": "TEMP_R2_both_insulated_entries",
+      "size": [
+        1100,
+        780
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {},
+  "main_camera": "overview_camera_v02"
+}

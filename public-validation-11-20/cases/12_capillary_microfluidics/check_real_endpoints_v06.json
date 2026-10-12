@@ -1,0 +1,188 @@
+{
+  "author": "AGH",
+  "case": 12,
+  "saved_scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v06.blend",
+  "scene_sha256": "d4c544b818dcf3a4a8cacedb37b9faf9f9f61bda222bf41efffa509cd58f814e",
+  "status": "LIMITED_REAL_GEOMETRY_PASS",
+  "checks": [
+    {
+      "check": "actual camera housing rear plane +Y",
+      "status": "PASS",
+      "detail": {
+        "rear_y": 0.26499998569488525,
+        "surface_mesh_gap": 1.4901161193847656e-08,
+        "socket_front_y": 0.2539999783039093
+      }
+    },
+    {
+      "check": "data socket seated on true housing rear",
+      "status": "PASS",
+      "detail": {
+        "body": [
+          [
+            -0.3400000035762787,
+            0.3400000035762787
+          ],
+          [
+            -0.26499998569488525,
+            0.26499998569488525
+          ],
+          [
+            2.299999952316284,
+            2.799999952316284
+          ]
+        ],
+        "socket": [
+          [
+            0.16099999845027924,
+            0.24899999797344208
+          ],
+          [
+            0.2539999783039093,
+            0.2800000011920929
+          ],
+          [
+            2.56499981880188,
+            2.615000009536743
+          ]
+        ]
+      }
+    },
+    {
+      "check": "plug enters socket real volume",
+      "status": "PASS",
+      "detail": {
+        "socket": [
+          [
+            0.16099999845027924,
+            0.24899999797344208
+          ],
+          [
+            0.2539999783039093,
+            0.2800000011920929
+          ],
+          [
+            2.56499981880188,
+            2.615000009536743
+          ]
+        ],
+        "plug": [
+          [
+            0.1679999977350235,
+            0.24199999868869781
+          ],
+          [
+            0.27399998903274536,
+            0.3659999966621399
+          ],
+          [
+            2.571499824523926,
+            2.6085000038146973
+          ]
+        ]
+      }
+    },
+    {
+      "check": "boot physically mates plug",
+      "status": "PASS",
+      "detail": {
+        "plug": [
+          [
+            0.1679999977350235,
+            0.24199999868869781
+          ],
+          [
+            0.27399998903274536,
+            0.3659999966621399
+          ],
+          [
+            2.571499824523926,
+            2.6085000038146973
+          ]
+        ],
+        "boot": [
+          [
+            0.17599999904632568,
+            0.23399999737739563
+          ],
+          [
+            0.3530000150203705,
+            0.45100000500679016
+          ],
+          [
+            2.569999933242798,
+            2.609999895095825
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cable center begins inside boot volume",
+      "status": "PASS",
+      "detail": {
+        "start_world": [
+          0.20499999821186066,
+          0.42500001192092896,
+          2.5899999141693115
+        ],
+        "boot_aabb": [
+          [
+            0.17599999904632568,
+            0.23399999737739563
+          ],
+          [
+            0.3530000150203705,
+            0.45100000500679016
+          ],
+          [
+            2.569999933242798,
+            2.609999895095825
+          ]
+        ],
+        "boot_surface_gap": 0.01743066684239576
+      }
+    },
+    {
+      "check": "cable exits boot on rear normal +Y",
+      "status": "PASS",
+      "detail": {
+        "world_handle_tangent": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "exterior_waypoint": [
+          0.20499999821186066,
+          0.4819999933242798,
+          2.5899999141693115
+        ],
+        "boot_exit_y": 0.45100000500679016,
+        "max_first_curve_xy": 2.9802322387695312e-08
+      }
+    },
+    {
+      "check": "old off-axis wire start removed",
+      "status": "PASS",
+      "detail": {
+        "world_start": [
+          0.20499999821186066,
+          0.42500001192092896,
+          2.5899999141693115
+        ],
+        "old_start": [
+          0.235,
+          0.278,
+          2.59
+        ]
+      }
+    }
+  ],
+  "method": "Evaluated real meshes world-space vertices/BVH, actual cubic Bezier world samples and transformed handles; independent reload. No authored metadata trusted.",
+  "not_checked": [
+    "Rendered pixel visual acceptance",
+    "CAD connector specifications",
+    "electrical contact or HV safety",
+    "sealed function",
+    "hidden line paths"
+  ]
+}

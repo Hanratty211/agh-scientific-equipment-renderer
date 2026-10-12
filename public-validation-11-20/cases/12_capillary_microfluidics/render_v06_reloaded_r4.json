@@ -1,0 +1,59 @@
+{
+  "case": 12,
+  "scene": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/scene_v06.blend",
+  "scene_sha256": "d4c544b818dcf3a4a8cacedb37b9faf9f9f61bda222bf41efffa509cd58f814e",
+  "source": "reloaded saved .blend; dependency graph explicitly updated before overview and each detail",
+  "images": [
+    {
+      "label": "overview",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v06_reloaded_r4.png",
+      "sha256": "11becb82a9d60d50c85f22a866089970215144613193b8cded0d0eeecfb0cccd",
+      "camera": "overview_camera_v02",
+      "size": [
+        1140,
+        720
+      ]
+    },
+    {
+      "label": "camera_data_rear",
+      "path": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/detail_camera_data_rear_v06_reloaded_r4.png",
+      "sha256": "9e8408134b2a6625790f1c82762b9d5ee6539ff4073a0ba3fcf6326e8a1dfd53",
+      "camera": "TEMP_R2_camera_data_rear",
+      "size": [
+        1200,
+        820
+      ]
+    }
+  ],
+  "evaluated_mesh_bounds": {
+    "upper syringe pump mounted syringe barrel": {
+      "x": [
+        -3.365000009536743,
+        -2.705000162124634
+      ],
+      "y": [
+        -0.0729999989271164,
+        0.0729999989271164
+      ],
+      "z": [
+        2.3470001220703125,
+        2.493000030517578
+      ]
+    },
+    "lower syringe pump mounted syringe barrel": {
+      "x": [
+        -3.365000009536743,
+        -2.705000162124634
+      ],
+      "y": [
+        -0.0729999989271164,
+        0.0729999989271164
+      ],
+      "z": [
+        0.8970000147819519,
+        1.0429999828338623
+      ]
+    }
+  },
+  "main_camera": "overview_camera_v02"
+}

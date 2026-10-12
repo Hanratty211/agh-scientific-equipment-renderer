@@ -1,0 +1,39 @@
+{
+  "author": "AGH",
+  "sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/physical_feedback_r4_six_overviews.png",
+  "sha256": "f1e382b3ef09bab69fe7db52067f3c22d946832ad1717245f35cb9b4501b607b",
+  "case12_and_16": "new v06 and v07 independent reload",
+  "other_four": "unchanged SHA256 from prior R3 manifest",
+  "inputs": [
+    {
+      "case": 12,
+      "sha256": "11becb82a9d60d50c85f22a866089970215144613193b8cded0d0eeecfb0cccd",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/12_capillary_microfluidics/overview_v06_reloaded_r4.png"
+    },
+    {
+      "case": 13,
+      "sha256": "a1a07729845405d9a15f896b3aa1f31494b7c6d7e62cecebf264b12ad8ee2a7e",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/13_fff_printer/overview_v04_reloaded_r2.png"
+    },
+    {
+      "case": 14,
+      "sha256": "0c4bab61edc2a5cca25ed7db7a5ccaa5c04e84a2fd19feac6793bd1f3858acd1",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v06_reloaded_r2.png"
+    },
+    {
+      "case": 16,
+      "sha256": "4dc42ee2e0c64376dfc93ddc10c3f9fb06c83d4ed8987b5bbe9f03402d5b5e38",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/16_electrospinning/overview_v07_reloaded_r4.png"
+    },
+    {
+      "case": 17,
+      "sha256": "9278a33a0d8c60ed195029a1bcf2be6e1360aa997a4220f7553dd27906df368b",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/17_magnetic_shell/overview_v05_reloaded_r2.png"
+    },
+    {
+      "case": 19,
+      "sha256": "734366cdbf406cd878445aa8cc7e3456477bd56a1e34c412fa570f156d5e9e2d",
+      "image": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v06_reloaded_r2.png"
+    }
+  ]
+}

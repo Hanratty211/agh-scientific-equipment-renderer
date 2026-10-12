@@ -1,0 +1,255 @@
+{
+  "status": "UNKNOWN",
+  "errors": [],
+  "unknown": [
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.upper-pump"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lower-pump"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.upper-inlet"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.lower-inlet"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.capillary-out"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.waste-mouth"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.cam-data"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.laptop-data"
+    },
+    {
+      "code": "PORT_UNKNOWN",
+      "where": "ports.cam-cable-boot"
+    },
+    {
+      "code": "MEDIUM_UNKNOWN",
+      "where": "connections.camera-data.cam-cable-boot"
+    },
+    {
+      "code": "MEDIUM_UNKNOWN",
+      "where": "connections.camera-data.laptop-data"
+    },
+    {
+      "code": "NO_SUPPORTS",
+      "where": "supports"
+    }
+  ],
+  "checks": [
+    {
+      "name": "record_references",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "dependent_records": {
+    "component:c1": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "upper syringe pump"
+    },
+    "component:c2": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "lower syringe pump"
+    },
+    "component:c3": {
+      "supports": [],
+      "ports": [
+        "capillary-out"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "horizontal clear capillary"
+    },
+    "component:c4": {
+      "supports": [],
+      "ports": [
+        "upper-inlet"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper inlet fitting"
+    },
+    "component:c5": {
+      "supports": [],
+      "ports": [
+        "lower-inlet"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower inlet fitting"
+    },
+    "component:c6": {
+      "supports": [],
+      "ports": [
+        "cam-data"
+      ],
+      "connections": [],
+      "labels": [],
+      "object": "high speed camera"
+    },
+    "component:c7": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "inverted microscope"
+    },
+    "component:c8": {
+      "supports": [],
+      "ports": [],
+      "connections": [],
+      "labels": [],
+      "object": "sealed branch cap"
+    },
+    "component:c9": {
+      "supports": [],
+      "ports": [
+        "waste-mouth"
+      ],
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "object": "waste vessel rim"
+    },
+    "component:c10": {
+      "supports": [],
+      "ports": [
+        "laptop-data"
+      ],
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "object": "laptop base"
+    },
+    "component:c11": {
+      "supports": [],
+      "ports": [
+        "upper-pump"
+      ],
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "object": "upper pump coax metal nozzle"
+    },
+    "component:c12": {
+      "supports": [],
+      "ports": [
+        "lower-pump"
+      ],
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "object": "lower pump coax metal nozzle"
+    },
+    "component:c13": {
+      "supports": [],
+      "ports": [
+        "cam-cable-boot"
+      ],
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "object": "camera representative DATA cable boot"
+    },
+    "port:upper-pump": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c11"
+    },
+    "port:lower-pump": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c12"
+    },
+    "port:upper-inlet": {
+      "connections": [
+        "upper-feed"
+      ],
+      "labels": [],
+      "owner": "c4"
+    },
+    "port:lower-inlet": {
+      "connections": [
+        "lower-feed"
+      ],
+      "labels": [],
+      "owner": "c5"
+    },
+    "port:capillary-out": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c3"
+    },
+    "port:waste-mouth": {
+      "connections": [
+        "outlet-waste"
+      ],
+      "labels": [],
+      "owner": "c9"
+    },
+    "port:cam-data": {
+      "connections": [],
+      "labels": [],
+      "owner": "c6"
+    },
+    "port:laptop-data": {
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "owner": "c10"
+    },
+    "port:cam-cable-boot": {
+      "connections": [
+        "camera-data"
+      ],
+      "labels": [],
+      "owner": "c13"
+    }
+  },
+  "not_checked": [
+    "saved_scene_geometry",
+    "visual_legibility",
+    "functional_transport",
+    "occlusion",
+    "physics"
+  ]
+}
