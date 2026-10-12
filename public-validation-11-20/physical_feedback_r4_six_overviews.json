@@ -2,8 +2,8 @@
   "author": "AGH",
   "sheet": "/Users/wht/Desktop/黑客松/agh-research-figure-skill/public-validation-11-20/physical_feedback_r4_six_overviews.png",
   "sha256": "f1e382b3ef09bab69fe7db52067f3c22d946832ad1717245f35cb9b4501b607b",
-  "case12_and_16": "new v06 and v07 independent reload",
-  "other_four": "unchanged SHA256 from prior R3 manifest",
+  "case12_and_16": "new case12 v06 and case16 v07 independent reload",
+  "other_four": "case13/14/17/19 unchanged R2 overview PNG SHA256 (also carried unchanged in R3 manifest)",
   "inputs": [
     {
       "case": 12,

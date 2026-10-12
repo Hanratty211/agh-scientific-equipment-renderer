@@ -1,0 +1,34 @@
+{
+  "author": "Codex external image review, independent of AGH execution",
+  "date": "2026-10-12",
+  "method": "Actual image pixels loaded with view_image; not inferred from geometry PASS.",
+  "verdict": "REPRESENTATIVE_PREVIEW_STAGE_ACCEPTABLE",
+  "not_verified": [
+    "Manufacturer CAD or dimensional fidelity",
+    "Hidden electrical/fluid routing",
+    "Electrical safety, vacuum/fluid seals, functional operation",
+    "Human final acceptance"
+  ],
+  "images": [
+    {
+      "path": "cases/12_capillary_microfluidics/detail_camera_data_rear_v06_reloaded_r4.png",
+      "sha256": "9e8408134b2a6625790f1c82762b9d5ee6539ff4073a0ba3fcf6326e8a1dfd53",
+      "observation": "相机后板→插头→缓冲→线缆连续可辨，旧版可见断口已消除。"
+    },
+    {
+      "path": "cases/16_electrospinning/detail_both_insulated_entries_v07_reloaded_r4.png",
+      "sha256": "5c56a6a20b945376caed18a90209ffbcdfa9843aadb1d21de2a28345bd10032c",
+      "observation": "两根彩色线沿缓冲轴向入座，不再从黑色缓冲旁弯出游离圆头。"
+    },
+    {
+      "path": "physical_feedback_r4_six_overviews.png",
+      "sha256": "f1e382b3ef09bab69fe7db52067f3c22d946832ad1717245f35cb9b4501b607b",
+      "observation": "六例整体布局保持；笔记本铰接、可辨仪器面板及连接较此前有改善。"
+    }
+  ],
+  "historical_failures_retained": [
+    "12 rear v05 reloaded r2: visible disconnected cable at rear panel",
+    "16 entries v06 reloaded r3: colored ends bend beside the black entry boots"
+  ],
+  "record_correction_needed": "r4_six_overviews.json case16/other_five fields inherited stale R3 description. Inputs are correctly case12 v06 and case16 v07; other four from R2."
+}
