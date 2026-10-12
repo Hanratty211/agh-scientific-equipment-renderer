@@ -1,0 +1,275 @@
+{
+  "reviewer": "Codex",
+  "scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/scene_v05.blend",
+  "camera": "overview_camera_v02",
+  "rows": [
+    {
+      "position": 12,
+      "target": "position 12 framed cell A inner panel",
+      "visible_samples": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "point": [
+            3.0399999618530273,
+            1.7624999284744263,
+            0.5099999904632568
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.0399999618530273,
+            1.7624999284744263,
+            0.6600000262260437
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.0399999618530273,
+            1.7624999284744263,
+            0.8100000619888306
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.240000009536743,
+            1.7624999284744263,
+            0.5099999904632568
+          ],
+          "first_hit": "position 12 framed cell A interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.240000009536743,
+            1.7624999284744263,
+            0.6600000262260437
+          ],
+          "first_hit": "position 12 framed cell A interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.240000009536743,
+            1.7624999284744263,
+            0.8100000619888306
+          ],
+          "first_hit": "position 12 framed cell A interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.440000057220459,
+            1.7624999284744263,
+            0.5099999904632568
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.440000057220459,
+            1.7624999284744263,
+            0.6600000262260437
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            3.440000057220459,
+            1.7624999284744263,
+            0.8100000619888306
+          ],
+          "first_hit": "position 12 framed cell A inner panel",
+          "inner_panel_or_pattern_hit": true
+        }
+      ]
+    },
+    {
+      "position": 13,
+      "target": "position 13 framed cell B inner panel",
+      "visible_samples": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "point": [
+            4.820000171661377,
+            2.632499933242798,
+            0.5099999904632568
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            4.820000171661377,
+            2.632499933242798,
+            0.6600000262260437
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            4.820000171661377,
+            2.632499933242798,
+            0.8100000619888306
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.019999980926514,
+            2.632499933242798,
+            0.5099999904632568
+          ],
+          "first_hit": "position 13 framed cell B interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.019999980926514,
+            2.632499933242798,
+            0.6600000262260437
+          ],
+          "first_hit": "position 13 framed cell B interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.019999980926514,
+            2.632499933242798,
+            0.8100000619888306
+          ],
+          "first_hit": "position 13 framed cell B interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.21999979019165,
+            2.632499933242798,
+            0.5099999904632568
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.21999979019165,
+            2.632499933242798,
+            0.6600000262260437
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            5.21999979019165,
+            2.632499933242798,
+            0.8100000619888306
+          ],
+          "first_hit": "position 13 framed cell B inner panel",
+          "inner_panel_or_pattern_hit": true
+        }
+      ]
+    },
+    {
+      "position": 14,
+      "target": "position 14 framed cell C inner panel",
+      "visible_samples": 9,
+      "sample_count": 9,
+      "samples": [
+        {
+          "point": [
+            6.600000381469727,
+            3.502500057220459,
+            0.5099999904632568
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            6.600000381469727,
+            3.502500057220459,
+            0.6600000262260437
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            6.600000381469727,
+            3.502500057220459,
+            0.8100000619888306
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            6.800000190734863,
+            3.502500057220459,
+            0.5099999904632568
+          ],
+          "first_hit": "position 14 framed cell C interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            6.800000190734863,
+            3.502500057220459,
+            0.6600000262260437
+          ],
+          "first_hit": "position 14 framed cell C interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            6.800000190734863,
+            3.502500057220459,
+            0.8100000619888306
+          ],
+          "first_hit": "position 14 framed cell C interior field line.002",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            7.0,
+            3.502500057220459,
+            0.5099999904632568
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            7.0,
+            3.502500057220459,
+            0.6600000262260437
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        },
+        {
+          "point": [
+            7.0,
+            3.502500057220459,
+            0.8100000619888306
+          ],
+          "first_hit": "position 14 framed cell C inner panel",
+          "inner_panel_or_pattern_hit": true
+        }
+      ]
+    }
+  ],
+  "limits": "nine sampled opaque-geometry rays per face only; transparent visibility/whole face/pixel quality not inferred"
+}

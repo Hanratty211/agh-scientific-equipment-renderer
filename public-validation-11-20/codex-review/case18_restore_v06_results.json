@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex",
+  "geometry_and_render_state_reference": "scene_v04.blend",
+  "final": "scene_v06.blend",
+  "matched_physical_objects": 173,
+  "changed_or_missing_objects": [],
+  "missing": [],
+  "extra_non_camera_objects": [],
+  "camera_before": "overview_camera_v02",
+  "camera_after": "overview_camera_v02",
+  "output_hashes": {
+    "overview_v04.png": "110a6f300ce3dc18fd575f9b487cc8878568a39337c170a584712333005c5feb",
+    "overview_v06.png": "82e3e36d5751b0ca3cf59e944d9193ca97c502b286d7b58565aa34061068154b",
+    "cell_12_detail_v06.png": "7450e2d4c5d77b1fa3b9bf5f5f195063f5d293e7dbe5bd5fc267868d0a2aaf55",
+    "cell_13_detail_v06.png": "60d6a05be615ed454e43d4be3980c03e229c2540a3f4ccdc95729719168dbd7a",
+    "cell_14_detail_v06.png": "526df118e25702cdf3242614fd41fd805f48b2f17a190796a1b1504e45cfbd46"
+  },
+  "limitations": "equal physical mesh/transform/hide_render inventory is not materials/functional/occlusion certification; actual PNGs externally inspected separately"
+}

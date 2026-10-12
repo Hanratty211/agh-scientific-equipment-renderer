@@ -30,7 +30,7 @@
     "id": 14,
     "version": "v04",
     "source_sha256": "0e12d2a8b3f27a55bbe917d22493dda65487aeaaa4c3b86013696989ec931ae8",
-    "render_sha256": "d9b0328d10931104e204451fb1291562eb2d523d62b759e8d2077cbe77a6b75e",
+    "render_sha256": "84647b1240de75dbc8a0b6386157938508b669640ee58cd65ec8b97558966f38",
     "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/14_acoustic_levitation.png",
     "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/14_acoustic_levitation/overview_v04.png",
     "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
@@ -64,18 +64,18 @@
   },
   {
     "id": 18,
-    "version": "v04",
+    "version": "v06",
     "source_sha256": "8fe9073f1d220f2e3f83bbd0e495d4c784d696cf8346f3f94cb80563014841a4",
-    "render_sha256": "110a6f300ce3dc18fd575f9b487cc8878568a39337c170a584712333005c5feb",
+    "render_sha256": "82e3e36d5751b0ca3cf59e944d9193ca97c502b286d7b58565aa34061068154b",
     "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/18_electrochemical_stack.png",
-    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/overview_v04.png",
+    "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/18_electrochemical_stack/overview_v06.png",
     "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."
   },
   {
     "id": 19,
     "version": "v04",
     "source_sha256": "4a209463299f7ba276257ca2044ae3b0caf1d78aaa9f385559821c0e4456fe6e",
-    "render_sha256": "a9b7ef07afb4f4e8f4eceebc62c5c6f1faa580fb4baf9bba7e3f7074624f29af",
+    "render_sha256": "b48401e5c216fb8363868b4e323203a3853daf0f3fc8b8895bb81ef6306efc9c",
     "source": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/inputs/19_triboelectric_glass.png",
     "render": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agh-research-figure-skill/public-validation-11-20/cases/19_triboelectric_glass/overview_v04.png",
     "meaning": "Review aid prepared only; actual pixel inspection and verdict recorded separately."

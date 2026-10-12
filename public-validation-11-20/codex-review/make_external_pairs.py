@@ -8,7 +8,7 @@ papers=json.loads((root/'targets.json').read_text())['papers']
 out=Path(__file__).resolve().parent
 canvas=Image.new('RGB',(2000,2250),'#eeeeee');draw=ImageDraw.Draw(canvas);seen=[]
 for j,p in enumerate(papers):
- actual_version=('v04' if p['id'] in (14,15,18,19) else 'v03') if version=='latest' else version
+ actual_version=('v06' if p['id']==18 else 'v04' if p['id'] in (14,15,19) else 'v03') if version=='latest' else version
  source=root/p['target_file'];render=root/'cases'/f"{p['id']}_{p['slug']}"/f'overview_{actual_version}.png'
  im=Image.open(render).convert('RGB');im.thumbnail((970,410));x=j%2*1000;y=j//2*450
  canvas.paste(im,(x+(1000-im.width)//2,y+30));draw.text((x+12,y+6),f"{p['id']} {p['slug']} {actual_version}",fill='black')

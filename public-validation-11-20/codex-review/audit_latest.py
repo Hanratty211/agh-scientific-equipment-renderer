@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 root=Path(__file__).resolve().parents[1];proj=root.parent
 exe='/Applications/Blender.app/Contents/MacOS/Blender'
 audit=proj/'skills/agh-scientific-equipment-renderer/scripts/audit_saved_scene.py'
-versions={} if '--v03-only' in sys.argv else {14:'v04',15:'v04',18:'v04',19:'v04'}
+versions={} if '--v03-only' in sys.argv else {14:'v04',15:'v04',18:'v06',19:'v04'}
 def one(case):
  id_=int(case.name[:2]);v=versions.get(id_,'v03');scene=case/f'scene_{v}.blend';record=case/f'record_{v}.json';out=root/'codex-review'/f'independent_audit_{id_}_{v}.json'
  args=[exe,'--background',str(scene),'--python',str(audit),'--',str(record),'--report',str(out)]

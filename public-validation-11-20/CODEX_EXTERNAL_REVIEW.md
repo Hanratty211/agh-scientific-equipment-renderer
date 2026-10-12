@@ -58,3 +58,11 @@ All ten v03 pairs were read. The three versions regenerated after endpoint repai
 Nine cases now receive **limited external schematic-preview stage approval**: 11/12/13/16/17/20 v03; 14/15/19 v04. This is not exact manufacturer appearance, complete hidden topology, user final acceptance or publication-grade replication. Case18 v04 still requires revision: repeated framed-module internals exist but are visually obscured by preceding layers. Targeted presentation repair requested in R4, not another whole-batch rebuild.
 
 Independent rerun of all ten saved-scene audits had zero declared-check FAIL and overall UNVERIFIED for all ten. Six cases declared 43 ports and 22 connections in total; remaining four had zero routes, with photo/exploded/contact scopes and incomplete support coverage explicitly not covered. This result is not complete scientific validation. Raw independent reports, hashes and limits are in `codex-review/independent_audit_summary.json`.
+
+### R5 / final v06 case18 actual review
+
+V05 overview and detail were actually read. Its inner faces became visible (independent rays9/9 hit actual inner-panel/pattern geometry), but whole scope regressed: preceding layers overlapped and assembly moved to the left. V05 was rejected. The first independent probe had a MeshVertex.y API error, corrected to MeshVertex.co.y and explicitly rerun with --python-exit-code1; that failed attempt is not a PASS.
+
+AGH then produced v06 by retaining the v04 complete overview and three separately isolated module12/13/14 closeups. Codex actually viewed all four final PNGs. These reach limited **multi-view** stage approval: internal faces readable only in supplemental views, not the whole overview. Independent mesh/transform/hide_render comparison matched173 physical objects and restored main camera; no missing/extra objects. Raw result is `codex-review/case18_restore_v06_results.json`. Final independent saved-scene audits still overall UNVERIFIED for all ten with zero declared-check FAIL.
+
+All ten now have finite external schematic-preview stage judgments and known limitations. This coached selected-case validation is not a blind benchmark, user final acceptance, exact manufacturer CAD, measured physics, full route/support verification or universal generalization.
