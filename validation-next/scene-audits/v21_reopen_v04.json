@@ -1,0 +1,1342 @@
+{
+  "source_blend": "D:\\Document\\MyCodeProject\\AGH\\agh-scientific-equipment-renderer\\validation-next\\cases\\v21_mip_twin_beams\\scene_v04.blend",
+  "source_sha256": "05a866fd577b71a26e21ed3802ce82bf033b35042eecb73ccf7d193490fe0516",
+  "engine": "BLENDER_EEVEE",
+  "camera": "Camera_overview",
+  "object_count": 40,
+  "required_objects": [
+    "fs_laser",
+    "FBG",
+    "fiber_amplifier",
+    "SHG_PPLN",
+    "OPA_PPLN_waveguide",
+    "spectral_filter",
+    "delay_line",
+    "QCL_4p64um",
+    "AOM_2MHz",
+    "CaF2_sample_cell",
+    "BPD",
+    "RFSA",
+    "Camera_overview",
+    "Camera_branch_detail"
+  ],
+  "missing_required": [],
+  "hidden_render": [],
+  "objects": [
+    {
+      "name": "optical_table",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0125
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.620000005,
+        0.379999995,
+        0.025
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "table"
+      ]
+    },
+    {
+      "name": "fs_laser",
+      "type": "MESH",
+      "location": [
+        -0.254999995,
+        0.0,
+        0.064999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.075000003,
+        0.050000001,
+        0.035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "fs_laser"
+      ]
+    },
+    {
+      "name": "laser_port",
+      "type": "MESH",
+      "location": [
+        -0.213,
+        0.0,
+        0.064999998
+      ],
+      "rotation_euler": [
+        0.0,
+        1.570796371,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.008,
+        0.008,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "PM_splitter",
+      "type": "MESH",
+      "location": [
+        -0.170000002,
+        0.0,
+        0.055
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.028000001,
+        0.024,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "laser_to_splitter",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.030240133,
+        0.004000001,
+        0.013596408
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "seed_path"
+      ],
+      "wire_p0": [
+        -0.213,
+        0.0,
+        0.065
+      ],
+      "wire_p1": [
+        -0.184,
+        0.0,
+        0.055
+      ]
+    },
+    {
+      "name": "FBG",
+      "type": "MESH",
+      "location": [
+        -0.119999997,
+        0.094999999,
+        0.052000001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.025,
+        0.017999999,
+        0.015
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "fiber_amplifier",
+      "type": "MESH",
+      "location": [
+        -0.025,
+        0.094999999,
+        0.059999999
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.07,
+        0.035,
+        0.029999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "fs_laser"
+      ]
+    },
+    {
+      "name": "SHG_PPLN",
+      "type": "MESH",
+      "location": [
+        0.075000003,
+        0.094999999,
+        0.057999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.055,
+        0.026000001,
+        0.025
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "PPLN"
+      ]
+    },
+    {
+      "name": "pump_branch",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.052854002,
+        0.08496958,
+        0.003423803
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "pump_path"
+      ],
+      "wire_p0": [
+        -0.17,
+        0.012,
+        0.055
+      ],
+      "wire_p1": [
+        -0.12,
+        0.095,
+        0.055
+      ]
+    },
+    {
+      "name": "FBG_to_FA",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.035484198,
+        0.003600001,
+        0.008389395
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "pump_path"
+      ],
+      "wire_p0": [
+        -0.095,
+        0.095,
+        0.055
+      ],
+      "wire_p1": [
+        -0.06,
+        0.095,
+        0.06
+      ]
+    },
+    {
+      "name": "FA_to_SHG",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.037184801,
+        0.003600001,
+        0.005418811
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "pump_path"
+      ],
+      "wire_p0": [
+        0.01,
+        0.095,
+        0.06
+      ],
+      "wire_p1": [
+        0.047,
+        0.095,
+        0.058
+      ]
+    },
+    {
+      "name": "spectral_filter",
+      "type": "MESH",
+      "location": [
+        -0.055,
+        -0.094999999,
+        0.057999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.064999998,
+        0.035,
+        0.028000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "delay_line",
+      "type": "MESH",
+      "location": [
+        0.055,
+        -0.094999999,
+        0.057999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.064999998,
+        0.035,
+        0.028000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "seed_branch",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.085368037,
+        0.085454009,
+        0.0067368
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "seed_path"
+      ],
+      "wire_p0": [
+        -0.17,
+        -0.012,
+        0.055
+      ],
+      "wire_p1": [
+        -0.087,
+        -0.095,
+        0.058
+      ]
+    },
+    {
+      "name": "filter_to_delay",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.044,
+        0.003600001,
+        0.003423803
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "seed_path"
+      ],
+      "wire_p0": [
+        -0.022,
+        -0.095,
+        0.058
+      ],
+      "wire_p1": [
+        0.022,
+        -0.095,
+        0.058
+      ]
+    },
+    {
+      "name": "OPA_PPLN_waveguide",
+      "type": "MESH",
+      "location": [
+        0.155000001,
+        0.0,
+        0.059999999
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.064999998,
+        0.039999999,
+        0.028000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "PPLN"
+      ]
+    },
+    {
+      "name": "SHG_to_OPA",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.02442006,
+        0.095883191,
+        0.005698822
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "pump_path"
+      ],
+      "wire_p0": [
+        0.102,
+        0.095,
+        0.058
+      ],
+      "wire_p1": [
+        0.122,
+        0.0,
+        0.06
+      ]
+    },
+    {
+      "name": "delay_to_OPA",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.037277438,
+        0.096234299,
+        0.005632509
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "seed_path"
+      ],
+      "wire_p0": [
+        0.088,
+        -0.095,
+        0.058
+      ],
+      "wire_p1": [
+        0.122,
+        0.0,
+        0.06
+      ]
+    },
+    {
+      "name": "twin_separator",
+      "type": "MESH",
+      "location": [
+        0.224999994,
+        0.0,
+        0.057999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.028000001,
+        0.024,
+        0.02
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "OPA_to_separator",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.023329556,
+        0.004000001,
+        0.005789924
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "twin_beams"
+      ],
+      "wire_p0": [
+        0.188,
+        0.0,
+        0.06
+      ],
+      "wire_p1": [
+        0.211,
+        0.0,
+        0.058
+      ]
+    },
+    {
+      "name": "CaF2_sample_cell",
+      "type": "MESH",
+      "location": [
+        0.310000002,
+        -0.064999998,
+        0.059999999
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.055,
+        0.039999999,
+        0.026000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "sample_cell"
+      ]
+    },
+    {
+      "name": "Fourier_iris",
+      "type": "MESH",
+      "location": [
+        0.395000011,
+        -0.064999998,
+        0.059999999
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.017999999,
+        0.017999999,
+        0.028000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "signal_probe",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.045885488,
+        0.059147216,
+        0.005550172
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "twin_beams"
+      ],
+      "wire_p0": [
+        0.239,
+        -0.008,
+        0.058
+      ],
+      "wire_p1": [
+        0.282,
+        -0.065,
+        0.06
+      ]
+    },
+    {
+      "name": "sample_to_iris",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.048000008,
+        0.003600001,
+        0.003423803
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "twin_beams"
+      ],
+      "wire_p0": [
+        0.338,
+        -0.065,
+        0.06
+      ],
+      "wire_p1": [
+        0.386,
+        -0.065,
+        0.06
+      ]
+    },
+    {
+      "name": "QCL_4p64um",
+      "type": "MESH",
+      "location": [
+        0.310000002,
+        -0.189999998,
+        0.064999998
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.064999998,
+        0.039999999,
+        0.032000002
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "fs_laser"
+      ]
+    },
+    {
+      "name": "AOM_2MHz",
+      "type": "MESH",
+      "location": [
+        0.310000002,
+        -0.125,
+        0.059999999
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.037999999,
+        0.027000001,
+        0.024
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "QCL_to_AOM",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.003600001,
+        0.031545177,
+        0.008380119
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "MIR_QCL"
+      ],
+      "wire_p0": [
+        0.31,
+        -0.17,
+        0.065
+      ],
+      "wire_p1": [
+        0.31,
+        -0.139,
+        0.06
+      ]
+    },
+    {
+      "name": "MIR_to_sample",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.003600001,
+        0.033,
+        0.003423803
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "MIR_QCL"
+      ],
+      "wire_p0": [
+        0.31,
+        -0.111,
+        0.06
+      ],
+      "wire_p1": [
+        0.31,
+        -0.078,
+        0.06
+      ]
+    },
+    {
+      "name": "BPD",
+      "type": "MESH",
+      "location": [
+        0.479999989,
+        0.0,
+        0.07
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.064999998,
+        0.055,
+        0.041999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "detector"
+      ]
+    },
+    {
+      "name": "BPD_signal_port",
+      "type": "MESH",
+      "location": [
+        0.448000014,
+        -0.015,
+        0.064999998
+      ],
+      "rotation_euler": [
+        0.0,
+        1.570796371,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.008,
+        0.008,
+        0.016000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "BPD_idler_port",
+      "type": "MESH",
+      "location": [
+        0.448000014,
+        0.015,
+        0.075000003
+      ],
+      "rotation_euler": [
+        0.0,
+        1.570796371,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.008,
+        0.008,
+        0.016000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "optic"
+      ]
+    },
+    {
+      "name": "signal_to_BPD",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.046707302,
+        0.052350417,
+        0.008421604
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "twin_beams"
+      ],
+      "wire_p0": [
+        0.404,
+        -0.065,
+        0.06
+      ],
+      "wire_p1": [
+        0.448,
+        -0.015,
+        0.065
+      ]
+    },
+    {
+      "name": "idler_reference",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.210854545,
+        0.052901834,
+        0.020759307
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "twin_beams"
+      ],
+      "wire_p0": [
+        0.239,
+        0.008,
+        0.058
+      ],
+      "wire_p1": [
+        0.448,
+        0.015,
+        0.075
+      ]
+    },
+    {
+      "name": "RFSA",
+      "type": "MESH",
+      "location": [
+        0.550000012,
+        0.119999997,
+        0.071999997
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.075000003,
+        0.059999999,
+        0.050000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "detector"
+      ]
+    },
+    {
+      "name": "RFSA_screen",
+      "type": "MESH",
+      "location": [
+        0.550000012,
+        0.088500001,
+        0.075000003
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.045000002,
+        0.003,
+        0.028000001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "screen"
+      ]
+    },
+    {
+      "name": "BPD_to_RFSA",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.042943835,
+        0.071700238,
+        0.003233597
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "RF"
+      ],
+      "wire_p0": [
+        0.51,
+        0.02,
+        0.07
+      ],
+      "wire_p1": [
+        0.55,
+        0.09,
+        0.07
+      ]
+    },
+    {
+      "name": "Camera_overview",
+      "type": "CAMERA",
+      "location": [
+        0.540000021,
+        -0.689999998,
+        0.5
+      ],
+      "rotation_euler": [
+        1.066512823,
+        -5.3e-08,
+        0.537421882
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Area",
+      "type": "LIGHT",
+      "location": [
+        0.200000003,
+        -0.200000003,
+        0.400000006
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Area.001",
+      "type": "LIGHT",
+      "location": [
+        -0.300000012,
+        0.25,
+        0.300000012
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Camera_branch_detail",
+      "type": "CAMERA",
+      "location": [
+        0.200000003,
+        -0.379999995,
+        0.219999999
+      ],
+      "rotation_euler": [
+        1.200155854,
+        -1.9e-08,
+        0.425622493
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    }
+  ],
+  "rerender_sha256": "6c0d655324378cbe885563a52699b2b47f6427505f9e42381aa917df71686f35",
+  "rerender_bytes": 342907,
+  "status": "PASS_REOPEN_STRUCTURE_AND_RERENDER_ONLY"
+}

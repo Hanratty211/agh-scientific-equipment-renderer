@@ -2,14 +2,14 @@
 
 ## 来源
 - 论文：arXiv:2610.10294 — *Sub-shot-noise mid-infrared photothermal measurements using twin beams*
-- SELECTION.md 记录：B 类，arXiv HTML 正文与 Fig.1/Fig.2 链接已取得（2026-10-07），无本地 PDF
+- SELECTION.md 记录：B 类；本轮另用 `curl.exe` 下载 arXiv PDF（临时文件 `v21.pdf`，SHA-256 `3758623acd22038bf3ead7d716a162f6c7d087ddb75619090bd70c5767a0f3a3`，2026-10-13 UTC），未把临时缓存纳入仓库
 - 目标范围：twin-beam MIP 系统 1.5 µm 飞秒激光、FBG/fiber amplifier、SHG/PPLN OPA、seed 滤波与延迟线、QCL/AOM、sample cell、BPD/RFSA 链路
 
 ## 输入类别
 B（系统架构图）
 
-## 建模范围（首版 v01，低成本，无本地 PDF）
-基于 SELECTION.md 已记录组件清单 + B 类系统图保守重建：
+## 建模范围（v02 来源纠错后）
+根据 PDF Fig.1、正文 §2–5 和 Methods/Supplementary 文字建立分支拓扑；v02 不再把系统简化为横向串联盒体：
 
 | 组件 | 来源依据 | 状态 |
 |---|---|---|
@@ -34,5 +34,6 @@ B（系统架构图）
 - RFSA 显示波形内容（静态屏幕，非实际数据）
 
 ## 来源限制
-- 无本地 arXiv PDF，全部组件基于 SELECTION.md 已记录清单
-- 光路走线为保守直线/单段表示，非实际光纤弯曲路径
+- Fig.1 是系统示意图，不提供全部厂家外观或精确空间尺度。
+- v02 使用代表性几何；光纤走线仍是低成本曲线路径，不等于实测装配。
+- Supplementary/Methods 明确的 FBG、EDFA、PPLN、QCL/AOM、CaF2 cell、BPD、RFSA 已按功能分列；真实接口和镜片安装仍未确认。

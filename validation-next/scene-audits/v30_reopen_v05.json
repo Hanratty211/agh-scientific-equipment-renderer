@@ -1,0 +1,1522 @@
+{
+  "source_blend": "D:\\Document\\MyCodeProject\\AGH\\agh-scientific-equipment-renderer\\validation-next\\cases\\v30_radiative_cooling_energy\\scene_v05.blend",
+  "source_sha256": "886045e05ba57204145aaad9b672a91a8d2587593e6795049d54d9f727c56155",
+  "engine": "BLENDER_EEVEE",
+  "camera": "Camera_overview",
+  "object_count": 48,
+  "required_objects": [
+    "sapphire_chip",
+    "sample_contact",
+    "housing_left",
+    "housing_right",
+    "housing_front",
+    "housing_back",
+    "housing_cover_removed",
+    "vcsel_AlN",
+    "vcsel_active_mesa",
+    "si_photodetector",
+    "longpass_filter",
+    "TIA",
+    "ADC",
+    "ESP32",
+    "TP4056",
+    "BOOST",
+    "LDO",
+    "LiPo_400mAh",
+    "USB_C_port",
+    "wifi_antenna",
+    "rail_3V3",
+    "rail_7V",
+    "Camera_overview",
+    "Camera_bottom_detail"
+  ],
+  "missing_required": [],
+  "hidden_render": [],
+  "objects": [
+    {
+      "name": "sapphire_chip",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.002
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.02,
+        0.050000001,
+        0.004
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "sapphire"
+      ]
+    },
+    {
+      "name": "sample_contact",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0046
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.007,
+        0.007,
+        0.0012
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "analyte"
+      ]
+    },
+    {
+      "name": "housing_left",
+      "type": "MESH",
+      "location": [
+        -0.0114,
+        0.0,
+        -0.009
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0012,
+        0.054000001,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "enclosure"
+      ]
+    },
+    {
+      "name": "housing_right",
+      "type": "MESH",
+      "location": [
+        0.0114,
+        0.0,
+        -0.009
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0012,
+        0.054000001,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "enclosure"
+      ]
+    },
+    {
+      "name": "housing_front",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.0264,
+        -0.009
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.021600001,
+        0.0012,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "enclosure"
+      ]
+    },
+    {
+      "name": "housing_back",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0264,
+        -0.009
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.021600001,
+        0.0012,
+        0.017999999
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "enclosure"
+      ]
+    },
+    {
+      "name": "housing_cover_removed",
+      "type": "MESH",
+      "location": [
+        0.035,
+        0.0,
+        -0.017000001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.024,
+        0.054000001,
+        0.0015
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "removed_cover"
+      ]
+    },
+    {
+      "name": "vcsel_AlN",
+      "type": "MESH",
+      "location": [
+        -0.004,
+        0.004,
+        -0.00025
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0014,
+        0.0014,
+        0.0005
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "vcsel_n_DBR",
+      "type": "MESH",
+      "location": [
+        -0.004,
+        0.004,
+        -0.00065
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0011,
+        0.0011,
+        0.00025
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "n_DBR"
+      ]
+    },
+    {
+      "name": "vcsel_active_mesa",
+      "type": "MESH",
+      "location": [
+        -0.004,
+        0.004,
+        -0.00092
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0015,
+        0.0015,
+        0.00028
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "mesa"
+      ]
+    },
+    {
+      "name": "vcsel_p_pad",
+      "type": "MESH",
+      "location": [
+        -0.004,
+        0.004,
+        -0.00112
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0007,
+        0.0007,
+        0.00012
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ]
+    },
+    {
+      "name": "vcsel_n_pad",
+      "type": "MESH",
+      "location": [
+        -0.0028,
+        0.004,
+        -0.00112
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0005,
+        0.00028,
+        0.00012
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ]
+    },
+    {
+      "name": "si_photodetector",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.004,
+        -0.00042
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.003,
+        0.005,
+        0.0007
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "Si_PD"
+      ]
+    },
+    {
+      "name": "longpass_filter",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.004,
+        -0.00086
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0028,
+        0.0048,
+        0.00016
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "longpass"
+      ]
+    },
+    {
+      "name": "LD_driver_carrier",
+      "type": "MESH",
+      "location": [
+        -0.006,
+        0.013,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0026,
+        0.0026,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "LD_driver",
+      "type": "MESH",
+      "location": [
+        -0.006,
+        0.013,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0021,
+        0.0021,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "TIA_carrier",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.012,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0026,
+        0.0026,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "TIA",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.012,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0021,
+        0.0021,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "ADC_carrier",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.017999999,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0026,
+        0.0026,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "ADC",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.017999999,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0021,
+        0.0021,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "ESP32_carrier",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.024,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0039,
+        0.0037,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "ESP32",
+      "type": "MESH",
+      "location": [
+        0.004,
+        0.024,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0034,
+        0.0032,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "TP4056_carrier",
+      "type": "MESH",
+      "location": [
+        -0.006,
+        -0.013,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0023,
+        0.0023,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "TP4056",
+      "type": "MESH",
+      "location": [
+        -0.006,
+        -0.013,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0018,
+        0.0018,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "BOOST_carrier",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.013,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0023,
+        0.0023,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "BOOST",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.013,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0018,
+        0.0018,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "LDO_carrier",
+      "type": "MESH",
+      "location": [
+        0.006,
+        -0.013,
+        -0.001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0023,
+        0.0023,
+        0.0003
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "carrier"
+      ]
+    },
+    {
+      "name": "LDO",
+      "type": "MESH",
+      "location": [
+        0.006,
+        -0.013,
+        -0.00132
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0018,
+        0.0018,
+        0.00035
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "die"
+      ]
+    },
+    {
+      "name": "LiPo_400mAh",
+      "type": "MESH",
+      "location": [
+        -0.004,
+        -0.021,
+        -0.0025
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.006,
+        0.005,
+        0.0028
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "LiPo"
+      ]
+    },
+    {
+      "name": "LiPo_connector",
+      "type": "MESH",
+      "location": [
+        0.003,
+        -0.021,
+        -0.0013
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.002,
+        0.0015,
+        0.0008
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ]
+    },
+    {
+      "name": "USB_C_port",
+      "type": "MESH",
+      "location": [
+        0.008,
+        -0.0265,
+        -0.0018
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.003,
+        0.0015,
+        0.0018
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "USB_C"
+      ]
+    },
+    {
+      "name": "rail_3V3",
+      "type": "MESH",
+      "location": [
+        0.009,
+        0.0,
+        -0.00125
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00045,
+        0.037999999,
+        0.0001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ]
+    },
+    {
+      "name": "rail_7V",
+      "type": "MESH",
+      "location": [
+        -0.009,
+        -0.002,
+        -0.00125
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00045,
+        0.023,
+        0.0001
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ]
+    },
+    {
+      "name": "PD_to_TIA",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00032,
+        0.007999999,
+        0.00032
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        0.004,
+        0.004,
+        -0.0011
+      ],
+      "wire_p1": [
+        0.004,
+        0.012,
+        -0.0011
+      ]
+    },
+    {
+      "name": "TIA_to_ADC",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00032,
+        0.005999999,
+        0.00032
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        0.004,
+        0.012,
+        -0.0011
+      ],
+      "wire_p1": [
+        0.004,
+        0.018,
+        -0.0011
+      ]
+    },
+    {
+      "name": "ADC_to_ESP32",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00032,
+        0.006000001,
+        0.00032
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        0.004,
+        0.018,
+        -0.0011
+      ],
+      "wire_p1": [
+        0.004,
+        0.024,
+        -0.0011
+      ]
+    },
+    {
+      "name": "BOOST_to_VCSEL",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.009283831,
+        0.017203748,
+        0.00032
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        0.0,
+        -0.013,
+        -0.0012
+      ],
+      "wire_p1": [
+        -0.004,
+        0.004,
+        -0.0012
+      ]
+    },
+    {
+      "name": "wifi_antenna",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.01228,
+        0.003477991,
+        0.00056
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "antenna"
+      ],
+      "wire_p0": [
+        -0.008,
+        0.022,
+        -0.0013
+      ],
+      "wire_p1": [
+        0.004,
+        0.025,
+        -0.0013
+      ]
+    },
+    {
+      "name": "rf_feed",
+      "type": "CURVE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.012102826,
+        0.002338415,
+        0.00036
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        0.004,
+        0.024,
+        -0.0012
+      ],
+      "wire_p1": [
+        -0.008,
+        0.025,
+        -0.0012
+      ]
+    },
+    {
+      "name": "wire_p",
+      "type": "MESH",
+      "location": [
+        -0.005,
+        0.0085,
+        -0.00116
+      ],
+      "rotation_euler": [
+        1.579473257,
+        6.5e-08,
+        -2.922923803
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0002,
+        0.0002,
+        0.009219891
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        -0.004,
+        0.004,
+        -0.00112
+      ],
+      "wire_p1": [
+        -0.006,
+        0.013,
+        -0.0012
+      ]
+    },
+    {
+      "name": "wire_n",
+      "type": "MESH",
+      "location": [
+        -0.0059,
+        0.004,
+        -0.00116
+      ],
+      "rotation_euler": [
+        1.583698988,
+        8.9e-08,
+        -1.570796371
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0002,
+        0.0002,
+        0.006200515
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "gold"
+      ],
+      "wire_p0": [
+        -0.0028,
+        0.004,
+        -0.00112
+      ],
+      "wire_p1": [
+        -0.009,
+        0.004,
+        -0.0012
+      ]
+    },
+    {
+      "name": "uv_excitation",
+      "type": "MESH",
+      "location": [
+        -0.002,
+        0.002,
+        0.0016
+      ],
+      "rotation_euler": [
+        0.827453256,
+        -8e-09,
+        0.785398304
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00048,
+        0.00048,
+        0.007683749
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "UV"
+      ],
+      "wire_p0": [
+        -0.004,
+        0.004,
+        -0.001
+      ],
+      "wire_p1": [
+        0.0,
+        0.0,
+        0.0042
+      ]
+    },
+    {
+      "name": "fluorescence_to_PD",
+      "type": "MESH",
+      "location": [
+        0.002,
+        0.002,
+        0.001675
+      ],
+      "rotation_euler": [
+        2.299576283,
+        1.34e-07,
+        2.356194735
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.00064,
+        0.00064,
+        0.00758304
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": [
+        "fluorescence"
+      ],
+      "wire_p0": [
+        0.0,
+        0.0,
+        0.0042
+      ],
+      "wire_p1": [
+        0.004,
+        0.004,
+        -0.00085
+      ]
+    },
+    {
+      "name": "Camera_overview",
+      "type": "CAMERA",
+      "location": [
+        0.078000002,
+        -0.104999997,
+        -0.082000002
+      ],
+      "rotation_euler": [
+        2.124232292,
+        7e-09,
+        0.61656636
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Camera_bottom_detail",
+      "type": "CAMERA",
+      "location": [
+        0.039999999,
+        -0.064999998,
+        -0.050000001
+      ],
+      "rotation_euler": [
+        2.121718645,
+        -2.7e-08,
+        0.525366962
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Area",
+      "type": "LIGHT",
+      "location": [
+        0.02,
+        -0.039999999,
+        -0.090000004
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Area.001",
+      "type": "LIGHT",
+      "location": [
+        -0.050000001,
+        0.039999999,
+        -0.050000001
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    },
+    {
+      "name": "Area.002",
+      "type": "LIGHT",
+      "location": [
+        0.0,
+        0.0,
+        0.090000004
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "materials": []
+    }
+  ],
+  "rerender_sha256": "1c11fa715be67cc795e5180d5235fe24c3d0ff61d8180d70974897a25347f36b",
+  "rerender_bytes": 329569,
+  "status": "PASS_REOPEN_STRUCTURE_AND_RERENDER_ONLY"
+}

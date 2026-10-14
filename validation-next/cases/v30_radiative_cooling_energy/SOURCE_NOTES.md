@@ -28,19 +28,19 @@ D（正文/方法文字为主）—— 无本地 Fig 高清 PNG，几何依据�
 | USB-C 充电口 | Fig. 12 正文：USB-C charge port | 来源可见 |
 | Wi-Fi 天线走线（5 段蛇形，50 Ω 射频馈线） | Fig. 12 正文：50-Ω RF lead from ESP32 to on-chip microwave antenna | 来源可见 |
 | 3.3V / 7V 金轨 | Fig. 12 正文：3.3 V Ti/Au rail, 7 V Ti/Au rail | 来源可见 |
-| 样品凹槽（顶面） | Fig. 11 正文：sample contacting top face, ~0.5 mm diameter excitation zone | 来源可见 |
+| 分析物样品接触顶面 | Fig. 11 正文：sample contacting the top face；不是凹槽 | 来源可见 |
 | UV 激光锥（VCSEL→样品→PD 荧光路径） | Fig. 7/11 正文：3.7° FWHM cone, 0.4 mm spot at top face | 来源可见 |
-| 顶面薄玻璃盖（极透明） | 保守假设 | 建模假设 |
-| 外壳壳体（18 mm 厚、24×54 mm） | 正文：rectangular housing bonded to chip bottom | 来源可见 |
-| 支撑脚（4 个） | 通用假设 | 建模假设 |
+| 外壳壳体（约 18 mm 厚、24×54 mm） | 正文：rectangular housing bonded to chip bottom | 正文依据；v03 以开口框＋移出底盖展示内部 |
+| 顶面薄玻璃盖、支撑脚 | 论文无依据 | v03 删除 |
 
 ## 未定项 / 未知
 - 芯片内各 IC 具体厂家型号（只标名称，不假设外观）
 - 50 Ω RF 馈线实际走线拓扑（蛇形天线段数为保守估计）
-- 样品区具体位置（假设在芯片中心）
-- 外壳壳体与芯片的固定方式（假设直接键合）
+- 样品接触区具体平面位置（v03 暂置中心，仅作示意）
+- 外壳壳体与芯片的固定细节；正文只说明 bonded to chip bottom
+- 为读图采用的开口框/移出底盖是同一 enclosure 的剖切展示，不代表论文给出的拆卸结构
 
 ## 来源限制
-- 无 Fig 高清 PNG，几何尺寸从正文文字推断（芯片 20×50×4 mm）
-- VCSEL 各 DBR 层厚度未精确建模（简化为单层块体）
-- 金线键合为直线近似（非抛物线弧）
+- 本地 PDF 第 12/19/21/22 页已实际读取，支持 VCSEL/PD、样品顶面接触、Wi-Fi 底面布局与底部 housing；旧记录“无 Fig”不准确。
+- VCSEL 各 DBR 层厚度未精确建模（简化为层块）；金线键合为直线近似。
+- v01/v02 的四脚与样品凹槽均无论文依据；v03 删除并保留旧版本为失败历史。

@@ -1,30 +1,43 @@
 # BATCH_STATUS — validation-next V21–V30
 
-日期：2026-10-13
-分支：agh/validation-next-2026
-Blender：5.2.2 LTS（C:\Program Files\Blender Foundation\Blender 5.2\blender.exe）
-渲染引擎：BLENDER_EEVEE
+日期：2026-10-14
+分支：`agh/validation-next-2026`
 
-## 各案状态表
+## 批量验证记录
 
-| 编号 | 论文 | 输入类别 | v01 落盘 | 最新版本 | 视觉验收 | 备注 |
-|---|---|---|---|---|---|---|
-| V21 | MIP twin beams | B | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 无本地 PDF；B 类系统架构保守重建 |
-| V22 | soft pneumatic skin | C | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 无本地 PDF；C 类实验台架保守重建 |
-| V23 | EO flat comb | B | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 本地 PDF 已落盘（8页） |
-| V24 | soliton microcomb | D | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 无本地 PDF；D 类文字主导 |
-| V25 | OoTrap | C | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 无本地 PDF；C 类外部接口保守重建 |
-| V26 | microfluidic T-junction | A | ✓ scene_v01.blend + overview_v01.png | **v03** | 外部审阅 | 本地 PDF 已落盘；v02 外部反馈：T 通道仍不可见→v03 开顶通道 + 高对比流体 + 发光粒子 + 光学面包板 |
-| V27 | acoustic levitation LM | A | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 本地 PDF 已落盘（8页） |
-| V28 | acoustic metamaterial nano | B | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 无本地 PDF；B 类保守重建 |
-| V29 | ABH metamaterial beam | C | ✓ scene_v01.blend + overview_v01.png | v01 | 外部审阅 | 本地 PDF 已落盘（21页） |
-| V30 | UV fluorescence chip | D | ✓ scene_v01.blend + overview_v01.png | **v02** | 外部审阅 | 本地 PDF 已落盘（31页）；v01 外部反馈：外壳全白半透明遮挡一切→v02 翻转底面视角 + 极低 alpha |
+十例均有批量验证产物（场景/渲染及可用的结构审计记录）。这表示批处理产物已生成，不代表十例全部通过视觉验收。仅 V21 v04 与 V30 v05 的最新版 PNG 已由外部 Codex 实际查看；其他案例不作视觉通过声明。
 
-## 读图验收说明
-- AGH 本会话内建视觉读图工具（vision-skill → qwen3-vl-flash）返回 404 model_not_found，**记录为"AGH 实际读图工具不可用"**，不再重试。
-- 视觉验收由外部 Codex 审阅者完成，反馈已在各案 CHECKPOINT.md 单独署名记录。
-- AGH 侧像素统计（PIL/numpy：frac_dark / frac_mid / frac_bright / mean_rgb）已对每张 PNG 完成，结果记录于各案 CHECKPOINT.md。
+| 编号 | 最新记录产物 | 验证范围与未完成项 |
+|---|---|---|
+| V21 | v04 | 独立重开、结构审计、复渲；视觉已由外部 Codex 查看。右侧设备有边缘裁切，不再返工。 |
+| V22 | v02 | 批量验证产物；来源/通道形态与实际照片构图仍待复核。 |
+| V23 | v02 | 批量验证产物；本地主文不含实验装置图，补充材料尚未取得。 |
+| V24 | v01 | 批量验证产物；设备层级和完整装置路径未视觉验收。 |
+| V25 | v01 | 批量验证产物；主体过曝，形态、微孔和内部腔不可可靠确认。 |
+| V26 | v04 | 批量验证产物；需区分论文数值域与超出来源的实验观测设备。 |
+| V27 | v01 | 批量验证产物；声学装置与光轴遮挡关系未视觉验收。 |
+| V28 | v01 | 批量验证产物；周期单元对比度不足，结构/连接不可确认。 |
+| V29 | v01 | 批量验证产物；梁、楔块层级偏弱且边缘裁切。 |
+| V30 | v05 | 独立重开、结构审计、复渲；视觉已由外部 Codex 查看，作为视频主展示候选。 |
 
-## 交付物清单
-- 各案：build_v0X.py + scene_v0X.blend + overview_v0X.png + SOURCE_NOTES.md + CHECKPOINT.md + verification_notes.md
-- 批量：SELECTION.md（已更新 V26/V30 来源）、BATCH_STATUS.md、REVIEW_GUIDE.md、contact_sheets/overview_grid.png
+## 视频说明
+
+- **主展示：V30 v05。** 最新 PNG 已由外部 Codex 实际查看；这是视频主展示选择，不等同于所有内部细节、接口与功能均已验证。
+- **第二展示：V21 v04。** 最新 PNG 已由外部 Codex 实际查看；右侧设备有边缘裁切，已决定不再返工，应避免将裁切设备作为特写主体。
+- 不建议特写：V22 v02（层/端口辨识和构图未验收）、V23 v02（装置图依据不足）、V24 v01（路径与器件可读性未验收）、V25 v01（过曝）、V26 v04（来源范围混入未证实设备）、V27 v01（遮挡关系未验收）、V28 v01（周期结构被亮度吞没）、V29 v01（层级弱且边缘裁切）。这些案例最多作为批量验证产物展示，不应剪成“已通过视觉验收”。
+
+## V21 来源纠错
+
+- 旧状态描述曾称无本地 PDF/仅 HTML；本轮记录已更正：曾下载的 PDF 为临时文件，未纳入仓库。建模依据为论文 Fig.1、正文及 Methods/Supplementary 相关文字；图示是系统示意，不提供全部厂家外观或精确空间尺度。
+- V21 v04 保留 v02 来源拓扑，仅改构图、曝光、材质亮度并输出局部图。全新 Blender 进程重开、结构审计和复渲均有记录，进程正常退出。
+
+## V30 来源纠错与验证
+
+- 旧“无 Fig/仅正文尺寸”的表述不准确：本地 PDF 已实际读取相关 VCSEL、样品顶面接触、底面布局及 enclosure 内容；SOURCE_NOTES 记载具体依据与局限。
+- V30 v05 保留来源结构，仅调整曝光、材质对比、镜头和采样。全新 Blender 进程重开、结构审计、复渲成功，构建与重开进程均正常退出。
+
+## 未完成项
+
+- V21/V30 外部视觉查看不构成逐接口、真实性能或全部细节的功能验证；其余八例没有本轮外部视觉验收证据。
+- V21 右侧边缘裁切明确接受、不返工；真实接口/厂家外观等来源未给出的细节仍未知。
+- 其他案例的来源充分性、遮挡、构图和可读性均按表中所述保留为未完成，不得概括为十例全部视觉通过。

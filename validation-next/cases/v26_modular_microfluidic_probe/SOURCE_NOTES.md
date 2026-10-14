@@ -8,28 +8,23 @@
 ## 输入类别
 A（工程图/通道图）—— Fig. 1 为数值域示意，含坐标、L/Rc 比例关系。
 
-## 建模范围（首版 v01，低成本）
-以下组件基于 Fig. 1 几何比例 + 正文文字（粒子追踪器、光学观察链路）保守建模：
+## 建模范围（v04 来源纠错后）
+本地 PDF 全文检索确认 `BOS`、`schlieren`、`camera`、`laser`、`optical` 均无命中。本文是 OpenFOAM DNS 与粒子轨迹研究，不是光学实验装置论文。v04 仅重建 Fig. 1 数值域及正文粒子轨迹范围：
 
 | 组件 | 来源依据 | 状态 |
 |---|---|---|
-| 透明基底 wafer（PDMS-like） | 正文：microfluidic 通道，未明确材料；假设 PDMS 透明 | 建模假设 |
-| T-junction 壁（inflow arm, outflow arm, branch arm） | Fig. 1 几何：W=L，arm=L，分支沿 Y | 来源可见 |
-| 内部流体（inflow/outflow/branch） | Fig. 1 通道空间 | 来源可见 |
-| 粒子追踪器（tracer particle，橙球） | 正文：finite-size particle 直径 ~ 0.4L（Rc=0.4L 为通道曲率半径，粒径 a*=0.2L）；假设 | 建模假设 |
-| 顶部光学端口（3× 圆柱口 + 孔） | Fig. 1 三出口标注 inflow/outflow/branch outflow；保守估计端口在顶部 | 建模假设 |
-| 观察光路（laser 侧臂 + beam） | 正文：schlieren / 背光照；BOS 方法提及光路 | 正文依据 |
-| 检测块（detector block + lens） | 正文：BOS 相机记录折射率梯度 | 正文依据 |
-| 支撑底板 | 通用实验台架假设 | 建模假设 |
-| 相机机壳（camera body + lens） | 正文：camera records light path | 正文依据 |
+| 90° T-junction square-section numerical domain | Fig. 1 与 §2：square cross-sections | 来源可见/正文依据 |
+| 主臂左右 5L、分支 L、内圆角 Rc=0.4L | Fig. 1 标注 | 来源可见 |
+| 一个 inflow 与两个 outflow 截面 | Fig. 1 标注 | 来源可见；v04 以截面环而非物理接头表达 |
+| 流体域体积和边界墙 | DNS geometry / no-slip solid walls | 正文依据；颜色为示意 |
+| 有限尺寸球形粒子及少量轨迹样本 | §2.2 particle trajectory；几何仅作代表性轨迹预览 | 正文依据＋建模示意 |
+| BOS、schlieren、相机、激光、探测器、光学台、物理顶置端口 | PDF 无依据 | v04 全部删除 |
 
 ## 未定项 / 未知
-- 具体通道尺寸（L、W 绝对值）—— 论文为无量纲化数值域，无实际 mm 尺度
-- 粒子材料（假设金属球，金色）
-- 端口尺寸（假设 3 mm 直径）
-- 光路具体配置（schlieren 还是纯 BOS 相机）—— 保守用单一入射光束表示
-- 实验台架（假设标准光学面包板尺寸）
+- 论文采用与 Vigolo et al. 实验对应的 L=4.8×10⁻³ m，但 v04 只表达比例，不宣称制造尺寸复刻。
+- v04 粒子颜色和轨迹采样点是可视化选择，不表示材料或某一条论文数值轨迹。
+- Fig. 1 内圆角 Rc=0.4L 在 v04 低成本墙体中尚未做真实曲面，只保留在证据记录中。
 
 ## 来源限制
-- 无本地 Fig. 1 PNG 图像，几何依据正文文字和 Fig. 1 描述（5L×L 主臂，L 分支，Rc=0.4L）
-- 无厂家实物外观参考；wafer/端口/光路组件均为代表性示意
+- Fig. 1 已由本地 PDF 第 5 页读取；它是数值域示意，不支持实物 wafer、端口接头或光学观察链。
+- v01–v03 的 BOS/光学链属于本次执行误读，旧版本保留为失败历史；v04 缩回有据范围。
