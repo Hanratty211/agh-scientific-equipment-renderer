@@ -1,0 +1,12 @@
+00:02.729  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v01/scene.blend"
+Traceback (most recent call last):
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/revise_micro_v04.py", line 15, in <module>
+    r.M['schematic_green']=r.material('MAT_schematic_green',(0.23,0.64,0.34),rough=.68)
+                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/render_core.py", line 14, in material
+    m.use_nodes=True; p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color[:3],1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough
+                                                                 ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

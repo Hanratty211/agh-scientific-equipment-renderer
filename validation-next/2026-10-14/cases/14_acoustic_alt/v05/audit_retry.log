@@ -1,0 +1,16 @@
+00:00.241  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v05/scene.blend"
+Traceback (most recent call last):
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/audit_stage6.py", line 45, in <module>
+    Path(path).write_text(json.dumps(d,indent=2,ensure_ascii=False));print('STAGE6_AUDIT',case,d['fails'],flush=True)
+    ~~~~^^^^^^
+  File "/Applications/Blender.app/Contents/Resources/5.1/python/lib/python3.13/pathlib/_local.py", line 503, in __init__
+    super().__init__(*args)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Applications/Blender.app/Contents/Resources/5.1/python/lib/python3.13/pathlib/_local.py", line 132, in __init__
+    raise TypeError(
+    ...<2 lines>...
+        f"not {type(path).__name__!r}")
+TypeError: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'Object'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

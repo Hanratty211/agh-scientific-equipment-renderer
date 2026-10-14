@@ -1,0 +1,107 @@
+PIM specimens, including ultrasonic washing in absolute ethanol for
+10 min and UV post-curing at 60 °C for 60 min.
+Mechanical experiments
+Supplementary Figs. 17–20 summarizes the test conﬁgurations used in
+this study, employing a ZwickRoell Z100 universal tensile test machine.
+Supplementary Table 2 details the load rates, directions, and geome-
+tries for various mechanical tests satisfying quasi-static load condi-
+tions. ASTM D638 standard guidelines informed the mechanical
+evaluation of parent materials, with specimens conforming to ASTM
+D638 type IV (Supplementary Fig. 17). PIM samples featuring pre-
+programmed strengthening mechanisms and CIM designs were tested
+in a 20 × 10 × 20 mm3 region along the x, y, and z axes, subject to
+vertical tensile or compressive forces (Supplementary Fig. 18). Tensile
+testing for CIM+PIM composite layers focused on polymer chain
+loading, employing specimens with twoCIM+PIM cells aligned with the
+load direction and one cell perpendicular, reducing necking phe-
+nomena and enhancing the generalizability of mechanical properties
+(Supplementary Fig. 19a). Compressive tests for crystal loading
+mechanics used a single CIM+PIM cell perpendicular to the load
+direction (Supplementary Fig. 19b). Biomimetic shells underwent
+tensile and compressive testing to assess reshaping and compression
+mechanics (Supplementary Fig. 19c, d). A single grabbing ﬁnger was
+tested for both stretching (grab force) and bending (adapting force)
+(Supplementary Fig. 19e, f). Cylindrical tissue test specimens with a
+molecular-like density of 4.25 cm−3 under different PS levels were
+designed to evaluate tissue mechanics (Supplementary Fig. 20a). For
+robotic toe and ﬁnger joints, specialized ﬁxtures simulated bending
+loads akin to human tissue dynamics (Supplementary Fig. 20b–d).
+The experimental stress–strain curves are used to calculate the
+modulus, strength, energy absorption efﬁciency, fracture dissipation,
+and fracture energies of the specimens. The energy absorption efﬁ-
+ciency is calculated by integrating the compressive stress–strain curve
+tillthe densiﬁcation strain, normalized by the peak stress (Eqs. 4 and 5).
+The fracture energies are evaluated by integrating the tensile
+stress–strain curves till the total fracture of the specimen, while the
+fracture dissipation integrates the curves from the fracture initiation
+strain to the complete fracture (Eqs. 6 and 7). The speciﬁc mechanical
+properties are derived by normalizing these mechanical performances
+by the density of the specimen within the test region to conduct fair
+comparisons.
+η =
+Z εd
+0
+σεdε=σpeak
+ð4Þ
+σpeak = MAX σ εð Þ
+ð
+Þ, ε 2 ½0, εP,
+ð5Þ
+Af racture =
+Z δb
+0
+F dδ,
+ð6Þ
+Adissipation =
+Z δb
+δa
+F dδ
+ð7Þ
+where η is the energy absorption efﬁciency, σ is the compressive
+stress, σpeak is the peak stress, ε is the compressive strain, εP is the
+plateau initiation strain, Af racture is the fracture energy, Adissipation is the
+fracture dissipation energy, F is the fracture load, δa and δb are the
+displacement at the fracture initiation and complete fracture,
+respectively.
+Digital image correlation analysis
+The DIC analysis is performed on a Correlated Solutions VIC-3D DIC
+measurement system using its 2D measuring conﬁgurations (Supple-
+mentary Fig. 21). The DIC is used to measure full-ﬁeld surface strains
+during mechanical testing of PIM samples. These spatial strain maps
+were used to locate regions associated with different strengthening
+events (entangled zones, crosslinked segments, and proto-crystalline
+chains) and quantify the relationship between experimental local chain
+strain and the programmed PIM design, such as robotic muscles. The
+speckle patterns are sprayed evenly on the specimens for DIC calcu-
+lations. A Basler acA4112-30 um camera with 28-mm Basler lens are
+used to capture the relative positions of the DIC speckle patterns, while
+VIC-2D 7 software is used to perform DIC analysis based on the
+experimental results. The analyzed images possess a resolution of
+4096 pixels × 3000 pixels. A 19 pixels × 19 pixels subset dimension is
+used during the DIC derivation, while the step size is 4 pixels.
+Data availability
+The data supporting the ﬁndings of this study are included within the
+paper and its Supplementary Information. All other data are available
+from the corresponding authors upon request. Source data are pro-
+vided with this paper.
+References
+1.
+Jiao, P., Mueller, J., Raney, J. R., Zheng, X. & Alavi, A. H. Mechanical
+metamaterials and beyond. Nat. Commun. 14, 6004 (2023).
+2.
+Bertoldi, K., Vitelli, V., Christensen, J. & Van Hecke, M. Flexible
+mechanical metamaterials. Nat. Rev. Mater. 2, 1–11 (2017).
+3.
+Kadic, M., Milton, G. W., Van Hecke, M. & Wegener, M. 3D meta-
+materials. Nat. Rev. Phys. 1, 198–210 (2019).
+4.
+Cheng, H. et al. Mechanical metamaterials made of freestanding
+quasi-BCC nanolattices of gold and copper with ultra-high energy
+absorption capacity. Nat. Commun. 14, 1243 (2023).
+5.
+Karthikeyan, V. et al. Three dimensional architected thermoelectric
+devices with high toughness and power conversion efﬁciency. Nat.
+Commun. 14, 2069 (2023).
+6.
+Shaikeea, A. J. D., Cui, H., O’Masta, M., Zheng, X. R. & Deshpande, V.
+S. The toughnes

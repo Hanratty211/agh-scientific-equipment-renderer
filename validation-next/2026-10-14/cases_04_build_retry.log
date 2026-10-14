@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/build_cases.py", line 111, in <module>
+    build(*args)
+    ~~~~~^^^^^^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/build_cases.py", line 98, in build
+    r.setup();ROUTINES[case]()
+    ~~~~~~~^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/render_core.py", line 23, in setup
+    bpy.context.scene.render.engine='BLENDER_EEVEE_NEXT';bpy.context.scene.render.resolution_x=900;bpy.context.scene.render.resolution_y=640;bpy.context.scene.render.resolution_percentage=100
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "BLENDER_EEVEE_NEXT" not found in ('BLENDER_EEVEE', 'BLENDER_WORKBENCH', 'CYCLES')
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

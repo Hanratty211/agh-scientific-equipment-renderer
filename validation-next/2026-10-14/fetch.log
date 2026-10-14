@@ -1,0 +1,12 @@
+01_optics verified_openalex pending 
+02_robotics verified_openalex saved 11
+03_radio verified_openalex failed_403 Client Error: Forbidden for url: https://www.hardware-x.com/article/S2468-0672(25)00073-2/pdf 
+04_microfluidics verified_openalex saved 8
+05_energy verified_openalex failed_403 Client Error: Forbidden for url: https://pubs.acs.org/doi/pdf/10.1021/acs.jchemed.5c00647?ref=ar 
+06_acoustics verified_openalex pending 
+07_thermal verified_openalex failed_403 Client Error: Forbidden for url: https://www.mdpi.com/1996-1073/18/8/2039/pdf?version=1744800203 
+08_biomedical verified_openalex saved 15
+09_electronics verified_openalex failed_403 Client Error: Forbidden for url: https://www.science.org/doi/pdf/10.1126/sciadv.adt5620?download 
+10_mechanical verified_openalex pending 
+11_optics_alt verified_openalex pending 
+12_robotics_alt verified_openalex pending 

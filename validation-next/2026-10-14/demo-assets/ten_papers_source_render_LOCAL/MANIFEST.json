@@ -1,0 +1,86 @@
+{
+  "note": "LOCAL ONLY: boards include publisher source figures/text; not for Git/public redistribution",
+  "items": [
+    {
+      "case": "02_robotics",
+      "render": "cases/02_robotics/v05/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/01_02_robotics_source_vs_v05.png",
+      "board_sha256": "9a6579cedb9df3459691a3b380bb4e0e6691923b70a2469c12f02c668df603bd",
+      "source_anchor": "Fig. 3b｜PDF p.4｜拉伸夹具与柔性试样",
+      "doi": "10.1038/s41467-025-56025-3"
+    },
+    {
+      "case": "04_microfluidics",
+      "render": "cases/04_microfluidics/v06/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/02_04_microfluidics_source_vs_v06.png",
+      "board_sha256": "2300bdf1babbcf2f41113ca6d57255ee82fe1e87b26b7cc25a430c0ac0073c20",
+      "source_anchor": "Fig. 3C｜PDF p.4｜注射器架—芯片—气囊支路",
+      "doi": "10.1038/s41526-025-00470-3"
+    },
+    {
+      "case": "08_biomedical",
+      "render": "cases/08_biomedical/v03/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/03_08_biomedical_source_vs_v03.png",
+      "board_sha256": "706c3d8c77daac4ab49c9d41290e94bbde2c1459ed77b3064ffd0d84a3ddde20",
+      "source_anchor": "Fig. 3 左侧｜PDF p.6｜传感器层叠示意",
+      "doi": "10.3991/ijoe.v22i03.59657"
+    },
+    {
+      "case": "13_biomed_optics",
+      "render": "cases/13_biomed_optics/v07/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/04_13_biomed_optics_source_vs_v07.png",
+      "board_sha256": "9243f90bc6e7679c3f684e5dc8cc1feec0e228425cb9cb6029a8652fd248dc3d",
+      "source_anchor": "Fig. 1a + Fig. 1c｜PDF p.3｜临床推车、光纤束接口",
+      "doi": "10.1038/s44303-026-00161-y"
+    },
+    {
+      "case": "14_acoustic_alt",
+      "render": "cases/14_acoustic_alt/v05/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/05_14_acoustic_alt_source_vs_v05.png",
+      "board_sha256": "bd16212cb270ac6d89bed478c25bc4bb07acd474e5bb6c209bbcf892bf9c2eb6",
+      "source_anchor": "Fig. 1c（辅以 1a）｜PDF p.3｜LDV、Tiny-Lev、目标和 shaker",
+      "doi": "10.1038/s41598-025-24666-5"
+    },
+    {
+      "case": "15_biomed_energy",
+      "render": "cases/15_biomed_energy/v05/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/06_15_biomed_energy_source_vs_v05.png",
+      "board_sha256": "b1675945daa7e8b72563a8473873c754d297102bc9813fc549bb05fff9ed95a3",
+      "source_anchor": "Fig. 3a｜PDF p.5 图像、p.6 图注｜穿戴贴片分层",
+      "doi": "10.1038/s41467-025-60911-1"
+    },
+    {
+      "case": "16_energy_nature",
+      "render": "cases/16_energy_nature/v05/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/07_16_energy_nature_source_vs_v05.png",
+      "board_sha256": "0cffbb0ce57611070095822c39ecbfe2e00463c41bb15d92d5601db7880d4b55",
+      "source_anchor": "Methods｜PDF p.9｜单程电解液与背面进气",
+      "doi": "10.1038/s41467-025-64306-0"
+    },
+    {
+      "case": "17_rf_nature",
+      "render": "cases/17_rf_nature/v03/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/08_17_rf_nature_source_vs_v03.png",
+      "board_sha256": "c8c9d44507ffb7d8047c5bac3ea4f6234dc92ad83f6d0513a380157410d920cd",
+      "source_anchor": "Fig. 1a–d｜PDF p.4｜装配、双槽、馈线与辐射体",
+      "doi": "10.1038/s41598-026-39831-7"
+    },
+    {
+      "case": "18_mechanical_nature",
+      "render": "cases/18_mechanical_nature/v07_fig18_diagonal_weave/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/09_18_mechanical_nature_source_vs_v07_Fig.18.png",
+      "board_sha256": "43d484b2b4193da82e9229284a50b4ebaa868287f36a027122286dc636746493",
+      "source_anchor": "Methods PDF p.9 + Supplementary Fig.18｜页面 33｜20 mm 正面区域与压缩态",
+      "doi": "10.1038/s41467-026-77199-4"
+    },
+    {
+      "case": "20_thermal",
+      "render": "cases/20_thermal/v04/overview.png",
+      "board": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/10_20_thermal_source_vs_v04.png",
+      "board_sha256": "e45b0ca06f518b0ab1ca959165bcf5ead5977f669c5bfa18250e2c0e8e66a788",
+      "source_anchor": "Materials PDF p.11（辅以 p.2）｜铝塑膜壳、200 mesh 铜网及三边封合",
+      "doi": "10.1038/s41467-025-56960-1"
+    }
+  ],
+  "contact_sheet_sha256": "2f71e0a5bb67a1e1dc16ba7c298fb72d09145c86b412e86691021e02769b3828"
+}

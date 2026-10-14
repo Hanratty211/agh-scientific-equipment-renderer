@@ -1,0 +1,6 @@
+00:00.224  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v02/scene.blend"
+00:00.605  render           | Saved: '/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v02/overview.png'
+RELOAD_RENDER_OK {"scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v02/scene.blend", "scene_sha256": "c716de06bde148018baca43dd6c5320fbc7d80a3d2aeec638c6fa5051b9ee8ba", "png": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v02/overview.png", "png_sha256": "8382a228aa47f7febda42989f14b9ec0af8e70c961ee62f03af529e899cd731b", "objects": 12, "camera": "Overview_Camera.002", "source_basis": "figure-and-caption", "render_engine": "BLENDER_EEVEE", "image_size": [900, 640], "visual_review": "NOT_YET_REVIEWED"}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

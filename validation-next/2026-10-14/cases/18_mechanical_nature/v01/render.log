@@ -1,0 +1,6 @@
+00:00.214  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v01/scene.blend"
+00:00.537  render           | Saved: '/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v01/overview.png'
+RELOAD_RENDER_OK {"scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v01/scene.blend", "scene_sha256": "e74171901bf6db0eedacfc00e72e5dba2326e9530b7afb6806876b0726005878", "png": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v01/overview.png", "png_sha256": "26f54e1eee166a397f5f52ef256ad14c712a1c2733694abd99de7be08fd5ce35", "objects": 22, "camera": "Overview_Camera.001", "source_basis": "text-only", "render_engine": "BLENDER_EEVEE", "image_size": [900, 640], "visual_review": "NOT_YET_REVIEWED"}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

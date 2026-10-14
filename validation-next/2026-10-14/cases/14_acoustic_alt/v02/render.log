@@ -1,0 +1,6 @@
+00:00.235  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v02/scene.blend"
+00:00.579  render           | Saved: '/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v02/overview.png'
+RELOAD_RENDER_OK {"scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v02/scene.blend", "scene_sha256": "0f3540a17731ba9672991dcaa49112a9e20f2158e1855ac8d4f38deeafcc5b95", "png": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v02/overview.png", "png_sha256": "5a0334fa696f499e057571ea55a5c6a2fe682f191374c8f56e104bb29ef66dbb", "objects": 37, "camera": "Overview_Camera", "source_basis": "figure-and-caption", "render_engine": "BLENDER_EEVEE", "image_size": [900, 640], "visual_review": "NOT_YET_REVIEWED"}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

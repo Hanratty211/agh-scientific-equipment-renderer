@@ -1,5 +1,9 @@
 # 演示素材索引｜2026-10-14
 
+## 本次私有 main 交接说明（历史段落下方原样保留）
+
+[根交接](../../../VIDEO_DEMO_HANDOFF.md) · [十篇总览与 HTML 画廊](ten_papers_source_render_LOCAL/README.md) · [逐例目视判词](../EXTERNAL_HUMAN_REVIEW.md) · [Stage9 队列](../STAGE9_REVIEW_QUEUE.md)。本次用户授权将原本仅本地保存的源 PDF、图版、`*_LOCAL.png` 与日志纳入私人 Git 协作仓库；本文件下文“不可提交 Git/只留本地”记录**当时**公开/权限未确认状态，不是这轮私有交付的事实，不追改旧审阅判词。上述图仍不能未经许可用作公开视频或再分发，只有 13 局部身份与 14 具体真孔问题获有限外部目视判断；18 v07 未目视通过。全量素材/失败版均按原结构保留，不存在已录成视频或 AGH GUI 最新屏录。
+
 AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来源与生成十张 v01；渲染是**未验收首稿**。按案例查 `../cases/<id>/v01/{scene.blend,overview.png,render_report.json}`，输入来源查 `<id>/source/SOURCE.md` 和相邻本地 PNG / `../sources/<id>.pdf`。原出版方页图/PDF许可未核不入公开 Git；含源图的比较 PNG 也暂不提交，文字索引会指向本地素材。
 
 |故事|画面|问题→变化|审阅者/边界|执行证据|

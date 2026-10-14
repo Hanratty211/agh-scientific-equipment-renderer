@@ -1,0 +1,515 @@
+{
+  "02_robotics": {
+    "id": "02_robotics",
+    "doi": "10.1038/s41467-025-56025-3",
+    "metadata_status": "verified_openalex",
+    "pdf_status": "saved",
+    "title": "A framework for soft mechanism driven robots",
+    "date": "2025-02-06",
+    "landing": "https://doi.org/10.1038/s41467-025-56025-3",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-56025-3.pdf",
+    "pdf_sha256": "d591700899a34164dc4c7fe67b32536884b5980bbaa47565f494f21652edf939",
+    "pages": 11,
+    "figure_mentions": [
+      {
+        "page": 2,
+        "excerpt": "Fig. 1 | Framework extending classical mechanism design to soft robotics. a Design process. Inspired by nature, we observe the walking trajectories of quadrupeds such as horses. We then select a trajectory from a four-bar atlas. We synthesize the corresponding linkage in the ideal design domain. Finally, we convert the linkage into a multi-material design by replacing ideal joints and links with variations of soft an"
+      },
+      {
+        "page": 3,
+        "excerpt": "Fig. 2 | Materials and fabrication methodology. a The Shore hardness scale compares our ﬁlaments to other common materials. b The fabrication setup with three different ﬁlaments assigned to three separate extruders, and the resulting print of the leg mechanisms and the robot body on the print bed. Article https://doi.org/10.1038/s41467-025-56025-3 Nature Communications|  (2025) 16:1426  3 "
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 3 | Tensile testing setup and Young’s moduli experiments of multi-material tensile testing specimens. a The combinations of different specimens. b Test of a NinjaFlex (85A)/Cheetah (95A) specimen with ﬁnger interfaces. c A sample stress- strain graph comparing specimens of uniform Armadillo (75D), uniform Cheetah (95A), uniform NinjaFlex (85A), and Cheetah (95A)/NinjaFlex (85A) with ﬁnger interfaces. d Young’s m"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 4 | Trajectory analysis. a Analytical synthesis of the mechanism generating the desired trajectory. b The leg mechanism being actuated in mid-air to track the foot for trajectory generation. c Monolithic mechanism duplicated in FEA domain numerically calculates the foot trajectory. d Trajectory data acquired with image processing. e Trajectory data generated in ﬁnite element simulations. Article https://doi.org/"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 5 | Experimental data on the effects of different linkages or material combinations on locomotion and centroid movement. Material combinations exert a discernible impact on motion smoothness, with softer combinations cor- relating with diminished oscillations and expanded range in locomotion direction. a Image tracking of leg trajectory for varying synthesis combinations. b Image tracking of leg trajectory for v"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 6 | Impact resistance testing on the ﬂexible and rigid robot chassis. a The force-versus-displacement graph from the impact test illustrates that the ﬂexible chassis endures deformation before forces escalate. Spikes in the rigid chassis plot denote fracture points. b Post-test, the ﬂexible chassis reverts to its original shape, while the rigid chassis remains ﬂattened due to plastic deformation and fracture. c "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 7 | Robots operating in different environments. a Robot walking on soil. b Robot walking on a rock. c Robot driven over by a car. d Robot climbing steep rock (vertical trajectory - Fig. 5c). e Robot walking in dirt. f Robot walking on sand. g Robot walking on a carpet. Article https://doi.org/10.1038/s41467-025-56025-3 Nature Communications|  (2025) 16:1426  8 "
+      }
+    ]
+  },
+  "04_microfluidics": {
+    "id": "04_microfluidics",
+    "doi": "10.1038/s41526-025-00470-3",
+    "metadata_status": "verified_openalex",
+    "pdf_status": "saved",
+    "title": "Microscopy with microfluidics in microgravity using FlightScope",
+    "date": "2025-05-06",
+    "landing": "https://doi.org/10.1038/s41526-025-00470-3",
+    "pdf_url": "https://www.nature.com/articles/s41526-025-00470-3.pdf",
+    "pdf_sha256": "79a96817798d6a516719e0ce52e33a3c472d6d855e84ca6b665cea3083d49d81",
+    "pages": 8,
+    "figure_mentions": [
+      {
+        "page": 3,
+        "excerpt": "Fig. 1 | FlightScope microscope. A Schematic of microscope showing (i) motorised xy stage (ii) a central vibration mast which absorbs vibrations felt by the optical train. B The microscope optical train is shown in the red outline and consists of (iii) a ﬂuorescence LED, (vi) brightﬁeld LED array, (v) sample and (iv) camera. The blue and green lines depict the excitation and emission optical paths respectively. The y"
+      },
+      {
+        "page": 3,
+        "excerpt": "Fig. 2 | FlightScope vibration testing in the lab. A Brightﬁeld image of yeast cells taken while Flight-Scope was mounted on a benchtop centrifuge. B A zoomed-in ROI brightﬁeld taken on the centrifuge. C Plot of correlation coefﬁcient of cell position in consecutive frames vs time for images taken while the microscope was on the centrifuge. D Brightﬁeld image of yeast cells taken while the microscope was mounted insi"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 3 | FlightScope microﬂuidics. A The FlightScope syringe pump with clasp- based syringe rack (i) and user interface (ii). B Syringe driver schematic. C Schematic of panel-mounted sample system with syringe-rack, inlet ports (right) and outlet ports in green (left). Not to scale. D Fluorescent 2-NBDG uptake vs. time of yeast cells for 10μM 2-NBDG concentration n = 20 cells, black dotted lines are individual cell t"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 5 | Performance of FlightScope on parabolic ﬂights. A Brightﬁeld image of yeast cells and B ﬂuorescence image of 2-NBDG uptake by the cells taken by FlightScope on board a parabolic ﬂight. (100 ms exposure, 20% illumination power). C Plot of average lateral cell location correlation coefﬁcient for four videos taken in steady 1 g ﬂight. D Plot of 2-NBDG uptake by cells when in 0.01–1.8 g ﬂight (cyan) and on the g"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 4 | FlightScope microﬂuidic change-over system. (i) Flight-Scope and (ii) syringe pump inside the Zarges box with (iii) three syringe rack holders, also depicted in the rightmost red outline, each holding a sample set, depicted in the leftmost red outline with (iv) primed glucose inlet tubing and (v) stowed outlet balloons. https://doi.org/10.1038/s41526-025-00470-3 Brief communication npj Microgravity | (2025) "
+      }
+    ]
+  },
+  "08_biomedical": {
+    "id": "08_biomedical",
+    "doi": "10.3991/ijoe.v22i03.59657",
+    "metadata_status": "verified_openalex",
+    "pdf_status": "saved",
+    "title": "A Wearable Strain Sensor Based on 3D Silicone Printing with Composite Structure Design",
+    "date": "2026-03-05",
+    "landing": "https://doi.org/10.3991/ijoe.v22i03.59657",
+    "pdf_url": "https://online-journals.org/index.php/i-joe/article/download/59657/17063",
+    "pdf_sha256": "26075b94a77d43b01259e06e51679764f643b2c7754de3987af3779fa5dbab1e",
+    "pages": 15,
+    "figure_mentions": [
+      {
+        "page": 4,
+        "excerpt": "Fig. 1. Illustration of the stretching and releasing curves of relative resistance variation (DR/R0) versus  displacement (mm) for the resistive-type flexible strain sensor The blue curve represents the stretching process, the red curve represents the  releasing process, and the light, green-shaded area indicates the hysteresis region  between the two curves. 3  EXPERIMENTAL DESIGN 3.1  Fabrication process of stretch"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 2. Schematic illustration of the overall fabrication process of sensor P1: (a) Computer-aided design  of the conductive pathway; (b) 3D silicone printing and thermal curing at 60°C for shape stabilization;  (c) Coating of the structure surface with water-based stretchable silver ink to form the conductive layer;  (d) Encapsulation with silicone and wire extension to complete the flexible conductive sensing eleme"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 3. Structural schematic and assembly of the composite stretchable conductive silicone sensor (P2)  [(Left) Exploded view illustrating the three-layer configuration: the artificial skin substrate (bottom), the  silicone-based double-sided adhesive layer (middle), and the conductive silicone P1 with measurement  points (top). (Center) Photographs of the components before assembly, including the P1 element with  el"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 4. Schematic diagram of the stretching measurement platform for the resistive flexible strain sensor 4  RESULTS 4.1  Comparative performance of P1 and P2 sensors This section compares the electromechanical response characteristics of the first  stage conductive silicone sensor (P1) and the second stage composite conductive  silicone sensor (P2) under different displacement conditions. Figure 5 presents the  rela"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 5. Relative resistance changes DR/R0 of the P1 sensor under different displacement conditions The solid line represents the stretching phase, and the dashed line represents the  releasing phase, while the shaded areas indicate the standard deviation ranges. Figure 6 presents how the relative resistance change (DR/R0) varies with dis- placement for the P2 composite sensor at displacement amplitudes of 3, 4, 6, 8,"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 6. Relative resistance change DR/R0 of the P2 sensor under different displacement conditions "
+      },
+      {
+        "page": 9,
+        "excerpt": "Fig. 7. Comparative performance of P1 and P2 sensors under a 3 mm displacement condition 4.2  Feasibility verification of human attachment This study further verified the feasibility of attaching the P2 sensor to the human  body under realistic wearable conditions. As shown in Figure 8a, the P2 sensor was  attached to the dorsal side of the participant’s forearm, approximately 12 cm prox- imal to the wrist dorsal cre"
+      },
+      {
+        "page": 10,
+        "excerpt": "Fig. 8. Wrist motion test with the P2 wearable strain sensor: (a) wrist postures and sensor placement,  and (b) corresponding IMU angle signal and sensor resistance variation during repetitive wrist motion 5  DISCUSSIONS Both sensors developed in this study employed silicone-based conductive com- posites as their core material. The internal conductive pathways were rearranged  during stretching deformation, causing v"
+      },
+      {
+        "page": 11,
+        "excerpt": "Fig. 9. Comparison of the hysteresis index of sensors P1 and P2 under different displacement conditions  (Data are presented as mean ± standard deviation) In the wrist-mounted motion tracking tests, although the resistance response  of P2 exhibited larger fluctuations influenced by biomechanical factors such as  skin tension, shear deformation, and localized wrinkling, the signal remained well  synchronized with and "
+      }
+    ]
+  },
+  "14_acoustic_alt": {
+    "id": "14_acoustic_alt",
+    "doi": "10.1038/s41598-025-24666-5",
+    "date": "2025-11-19",
+    "title": "Sparse identification of nonlinear dynamics applied to the acoustic levitation of acoustically large objects",
+    "pdf_url": "https://www.nature.com/articles/s41598-025-24666-5.pdf",
+    "landing": "https://doi.org/10.1038/s41598-025-24666-5",
+    "metadata_status": "verified_openalex",
+    "pdf_status": "saved",
+    "pdf_sha256": "c92dc4fb7d31eef3eaf6e5b7c2876b454963e099c04cb3a158762c0db42c73f6",
+    "pages": 10,
+    "figure_mentions": [
+      {
+        "page": 3,
+        "excerpt": "Fig. 1.  Experimental setup in hemi-anechoic chamber. (a) Schematic and (b) drilled hole in the Tiny-Lev’s  top plate showing the object, and (c) Photograph of a levitated object within the Tiny-Lev mounted on the  vibrating shaker, using an LDV for measurements.   Scientific Reports |        (2025) 15:40745  3 | https://doi.org/10.1038/s41598-025-24666-5 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 1. The following equations of motion are obtained after applying SINDy and averaging the extracted  coefficients, with x representing the object’s displacement from its static equilibrium point and ˙x being the  object’s velocity: \t Ain,1 Ain,2 Ain,3 := [ 1 1 1 ] ¨x + [ 160,985 85,680 98,467 ] x − [ 351.1 1,212.1 396.2 ] ˙x − [ 667,030 358,700 565,600 ] x3 + [ 10,283 10,549 2,566 ] x2 ˙x \t − [ 8.64 19.02 7.17 ] "
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 2.  (a) Box plot analysis of the variation in coefficients derived using the SINDy method across four  measurements. Zero-valued coefficients are excluded from the plot. The analysis highlights the statistical  distribution and variability of normalized measured values (NVM) used to reconstruct the nonlinear equations  of motion: (a) Eq. (7), (b) Eq. (8), and (c) Eq. (9)).   Scientific Reports |        (2025) 15"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 3.  Comparison of experimentally measured data and SINDy predictions using averaged coefficients  with filtered data and PSD of the original signal measured by LDV before applying a filter, after applying  the filter for: (a, b) Ain,1 = 0.60 mm, (c, d) Ain,2 = 0.45 mm, (e, f) Ain,3 = 0.70 mm. All experimental  measurements were performed at the fixed frequency ω o = 32 Hz. These plots highlight the accuracy of  "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 4.  (a) Bifurcation diagram for an acoustically large object: analytical (solid line) vs. experimental data  (dots), showing discrepancies due to Gorkov’s small-object assumption. (b) Comparison of the SINDy  results (red), and experimental data (blue), highlighting deviations at higher excitation amplitudes due to the  polynomial-based library limitations. (c) Comparison of SINDy-derived results with experiment"
+      }
+    ]
+  },
+  "13_biomed_optics": {
+    "id": "13_biomed_optics",
+    "doi": "10.1038/s44303-026-00161-y",
+    "date": "2026-05-04",
+    "title": "Multi-contrast laser endoscopy for in vivo gastrointestinal imaging",
+    "pdf_url": "https://www.nature.com/articles/s44303-026-00161-y.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 12,
+    "figure_mentions": [
+      {
+        "page": 3,
+        "excerpt": "Fig. 1 | The Multi-contrast Laser Endoscopy (MLE) system for in vivo gastro- intestinal imaging. a MLE is built around a retroﬁtted clinical colonoscope that interfaces with a standard clinical endoscopic imaging system while accepting multi- contrast laser illumination. b, c The internal light guide of a clinical colonoscope was replaced with a custom ﬁber optic bundle for transmitting both clini"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 5. WLE visualization exhibits poor con- trast between the adenomatous tissue and normal tissue. Both regions appear yellow with subtle perceivable differences in texture or surface shape (Fig. 5a). Similarly, under NBI illumination, the color contrast is poor, as both types of tissue have a blue tint (Fig. 5b). However, NBI offers some improvementinvisualizingthedisruptedsurfacetexturecompare"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2 | MLE enables wideﬁeld spectral imaging for interrogating molecular chromophore changes in tissue. a Images of a Macbeth color target acquired with clinical WLE and NBI illumination. b Multispectral reﬂectance images of the color target acquired with MLE. Reﬂectance measurements were normalized using images of a white reference target. c Mean spectral reﬂectance values from the ﬁrst three r"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 3 | MLE is sensitive to differences in blood ﬂow. a Images of a uniform scattering medium under WLE, low coherence laser (MLE-LC), and high coherence laser (MLE-HC) illumination. Displayed below are line proﬁles from the red color channel of each image, along with speckle contrast (K) values taken from ± 100 pixels around the center of the full-width half maximum of each proﬁle. Low-coherence"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 4 | MLE enhances visual contrast of subtle changes in mucosal surface. a Virtual 3D colon model with a 7 mm diameter tubular adenoma (blue arrow). b WLE image of a silicone cast of the model. c MLE images of the phantom acquired with directional illumination from the three point sources (~L) at the tip of the colonoscope (~L1, upper right; ~L2, upper left; ~L3, lower left). d Surface height m"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 5 | MLE enhances adenoma contrast during screening colonoscopies. a, b Tubular adenoma (4 mm diameter) in the ascending colon visualized with clinical white light endoscopy (WLE) and narrow band imaging (NBI). The WLE and NBI frames were converted to normalized hue and saturation for brightness- independent analysis of color contrast. c Multispectral reﬂectance images acquired at eight narrow"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 7. Image processing Raw video sequences acquired by the MLE system were post-processed in Matlab 2024b (The MathWorks, Inc., Portola Valley, CA, USA). A dark frame was subtracted from the frames to remove the contribution of dark current. Deinterlacing was performed by splitting odd and even pixel rows into separate images and resizing them with bilinear interpolation. Lens distortion was rem"
+      },
+      {
+        "page": 11,
+        "excerpt": "Fig. 1. Author contributions Optical design, device fabrication, acquisition software, and data processing: TLB and NJD; clinical study design: TLB, SN, and NJD; data collection: TLB, MG, AAS, and SN; data curation: TLB, SA, and SN; manuscript preparation: TLB, SA, and NJD. All authors reviewed the manuscript. Competing interests NJD and TLB are co-inventors of two issued patents (US11971960B2; US"
+      }
+    ],
+    "pdf_sha256": "bade2e4029041b6e3aca210ee942463049f9b0f90d610f436d61b4b32d635182"
+  },
+  "15_biomed_energy": {
+    "id": "15_biomed_energy",
+    "doi": "10.1038/s41467-025-60911-1",
+    "date": "2025-07-01",
+    "title": "Adaptive electronics for photovoltaic, photoluminescent and photometric methods in power harvesting for wireless wearable devices",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-60911-1.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 17,
+    "figure_mentions": [
+      {
+        "page": 2,
+        "excerpt": "Fig. 8. If VPV falls below 3.6 V due to battery discharge, the system tran- sitions to conﬁgurations (3) and (4) by disconnecting the PEH-IC from the pMUX to prevent further discharge of the PV battery. In conﬁg- uration (3), should the PV cell generate a voltage above 50 mV, the PEH-IC boosts this voltage up to 4.12 V and charges the PV battery up to 3.67 V. During this charging phase, the PV cel"
+      },
+      {
+        "page": 2,
+        "excerpt": "Fig. 10. At a TX power of 2 W, 4 W, and 8 W, the temperature reaches 28.4 °C, 32.1 °C and 37.3 °C, all of which lie below the threshold for burn injury (44 °C). Furthermore, the encapsulation layer prevents direct thermal transfer from the device to the skin, enhancing thermal safety Article https://doi.org/10.1038/s41467-025-60911-1 Nature Communications|  (2025) 16:5808  2 "
+      },
+      {
+        "page": 3,
+        "excerpt": "Fig. 1 | Energy harvesting by photoluminescence, photovoltaics and photo- metrics in a sensor for monitoring heart rate (HR) and blood oxygen saturation(SpO2) through PPG sensing with in-sensor computation. a Schematic illustration of the sensor and operational mechanisms with a block diagram of in-sensor computation. Created in BioRender59. b Block diagrams of the strategies for low-power operati"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2 | Light adaptive power management system with a PV cell and electro- magnetic harvesting. a Schematic illustration of the circuit diagram of the adap- tive power management (aPM) module, including PV harvesting unit, power switching module, and electromagnetic harvesting module, with associated conditions for changing the power source. b Four representative block diagrams of the aPM module "
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 19. The red LED has an emission range of 570–650 nm with a peak at 621 nm, while the IR LED has an emission range of 760–980 nm with a peak at 903 nm. The voltage proﬁles of the PV battery during different modes of operation quantify the utility of the adaptive LED control (Fig. 3d) and harvesting (Fig. 3e) processes. Figure 3d illustrates the discharge behaviors during PPG measurements for t"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 20. The diffusion theory of light propagation determines the dis- tribution of light intensity (I) across the cross section of the underlying skin, as delineated by green lines in the inset of Fig. 3f, with both LEDs off and PL light on in darkness (Fig. 3f). Figure 3g illustrates the dis- tribution under varied light conditions, maintaining a constant total light intensity of 578.28 W/m² acr"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 3 | Light-adaptive, power-efﬁcient sensor for HR and SpO2 by PPG mea- surements. a Exploded view schematic illustration that highlights the energy harvesting system, a light-adaptive PPG sensing module, a PV cell, a BLE commu- nication module, a pair of LiPo batteries, all attached via an fPCB platform and housed in a silicone encapsulation structure. b The PPG signal (black) and calcu- lated"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 23. The HR and SpO2 values for each subject as a function of time are in Supplementary Figs. 23, 24. The results (sample size: n ≥590 for each scenario) indicate good agreement between the sensor and reference values. With both LEDs inactive, under sufﬁcient ambient light (both room light and IR lamp on; intensity: 160 W/m2 and 270 W/m2, respectively), the HR and SpO2 measurement errors (mean"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 25. Several studies have high- lighted that the accuracy of PPG sensor can be inﬂuenced by skin pigmentation, primarily due to variations in photon scattering asso- ciated with melanin concentration in the skin33,34. While a light- adaptive system compensates for signal loss due to skin pigmentation, changes in the calibration factor may negatively impact measurement consistency. As shown in "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 39. The blue light sensing module has 10 photodiodes and three SCs in Supplementary Fig. 39a, b. The indoor blue light dosimeter can measure the weak blue light emitted by a computer display (Supplementary Fig. 39c), and instances of excessive blue light exposure can be sent to the user by pop-up alerts or sounds, as shown in Supplementary Movie 1. Sweat sensor Combining light-harvesting sche"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 4 | Light-adaptive, power-efﬁcient sensor for blue light dosimetry. a Exploded view schematic illustration that highlights the PV cell, BLE commu- nication module, an accumulation mode dosimeter, and a pair of LiPo batteries, all attached via an fPCB platform and housed in a silicone encapsulation structure. b Block diagram of the electronics. c Average current consumption and Twake for conti"
+      },
+      {
+        "page": 10,
+        "excerpt": "Fig. 5 | Light-adaptive, power-efﬁcient sensor for sweat rate, sweat loss and sweat biomarker concentrations. a Top view schematic illustration of the microﬂuidic system and diagram of the mechanism of colorimetric sensing by use of ambient light and block diagram of the electronics and microﬂuidics. b Exploded view schematic illustration that highlights the PV cell, the microﬂuidic structure, BLE"
+      },
+      {
+        "page": 11,
+        "excerpt": "Fig. 6 | Light-adaptive, power-efﬁcient multifunctional sensor. a Exploded view schematic illustration that highlights all of the components featured in the other sensors, with the addition of a temperature sensor. b Block diagram of the elec- tronics. c Images of the sensor on the neck with under room light, dim light, and dark environments. d On-body test results for measuring HR, SpO2, skin tem"
+      },
+      {
+        "page": 12,
+        "excerpt": "Fig. 59. Figure 6c shows optical images of the sensor attached to the neck in three different lighting environments: bright and dim room light and dark environments. The microﬂuidic component and the bottom encapsulation layer emit green and red PL, respectively, in dim and dark environments. Figure 6d shows simultaneous mea- surements of HR, SpO2, skin temperature (Tskin), sweat chloride concentr"
+      }
+    ],
+    "pdf_sha256": "fceaee476906d5907545898a1b3427cd48417702af3a79d1707e38debacfd4c8"
+  },
+  "16_energy_nature": {
+    "id": "16_energy_nature",
+    "doi": "10.1038/s41467-025-64306-0",
+    "date": "2025-10-17",
+    "title": "Membrane-free CO2 electrolyzer design for economically efficient formic acid electrosynthesis",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-64306-0.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 12,
+    "figure_mentions": [
+      {
+        "page": 2,
+        "excerpt": "Fig. 1 | Energy analysis of the electrolysis process. Energy and mass ﬂows of (a) the co-electrolysis of CO2 and H2O in an anion exchange membrane (AEM)-based ﬂow cell and b the co-electrolysis of CO2 and glycerol in a membrane-free ﬂow cell. c Impacts of Q/NHCOOH value and cell voltage on the electrical energy consumption for producing per mole of HCOOH. The contour lines (solid lines) and circles represent equal el"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2 | Electrochemical performance of catalysts and various ﬂow cells. a, b Half-reaction performance evaluated using a membrane-based ﬂow cell with a three-electrode system. a The FEs of cathodic products and corresponding working potentials (E-iR; 85%-iR compensated) for Bi2O3 in 1 M KOH. b The FEs of GOR products and corresponding E-iR for NiV/Ni foam in 1 M KOH with 0.5 M glycerol addition. c, d Overall reactio"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 3 | Universality and scalability demonstration. a Contour plot of the elec- trical energy consumption for producing per mole of formate in the NOM-CO2R/ MOR1.3 system as a function of measured cell voltage and formate yield across a current density range of 0.05–0.25 A cm–2. The insets in a correspond to the SEM image of CuSn/Cu foam (up) and LSV curves of CuSn/Cu foam electrode evaluated in 1 M KOH with or with"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 4 | Performance comparison with state-of-the-art CO2-to-HCOOH conver- sion systems. a Cell voltage versus electrical energy consumption. Bubble size reﬂects applied current densities. b Amount of passed charge versus electricity-to- HCOOH conversion efﬁciency. Bubble size reﬂects the HCOOH yield. The reference number corresponds to that in Supplementary Table 13. Source data are provided as a Source Data ﬁle. Ar"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 5 | Techno-economic analysis for formic acid electro-synthesis. a The HCOOH production cost in four various ﬂow cells across major global economies (e.g., US, EU, China) based on the performance at a current density of 0.2 A cm-2 with a CO2 ﬂow rate of 28.5 mL min–1. b Single-variable sensitivity analysis for the production cost of HCOOH in the NOM-CO2R/GOR1.3 system (the base HCOOH production cost is set at US$"
+      }
+    ],
+    "pdf_sha256": "45c667307dfbd26446a6105533e3cb29630c02973a0feacf995ca27575859920"
+  },
+  "17_rf_nature": {
+    "id": "17_rf_nature",
+    "doi": "10.1038/s41598-026-39831-7",
+    "date": "2026-02-13",
+    "title": "Wideband circularly polarized dielectric resonator antenna with high gain for microwave applications",
+    "pdf_url": "https://www.nature.com/articles/s41598-026-39831-7.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 17,
+    "figure_mentions": [
+      {
+        "page": 3,
+        "excerpt": "Fig. 2. The results were analysed, focusing on  changes in field distribution, gain, and bandwidth caused by combining the cone with the torus. This process was  continued through Ant#4, with results compared at each stage to optimize the design. From the E-field perspective, a change in the strength of the field distribution was observed. Next, the cone  position was adjusted up and down relative to the torus. It wa"
+      },
+      {
+        "page": 3,
+        "excerpt": "Fig. 4. The  Scientific Reports |         (2026) 16:8833  3 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2.  Design steps of the proposed antenna shape.   Fig. 1.  (a) Schematic 3D diagram of the proposed antenna, (b) the radiator, (c) ground with two elliptical slots,  and (d) feed line.   Scientific Reports |         (2026) 16:8833  4 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 1.  (a) Schematic 3D diagram of the proposed antenna, (b) the radiator, (c) ground with two elliptical slots,  and (d) feed line.   Scientific Reports |         (2026) 16:8833  4 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 5. Both resonances correspond to the TE113 mode, as confirmed by the stable radiation patterns,  which will be discussed below. Both resonances include the WPT band at 5.8 GHz. The results demonstrate that  adjusting the length and shape of the microstrip line effectively tunes the operating frequency to the desired  band. During the simulation phase, another issue was the presence of side lobes and back lobes. "
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 8. This configuration also slightly increased the gain to  11.1 dBic, as demonstrated in Fig. 9a. Figure 9b shows the antenna efficiencies of the proposed design, including both the radiation efficiency and  the total efficiency (accounting for mismatch losses). The results demonstrate excellent performance with values  exceeding 94% across the entire operating bandwidth. This confirms the low-loss nature of the"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 3.  Impact of various antenna shapes on (a) electric field distribution and (b) reflection coefficient |S11|  versus frequency.   Scientific Reports |         (2026) 16:8833  5 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 4.  The simulated far-field radiation pattern of LP DRA.   Scientific Reports |         (2026) 16:8833  6 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 7.  Simulated radiation pattern at 5.8 GHz.   Fig. 6.  Reflection coefficient |S11| vs. frequency for CP DRA.   Fig. 5.  Axial ratio vs. frequency of CP DRA.   Scientific Reports |         (2026) 16:8833  7 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 6.  Reflection coefficient |S11| vs. frequency for CP DRA.   Fig. 5.  Axial ratio vs. frequency of CP DRA.   Scientific Reports |         (2026) 16:8833  7 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 5.  Axial ratio vs. frequency of CP DRA.   Scientific Reports |         (2026) 16:8833  7 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 14: (a) the DRA, (b)  top view of the ground plane, and (c) the feed line. The resonator was produced using a 3-D printer with PLA  material, and two PLA alignment arms of negligible thickness were attached to the DRA to ensure proper  positioning with the elliptical slots, without affecting the antenna’s electromagnetic performance. Figure 15 compares the simulated and measured antenna axial ratio versus freque"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 16. The figure presents the simulated and measured − 10- dB impedance bandwidths, demonstrating a broadband performance of 64% from 3.3 GHz to 6.4 GHz, which  represents a significant improvement over the previous design. Figure 17 shows the measured realized gain  compared with the simulation results, demonstrating a good agreement across the operating band, with a peak  gain of about 9.5 dBic. Minor discrepanc"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 9.  (a) Antenna gain and (b) antenna efficiency vs. frequency.   Fig. 8.  Simulated radiation patterns at 5.8 GHz with reflector.   Scientific Reports |         (2026) 16:8833  8 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 8.  Simulated radiation patterns at 5.8 GHz with reflector.   Scientific Reports |         (2026) 16:8833  8 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 9,
+        "excerpt": "Fig. 19. A received  power of approximately 13 dBm is expected at a distance of 100 cm, and 0 dBm at 500 cm, which is above the  typical sensitivity of commercial energy-harvesting circuits39. With this input RF power range, the harvesting  circuit is expected to operate with a conversion efficiency above 50%, enabling rapid charging of the sensor’s  battery within a few minutes. Finally, Table 1 compares the propose"
+      },
+      {
+        "page": 9,
+        "excerpt": "Fig. 9.  (continued) Fig. 10.  Impact of changing elliptical radius.     Scientific Reports |         (2026) 16:8833  9 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 9,
+        "excerpt": "Fig. 10.  Impact of changing elliptical radius.     Scientific Reports |         (2026) 16:8833  9 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 10,
+        "excerpt": "Fig. 11.  Axial Ratio position with changing torus radius.   Scientific Reports |         (2026) 16:8833  10 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      },
+      {
+        "page": 11,
+        "excerpt": "Fig. 12.  Gain vs. frequency with increasing DRA height.   Scientific Reports |         (2026) 16:8833  11 | https://doi.org/10.1038/s41598-026-39831-7 www.nature.com/scientificreports/ "
+      }
+    ],
+    "pdf_sha256": "13a101fa95785fbae7f5282778efdd839201f64e0e61a50aa0e2814cb0f6c48b"
+  },
+  "18_mechanical_nature": {
+    "id": "18_mechanical_nature",
+    "doi": "10.1038/s41467-026-77199-4",
+    "date": "2026-08-26",
+    "title": "Polymer-inspired mechanical metamaterials",
+    "pdf_url": "https://www.nature.com/articles/s41467-026-77199-4.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 11,
+    "figure_mentions": [
+      {
+        "page": 3,
+        "excerpt": "Fig. 1 | The existing CIMs and proposed PIMs achieving different polymeric strengthening mechanisms. a Typical crystal structures and existing designs of CIMs. b The polymer structures and PIM. c The PIMs mimicking MD strengthening, PS strengthening, and CL strengthening inspired from the microstructural strengthening mechanisms of polymers. The samples for molecular-density strengthening and pre-stretched strengthen"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2 | Deformation mechanics, energy partitions, and theoretical modeling of polymer-inspired metamaterials (PIMs). a Deformation of a PIM chain and its energy partitions. b Strain ﬁelds from digital image correlation at 15% strain for PIMs with ρ = 4.25 cm−3, MD strengthening (ρ = 5.25 cm−3), pre-stretched strength- ening (p = 80%), and CL strengthening (nc = 145 cm−3). ρ, p, and nc represent the molecular density"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 3 | Mechanical property comparison of PIMs with representative lattice designs. The comparison architectures were based on established topological designs, including BCC49, FCC50, octet-truss51, diamond52, tesseract53, and vintiles54 CIMs; twisted lattice designs16, including pure-woven and composite-woven BCC, FCC, and octet-truss structures; directional lattices55, including honeycomb, re- entrant honeycomb, a"
+      },
+      {
+        "page": 7,
+        "excerpt": "Fig. 4 | Programmable PIM humanoid tissue and functional applications. a The digital image correlation (DIC) analysis of the experimentally measured strain ﬁelds (right) for fabricated PIM humanoid tissues (left) with different pre-programmedPS levels. ε represents local DIC tissue strain. b Schematics of human walking mechanics and humanoid feet designed with different gradients of chain strain factors (∇f c). The f"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 17. Supplementary Table 2 further details the geometrical speciﬁcations and depicts various metamaterials, respectively. The diameters of the chains and bonding struts in PIMs, PIM-CIM compo- sites, and PIM-based humanoid tissues have been standardized at 1 mm. Conversely, the diameters of the CIMs vary between 0.6 and 1.2 mm, facilitating a range of densities that overlap with those of the PIMs, enabling equita"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 16. For the CIM+PIM exoskeleton and grabber, octet-truss CIM regions were positioned at the load-bearing and attachment locations and interconnected by compliant PIM net- works, following the designs presented in Supplementary Note 4 and Supplementary Fig. 12. The cable-actuation conﬁguration of the grabber is further illustrated in Supplementary Fig. 13. The com- pleted geometries were converted into printable "
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 12. The cable-actuation conﬁguration of the grabber is further illustrated in Supplementary Fig. 13. The com- pleted geometries were converted into printable solid STL models, exported for standard Formlabs® Preform slicing, and fabricated by stereolithography using a Formlabs Form 3 printer. No custom G-code or script-generated printing path was used. These functional components were printed using Formlabs dura"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 13. The com- pleted geometries were converted into printable solid STL models, exported for standard Formlabs® Preform slicing, and fabricated by stereolithography using a Formlabs Form 3 printer. No custom G-code or script-generated printing path was used. These functional components were printed using Formlabs durable resin and sub- jected to the same fabrication and post-processing conditions as the Article h"
+      }
+    ],
+    "pdf_sha256": "81eedb715b3e590bedde9b44ff278c18f25d362f28580119f8428fc36981092c"
+  },
+  "20_thermal": {
+    "id": "20_thermal",
+    "doi": "10.1038/s41467-025-56960-1",
+    "title": "Adaptative two-phase thermal circulation system for complex-shaped electronic device cooling",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-56960-1.pdf",
+    "metadata_status": "verified_openalex_prior_query",
+    "pdf_status": "saved",
+    "pages": 15,
+    "figure_mentions": [
+      {
+        "page": 2,
+        "excerpt": "Fig. 2. Due to the thermoplastic properties of the inner polypropylene layer, applying pressure at a speciﬁc temperature allows for thermal bonding of the aluminum-plastic ﬁlm casing. The internal structure includes a self-supporting wick, created from three-dimensionally structured multi-layer copper mesh. The capillary force of the wick is enhanced by chemically deposited hydrophilic nanosheets (as detailed in Supp"
+      },
+      {
+        "page": 3,
+        "excerpt": "Fig. 1 | Conceptual illustration and customized design strategy for the adap- tative heat pipe (AHP) in complex 3D electronic devices. a In-plane thermal management of traditional phase change system in electronic device. b Out- plane thermal management of 3D two-phase circulation by AHP. c Working mechanism and the structure of AHP, consisting of a self-supporting wick and aluminum-plastic ﬁlm casing to form a vapor"
+      },
+      {
+        "page": 4,
+        "excerpt": "Fig. 2 | Mitigation effects of 3D segment on two-phase counterﬂow entrain- ment. a Theoretical operating limits of adaptative heat pipe (AHP). b Entrainment effects in 2D two-phase counterﬂow. c Schematic of mitigated two-phase coun- terﬂow entrainment in 3D AHP. d Operating performance of AHP without 3D seg- ment. e Operating performance of AHP with 90° local 3D segment. f Operating performance of AHP with 180° loca"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 13. The robustness of AHP to spatial state changes Wearable and mobile electronic devices frequently change spatial state based on user demands, which often prevents their cooling components from operating in the most advantageous state. In two- phase thermal circulation systems, spatial state changes affect the gravitational pressure drop, represented by ΔPg in Eq. (1). To ensure the stable operation of the AHP"
+      },
+      {
+        "page": 5,
+        "excerpt": "Fig. 14. The results show that as power increases, the theo- retically permissible range of gravitational pressure drop gradually decreases. By discretizing the AHP and deﬁning the spatial state change parameters α and β, and calculating the weighted average of the gravitational pressure drops across the discrete segments, we derived the formula for the 3D gravitational pressure drop of the AHP in various spatial sta"
+      },
+      {
+        "page": 6,
+        "excerpt": "Fig. 3 | Spatial robustness and mechanical strength testing of the adaptative heat pipe (AHP). a Discrete weighted calculation of gravitational pressure drop in AHP. b Theoretical values of gravitational pressure drop in different spatial states. c Heat transfer performance of the straight 2D heat pipe across different spatial states. d Heat transfer performance of the AHP with full 3D segment across dif- ferent spat"
+      },
+      {
+        "page": 8,
+        "excerpt": "Fig. 4 | Customized adaptative heat pipe (AHP) for VR headset. a Reverse design of the AHP for the VR headset, extracting the head-mount component to create a customized AHP that provides both cooling capability and mounting functionality. b VR headset after co-integration of the AHP. c Infrared thermal imaging results of the commercial ﬂat heat pipe under a heating power of 4 W. d Infrared thermal imaging of the com"
+      },
+      {
+        "page": 9,
+        "excerpt": "Fig. 5 | Development of stretchable vapor-liquid phase-change circulation system. a Extraction of spring element curves from the shock absorber enables the designed adaptative heat pipe (AHP) to offer not only heat exchange capabilities but also damping and stretchability. b A stretchable AHP. c Characteristics of the stretchable AHP (L represents the minimum pitch of the stretchable heat pipe). d Dynamic temperature"
+      },
+      {
+        "page": 11,
+        "excerpt": "Fig. 6 | Dynamic cooling of two-phase circulation heat exchange robot system. a Extraction of external curves of the cubic model to plan the two-phase circulation path of the adaptative heat pipe (AHP) and construct a fully enclosed cubic AHP. b Structural schematic of a cubic AHP. c Schematic of magnetic pole arrangement for heat exchange robot. d Temperature distribution at the center points of the six faces under "
+      },
+      {
+        "page": 12,
+        "excerpt": "Fig. 3. The process begins with precise cutting of copper mesh using a pulsed laser. The layered copper mesh is then assembled within a mold to achieve complex three- dimensional forms. To enhance the bonding strength between layers and stabilize the capillary pores, the shaped multi-layer copper wire mesh undergoes a sintering process. Subsequently, the samples are cleaned with ultrasonic cleaning and treated chemic"
+      },
+      {
+        "page": 12,
+        "excerpt": "Fig. 25. Cu + 2NaOH + Na2S2O8 ! CuðOHÞ2 + Na2SO4 ð5Þ CuðOHÞ2 + 2OH\u0002 ! ½CuðOHÞ4\u00042\u0002 ð6Þ ½CuðOHÞ4\u00042\u0002 ! CuO # + H2O + 2OH\u0002 ð7Þ Characterization The morphology of hydrophilic wick in Supplementary Fig. 23 was captured by Scanning Electron Microscopy (SUPRA55 SAPPHIRE, ZEISS, German), as well as the energy dispersive X-ray spectrometer (EDS) in Supplementary Fig. 24. The structure of wick was observed by optical microscope"
+      },
+      {
+        "page": 12,
+        "excerpt": "Fig. 24. The structure of wick was observed by optical microscope (AO-HK830, Aosvi Co. Ltd, China). The thermal imaging of the AHP during startup and stable operation were recorded by an infrared thermal imaging camera (FLIR T440, FLIR Systems Company, USA). Experimental setup The testing setup for evaluating the performance of the AHP includes a DC power supply (WPS3010B, Shenzhen WANPTEK Electronic Technology Co., "
+      },
+      {
+        "page": 12,
+        "excerpt": "Fig. 28. Cuboids with an area of 10 × 10 mm² and a thickness of 0.3 mm are used as both the heating plate and condenser. Their centers are located 15 mm from the heat pipe’s ends, positioned near the wall on the wick side (Supplemen- tary Fig. 28b, c). To maintain a uniform total length for the two- phase circulation across all models, the central line length of the various 3D heat pipes is kept consistent with that "
+      },
+      {
+        "page": 13,
+        "excerpt": "Fig. 29. Four evaporators are posi- tioned at speciﬁc locations on one end of the straight heat pipe, with a condenser is placed at a deﬁned coordinate on the other end (Supplementary Fig. 29a). Different power inputs are applied to each of the four evaporators, and the temperatures along the heat pipe wall are measured and compared. Since explicit cooling conditions for the condenser are not speciﬁed in the literatu"
+      }
+    ],
+    "pdf_sha256": "3e6e1880d2c9061300cc2b7189709bb9566ce4543afaf4ed696b7bf978585bcb"
+  }
+}

@@ -1,0 +1,107 @@
+pressure. The cell voltage was recorded by the workstation. CO2 and Ar
+were continuously passed through the back of cathode and anode
+electrodes with a ﬂow rate of 28.5 mL min–1, with the ﬂow precisely
+regulated by a mass ﬂow controller (MFC), respectively, except where
+noted. The continuous ﬂow of Ar through the back of the anode was to
+prevent the localized accumulation of GOR products within the Ni foam
+channels. Freshly prepared electrolyte was continuously supplied to the
+electrolyzer at 15 mL min–1 using a peristaltic pump in a non-recirculating
+single-pass mode, except where noted. The catholyte for AEM-CO2R/
+OER and AEM-CO2R/GOR was 1 M KOH. The anolyte for AEM-CO2R/OER
+and AEM-CO2R/GOR was 1 M KOH without and with 0.5 M glycerol
+addition, respectively. The electrolyte for NOM-CO2R/GORx was 1 M
+KOH with 0.5 M glycerol addition. The electrolyte for NOM-CO2R/MOR
+was 1 M KOH with 1 M methanol addition. Bi2O3 deposited on GDE was
+used as the cathode. NiV/Ni foam and CuSn/Cu foam electrodes were
+used as the anodes, respectively. The scaled-up membrane-free ﬂow cell
+features a reaction area of 22.5 cm2 and an electrolyte chamber thickness
+of 4.5 mm. Under amper-level current, the CO2 ﬂow rate and electrolyte
+ﬂow rate are maintained at 100 mL min–1 and 15 mL min–1, respectively,
+except where noted.
+The half-reaction performances, encompassing CO2R, OER, GOR,
+and MOR, were evaluated in the membrane-based ﬂow cell by
+employing a typical three-electrode system. The Ag/AgCl electrode
+was used as the reference electrode. When evaluating the anodic half-
+reaction performances of NiV/Ni foam and CuSn/Cu foam, the Bi2O3-
+catalyzed HER half-reaction was paired with GOR and MOR by sup-
+plying Ar with a ﬂow rate of 28.5 mL min–1 into the gas compartment at
+the cathode. All other operation conditions were maintained con-
+sistent with the overall reaction test. Finally, the working potential was
+85%-iR compensated and converted to the RHE scale according to Eq.
+(2). The pHs of electrolytes in different systems were tabulated in
+Supplementary Tables 14, 15.
+E vs RHE
+ð
+Þ = E vs Ag=AgCl
+
+
++ Eθðreference electrodeÞ
++ 0:059 × pH  0:85 × i × Rs
+ð2Þ
+where i is the applied current (in A), Rs is the solution resistance (in Ω),
+EθðAg=AgClÞ is 0.198 V, and EθðHg=HgOÞ is 0.098 V.
+The LSV tests for the commercial Bi2O3 electrode were carried out
+in a membrane-based ﬂow cell by employing a three-electrode system
+on a CHI 760E workstation. The Hg/HgO electrode and NiV/Ni foam
+electrode were used as the reference electrode and counter electrode.
+The electrolyte is 1 M KOH, and the gas ﬂow rate is 28.5 mL min–1. The
+LSV tests for NiV/Ni foam and CuSn/Cu foam electrodes were carried
+out in a typical single-compartment electrolytic cell by employing a
+three-electrode system. The Hg/HgO electrode and Pt wire electrode
+were used as the reference electrode and counter electrode. The
+working potential was 85%-iR compensated and converted to the RHE
+scale according to Eq. (2)
+For electrochemical impedance spectroscopy (EIS), all measure-
+ments were performed at open circuit potential (OCP) with a fre-
+quency range between 1 × 106Hz and 0.1 Hz, with an AC amplitude of
+10 mV. The system resistances were directly extracted from the EIS
+spectra without any ﬁtting procedure.
+Product detection and analysis
+Detection. The gas products and liquid products were quantiﬁed by
+online gas chromatography and 1H nuclear magnetic resonance spec-
+troscopy (1H-NMR, Bruker 400 M), respectively. The 0.2 mM Dimethyl
+sulfoxide (DMSO, Aladdin, 99.8 %) diluted in D2O (Energy Chemical,
+99.9%) was used as an internal standard for 1H-NMR, and a water
+suppression mode was also adopted.
+FEs of CO2R, GOR, and MOR products were calculated according
+to Eq. (3).
+FE = Z × F × N
+i × t
+ð3Þ
+where Z is the number of electrons required to form 1 mol of product, F
+is the Faraday constant, N is the amount of product (in mol), i is the
+current (A), and t is the running time (in s). The Z is 2 for CO2-to-
+formate conversion, 8/3 for glycerol-to-formate conversion, and 4 for
+methanol-to-formate conversion.
+Selectivity of formate for the co-electrolysis of CO2 and organic
+system was deﬁned as the ratio of experimental formate yield to the-
+oretical formate yield.
+The experimental formate yield
+mmolcm1h1
+
+
+was calculated
+according to Eq. (4).
+Formate yield = Nformate
+s × T
+ð4Þ
+where Nformate is the total amount of formate in the catholyte and
+anolyte detected by 1H NMR (in mmol), s is the working area (in cm2),
+and T is the running time (in h).
+The theoretical formate yield ðmmol cm1h1Þ was calculated
+according to the deformable Eq. (5).
+Theoretical formate yield = i × 3:6 × 106
+Z × F
+ð5Þ
+where i is the current density (in A·cm-2). The theoretical formate yield
+of the CO2 and organic compound co-electrolysis system is the
+formate yield sum of CO2R and anode half-reaction.
+Thus, the selectivity of formate for the co-electrolysis of CO2 and
+organic system was calculated according to Eq. (6).
+Selectivity =
+Formate yield
+Theoretical formate yield × 100%
+ð6Þ
+Cell voltage reduction of the CO2R/GOR system was calculated
+according to Eq. (7).
+Cell voltage reduction = Ecell AEM  CO2

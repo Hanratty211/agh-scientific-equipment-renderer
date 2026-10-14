@@ -1,0 +1,6 @@
+00:00.209  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v04/scene.blend"
+00:00.544  render           | Saved: '/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v04/overview.png'
+RELOAD_RENDER_OK {"scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v04/scene.blend", "scene_sha256": "0ef4922e03fbd0d08213539f61c433700f4ec1c9b5ea2ea658fa3115b4838d2e", "png": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v04/overview.png", "png_sha256": "c40b0e9212ab2e0e7db924cec45dc2f4b03948a6d94181a5405936fecf920d2f", "objects": 86, "camera": "Overview_Camera", "source_basis": "text-only", "render_engine": "BLENDER_EEVEE", "image_size": [900, 640], "visual_review": "NOT_YET_REVIEWED"}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

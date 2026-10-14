@@ -1,0 +1,12 @@
+00:00.242  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v05/scene.blend"
+Traceback (most recent call last):
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/audit_stage6.py", line 29, in <module>
+    hit_center=evaluated_nearest_ray('TinyLev_upper_plate',(target.location.x,target.location.y,plate_top+.25),(0,0,-1))[0]
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/audit_stage6.py", line 14, in evaluated_nearest_ray
+    return ev.ray_cast(p,d,distance)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: Object.ray_cast(): required parameter "distance" to be a keyword argument!
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

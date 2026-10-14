@@ -1,0 +1,6 @@
+00:00.248  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v05/scene.blend"
+00:00.853  render           | Saved: '/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v05/overview.png'
+RELOAD_RENDER_OK {"scene": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v05/scene.blend", "scene_sha256": "0c04967e4a8e4ebe7ca8619731f805bda66eac3e8cbe2ff8a86f18c2c5ed1dcb", "png": "/Users/wht/Desktop/\u9ed1\u5ba2\u677e/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v05/overview.png", "png_sha256": "030be22f931483b2cbc5ff1110a2dd5b793856b740a243225e0bb0a30c1d2904", "objects": 64, "camera": "Overview_Camera", "source_basis": "figure-and-caption", "render_engine": "BLENDER_EEVEE", "image_size": [900, 640], "visual_review": "NOT_YET_REVIEWED"}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

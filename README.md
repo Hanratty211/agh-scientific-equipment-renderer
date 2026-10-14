@@ -1,5 +1,7 @@
 # 科研装置实物三维渲染 Skill 开发项目
 
+**私有 main 视频协作入口**：[VIDEO_DEMO_HANDOFF.md](VIDEO_DEMO_HANDOFF.md)；[十篇 2×5 导航及逐例 HTML 画廊](validation-next/2026-10-14/demo-assets/ten_papers_source_render_LOCAL/README.md)；[本次全量文件 SHA/大小清单](GIT_FILE_MANIFEST_VIDEO_DEMO.txt)。本次获授权将原记录标为 local-only 的 PDF、源图、含图画布、日志按原结构收入**私有**仓库供协作；早期“不可入 Git”句子保留为当时状态，非当前提交规则。仅在本私人项目内部使用出版方内容，不代表取得对外公开/转授权；成片公开前逐项核许可。十例均候选、部分旧版外部否决，新图不因上传而通过。
+
 ## 规范独立 Skill 包（2026-10-14）
 
 - **唯一规范源码**：[根目录 `agh-scientific-equipment-renderer/`](agh-scientific-equipment-renderer/README.md)；[入口](agh-scientific-equipment-renderer/SKILL.md) · [版本与安装状态边界](agh-scientific-equipment-renderer/PROVENANCE.md)。完整拷贝此目录即可读方法与运行合成测试；旧 `skills/agh-scientific-equipment-renderer/` 仅是 Git 历史，不是第二个安装源。

@@ -1,0 +1,40 @@
+the bolts, a pre-encapsulated AHP (three sides sealed, one side open) is
+obtained.
+Next, venting treatment is performed through a charging port on
+the pre-encapsulated AHP, followed by vacuuming and ﬁlling with
+working ﬂuid (deionized water). The ﬁnal side is then sealed to com-
+plete the fabrication of a customized AHP with two-phase thermal
+cycling capabilities. Detailed information about the fabrication pro-
+cess is provided in Supplementary Fig. 5 and Supplementary Movie 2,
+offering a more intuitive understanding of the fabrication method.
+Materials
+Aluminum-plastic ﬁlm (D-EL40H(3)) as heat pipe casing was purchased
+from Dai Nippon Printing Co., Japan. Copper wire mesh (200 mesh
+copper) used as wick was purchased from Anping County Bolin Metal
+Wire Mesh Co., China. The carbon fabric (WOS1009, CeTech, USA)
+after cutting, was utilized as a ﬂexible heater. Chemicals including
+sodium persulfate (Na2S2O8), sodium hydroxide (NaOH), deionized
+water, and ethanol were purchased from Shanghai Aladdin Biochem-
+ical Technology Co.
+3D printing of shaping and pre-encapsulating molds
+A customized conﬁguration of the three-dimensional resin mold is
+created using Computer-Aided Design (CAD) software and exported in
+STL format. This STL ﬁle is then imported into Voxeldance Tango sli-
+cing software to add support structures and slice the model. The sliced
+ﬁle is loaded into a Digital Light Processing (DLP) 3D printing machine
+Fig. 6 | Dynamic cooling of two-phase circulation heat exchange robot system.
+a Extraction of external curves of the cubic model to plan the two-phase circulation
+path of the adaptative heat pipe (AHP) and construct a fully enclosed cubic AHP.
+b Structural schematic of a cubic AHP. c Schematic of magnetic pole arrangement
+for heat exchange robot. d Temperature distribution at the center points of the six
+faces under a bottom point heat source. e Thermal resistance and thermal
+conductivity at a heating power of 5 W. f Magnetic actuation ﬂipping method for
+the AHP heat exchange robot. g Heat transfer process demonstrated by the cubic
+AHP when positioned above a hot spot. h The AHP heat exchange robot performing
+dynamic heat dissipation in response to random hot spots (The upper and lower
+sections of the diagram respectively represent the workﬂow under an optical
+camera and an infrared thermal imaging camera).
+Article
+https://doi.org/10.1038/s41467-025-56960-1
+Nature Communications|  (2025) 16:1713 
+11

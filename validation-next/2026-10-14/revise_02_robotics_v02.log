@@ -1,0 +1,17 @@
+00:00.474  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/02_robotics/v01/scene.blend"
+/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/revise_remaining.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('MAT_'+name);m.diffuse_color=(*col,1);m.use_nodes=True
+Traceback (most recent call last):
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/revise_remaining.py", line 183, in <module>
+    case=args[0];FIX[case]();sc=bpy.context.scene
+                 ~~~~~~~~~^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/revise_remaining.py", line 41, in robot
+    r.cyl(f'{lab}_circular_grip_body',(0,0,z),.35,.24,'dark',evidence='source-visible')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/render_core.py", line 48, in cyl
+    o.data.materials.append(M[mat]);return tag(o,evidence)
+                            ~^^^^^
+KeyError: 'dark'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

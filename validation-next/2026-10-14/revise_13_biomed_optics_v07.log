@@ -1,0 +1,8 @@
+00:00.451  blend            | Read blend: "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/13_biomed_optics/v06/scene.blend"
+/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/revise_stage7.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('MAT_'+k);m.diffuse_color=(*c,1);m.use_nodes=True
+信息: 已另存为 "scene.blend"
+STAGE7_SAVED 13_biomed_optics v07
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit
