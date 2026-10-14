@@ -47,3 +47,8 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 - 13 `../cases/13_biomed_optics/v06/overview.png`（前窗目视不清）→`v07/overview.png`；18 `../cases/18_mechanical_nature/v04_fig18_woven/overview.png`（粗绳结团）→`v05_fig18_dense_weave/overview.png`。两新版均待外部再读，不可标验收。
 - 14 `../cases/14_acoustic_alt/v05/overview.png` 外部仅认具体孔内轴线问题解决，保留候选。
 - 十例路径/哈希见 `../STAGE7_REVIEW_QUEUE.md`；两张本地 `stage7_source_*_LOCAL.png` 含版权源图，不入 Git/公开视频。无 AGH 新截图。
+
+## Stage8/9 纯自制候选资产（源图只留本地）
+- 13 `../cases/13_biomed_optics/v07/detail_tip.png`、[总览—局部纯自制拼版](13_biomed_optics/stage8_overview_detail_OWN.png)：外部第七轮读到近景端面窗；只展示局部身份、不宣称功能。
+- 18 [v05→v06 纯自制](18_mechanical_nature/stage8_v05_v06_OWN.png)、[v06→v07 纯自制](18_mechanical_nature/stage9_v06_v07_OWN.png)。v06 被外部判**栅栏**；v07 当前只是生成候选，AGH 无法目视，新图不能标成功。下轮请对比 Fig18 左栏与 v07。含来源三栏 `stage8_fig18_source_v05_v06_LOCAL.png` 只本地，不入仓库。
+- 14 v05 不变，仅具体 LDV 光轴与真孔问题外部称解决。参见 `../STAGE9_REVIEW_QUEUE.md`、`../EXTERNAL_HUMAN_REVIEW.md`。

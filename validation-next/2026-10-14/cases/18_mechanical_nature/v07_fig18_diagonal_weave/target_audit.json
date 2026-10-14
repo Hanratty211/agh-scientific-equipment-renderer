@@ -1,0 +1,19 @@
+{
+  "scene_sha256": "dbbbd7784d160cae32ec970254f5bf136fe448f9f0894582172e56c82b3ce0a3",
+  "counts": [
+    17,
+    17
+  ],
+  "checks": {
+    "two_complete_diagonal_families": true,
+    "old_v06_family_removed": true,
+    "plates_exist": true,
+    "smooth_single_curve_per_object": true,
+    "central_lanes_have_diagonal_span": true,
+    "both_ends_within_visible_face": true
+  },
+  "fails": [],
+  "scope": "saved curves diagonal ranges, smooth handles, family count and retained compression plates only",
+  "unknown": "frame geometry not individually compared; visual read, 3D node bonding, actual depth and mechanics NOT VERIFIED",
+  "visual_review": "PENDING_EXTERNAL"
+}

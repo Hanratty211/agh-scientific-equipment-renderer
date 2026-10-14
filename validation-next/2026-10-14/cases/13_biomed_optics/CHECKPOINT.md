@@ -27,3 +27,6 @@ DOI: https://doi.org/10.1038/s44303-026-00161-y。日期 2026-05-04。依据：F
 
 ### 第五轮外部人工复核后 Stage7 `v07` 候选（未验收）
 审阅者：**外部复核**，已从磁盘逐张读 stage6 旧 `v06` PNG 与来源；判词独立于数值在 `../../EXTERNAL_HUMAN_REVIEW.md` 第五轮表。只修本例限定目标：v07 保留三束独立后端线/主缆及细长探头，前端加锥度实物罩、可辨两圈层与透光端窗，尺寸是展示假设，未建内部光路。 [`v07/scene.blend`](v07/scene.blend) 经独立 Blender 重开渲染 [`v07/overview.png`](v07/overview.png)，scene SHA `50892655bdc49af239bb0a24f21cabcc5c946ec55311881be23a51216fd69ffc`，PNG SHA `5201684242f676a0a086e5b7331545f5e1e4999ff3e0088b7e3c1f96c2910c88`；`v07/target_audit.json` 仅 6 项局部网格/曲线存在性检查 FAIL=[]，**不代表像素/光学/强度验收**。新 PNG 尚无人目视，AGH GUI 仍故障。本地含源图三栏 `../../demo-assets/13_biomed_optics/stage7_source_v06_v07_LOCAL.png` 不入 Git。
+
+### 第六／七轮外部复核与同几何局部图（v07 不改）
+第六轮外部从磁盘看 v07 总览：前端端窗与双圈可辨，但远端身份像素有限。另开 **v07 原 `.blend`** 的临时 1200×840 正交镜头，未存新 .blend、未改对象/材料/总览，重载生成 [`v07/detail_tip.png`](v07/detail_tip.png)，源 blend SHA 重载前后同 `50892655bdc49af239bb0a24f21cabcc5c946ec55311881be23a51216fd69ffc`，PNG SHA `fed19e439095582c70c8aefc5df7176255dccfd3436711c2690b6b1fb8bb177f`。第七轮外部实际目视：主缆→套环→锥形端头→同心端面窗可读；**只保留局部形态候选，不是整机、内束路或光学功能验收**。见 `../../EXTERNAL_HUMAN_REVIEW.md`，v07 总览场景/PNG 哈希均不变。

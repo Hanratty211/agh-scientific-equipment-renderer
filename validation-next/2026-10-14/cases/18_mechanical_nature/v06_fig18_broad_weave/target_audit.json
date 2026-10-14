@@ -1,0 +1,15 @@
+{
+  "scene_sha256": "94369e5ac8acc5beb8718c3fae474c72f20b3037a716c343cae75b40f21c8f8e",
+  "checks": {
+    "15_plus_15_continuous_families": true,
+    "old_regular_v05_removed": true,
+    "saved_plate_pair": true,
+    "fig18_only": true,
+    "bezier_c1_continuity": true,
+    "broader_than_v05_bevel": true
+  },
+  "fails": [],
+  "scope": "curve families, smooth handles, width and plate preservation only",
+  "unknown": "actual 3D crossing, node bonding, depth, appearance and material strength NOT VERIFIED",
+  "visual_review": "PENDING_EXTERNAL"
+}

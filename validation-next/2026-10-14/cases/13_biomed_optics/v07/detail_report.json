@@ -1,0 +1,13 @@
+{
+  "source_blend": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/13_biomed_optics/v07/scene.blend",
+  "source_sha256_before_and_after": "50892655bdc49af239bb0a24f21cabcc5c946ec55311881be23a51216fd69ffc",
+  "detail_png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/13_biomed_optics/v07/detail_tip.png",
+  "detail_sha256": "fed19e439095582c70c8aefc5df7176255dccfd3436711c2690b6b1fb8bb177f",
+  "image_size": [
+    1200,
+    840
+  ],
+  "visual_review": "NOT_YET_REVIEWED",
+  "scope": "local shape view of the SAME v07 scene geometry; NOT whole-machine or optical validation",
+  "view_geometry": "orthographic temporary camera; all existing scene objects/materials unchanged; no blend saved"
+}
