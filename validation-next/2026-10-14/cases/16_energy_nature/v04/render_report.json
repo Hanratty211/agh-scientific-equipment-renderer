@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/16_energy_nature/v04/scene.blend",
+  "scene_sha256": "29639ee79553b4c82627b38769944ea9d013883a573115ca3f8334c3c6d6b426",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/16_energy_nature/v04/overview.png",
+  "png_sha256": "55d1a16dbcd3807e128e4f2250506aa8073b5d385b2b04108bdfbfb7fde89900",
+  "objects": 34,
+  "camera": "Overview_Camera",
+  "source_basis": "text-only",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

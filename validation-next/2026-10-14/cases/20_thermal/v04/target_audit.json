@@ -1,0 +1,16 @@
+{
+  "case": "20_thermal",
+  "scene_sha256": "0ef4922e03fbd0d08213539f61c433700f4ec1c9b5ea2ea658fa3115b4838d2e",
+  "checks": {
+    "physical_east_cap": true,
+    "cap_beyond_wick_x": true,
+    "all_four_final_seams": true,
+    "preseal_objects_absent": true
+  },
+  "fails": [],
+  "unknown": [
+    "visibility through camera and real hermetic seal not tested; preseal view is separate scene"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

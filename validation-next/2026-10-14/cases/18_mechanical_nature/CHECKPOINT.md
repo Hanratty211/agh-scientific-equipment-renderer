@@ -17,3 +17,7 @@ DOI: https://doi.org/10.1038/s41467-026-77199-4。日期 2026-08-26。依据：M
 
 ### 第二轮外部复核/补充材料核对
 审阅者：**外部复核**，明确 v02 dogbone 只代表 parent-material ASTM Type IV，不能等于机械记忆结构。下载论文开放的补充 PDF 51 页至本地，定位 Supplementary Fig.17–20 于 PDF pp.32–35，核到图注：17 parent materials、18 PIM/CIM、19 composites、20 tissue；**AGH 图像服务仍失败，尚未看见补图像素/铰接细节，故不建 PIM v03**。详情 `../../CASE18_SUPPLEMENT_AUDIT.md`。旧 v02 保持 parent-material 示意，未通过本任务整体目标。
+
+### 第三轮外部复核后 `v03_fig18_PIM_CIM` 独立候选（不自动验收）
+旧 `v02` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v03_fig18_PIM_CIM/scene.blend`](v03_fig18_PIM_CIM/scene.blend)、[`v03_fig18_PIM_CIM/overview.png`](v03_fig18_PIM_CIM/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `46c7df65da9f29cb750858b83adce6f8822aa76dcd436137a6e4335cc2de962e`；PNG SHA `2652932a49f21ec60e02183b986c334bb68c58e18334f5ddf38d0205756c32d0`。`v03_fig18_PIM_CIM/target_audit.json` 仅审核 5 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/18_mechanical_nature/stage5_source_v02_v03_fig18_PIM_CIM_LOCAL.png` 不提交。
+v02 继续只涵盖 Fig.17 parent-material Type IV，不被覆盖；v03 此案是**独立 Fig.18 单一目标**的交织 PIM/CIM 面层与上下压板压缩候选，20×20 mm 仅可见试片面尺寸，厚度、铰接/交织真实连接与力学性能未知。Fig.19/20 没画。来源记录见 `../../CASE18_SUPPLEMENT_AUDIT.md`。

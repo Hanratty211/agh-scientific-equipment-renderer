@@ -18,3 +18,7 @@ DOI: https://doi.org/10.1038/s41467-025-56960-1。日期 2025-02-17（Crossref�
 ### 第二轮外部复核后：`v03` 候选（旧版不覆盖）
 外部复核实际逐张目视旧 `v02` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v02/scene.blend` 另存 `v03/scene.blend`；**独立 Blender 进程重新打开**并写出 `v03/overview.png`。场景 SHA256 `d6cdf25c34a04b039eea1577511b23158bffa736894a309bac3c5e1ed3b7862c`；PNG SHA256 `c339f737dcbfe8fc9850e3dbbfd297832070ee99e716c06ae76ba6e3576af38b`。目标结构检查 `v03/target_audit.json` 4 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/20_thermal/stage4_source_v02_v03_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。
 最终封装的薄箔折边为可编辑薄壳示意，实物弯曲半径未知；原 `v02_preseal_detail` 仍独立制造过程态，不作最终态。
+
+### 第三轮外部复核后 `v04` 独立候选（不自动验收）
+旧 `v03` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `0ef4922e03fbd0d08213539f61c433700f4ec1c9b5ea2ea658fa3115b4838d2e`；PNG SHA `c40b0e9212ab2e0e7db924cec45dc2f4b03948a6d94181a5405936fecf920d2f`。`v04/target_audit.json` 仅审核 4 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/20_thermal/stage5_source_v03_v04_LOCAL.png` 不提交。
+v04 最终态新增右端物理箔膜封面及折边；能否目视完全遮住铜网尚未可视复核，`v02_preseal_detail` 原过程态单独保留。

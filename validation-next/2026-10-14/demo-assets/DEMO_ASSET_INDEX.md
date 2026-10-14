@@ -33,3 +33,8 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 - 本地逐例三栏 `demo-assets/<id>/stage4_source_<old>_<new>_LOCAL.png` **均含论文原图或正文**，只供用户本机对照，不可纳入 Git/公开视频。04 特别保证源 Fig.3C—v01—v06，不省略旧失败版。
 - 第二轮旧版外部判词 `../EXTERNAL_HUMAN_REVIEW.md`，八例新图尚无人类复核。02 v03 悬空杆等旧图失败不能用 v04 数值自动洗白。
 - 18 补图 p32–35 裁页与 PDF 均本地；没有假画 PIM。20 `v02_preseal_detail` 仍只属工艺态，不同于最新成品 v03。
+
+## 第五阶段候选演示资产（非验收）
+- 十例纯自制最新版 .blend/PNG/哈希/旧版外部目视与新图待审状态：`../STAGE5_REVIEW_QUEUE.md`。04 v01→v06 保留旧失败与候选；16 v04 两气源端审计 FAIL→v05 修端点也不得剪成视觉成功。
+- 18 Fig17 parent Type IV (v02) 与 Fig18 交织 PIM/CIM+压板 (v03_fig18_PIM_CIM) **不同来源/目标**；Fig19/20 未建。20 v04 最终封与旧 `v02_preseal_detail` 预封分不同过程画面。
+- 本地 `stage5_source_*_LOCAL.png` 含论文原页/文字，连同补图 PDF/PNG 不纳入 Git 或公开视频。AGH GUI 截屏不可用，未伪称界面截图。

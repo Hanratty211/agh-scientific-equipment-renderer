@@ -1,0 +1,25 @@
+{
+  "case": "16_energy_nature",
+  "scene_sha256": "29639ee79553b4c82627b38769944ea9d013883a573115ca3f8334c3c6d6b426",
+  "checks": {
+    "CO2_cathode_source_cap": false,
+    "CO2_cathode_MFC_input_cap": true,
+    "CO2_cathode_MFC_output_cap": true,
+    "CO2_cathode_cell_rear_cap": true,
+    "CO2_cathode_owned_supply_panel": true,
+    "Ar_anode_source_cap": false,
+    "Ar_anode_MFC_input_cap": true,
+    "Ar_anode_MFC_output_cap": true,
+    "Ar_anode_cell_rear_cap": true,
+    "Ar_anode_owned_supply_panel": true
+  },
+  "fails": [
+    "CO2_cathode_source_cap",
+    "Ar_anode_source_cap"
+  ],
+  "unknown": [
+    "upstream source panel and sleeves are explicit assumptions; internal gas/aqueous routes and regulator action unverified"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

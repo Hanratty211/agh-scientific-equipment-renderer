@@ -1,0 +1,20 @@
+{
+  "case": "02_robotics",
+  "scene_sha256": "55a7de0f40cc4d81ae0c30e779c894b47f3f8fb8f58c7d2ec386916433405399",
+  "checks": {
+    "lower_opposed_surfaces": true,
+    "lower_axial_insert": true,
+    "lower_outer_rails": true,
+    "upper_opposed_surfaces": true,
+    "upper_axial_insert": true,
+    "upper_outer_rails": true,
+    "guide_-1_upper_beam": true,
+    "guide_1_upper_beam": true
+  },
+  "fails": [],
+  "unknown": [
+    "mechanical clamping force and manufacturer fixture shape unmeasured"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

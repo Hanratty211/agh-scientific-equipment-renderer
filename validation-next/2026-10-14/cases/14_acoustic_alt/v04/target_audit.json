@@ -1,0 +1,15 @@
+{
+  "case": "14_acoustic_alt",
+  "scene_sha256": "82301c961ff349faabd2d043486c61e5752dbcb042bc8154d530415c513cdbbc",
+  "checks": {
+    "path_starts_lens_bottom": true,
+    "path_hits_sample_top": true,
+    "stand_base_head_chain": true
+  },
+  "fails": [],
+  "unknown": [
+    "this is graphic alignment only, not real laser wavelength, optical focus or levitation force"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

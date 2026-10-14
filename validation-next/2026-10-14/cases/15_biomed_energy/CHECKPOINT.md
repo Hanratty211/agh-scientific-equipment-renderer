@@ -19,3 +19,6 @@ DOI: https://doi.org/10.1038/s41467-025-60911-1。日期 2025-07-01。依据：F
 
 ### 第二轮外部复核后：`v05` 候选（旧版不覆盖）
 外部复核实际逐张目视旧 `v04` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v04/scene.blend` 另存 `v05/scene.blend`；**独立 Blender 进程重新打开**并写出 `v05/overview.png`。场景 SHA256 `7450be7a390668fb5ef53fc88e8270c926c29b5363c5369c9cb3158f470afe15`；PNG SHA256 `aca06694ec9a823bbcfcaf14ce14a9cc49dbf6516ce30b915a9c7423c6412f4b`。目标结构检查 `v05/target_audit.json` 3 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/15_biomed_energy/stage4_source_v04_v05_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。
+
+### 第三轮外部复核：保留 `v05` 候选，不扩范围
+审阅者：**外部复核**，实际逐张看当前源图/渲染，意见见 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表；该版尚未最终验收。本轮不改模型、不重渲旧版。独立本地三栏 `../../demo-assets/15_biomed_energy/stage5_source_v04_v05_LOCAL.png` 仅供本地复核。有限结构 QA 不构成视觉通过。

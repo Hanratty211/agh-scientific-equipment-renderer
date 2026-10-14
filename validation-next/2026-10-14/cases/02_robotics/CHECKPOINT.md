@@ -19,3 +19,6 @@ DOI: https://doi.org/10.1038/s41467-025-56025-3。日期 2025-02-06。依据：F
 
 ### 第二轮外部复核后：`v04` 候选（旧版不覆盖）
 外部复核实际逐张目视旧 `v03` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v03/scene.blend` 另存 `v04/scene.blend`；**独立 Blender 进程重新打开**并写出 `v04/overview.png`。场景 SHA256 `f81d15b1ff3243fd4f1cdf5ff329c7e7e4248d5b0662599e21358294007b9ac7`；PNG SHA256 `12fc1a58e53fe17fbd7d10aaf943c1d0b734b47d659ab8b07e9e330a62ab9d81`。目标结构检查 `v04/target_audit.json` 6 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/02_robotics/stage4_source_v03_v04_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。
+
+### 第三轮外部复核后 `v05` 独立候选（不自动验收）
+旧 `v04` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v05/scene.blend`](v05/scene.blend)、[`v05/overview.png`](v05/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `55a7de0f40cc4d81ae0c30e779c894b47f3f8fb8f58c7d2ec386916433405399`；PNG SHA `daf2a49a5bc5d540097091212649088efcbd88e791cc9434c84ccd0bf40fc6dc`。`v05/target_audit.json` 仅审核 8 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/02_robotics/stage5_source_v04_v05_LOCAL.png` 不提交。

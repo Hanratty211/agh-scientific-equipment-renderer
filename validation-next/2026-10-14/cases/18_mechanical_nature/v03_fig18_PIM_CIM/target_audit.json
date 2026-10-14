@@ -1,0 +1,17 @@
+{
+  "case": "18_mechanical_nature",
+  "scene_sha256": "46c7df65da9f29cb750858b83adce6f8822aa76dcd436137a6e4335cc2de962e",
+  "checks": {
+    "fig18_face_dimensions_metadata": true,
+    "seven_plus_seven_strands": true,
+    "no_parent_TypeIV_in_fig18": true,
+    "two_compression_plates": true,
+    "fig18_scope_only": true
+  },
+  "fails": [],
+  "unknown": [
+    "lattice interweave bonds, 3D thickness, plate pressure and memory mechanics unknown"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

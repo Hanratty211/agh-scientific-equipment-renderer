@@ -1,0 +1,21 @@
+{
+  "case": "13_biomed_optics",
+  "scene_sha256": "0f39887cb6f8f4fcf6336c69b95051233fde3c326f0a66ecd2eaca10b6088925",
+  "checks": {
+    "physical_distal_head": true,
+    "distal_window_on_housing": true,
+    "shaft_in_distal_head": true,
+    "independent_rear_ferrule_0": true,
+    "fiber_0_back_ferrule": true,
+    "independent_rear_ferrule_1": true,
+    "fiber_1_back_ferrule": true,
+    "independent_rear_ferrule_2": true,
+    "fiber_2_back_ferrule": true
+  },
+  "fails": [],
+  "unknown": [
+    "internal optic/light transport, sealed insertion depth and viewing-window optics not measured"
+  ],
+  "visual_review": "NOT_PERFORMED",
+  "scope": "selected world-space interfaces/object identities; not image or function"
+}

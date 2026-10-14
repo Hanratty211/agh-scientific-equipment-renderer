@@ -21,3 +21,5 @@
 - 用户随后说明已由**外部人工**逐例实际打开旧版源图/文字和 PNG（非拼图），十例均给出目视缺陷；记录 `EXTERNAL_HUMAN_REVIEW.md`，不与 AGH 数值 audit 合并。先 04 v05→v06，右五蓝软管—中央固芯片左右五外接头—左五绿色 balloon 的外部几何 40/40（`v06/boundary_audit.json`），仍不证明实孔/像素。随后其余九例定点修订：02 v02 audit 上夹头 FAIL→v03；15 v03→v04；其余 v01→v02；20 另加三边封口准备态独立场景。所有保存均在另进程重开渲染、SHA 可复核，主说明 `NEW_VERSION_REVIEW_QUEUE.md`。Computer Use `list_apps` 再失败，因此**新的十例 PNG 均待外部人工再审，不得写验收**。来源 PDF/源图/含源图画布均未计划进 Git。
 
 - 第四阶段：第二轮用户转述的**外部复核**十例目视判词在 `EXTERNAL_HUMAN_REVIEW.md` 第二表，结构核查分栏。八例又另存：02 v04、08 v03、13 v03、14 v03、16 v03、17 v03、20 v03、15 v05；04 v06 外部称关系可读但非通过，未改；18 下载补充 PDF 定位 Fig17–20 图注，但 AGH 看图故障故 PIM 不建。十例来源—旧—新画布本地，`STAGE4_REVIEW_QUEUE.md` 提供逐条链接/哈希，`STAGE4_EXECUTION.md` 记录独立重开及 QA。**新八图像素仍待外部再次复核**。文件清单及提交/推送须另行核验。
+
+- 第五阶段起点 main `86840ba…`，第三轮**外部复核** stage4 PNG 与 Fig17–20 像素判词已分离数值写入 `EXTERNAL_HUMAN_REVIEW.md`；另存 02/13/14/20 新版与 16 v04 FAIL→v05 版本，18 基于 Fig18 单目标独立候选。十例最新源—旧—新链接/哈希在 `STAGE5_REVIEW_QUEUE.md`；AGH GUI 仍故障，**所有新 PNG 待外部再次复核**。v02 parent-material 与制造过程态仍保留。详见 `STAGE5_EXECUTION.md`；本次 Git 结果待单独验证。

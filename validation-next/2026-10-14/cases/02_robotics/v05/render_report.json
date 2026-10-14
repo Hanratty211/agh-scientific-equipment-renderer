@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/02_robotics/v05/scene.blend",
+  "scene_sha256": "55a7de0f40cc4d81ae0c30e779c894b47f3f8fb8f58c7d2ec386916433405399",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/02_robotics/v05/overview.png",
+  "png_sha256": "daf2a49a5bc5d540097091212649088efcbd88e791cc9434c84ccd0bf40fc6dc",
+  "objects": 20,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

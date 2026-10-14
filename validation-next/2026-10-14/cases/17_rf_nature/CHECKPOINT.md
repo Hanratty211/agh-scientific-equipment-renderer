@@ -18,3 +18,6 @@ DOI: https://doi.org/10.1038/s41598-026-39831-7。日期 2026-02-13。依据：F
 ### 第二轮外部复核后：`v03` 候选（旧版不覆盖）
 外部复核实际逐张目视旧 `v02` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v02/scene.blend` 另存 `v03/scene.blend`；**独立 Blender 进程重新打开**并写出 `v03/overview.png`。场景 SHA256 `e58495116ea62f8f880dcb9ec4cab15e9fd57f34f48b455781b42e6b1813779a`；PNG SHA256 `b66c011a53de07c58c5ddee27ac05a3ced92104d8ef76b818f67d743b36ba557`。目标结构检查 `v03/target_audit.json` 5 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/17_rf_nature/stage4_source_v02_v03_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。
 Fig.1a–d 表示基板与接地层是有层次的：本轮按同一 laminate 接触而非把有据两材料强合成同材；馈线铜迹线只作示意，RF 匹配未知。
+
+### 第三轮外部复核：保留 `v03` 候选，不扩范围
+审阅者：**外部复核**，实际逐张看当前源图/渲染，意见见 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表；该版尚未最终验收。本轮不改模型、不重渲旧版。独立本地三栏 `../../demo-assets/17_rf_nature/stage5_source_v02_v03_LOCAL.png` 仅供本地复核。有限结构 QA 不构成视觉通过。
