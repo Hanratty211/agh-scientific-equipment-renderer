@@ -11,3 +11,5 @@
 - 总表 `COMPARISON_INDEX.md` / `REVIEW_MATRIX.md` 可逐例跳到 DOI/依据/首版/脚本/场景/审阅边界；出版方原图仅本地保留。完整十例最新版对比仍缺八例修订及十例逐例独立图像审阅；内容不可表述为已完成验证。
 
 - Git 公开范围：尚未核出版方原图及 PDF 再分发许可，不提交 `sources/`、`demo-assets/*/source/*.png`、整页图或源裁图；可提交本人生成的脚本、场景、PNG、对比的**非原图两列版本**及文字索引，但现有三/四列比较含原图，也暂不提交。构建失败日志与缓存不提交，运行时结果摘要/哈希保留。
+
+- Git 结果补记：仅列明的 79 个授权可公开成果文件（见 `GIT_FILE_MANIFEST.txt`）提交 `3bc2f58c07ae72292421f0f465dcc07a89a7d5ba` 并成功 `git push origin main`；`git ls-remote origin refs/heads/main` 返回同 SHA。未 add 全部文件；未包含源 PDF/出版方 PNG/对照中源图、运行日志/缓存；这些仍在本地当前 main 工作树、远端无法直接看原文裁图。仓库历史与协作者分支未动。
