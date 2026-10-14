@@ -5,6 +5,7 @@ Uses evaluated mesh geometry and actual curve/beam ends. No occlusion, collision
 physics, transport or image clarity verdict. Exit 0 PASS, 2 FAIL, 3 UNVERIFIED.
 """
 import bpy, json, sys, math
+sys.dont_write_bytecode=True
 from pathlib import Path
 from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view

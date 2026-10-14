@@ -1,11 +1,13 @@
 # 科研装置实物三维渲染 Skill 开发项目
 
-## 最新交付（2026-10-12）
+## 规范独立 Skill 包（2026-10-14）
 
-- [科研装置渲染 Skill v1.0 源码](skills/agh-scientific-equipment-renderer/SKILL.md)（源包 commit `e764812`；已受管安装，后续新轮次 `skill_read` 实际读到 v1.0 入口；[运行时安装与读取记录](public-validation-11-20/RUNTIME_SKILL_V10_RECORD.md)）· [实物形态与完整接口按需参考](skills/agh-scientific-equipment-renderer/references/physical_equipment_and_interfaces.md) · [安装前源码沿革](skills/agh-scientific-equipment-renderer/PROVENANCE.md)
-- [六例实物与接口修订 R4：图件、可编辑场景及审查索引](public-validation-11-20/GITHUB_DELIVERY_R4.md)（该交付时 Skill v0.7；旧档案不改写为 v1.0 渲染）
+- **唯一规范源码**：[根目录 `agh-scientific-equipment-renderer/`](agh-scientific-equipment-renderer/README.md)；[入口](agh-scientific-equipment-renderer/SKILL.md) · [版本与安装状态边界](agh-scientific-equipment-renderer/PROVENANCE.md)。完整拷贝此目录即可读方法与运行合成测试；旧 `skills/agh-scientific-equipment-renderer/` 仅是 Git 历史，不是第二个安装源。
+- [案例证据档案](validation-next/2026-10-14/skill-evidence/README.md)保留 v1.0/11–20 及新十例证据，与独立 Skill 分开；[十例验证工程](validation-next/2026-10-14/STAGE9_REVIEW_QUEUE.md)的 PNG/审阅者/未知状态保持原样。出版方 PDF、原图、含原图画布只本地，不发布。
+- 之前 v1.0 运行时曾加载 revision `dd9d764…`；v1.1 从 main `a0b946b…` 发布源码，但同名受管更新返回 `SKILL_TARGET_CONFLICT`，**没有 v1.1 运行时加载证据**。安装需 AGH 合法受管流程解决冲突，不用复制/删旧安装绕过。
+- 历史六例 R4 归档属于 v0.7 时代，其记录见 Git 历史和 `skill-evidence/` 的旧索引；此稀疏 main 工作树未检出该目录，不能误作当前规范 Skill 包或可用链接。
 
-以下保留项目早期任务与案例记录；当前交付状态以以上索引及各轮检查点为准。
+以下保留项目早期任务与案例记录；**以下旧交付属于历史时期**，当前 Skill 规范源以上述根目录为准。
 
 ## 任务目标（当前轮次）
 

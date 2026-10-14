@@ -1,6 +1,6 @@
 # v1.1 逐篇原文—生成图审查、路由台账与演示资产
 
-此页是**工作流**，不是对既有十例旧图的追加目视认可。对照画布由主场景/PNG之外的图片处理流程生成，具体十例来源及审阅结果见 [十例证据台账](validation_2026_10_14.md)。
+此页是**通用工作流**，不是案例证据或对任何已生成图的目视认可。对照画布可由场景/PNG 之外的独立图片排版流程产生；不得反推一定调用了本 Skill 的可选脚本。
 
 ## 每篇一条可核审查记录（四种输入同一字段）
 
@@ -20,7 +20,7 @@
 
 `route_ledger` 每行：`session/round, task/input(A–D), requested deliverable, loaded skill name+revision+实际 skill_read 时点, SKILL.md 指令所选步骤, 实际调用的脚本/Blender/Computer Use/Pillow, 输出路径+SHA, image reviewer, limits`；若某步骤是**独立**自写的图片排版，不将其记为“Skill 内脚本自动生成”，更不将仅推荐的 `review_images.py` 记为已调用。查不到具体调用时写“调用未知/无证据”。后续安装版在**下一轮确切 skill_read** 前记“源码更新/受管安装待验证”，不要偷换。
 
-已核这批：`RUN_V01.md` 和 `BATCH_STATUS.md` 记录当时 AGH 的 `skill_read` v1.0 revision `dd9d764…`；案例的 `build_cases.py`、`build_more.py`、`render_core.py` 在批次目录，由 Blender 生成 v01 scene；`render_saved.py` **独立进程重开**保存场景出 PNG/报告。后续 `revise_*`、`audit_stage*`、版本内报告做专项修订/审计。这说明十例**在 v1.0 已加载情况下**按其路线建模，不意味着调用了 Skill 自带 `blender_core.py`。原文—渲染三栏、缩略索引系后续用图片排版单独输出到 `demo-assets/` 的比较工件；Skill v1.0 只规定可对照、提供**可选** `scripts/review_images.py`，实际运行记录没有证明这批比较使用了该脚本，也不证明由 Skill 自带函数自动生成。比较画布含论文源图，公开 Git 只收自制场景、PNG、无来源复制的自制比较图和文字索引。`STAGE8/9` 的纯自制 PNG 对比与 `*_LOCAL.png` 含源画布要分开。
+本包仅提供方法和可选工具（例如 `scripts/review_images.py`）；记录 `skill_read` 与**实际**运行的脚本、命令、版本和输出哈希。曾经的项目、独立 Blender 建模与图片排版，均不能因为采纳本工作流便记为本包脚本的直接产物。含出版方图片的画布只能留本地；仅自制无源图的版本前后对照适合公开。
 
 ## 功能演示视频保留清单（非自动视频生成）
 

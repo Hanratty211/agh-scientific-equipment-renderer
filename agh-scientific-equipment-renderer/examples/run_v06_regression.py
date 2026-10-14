@@ -2,7 +2,9 @@
 """Tiny synthetic PASS/FAIL/UNKNOWN regressions; no old-case render or visual acceptance.
 python3 examples/run_v06_regression.py --blender /path/to/Blender --report /tmp/agh-v06-results.json
 """
-import argparse,copy,json,subprocess,tempfile,sys
+import argparse,copy,json,subprocess,tempfile,sys,os
+sys.dont_write_bytecode=True
+os.environ['PYTHONPYCACHEPREFIX']=os.environ.get('PYTHONPYCACHEPREFIX','/tmp/agh-equipment-pycache')
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -41,6 +43,8 @@ record_case('unknown_size_basis',lambda d:d['components'][0].__setitem__('size_b
 record_case('nonphysical_medium_not_inferred',lambda d:(d['connections'][0].__setitem__('kind','field'),d['connections'][0].__setitem__('medium','unknown')),'UNKNOWN','NONPHYSICAL_ROUTE_OBJECT')
 with tempfile.TemporaryDirectory() as tmp:
  tmp=Path(tmp);scene=tmp/'fixture.blend';make=ROOT/'examples/make_synthetic_scene.py';audit=ROOT/'scripts/audit_saved_scene.py';label=ROOT/'scripts/make_svg_labels.py'
+ # Blender's embedded Python may not honor PYTHONPYCACHEPREFIX after startup.
+ # All child scripts that import local helpers disable writing bytecode explicitly.
  build=subprocess.run([args.blender,'--background','--python',str(make),'--',str(scene)],capture_output=True,text=True)
  rows.append({'name':'make_scene','expected_exit':0,'actual_exit':build.returncode,'pass':build.returncode==0 and scene.exists()})
  if scene.exists():

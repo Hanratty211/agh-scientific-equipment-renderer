@@ -3,7 +3,7 @@
 behavior_tests.py — 反例最小行为验证（真实 Blender 运行）
 ==========================================================
 针对外部核查指出的三个反例，验证修复后的 blender_core 行为。
-每个测试输出 PASS/FAIL + 实际数值，写入同目录 behavior_results.txt 并保留。
+每个测试输出 PASS/FAIL + 实际数值；运行日志写到明确指定的包外路径（默认临时目录），不向发布包写产物。
 
 运行（headless）：
     /Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup --python behavior_tests.py
@@ -20,16 +20,18 @@ behavior_tests.py — 反例最小行为验证（真实 Blender 运行）
 """
 import os
 import sys
+sys.dont_write_bytecode=True
 import math
 import bpy
 import mathutils
 
-# 允许把本文件放在 skill 根目录或任意路径；从脚本所在目录导入 blender_core
+# Import helper without writing a bytecode cache into the distributable folder.
 _here = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(_here, "scripts"))
 import blender_core as bc  # noqa: E402
 
-OUT = os.path.join(_here, "behavior_results.txt")
+import tempfile
+OUT = os.environ.get('AGH_BEHAVIOR_REPORT', os.path.join(tempfile.gettempdir(), 'agh-equipment-behavior-results.txt'))
 _lines = []
 def log(msg):
     print(msg)

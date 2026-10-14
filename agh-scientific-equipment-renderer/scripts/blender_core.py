@@ -3,10 +3,10 @@
 blender_core.py — 科研装置三维渲染可复用助手（v0.5 试用；最早抽取于 v0.1）
 ============================================================
 用途：Blender 几何/材质/相机/布尔/核查基础助手。
-从 case-1（⁸⁷Sr 冷冻光晶格钟）build_blender_v16.py 中提取，
-已去除 case-1 特定对象名与硬编码坐标（那些留在案例目录，不进入通用默认）。
+通用可复用的 Blender 几何助手，不含任何论文场景的物件名、路径或空间坐标；
+用户需根据当前来源设置尺寸与端口，不可把函数参数误认为已验证的器件实例。
 
-设计原则（详见 ../references/pitfalls_and_fixes.md）：
+设计原则（详见 ../references/physical_equipment_and_interfaces.md 与当前任务证据）：
   P2  光束端点记录为对象自定义属性（核查用中轴线，非顶点云）
   P5  独立材质 + Principled 透射输入名兼容（Blender 4.x/5.x）
   P8  独立复算（copy + 布尔 INTERSECT EXACT + bmesh.calc_volume）
