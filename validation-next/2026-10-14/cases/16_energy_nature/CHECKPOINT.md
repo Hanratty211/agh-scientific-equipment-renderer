@@ -21,3 +21,6 @@ DOI: https://doi.org/10.1038/s41467-025-64306-0。日期 2025-10-17。依据：M
 ### 第三轮外部复核后 `v05` 独立候选（不自动验收）
 旧 `v03` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v05/scene.blend`](v05/scene.blend)、[`v05/overview.png`](v05/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `050816a8955971dfe3c35e184a6a4f9aa23b217c53c08dbce871a828ea005e43`；PNG SHA `e4d91f20ab5e9abd9fed1a898d81942811d121e352802a5f9b3f3d2731a7772e`。`v05/target_audit.json` 仅审核 10 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/16_energy_nature/stage5_source_v03_v05_LOCAL.png` 不提交。
 失败史：v04 两个气源端 `source_cap` 数值 FAIL，保留 v04 与 `v04/target_audit.json`；v05 仅从 v04 改两个管首端世界作用面，十项新审计零 FAIL，但目视仍待。上游气源/套头的外观明确是建模假设。
+
+### 第四轮外部复核：保留 `v05` 原候选
+审阅者：**外部复核**，实际逐张目视 stage5 图/源，判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；本轮**未改模型/PNG、不宣称验收**。本地源—旧—当前画布 `../../demo-assets/16_energy_nature/stage6_source_v04_v05_LOCAL.png` 仅用于本地复核。

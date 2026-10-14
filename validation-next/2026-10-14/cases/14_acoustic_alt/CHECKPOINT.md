@@ -20,3 +20,7 @@ DOI: https://doi.org/10.1038/s41598-025-24666-5。日期 2025-11-19。依据：F
 
 ### 第三轮外部复核后 `v04` 独立候选（不自动验收）
 旧 `v03` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `82301c961ff349faabd2d043486c61e5752dbcb042bc8154d530415c513cdbbc`；PNG SHA `4c50a08bb186569d18954ec3ae65f292a14bfc96c67b308526ba7940bdc9f940`。`v04/target_audit.json` 仅审核 3 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/14_acoustic_alt/stage5_source_v03_v04_LOCAL.png` 不提交。
+
+### 第四轮外部人工视觉复核后 Stage6 `v05` 候选（待看新图）
+外部复核从磁盘逐张阅读 `v04` 与源图的判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；不对本次新图外推“通过”。新场景 [`v05/scene.blend`](v05/scene.blend)、独立重载图 [`v05/overview.png`](v05/overview.png)；scene SHA256 `3d6b7d277d73de36802ef72a78d833e50763823508640ca25ba23f7544e2b7fe`、PNG SHA256 `2b1dd837e8eb14a8a8c1ba8b886bff17fabb393bfc185d7c9e4d69203f1fc8d5`。`v05/target_audit.json` 仅 5 个已声明几何断言 FAIL=[]，不测全图像素/内部功能；审阅者此轮：AGH 脚本/局部结构，**新图外部复核待审**。本地含源图三栏 `../../demo-assets/14_acoustic_alt/stage6_source_v04_v05_LOCAL.png` 不提交。
+Fig1b 图注确认 Tiny-Lev 顶板钻孔；v05 对板真实布尔切孔，独立重载后一条轴心射线未撞网格、离轴射线撞板（仅网格射线，不证图像可辨或真实测量）。

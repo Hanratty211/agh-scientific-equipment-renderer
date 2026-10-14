@@ -23,3 +23,5 @@
 - 第四阶段：第二轮用户转述的**外部复核**十例目视判词在 `EXTERNAL_HUMAN_REVIEW.md` 第二表，结构核查分栏。八例又另存：02 v04、08 v03、13 v03、14 v03、16 v03、17 v03、20 v03、15 v05；04 v06 外部称关系可读但非通过，未改；18 下载补充 PDF 定位 Fig17–20 图注，但 AGH 看图故障故 PIM 不建。十例来源—旧—新画布本地，`STAGE4_REVIEW_QUEUE.md` 提供逐条链接/哈希，`STAGE4_EXECUTION.md` 记录独立重开及 QA。**新八图像素仍待外部再次复核**。文件清单及提交/推送须另行核验。
 
 - 第五阶段起点 main `86840ba…`，第三轮**外部复核** stage4 PNG 与 Fig17–20 像素判词已分离数值写入 `EXTERNAL_HUMAN_REVIEW.md`；另存 02/13/14/20 新版与 16 v04 FAIL→v05 版本，18 基于 Fig18 单目标独立候选。十例最新源—旧—新链接/哈希在 `STAGE5_REVIEW_QUEUE.md`；AGH GUI 仍故障，**所有新 PNG 待外部再次复核**。v02 parent-material 与制造过程态仍保留。详见 `STAGE5_EXECUTION.md`；本次 Git 结果待单独验证。
+
+- Stage6：第四轮外部人工目视 stage5 十例结论见 `EXTERNAL_HUMAN_REVIEW.md`；只改 13/14/18，小版/审计反例/最新队列见 `STAGE6_EXECUTION.md` 与 `STAGE6_REVIEW_QUEUE.md`。新三图待外部再看；源 PDF/原图/含源画布始终本地。提交 SHA 另核。

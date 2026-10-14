@@ -20,3 +20,7 @@ DOI: https://doi.org/10.1038/s44303-026-00161-y。日期 2026-05-04。依据：F
 
 ### 第三轮外部复核后 `v04` 独立候选（不自动验收）
 旧 `v03` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `0f39887cb6f8f4fcf6336c69b95051233fde3c326f0a66ecd2eaca10b6088925`；PNG SHA `ea10603dd1e22556e14c9e7f70e5a625c42c3106de58113df40707d077700f73`。`v04/target_audit.json` 仅审核 9 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/13_biomed_optics/stage5_source_v03_v04_LOCAL.png` 不提交。
+
+### 第四轮外部人工视觉复核后 Stage6 `v06` 候选（待看新图）
+外部复核从磁盘逐张阅读 `v04` 与源图的判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；不对本次新图外推“通过”。新场景 [`v06/scene.blend`](v06/scene.blend)、独立重载图 [`v06/overview.png`](v06/overview.png)；scene SHA256 `f0be0382f165d6a62d25d2ce3d3139f8cc3979567d455f873c98e15c325e1815`、PNG SHA256 `9e794e7126e831b74ea594d0ac90b5165c22cfb629cc801fc6255f92d2645433`。`v06/target_audit.json` 仅 5 个已声明几何断言 FAIL=[]，不测全图像素/内部功能；审阅者此轮：AGH 脚本/局部结构，**新图外部复核待审**。本地含源图三栏 `../../demo-assets/13_biomed_optics/stage6_source_v04_v06_LOCAL.png` 不提交。
+中间 v05 场景/图/报告独立保留；第一版审计错误使用旋转 cylinder 的 local dimensions.y，纠正成世界 y 后 v05 也通过有限长度项；v06 是探头轮廓再延长，并非证实 v05 仍断连。Fig1a 外形与 Fig1c 三个后端纤维分别取证，细长头尺寸仍假设。

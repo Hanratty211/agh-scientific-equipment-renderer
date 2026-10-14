@@ -38,3 +38,7 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 - 十例纯自制最新版 .blend/PNG/哈希/旧版外部目视与新图待审状态：`../STAGE5_REVIEW_QUEUE.md`。04 v01→v06 保留旧失败与候选；16 v04 两气源端审计 FAIL→v05 修端点也不得剪成视觉成功。
 - 18 Fig17 parent Type IV (v02) 与 Fig18 交织 PIM/CIM+压板 (v03_fig18_PIM_CIM) **不同来源/目标**；Fig19/20 未建。20 v04 最终封与旧 `v02_preseal_detail` 预封分不同过程画面。
 - 本地 `stage5_source_*_LOCAL.png` 含论文原页/文字，连同补图 PDF/PNG 不纳入 Git 或公开视频。AGH GUI 截屏不可用，未伪称界面截图。
+
+## Stage6 新增候选素材/实际失败史
+- 自制纯渲染：13 `../cases/13_biomed_optics/v05/overview.png`→`v06/overview.png`（两版不同轮廓）；14 `../cases/14_acoustic_alt/v05/overview.png`（真顶板孔）；18 `../cases/18_mechanical_nature/v03_fig18_PIM_CIM/overview.png` 直杆错误版→`v04_fig18_woven/overview.png` 波纹候选。各 `render_report.json` 和 `target_audit.json` 均在版本目录；新图均待外审。
+- 本地含原图三栏路径/独立自制 scene/PNG 哈希见 `../STAGE6_REVIEW_QUEUE.md`。出版方 PDF/图片/含图画布不入 Git 或公开视频。04/02/08/15/16/17/20 不重渲旧版。

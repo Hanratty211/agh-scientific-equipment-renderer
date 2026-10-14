@@ -1,0 +1,29 @@
+{
+  "case": "18_mechanical_nature",
+  "scene_sha256": "bf545ba23da3adc4659665e5690f6eea10a90f4aefe4eb015318c5d626cd0995",
+  "checks": {
+    "seven_continuous_wavy_families": true,
+    "straight_v03_rods_removed": true,
+    "PIM_wavy_visible_strand_0_single_bezier": true,
+    "CIM_wavy_cross_strand_0_single_bezier": true,
+    "PIM_wavy_visible_strand_1_single_bezier": true,
+    "CIM_wavy_cross_strand_1_single_bezier": true,
+    "PIM_wavy_visible_strand_2_single_bezier": true,
+    "CIM_wavy_cross_strand_2_single_bezier": true,
+    "PIM_wavy_visible_strand_3_single_bezier": true,
+    "CIM_wavy_cross_strand_3_single_bezier": true,
+    "PIM_wavy_visible_strand_4_single_bezier": true,
+    "CIM_wavy_cross_strand_4_single_bezier": true,
+    "PIM_wavy_visible_strand_5_single_bezier": true,
+    "CIM_wavy_cross_strand_5_single_bezier": true,
+    "PIM_wavy_visible_strand_6_single_bezier": true,
+    "CIM_wavy_cross_strand_6_single_bezier": true,
+    "plates_retained": true,
+    "no_parent_coupon": true
+  },
+  "fails": [],
+  "unknown": [
+    "20x20 mm face only; true internal interweave junctions and depth unverified; no strength/memory test"
+  ],
+  "visual_review": "PENDING_NEW_EXTERNAL"
+}

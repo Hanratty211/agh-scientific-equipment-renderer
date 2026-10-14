@@ -21,3 +21,5 @@
 外部复核逐条判词、目视/自动核查分栏：`EXTERNAL_HUMAN_REVIEW.md`。本轮另存 8 个候选版；04 v06 不变、18 仍 parent-material v02；十例最新源依据→被审旧版→当前版→有限 QA/哈希/本地并排画布见 `STAGE4_REVIEW_QUEUE.md`，替代本表早期版本的“当前”列。**新 PNG 尚未再次目视验收。**
 
 第三轮外部复核最新来源—旧版—当前版索引 `STAGE5_REVIEW_QUEUE.md`，旧本表保留历史。18 的输入此轮另以 Fig.18 作为有图锚点，旧 Type IV v02 不冒充 PIM。
+
+第四轮外部复核后的当前版/哈希/本地单例源—旧—新对照以 `STAGE6_REVIEW_QUEUE.md` 为准；此表先前版本保留历史，不误称最新版或视觉通过。

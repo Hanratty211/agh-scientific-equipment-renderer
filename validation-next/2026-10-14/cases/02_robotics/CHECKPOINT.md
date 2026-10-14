@@ -22,3 +22,6 @@ DOI: https://doi.org/10.1038/s41467-025-56025-3。日期 2025-02-06。依据：F
 
 ### 第三轮外部复核后 `v05` 独立候选（不自动验收）
 旧 `v04` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v05/scene.blend`](v05/scene.blend)、[`v05/overview.png`](v05/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `55a7de0f40cc4d81ae0c30e779c894b47f3f8fb8f58c7d2ec386916433405399`；PNG SHA `daf2a49a5bc5d540097091212649088efcbd88e791cc9434c84ccd0bf40fc6dc`。`v05/target_audit.json` 仅审核 8 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/02_robotics/stage5_source_v04_v05_LOCAL.png` 不提交。
+
+### 第四轮外部复核：保留 `v05` 原候选
+审阅者：**外部复核**，实际逐张目视 stage5 图/源，判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；本轮**未改模型/PNG、不宣称验收**。本地源—旧—当前画布 `../../demo-assets/02_robotics/stage6_source_v04_v05_LOCAL.png` 仅用于本地复核。

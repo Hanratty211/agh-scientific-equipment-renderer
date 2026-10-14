@@ -1,0 +1,16 @@
+{
+  "case": "13_biomed_optics",
+  "scene_sha256": "f0be0382f165d6a62d25d2ce3d3139f8cc3979567d455f873c98e15c325e1815",
+  "checks": {
+    "three_independent_rear_fibers": true,
+    "shaft_to_sleeve": true,
+    "slender_head_exists": true,
+    "longer_than_previous_short_cap": true,
+    "front_window_on_head_axis": true
+  },
+  "fails": [],
+  "unknown": [
+    "three rear fibers do not prove internal coupling; distal optical design and exact dimensions unknown"
+  ],
+  "visual_review": "PENDING_NEW_EXTERNAL"
+}

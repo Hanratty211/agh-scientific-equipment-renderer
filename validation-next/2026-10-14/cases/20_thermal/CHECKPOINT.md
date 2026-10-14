@@ -22,3 +22,6 @@ DOI: https://doi.org/10.1038/s41467-025-56960-1。日期 2025-02-17（Crossref�
 ### 第三轮外部复核后 `v04` 独立候选（不自动验收）
 旧 `v03` 被**外部复核**实际逐张读图的判词在 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表。候选文件 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，由另一 Blender 进程重开已保存场景后渲染。scene SHA `0ef4922e03fbd0d08213539f61c433700f4ec1c9b5ea2ea658fa3115b4838d2e`；PNG SHA `c40b0e9212ab2e0e7db924cec45dc2f4b03948a6d94181a5405936fecf920d2f`。`v04/target_audit.json` 仅审核 4 项可见对象/网格端点，FAIL=[]；非视觉/密封/强度/光电功能证据。**AGH GUI 读取失败，新版无人再次目视，外部复核待审**。本地含原图三栏 `../../demo-assets/20_thermal/stage5_source_v03_v04_LOCAL.png` 不提交。
 v04 最终态新增右端物理箔膜封面及折边；能否目视完全遮住铜网尚未可视复核，`v02_preseal_detail` 原过程态单独保留。
+
+### 第四轮外部复核：保留 `v04` 原候选
+审阅者：**外部复核**，实际逐张目视 stage5 图/源，判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；本轮**未改模型/PNG、不宣称验收**。本地源—旧—当前画布 `../../demo-assets/20_thermal/stage6_source_v03_v04_LOCAL.png` 仅用于本地复核。

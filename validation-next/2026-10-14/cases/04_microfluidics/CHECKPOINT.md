@@ -22,3 +22,6 @@ DOI: https://doi.org/10.1038/s41526-025-00470-3。日期 2025-05-06。依据：F
 
 ### 第三轮外部复核：保留 `v06` 候选，不扩范围
 审阅者：**外部复核**，实际逐张看当前源图/渲染，意见见 `../../EXTERNAL_HUMAN_REVIEW.md` 第三表；该版尚未最终验收。本轮不改模型、不重渲旧版。独立本地三栏 `../../demo-assets/04_microfluidics/stage5_source_v01_v06_LOCAL.png` 仅供本地复核。有限结构 QA 不构成视觉通过。
+
+### 第四轮外部复核：保留 `v06` 原候选
+审阅者：**外部复核**，实际逐张目视 stage5 图/源，判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；本轮**未改模型/PNG、不宣称验收**。本地源—旧—当前画布 `../../demo-assets/04_microfluidics/stage6_source_v01_v06_LOCAL.png` 仅用于本地复核。

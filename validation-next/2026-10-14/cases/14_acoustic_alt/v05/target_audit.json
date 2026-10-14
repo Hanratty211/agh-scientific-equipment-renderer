@@ -1,0 +1,16 @@
+{
+  "case": "14_acoustic_alt",
+  "scene_sha256": "3d6b7d277d73de36802ef72a78d833e50763823508640ca25ba23f7544e2b7fe",
+  "checks": {
+    "bore_and_target_xy": true,
+    "ray_xy_centered": true,
+    "center_ray_passes_real_aperture": true,
+    "offaxis_ray_hits_solid_plate": true,
+    "lens_above_target": true
+  },
+  "fails": [],
+  "unknown": [
+    "hole radius/photographic appearance approximate; optical focus, spot wavelength and sound pressure not verified"
+  ],
+  "visual_review": "PENDING_NEW_EXTERNAL"
+}
