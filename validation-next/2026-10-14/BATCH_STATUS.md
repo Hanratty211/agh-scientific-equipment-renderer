@@ -15,3 +15,5 @@
 - Git 结果补记：仅列明的 79 个授权可公开成果文件（见 `GIT_FILE_MANIFEST.txt`）提交 `3bc2f58c07ae72292421f0f465dcc07a89a7d5ba` 并成功 `git push origin main`；`git ls-remote origin refs/heads/main` 返回同 SHA。未 add 全部文件；未包含源 PDF/出版方 PNG/对照中源图、运行日志/缓存；这些仍在本地当前 main 工作树、远端无法直接看原文裁图。仓库历史与协作者分支未动。
 
 - 2026-10-14 续轮：04 v04 数值检测五个泵端 FAIL，v05 修订后外部边界 5×6 项零 FAIL（非内孔/像素 PASS）；15 v03 分层候选独立重载。十例单幅私有对照画布已生成，**Computer Use windows/apps discovery failed，未能实际读新的十例像素**，详见 `INDIVIDUAL_REVIEW_STATUS.md`。本轮提交后再记 SHA/推送，不得当人工验收。
+
+- 后续 AGH `computer_use.list_apps` 再测仍 `Computer Use apps discovery failed`；没有恢复逐例像素访问。外部阻塞是 GUI 发现服务，不是 Blender 渲染或文件缺失。持续尝试同一捕获将不会产生审阅证据。
