@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v03/scene.blend",
+  "scene_sha256": "916c34984166b9f69ff2ac5105f1aba0020b24c7c0910922130a834e6000cd8d",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/15_biomed_energy/v03/overview.png",
+  "png_sha256": "54dfb2959a90bb659ad4ab0044d4f3891a1f73421fc4fa606cd0f596761b89cf",
+  "objects": 13,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

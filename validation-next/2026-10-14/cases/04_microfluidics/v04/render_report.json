@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v04/scene.blend",
+  "scene_sha256": "157ba0ce92cd759c91b813b15af8514e12cff34fd4941dee35566c5fff295906",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v04/overview.png",
+  "png_sha256": "dcedc27c26896a5f53d8df5ca2b16d722812142ee2082411ae7588d27c58a97e",
+  "objects": 64,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

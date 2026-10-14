@@ -1,0 +1,213 @@
+{
+  "source_scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/04_microfluidics/v05/scene.blend",
+  "scene_sha256": "0c04967e4a8e4ebe7ca8619731f805bda66eac3e8cbe2ff8a86f18c2c5ed1dcb",
+  "results": [
+    {
+      "channel": 0,
+      "checks": {
+        "syringe_hub_to_blue": true,
+        "blue_to_outer_fitting": true,
+        "right_fitting_to_chip": true,
+        "chip_to_left_fitting": true,
+        "left_outer_fitting_to_green": true,
+        "five_y_distinct": true
+      },
+      "inlet_endpoints": [
+        [
+          0.6200000047683716,
+          0.07000000774860382,
+          0.8500000238418579
+        ],
+        [
+          -0.39500001072883606,
+          -0.6899999976158142,
+          0.14499999582767487
+        ]
+      ],
+      "outlet_start": [
+        -2.005000114440918,
+        -0.6899999976158142,
+        0.14499999582767487
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "pump_outer_y": 0.07000000774860382
+    },
+    {
+      "channel": 1,
+      "checks": {
+        "syringe_hub_to_blue": true,
+        "blue_to_outer_fitting": true,
+        "right_fitting_to_chip": true,
+        "chip_to_left_fitting": true,
+        "left_outer_fitting_to_green": true,
+        "five_y_distinct": true
+      },
+      "inlet_endpoints": [
+        [
+          1.25,
+          0.07000000774860382,
+          0.8500000238418579
+        ],
+        [
+          -0.39500001072883606,
+          -0.8700000047683716,
+          0.14499999582767487
+        ]
+      ],
+      "outlet_start": [
+        -2.005000114440918,
+        -0.8700000047683716,
+        0.14499999582767487
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "pump_outer_y": 0.07000000774860382
+    },
+    {
+      "channel": 2,
+      "checks": {
+        "syringe_hub_to_blue": true,
+        "blue_to_outer_fitting": true,
+        "right_fitting_to_chip": true,
+        "chip_to_left_fitting": true,
+        "left_outer_fitting_to_green": true,
+        "five_y_distinct": true
+      },
+      "inlet_endpoints": [
+        [
+          1.8799999952316284,
+          0.07000000774860382,
+          0.8500000238418579
+        ],
+        [
+          -0.39500001072883606,
+          -1.0499999523162842,
+          0.14499999582767487
+        ]
+      ],
+      "outlet_start": [
+        -2.005000114440918,
+        -1.0499999523162842,
+        0.14499999582767487
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "pump_outer_y": 0.07000000774860382
+    },
+    {
+      "channel": 3,
+      "checks": {
+        "syringe_hub_to_blue": true,
+        "blue_to_outer_fitting": true,
+        "right_fitting_to_chip": true,
+        "chip_to_left_fitting": true,
+        "left_outer_fitting_to_green": true,
+        "five_y_distinct": true
+      },
+      "inlet_endpoints": [
+        [
+          2.509999990463257,
+          0.07000000774860382,
+          0.8500000238418579
+        ],
+        [
+          -0.39500001072883606,
+          -1.2300000190734863,
+          0.14499999582767487
+        ]
+      ],
+      "outlet_start": [
+        -2.005000114440918,
+        -1.2300000190734863,
+        0.14499999582767487
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "pump_outer_y": 0.07000000774860382
+    },
+    {
+      "channel": 4,
+      "checks": {
+        "syringe_hub_to_blue": true,
+        "blue_to_outer_fitting": true,
+        "right_fitting_to_chip": true,
+        "chip_to_left_fitting": true,
+        "left_outer_fitting_to_green": true,
+        "five_y_distinct": true
+      },
+      "inlet_endpoints": [
+        [
+          3.140000104904175,
+          0.07000000774860382,
+          0.8500000238418579
+        ],
+        [
+          -0.39500001072883606,
+          -1.409999966621399,
+          0.14499999582767487
+        ]
+      ],
+      "outlet_start": [
+        -2.005000114440918,
+        -1.409999966621399,
+        0.14499999582767487
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "pump_outer_y": 0.07000000774860382
+    }
+  ],
+  "fails": [],
+  "unknown": "No bores/internal fluid channel or joint seal checks; pixel visibility and scientific correctness not tested"
+}

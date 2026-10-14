@@ -11,3 +11,8 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 |其余六例|相应 `<id>/source/` 和 `../cases/<id>/v01/overview.png`|待逐例查核|无人工/外部模型确认|../VISUAL_REVIEW_V01.md|
 
 总览拼图 `v01_contact_sheet.png`（捕获 3378），版本逐文件独立，不在无字原图上加字幕。界面截图工具返回仅本会话 artifact，**未取得本地屏幕截图文件**；视频用源PNG与比较画布代替，不冒称截图。已取得 04 的三版比较图及 15 的前后拼图；高质量 16:9 演示版仍缺，不为视频额外高成本重渲。
+
+## 当前轮追加（保留失败及私有源图）
+- 04：`../cases/04_microfluidics/v04/`（泵端 audit 五路 FAIL），`v05/`（5×6 外部边界 audit 0；PNG 未实读），数值报告 `v05/boundary_audit.json`；本地含论文图画布 `04_microfluidics/comparison_source_v01_v03_v04_v05_LOCAL.png`。证据 `../REVISIONS_04_V04_V05.md`。
+- 15：`../cases/15_biomed_energy/v03/`（隔离分层候选，PNG 未实读）；本地含论文图 `15_biomed_energy/comparison_source_v01_v02_v03_LOCAL.png`；证据 `../REVISIONS_15_V03.md`。
+- 十例单幅源—当前版 `*/source_and_current_LOCAL.png` 仅本地，不入 Git；**04/15 两张单幅生成时还是旧 v03/v02**，查看最新要用上面的多栏图。十例具体源/当前链接见 `../INDIVIDUAL_REVIEW_TABLE.md`。GUI Computer Use 窗口发现失败，未得到新截图；不得在视频标'十例已审'。
