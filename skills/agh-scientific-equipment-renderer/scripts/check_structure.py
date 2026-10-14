@@ -99,6 +99,17 @@ def main():
     if not uniq:
         print("  （SKILL.md 未引用 references/scripts 路径）")
 
+    # v1.1: documentary route/port/image negative examples (not Blender hardware validation).
+    v11 = os.path.join(ROOT, 'scripts/test_v11_workflow.py')
+    if not os.path.isfile(v11):
+        failures.append('v1.1 门槛反例脚本缺失')
+    else:
+        proc11 = subprocess.run([sys.executable, v11], capture_output=True, text=True, timeout=30)
+        print('\n=== v1.1 文档门槛与正反例 ===')
+        print(proc11.stdout.strip())
+        if proc11.returncode:
+            failures.append('v1.1 门槛反例未通过：'+proc11.stderr[-300:])
+
     # 通用性（字符串级：case-1 对象名/坐标 不得进通用文件）
     print("\n=== 通用性检查（case-1 对象名/硬编码坐标 是否混入通用默认）===")
     for g in ("SKILL.md", "scripts/blender_core.py"):

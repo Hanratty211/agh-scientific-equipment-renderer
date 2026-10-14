@@ -1,3 +1,14 @@
+# Skill 沿革｜v1.0 历史原样保留；v1.1 新批证据见文首
+
+## 2026-10-14 v1.1 更新的真实边界
+
+- 源码基线 `main` `1ebc00c60374f1371f4f576196384b1fc340cafc`；AGH 先读本仓库 v1.0 源包、十例 `validation-next/2026-10-14` 的构建/比图/外部七轮复核，且实际 `skill_read` v1.0 revision `dd9d764a3ec32396818499f03d5deea81121823bcda3dca07fc33dfb29597cde`。用户另明确指定 `scientific-system-renderer`，宿主本轮直接加载该**不同名称** Skill；它的路由规范仅供本轮执行而不是 AGH 实物 Skill 的运行时替代品。此次目标源码是本仓库 `agh-scientific-equipment-renderer`，不修改外置 Skill 或安装目录。
+- 十例 v01 使用 v1.0 方法并调用 AGH 自写 `build_cases.py`、`build_more.py`、`render_core.py`，独立 `render_saved.py` 出图；逐例审查的来源—旧—新画布是**后续独立图像排版产物**，不是 `review_images.py` 已调用的证据，也不是 Skill 直接生成的图。AGH 早期有实际 Preview 截图，后来 GUI apps discovery 故障，外部人工判词在 `EXTERNAL_HUMAN_REVIEW.md`；外部反馈不可冒作 AGH 实测。参见 [新工作流](references/source_render_and_demo_v11.md)及[十例实证](references/validation_2026_10_14.md)。
+- v1.0 已有“通用方块不可代替笔电、真实作用面/接口、重载及像素核图”原则；新问题显示建模前缺**强制可审核器件/端口表、跨案例辨识门槛、调用归因台账及逐篇源–图记录**，故发布 v1.1 源码步骤而非声称旧规则缺失。示波器是 Fig.1a 示意设备、未在 14 选定 Fig.1c 实拍交付里复刻，作为反例不能称本批已验证。v1.1 无新精确机械 CAD 或功能保证；新旧案例/审阅历史都原样留存。
+- 结构/反例测试、受管安装状态与 Git SHA 只以本轮实际运行/提交记录为准，不能将本源码标题称为已安装且已在后续轮加载。
+
+## 以下保留 v1.0 原历史（下方“当前状态”指其**当时**时点，不覆盖上方）
+
 # Skill v1.0 源码待安装｜编写、更正与 AGH 执行记录
 
 **Skill**：`agh-research-figure-skill/skills/agh-scientific-equipment-renderer/`

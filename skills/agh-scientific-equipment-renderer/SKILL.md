@@ -1,11 +1,17 @@
 ---
 name: agh-scientific-equipment-renderer
-description: 根据公开论文、图版、图注和正文制作有依据的实物三维科研装置场景与低成本预览；先锁整体范围与器件形态，逐跳核真实作用面、孔口、插头、缓冲、可见线路，独立重载场景并核图。复刻实验装置图、三维光路、科研设备可编辑场景或修复实物接口时使用。v1.0 方法发布，不等于工业 CAD、功能安全或跨领域验证。
+description: 根据论文图版、正文制作可编辑实物三维科研装置、光路或连接示意；先核器件身份、差异化外形和真实/明确示意端口，再逐跳建线、独立重载与原文逐篇比图。适用于科研装置渲染、系统实物布置、端口修复和源图—生成图审查；v1.1 方法，不等于精密 CAD 或功能验收。
 ---
 
-# 科研装置三维渲染｜v1.0
+# 科研装置三维渲染｜v1.1
 
 **主目标**：依据指定图版、图注和正文先制作**完整、可编辑的实物三维低成本总览**，再以实际像素迭代。器件类别/可见结构与有据型号决定实物形态；未知品牌外观只作代表性示意。可见接口逐跳验证真实部件作用面、可编辑开孔、插头、缓冲及曲线世界端点/末段切向，不以代理锚点、对象原点、属性或颜色圆头自证连接。详见按需[实物与接口方法](references/physical_equipment_and_interfaces.md)。六例 R1–R4 修复得到代表性低成本预览阶段反馈，但不证明厂家 CAD、内部连通、制造/电气安全、密封或泛化。
+
+## v1.1 强制预建与审查门槛（新增执行表；旧原则仍有效）
+
+**先读**[器件身份与端口门槛](references/identity_port_gate_v11.md)，建模前落盘器件识别表、跨案例差异化/接口清单、逐线连接拓扑与交付/镜头表；身份或端口来源不足标未知/示意并暂停该细节，不能靠两个矩形或 bbox 中心假装笔电/PC/示波器。保存后按[逐篇原文—生成图与演示工作流](references/source_render_and_demo_v11.md)记来源锚点、确切场景/PNG/hash、对应内容、差异、假设、自动/人工双栏及审阅者；10例证据与边界见[2026 十例](references/validation_2026_10_14.md)。缩略拼图只作导航，出版方图及含图比较只留本地。把 `skill_read`、Skill **实际**工具调用、自写建模脚本与独立图片排版分别记入 route ledger，不能把工作流建议冒充该 Skill 的程序调用。演示保留失败版、可编辑场景、局部近景和自制前后图，不只留终版。
+
+以下 v1.0 的范围、实物身份、端口/路径、独立重载和像素分栏原则仍适用；v1.1 将它们前置为可检查的门槛，**不是称 v1.0 原则缺失**。
 
 ## 工作方式
 1. **先定来源与范围**：读目标图版、图注、必要正文/方法（不清楚则查较高清公开图与有关补充材料）；**先按源图/图注/用户范围建立必需组件与关系清单，再建对象**，列身份、形态、连续路径、装配/拆解状态、作用面与未知项；通用仪器方块不能替代源图的笔电、显微镜、注射驱动或有纹理的多层单元。逐条区分 `来源可见 / 正文依据 / 建模假设 / 未定`；材料名称先核正文，纹理、色彩与照片观感不替代来源事实。原图的示意色/插图不当作实物或实测光束颜色；命名差异并列记录。
@@ -21,5 +27,5 @@ description: 根据公开论文、图版、图注和正文制作有依据的实�
 
 ## 适用边界与按需参考
 - 适用于来源清楚的科研装置**示意性三维重建**；不保证精密工程 CAD、真实尺寸、厂家外壳一致或任何领域一键复刻。具体光学型号、透镜曲率、角度、材质配方、采样数、视角数、相机与容差均由**当前任务证据**决定，不设案例默认。
-- [实物与接口方法](references/physical_equipment_and_interfaces.md)供物理外观/线缆/孔口任务按需读取；[工作清单](references/workflow_checklist.md)：按需勾选；[故障经验](references/pitfalls_and_fixes.md)：触发—行动—证据—边界；[按需域检查](references/domain_checks.md)与[项目记录](references/project_record.md)；[证据索引](references/evidence_index.md)及[11–20 公开批次](references/public_validation_11_20.md)：批次简表在 Skill 内自包含，旧案例开发仓库链接是可选档案（拷贝 Skill 后缺少它们不影响工具）；[出处与版本](PROVENANCE.md)：AGH 轨迹及限制。
-- `scripts/blender_core.py` 为已有可复用几何助手，**不要求每个案例都调用**；`scripts/check_structure.py` 做结构/frontmatter/引用与已有反例行为核查。其通过不是跨领域或视觉验收。
+- [v1.1 强制身份/端口表](references/identity_port_gate_v11.md)、[逐篇比图/演示与调用归因](references/source_render_and_demo_v11.md)；[实物与接口方法](references/physical_equipment_and_interfaces.md)供物理外观/线缆/孔口任务按需读取；[工作清单](references/workflow_checklist.md)：按需勾选；[故障经验](references/pitfalls_and_fixes.md)：触发—行动—证据—边界；[按需域检查](references/domain_checks.md)与[项目记录](references/project_record.md)；[证据索引](references/evidence_index.md)及[11–20 公开批次](references/public_validation_11_20.md)：批次简表在 Skill 内自包含，旧案例开发仓库链接是可选档案（拷贝 Skill 后缺少它们不影响工具）；[出处与版本](PROVENANCE.md)：AGH 轨迹及限制。
+- `scripts/blender_core.py` 为已有可复用几何助手，**不要求每个案例都调用**；`scripts/check_structure.py` 做结构/frontmatter/引用、v1.1 识别/端口路由示意正反例与已有 Blender 反例行为核查；也可单跑 `python3 scripts/test_v11_workflow.py`。这些通过不等于实物端口验证、跨领域或视觉验收。
