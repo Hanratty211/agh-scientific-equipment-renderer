@@ -17,6 +17,6 @@
 
 补充 20 制造过程：最终封装主览 `cases/20_thermal/v02/overview.png`，单独预封口剖视 `cases/20_thermal/v02_preseal_detail/overview.png`；不能把未封状态当最终器件。04 新版 `cases/04_microfluidics/v06/boundary_audit.json` 外部几何 40/40，不验实孔/密封/流通或画面。18 改用 Type IV parent-material 试片，原文未将该标准赋予 PIM 样件。
 
-步骤提示：外部审核请逐一打开 `demo-assets/<id>/new_source_v01_<v>_LOCAL.png` 的整幅，尤其逐看 04 v06 的五根右蓝+左绿 balloon 和 13 接头、16 背面气路。返回每例对比结论/缺陷后记录为**新版本外部复核**；未经复核的新图不得写通过。
+步骤提示：外部审核请逐一打开 上表每例列出的 `demo-assets/<id>/new_source_v01_…_LOCAL.png` 整幅（02 为含失败 v02 的四栏专图），尤其逐看 04 v06 的五根右蓝+左绿 balloon 和 13 接头、16 背面气路。返回每例对比结论/缺陷后记录为**新版本外部复核**；未经复核的新图不得写通过。
 
 02 的 v02 曾由独立 audit 发现上夹爪未与试样轴向重叠，保留旧场景及 `v02/target_audit.json` FAIL；上表新图为定点修后的 v03，`v03/target_audit.json` 数值零 FAIL，视觉仍待审。其余审计范围及未知均见每例 `target_audit.json`；此文件没有替代视觉反馈。
