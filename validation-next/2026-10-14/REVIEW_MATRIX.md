@@ -24,3 +24,5 @@
 第三轮实际外部逐例像素结论 `EXTERNAL_HUMAN_REVIEW.md`；自动核查分栏，最新版队列 `STAGE5_REVIEW_QUEUE.md`。任何上轮数值零 FAIL 不代表新图视觉/科学通过。
 
 第四轮外部复核后的当前版/哈希/本地单例源—旧—新对照以 `STAGE6_REVIEW_QUEUE.md` 为准；此表先前版本保留历史，不误称最新版或视觉通过。
+
+Stage7 外部旧图目视意见与有限数值分栏见 `EXTERNAL_HUMAN_REVIEW.md` 第五轮；只更新 13/18，十例当前路径和哈希以 `STAGE7_REVIEW_QUEUE.md` 为准，旧表保留历史。

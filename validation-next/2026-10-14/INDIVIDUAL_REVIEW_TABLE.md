@@ -23,3 +23,5 @@
 第三轮外部复核最新来源—旧版—当前版索引 `STAGE5_REVIEW_QUEUE.md`，旧本表保留历史。18 的输入此轮另以 Fig.18 作为有图锚点，旧 Type IV v02 不冒充 PIM。
 
 第四轮外部复核后的当前版/哈希/本地单例源—旧—新对照以 `STAGE6_REVIEW_QUEUE.md` 为准；此表先前版本保留历史，不误称最新版或视觉通过。
+
+Stage7 外部旧图目视意见与有限数值分栏见 `EXTERNAL_HUMAN_REVIEW.md` 第五轮；只更新 13/18，十例当前路径和哈希以 `STAGE7_REVIEW_QUEUE.md` 为准，旧表保留历史。

@@ -1,0 +1,17 @@
+{
+  "case": "13_biomed_optics",
+  "scene_sha256": "50892655bdc49af239bb0a24f21cabcc5c946ec55311881be23a51216fd69ffc",
+  "checks": {
+    "three_independent_rear_fibers": true,
+    "sleeve_to_body_chain": true,
+    "front_rim_and_glass": true,
+    "window_aligned_on_head_axis": true,
+    "window_proud_of_nose": true,
+    "nasal_taper_real_mesh": true
+  },
+  "fails": [],
+  "unknown": [
+    "glass visibility/brightness is a pixel judgement; exact optics, light throughput and head dimensions not supplied"
+  ],
+  "visual_review": "PENDING_EXTERNAL"
+}

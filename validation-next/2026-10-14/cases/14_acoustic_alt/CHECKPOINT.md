@@ -24,3 +24,6 @@ DOI: https://doi.org/10.1038/s41598-025-24666-5。日期 2025-11-19。依据：F
 ### 第四轮外部人工视觉复核后 Stage6 `v05` 候选（待看新图）
 外部复核从磁盘逐张阅读 `v04` 与源图的判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；不对本次新图外推“通过”。新场景 [`v05/scene.blend`](v05/scene.blend)、独立重载图 [`v05/overview.png`](v05/overview.png)；scene SHA256 `3d6b7d277d73de36802ef72a78d833e50763823508640ca25ba23f7544e2b7fe`、PNG SHA256 `2b1dd837e8eb14a8a8c1ba8b886bff17fabb393bfc185d7c9e4d69203f1fc8d5`。`v05/target_audit.json` 仅 5 个已声明几何断言 FAIL=[]，不测全图像素/内部功能；审阅者此轮：AGH 脚本/局部结构，**新图外部复核待审**。本地含源图三栏 `../../demo-assets/14_acoustic_alt/stage6_source_v04_v05_LOCAL.png` 不提交。
 Fig1b 图注确认 Tiny-Lev 顶板钻孔；v05 对板真实布尔切孔，独立重载后一条轴心射线未撞网格、离轴射线撞板（仅网格射线，不证图像可辨或真实测量）。
+
+### 第五轮外部人工复核：保留 v05
+外部复核从磁盘看 v05 与源图，明确**LDV 支架+向下轴线从顶板真孔到悬浮样品**这一具体视觉问题解决；但圆柱试样尺寸/悬浮方式仍示意，整图未最终验收、非功能验证。本轮不修改或重渲 v05；有限 5 项数值仅独立旁证，意见见 `../../EXTERNAL_HUMAN_REVIEW.md` 第五轮表。

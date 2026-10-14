@@ -1,0 +1,17 @@
+{
+  "case": "18_mechanical_nature",
+  "scene_sha256": "b38a8c7015ee106590fa9840a4996d3e964bd85228036955f92a9a235e9cc34f",
+  "checks": {
+    "dense_two_families": true,
+    "old_knotted_family_removed": true,
+    "PIM_dense_wavy__single_smooth_splines": true,
+    "CIM_dense_wavy__single_smooth_splines": true,
+    "compression_plates_unchanged": true,
+    "fig18_visible_face_metadata": true
+  },
+  "fails": [],
+  "unknown": [
+    "front density/pixel legibility remains for external reviewer; strand crossings, joint bonds, real 3D thickness and load not verified"
+  ],
+  "visual_review": "PENDING_EXTERNAL"
+}

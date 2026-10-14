@@ -24,3 +24,5 @@ Fig.1a–d 表示基板与接地层是有层次的：本轮按同一 laminate �
 
 ### 第四轮外部复核：保留 `v03` 原候选
 审阅者：**外部复核**，实际逐张目视 stage5 图/源，判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；本轮**未改模型/PNG、不宣称验收**。本地源—旧—当前画布 `../../demo-assets/17_rf_nature/stage6_source_v02_v03_LOCAL.png` 仅用于本地复核。
+
+第五轮外部复核（审阅者：**外部复核**）仍只将 `v03` 作为改善/待核候选，原话及数值分栏见 `../../EXTERNAL_HUMAN_REVIEW.md`；Stage7 不重做本案，不写通过。

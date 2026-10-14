@@ -25,3 +25,5 @@
 - 第五阶段起点 main `86840ba…`，第三轮**外部复核** stage4 PNG 与 Fig17–20 像素判词已分离数值写入 `EXTERNAL_HUMAN_REVIEW.md`；另存 02/13/14/20 新版与 16 v04 FAIL→v05 版本，18 基于 Fig18 单目标独立候选。十例最新源—旧—新链接/哈希在 `STAGE5_REVIEW_QUEUE.md`；AGH GUI 仍故障，**所有新 PNG 待外部再次复核**。v02 parent-material 与制造过程态仍保留。详见 `STAGE5_EXECUTION.md`；本次 Git 结果待单独验证。
 
 - Stage6：第四轮外部人工目视 stage5 十例结论见 `EXTERNAL_HUMAN_REVIEW.md`；只改 13/14/18，小版/审计反例/最新队列见 `STAGE6_EXECUTION.md` 与 `STAGE6_REVIEW_QUEUE.md`。新三图待外部再看；源 PDF/原图/含源画布始终本地。提交 SHA 另核。
+
+- Stage7：第五轮外部人工逐张读 stage6 三图，14 真孔光轴到目标的**具体视觉问题已解决**但全图仍候选；只新建 13 v07、18 Fig18 v05，独立重载渲染/有限 audit 与全部 SHA 在 `STAGE7_REVIEW_QUEUE.md`。AGH 图片服务未恢复，新图待外审。Git 提交/远端 SHA 以实际命令另核。

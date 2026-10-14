@@ -42,3 +42,8 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 ## Stage6 新增候选素材/实际失败史
 - 自制纯渲染：13 `../cases/13_biomed_optics/v05/overview.png`→`v06/overview.png`（两版不同轮廓）；14 `../cases/14_acoustic_alt/v05/overview.png`（真顶板孔）；18 `../cases/18_mechanical_nature/v03_fig18_PIM_CIM/overview.png` 直杆错误版→`v04_fig18_woven/overview.png` 波纹候选。各 `render_report.json` 和 `target_audit.json` 均在版本目录；新图均待外审。
 - 本地含原图三栏路径/独立自制 scene/PNG 哈希见 `../STAGE6_REVIEW_QUEUE.md`。出版方 PDF/图片/含图画布不入 Git 或公开视频。04/02/08/15/16/17/20 不重渲旧版。
+
+## Stage7 候选自制帧
+- 13 `../cases/13_biomed_optics/v06/overview.png`（前窗目视不清）→`v07/overview.png`；18 `../cases/18_mechanical_nature/v04_fig18_woven/overview.png`（粗绳结团）→`v05_fig18_dense_weave/overview.png`。两新版均待外部再读，不可标验收。
+- 14 `../cases/14_acoustic_alt/v05/overview.png` 外部仅认具体孔内轴线问题解决，保留候选。
+- 十例路径/哈希见 `../STAGE7_REVIEW_QUEUE.md`；两张本地 `stage7_source_*_LOCAL.png` 含版权源图，不入 Git/公开视频。无 AGH 新截图。

@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v05_fig18_dense_weave/scene.blend",
+  "scene_sha256": "b38a8c7015ee106590fa9840a4996d3e964bd85228036955f92a9a235e9cc34f",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/18_mechanical_nature/v05_fig18_dense_weave/overview.png",
+  "png_sha256": "b5fec1a4dc89a5605dd6663cf2005b480913931e2f39a1fdfb735bfc5323f14f",
+  "objects": 38,
+  "camera": "Overview_Camera",
+  "source_basis": "text-only",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

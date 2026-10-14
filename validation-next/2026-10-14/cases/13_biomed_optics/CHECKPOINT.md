@@ -24,3 +24,6 @@ DOI: https://doi.org/10.1038/s44303-026-00161-y。日期 2026-05-04。依据：F
 ### 第四轮外部人工视觉复核后 Stage6 `v06` 候选（待看新图）
 外部复核从磁盘逐张阅读 `v04` 与源图的判词见 `../../EXTERNAL_HUMAN_REVIEW.md` 第四表；不对本次新图外推“通过”。新场景 [`v06/scene.blend`](v06/scene.blend)、独立重载图 [`v06/overview.png`](v06/overview.png)；scene SHA256 `f0be0382f165d6a62d25d2ce3d3139f8cc3979567d455f873c98e15c325e1815`、PNG SHA256 `9e794e7126e831b74ea594d0ac90b5165c22cfb629cc801fc6255f92d2645433`。`v06/target_audit.json` 仅 5 个已声明几何断言 FAIL=[]，不测全图像素/内部功能；审阅者此轮：AGH 脚本/局部结构，**新图外部复核待审**。本地含源图三栏 `../../demo-assets/13_biomed_optics/stage6_source_v04_v06_LOCAL.png` 不提交。
 中间 v05 场景/图/报告独立保留；第一版审计错误使用旋转 cylinder 的 local dimensions.y，纠正成世界 y 后 v05 也通过有限长度项；v06 是探头轮廓再延长，并非证实 v05 仍断连。Fig1a 外形与 Fig1c 三个后端纤维分别取证，细长头尺寸仍假设。
+
+### 第五轮外部人工复核后 Stage7 `v07` 候选（未验收）
+审阅者：**外部复核**，已从磁盘逐张读 stage6 旧 `v06` PNG 与来源；判词独立于数值在 `../../EXTERNAL_HUMAN_REVIEW.md` 第五轮表。只修本例限定目标：v07 保留三束独立后端线/主缆及细长探头，前端加锥度实物罩、可辨两圈层与透光端窗，尺寸是展示假设，未建内部光路。 [`v07/scene.blend`](v07/scene.blend) 经独立 Blender 重开渲染 [`v07/overview.png`](v07/overview.png)，scene SHA `50892655bdc49af239bb0a24f21cabcc5c946ec55311881be23a51216fd69ffc`，PNG SHA `5201684242f676a0a086e5b7331545f5e1e4999ff3e0088b7e3c1f96c2910c88`；`v07/target_audit.json` 仅 6 项局部网格/曲线存在性检查 FAIL=[]，**不代表像素/光学/强度验收**。新 PNG 尚无人目视，AGH GUI 仍故障。本地含源图三栏 `../../demo-assets/13_biomed_optics/stage7_source_v06_v07_LOCAL.png` 不入 Git。
