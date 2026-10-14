@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v03/scene.blend",
+  "scene_sha256": "efa0e3bb262115892bec0a38cf4e90d5fe20f7454db3dfe59bfc10efaba904b6",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/14_acoustic_alt/v03/overview.png",
+  "png_sha256": "ca3374521d954c38f8c4382d55f468bbb5045156fba01b752ea890cb5c526f54",
+  "objects": 42,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

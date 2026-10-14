@@ -14,3 +14,6 @@ DOI: https://doi.org/10.3991/ijoe.v22i03.59657。日期 2026-03-05。依据：Fi
 
 ## 外部人工复核后的非破坏候选版（尚未验收）
 外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：导电 P1 图案与 measurement point 可辨，层材分别命名；引线仅外部段。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `5a219b0ef6808214648f71a271f4928d29a5c5575a78802cfceb490bbe559743`；PNG SHA256 `ed196142f65a25a6c961bf3e97e9e729a26a334ec29b30a3a6bf243cadc8b4c3`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/08_biomedical/source/SOURCE.md`，本地含原图画布 `../../demo-assets/08_biomedical/new_source_v01_v02_LOCAL.png` 不提交。
+
+### 第二轮外部复核后：`v03` 候选（旧版不覆盖）
+外部复核实际逐张目视旧 `v02` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v02/scene.blend` 另存 `v03/scene.blend`；**独立 Blender 进程重新打开**并写出 `v03/overview.png`。场景 SHA256 `08635c02a2a4f87e953a936ed5ce834873df0f8116ebf5e4cfa8d75614e9830e`；PNG SHA256 `a47417101c64de02457e69f3e53fed9e5aaaad9f9ed30804d104dee3b75ccff7`。目标结构检查 `v03/target_audit.json` 14 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/08_biomedical/stage4_source_v02_v03_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。

@@ -1,0 +1,15 @@
+{
+  "case": "14_acoustic_alt",
+  "scene_sha256": "efa0e3bb262115892bec0a38cf4e90d5fe20f7454db3dfe59bfc10efaba904b6",
+  "checks": {
+    "stand_to_base": true,
+    "arm_to_head_x": true,
+    "arm_to_stand_x": true,
+    "LDV_above_sample": true
+  },
+  "fails": [],
+  "limits": [
+    "Mount schematic only; shaft support and alignment unverified by pixels"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

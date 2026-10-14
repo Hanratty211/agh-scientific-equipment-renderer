@@ -1,0 +1,19 @@
+{
+  "case": "16_energy_nature",
+  "scene_sha256": "9b0860620783b9605c341ccaf81d9aa8ecfcd9fc7d27d7017e41c4b859e1009e",
+  "checks": {
+    "CO2_cathode_source_to_MFC_in": true,
+    "CO2_cathode_MFC_out_to_curve": true,
+    "CO2_cathode_curve_to_cell_rear": true,
+    "CO2_cathode_two_independent_curves": true,
+    "Ar_anode_source_to_MFC_in": true,
+    "Ar_anode_MFC_out_to_curve": true,
+    "Ar_anode_curve_to_cell_rear": true,
+    "Ar_anode_two_independent_curves": true
+  },
+  "fails": [],
+  "limits": [
+    "All sockets are representative external fittings, not bores, MFC function or mass flow"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

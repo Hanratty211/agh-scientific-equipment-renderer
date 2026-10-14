@@ -1,0 +1,14 @@
+{
+  "case": "15_biomed_energy",
+  "scene_sha256": "7450be7a390668fb5ef53fc88e8270c926c29b5363c5369c9cb3158f470afe15",
+  "checks": {
+    "stack_order": true,
+    "common_patch_center": true,
+    "old_standoff_removed": true
+  },
+  "fails": [],
+  "limits": [
+    "Exploded visual stack only; electrical contact and sealing unknown"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

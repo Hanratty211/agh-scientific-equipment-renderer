@@ -1,0 +1,17 @@
+{
+  "case": "02_robotics",
+  "scene_sha256": "f81d15b1ff3243fd4f1cdf5ff329c7e7e4248d5b0662599e21358294007b9ac7",
+  "checks": {
+    "guide_-1_upper_contact": true,
+    "guide_-1_lower_contact": true,
+    "guide_1_upper_contact": true,
+    "guide_1_lower_contact": true,
+    "lower_coupon_into_jaw": true,
+    "upper_coupon_into_jaw": true
+  },
+  "fails": [],
+  "limits": [
+    "Overlap only, no grip force/material constitutive model"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

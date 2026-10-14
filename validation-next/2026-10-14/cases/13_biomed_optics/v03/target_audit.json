@@ -1,0 +1,20 @@
+{
+  "case": "13_biomed_optics",
+  "scene_sha256": "189e6b81b72b127b1eefd948fce7568360d80a860260405f58584b3a8a5b2b21",
+  "checks": {
+    "fiber_0_source_face": true,
+    "fiber_0_back_connector": true,
+    "fiber_0_bezier": true,
+    "fiber_1_source_face": true,
+    "fiber_1_back_connector": true,
+    "fiber_1_bezier": true,
+    "fiber_2_source_face": true,
+    "fiber_2_back_connector": true,
+    "fiber_2_bezier": true
+  },
+  "fails": [],
+  "limits": [
+    "Three separate flexible exterior curves only; no optical coupling/insertion depth confirmation"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

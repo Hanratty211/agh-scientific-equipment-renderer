@@ -1,0 +1,25 @@
+{
+  "case": "08_biomedical",
+  "scene_sha256": "08635c02a2a4f87e953a936ed5ce834873df0f8116ebf5e4cfa8d75614e9830e",
+  "checks": {
+    "pad_xy_inside_P1": true,
+    "fan_0_inside_P1_xy": true,
+    "fan_0_ends_on_pad_xy": true,
+    "fan_1_inside_P1_xy": true,
+    "fan_1_ends_on_pad_xy": true,
+    "fan_2_inside_P1_xy": true,
+    "fan_2_ends_on_pad_xy": true,
+    "fan_3_inside_P1_xy": true,
+    "fan_3_ends_on_pad_xy": true,
+    "fan_4_inside_P1_xy": true,
+    "fan_4_ends_on_pad_xy": true,
+    "fan_5_inside_P1_xy": true,
+    "fan_5_ends_on_pad_xy": true,
+    "lead_begins_socket_face": true
+  },
+  "fails": [],
+  "limits": [
+    "Only control points and visible pad/sleeve proximity; no electrical continuity or through-layer contact"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

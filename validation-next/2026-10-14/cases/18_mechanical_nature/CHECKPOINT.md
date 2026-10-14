@@ -14,3 +14,6 @@ DOI: https://doi.org/10.1038/s41467-026-77199-4。日期 2026-08-26。依据：M
 
 ## 外部人工复核后的非破坏候选版（尚未验收）
 外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：移除梯形 PIM 假试样，建 parent-material Type IV 示意哑铃和上下夹持；PIM另案。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `1531ccbf79169b00f4231e6ac090149ff9f53f0d13bd6ba8074a5225bab3311d`；PNG SHA256 `8845c9129ef8979eecc69f729dd7a2c304a93b465c050d8e6d56dda66cdda7fc`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/18_mechanical_nature/source/SOURCE.md`，本地含原图画布 `../../demo-assets/18_mechanical_nature/new_source_v01_v02_LOCAL.png` 不提交。 正文 p9 明言 ASTM D638 Type IV 对 parent materials；v02 不可称 PIM 格构拉伸样。
+
+### 第二轮外部复核/补充材料核对
+审阅者：**外部复核**，明确 v02 dogbone 只代表 parent-material ASTM Type IV，不能等于机械记忆结构。下载论文开放的补充 PDF 51 页至本地，定位 Supplementary Fig.17–20 于 PDF pp.32–35，核到图注：17 parent materials、18 PIM/CIM、19 composites、20 tissue；**AGH 图像服务仍失败，尚未看见补图像素/铰接细节，故不建 PIM v03**。详情 `../../CASE18_SUPPLEMENT_AUDIT.md`。旧 v02 保持 parent-material 示意，未通过本任务整体目标。

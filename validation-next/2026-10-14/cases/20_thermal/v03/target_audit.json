@@ -1,0 +1,15 @@
+{
+  "case": "20_thermal",
+  "scene_sha256": "d6cdf25c34a04b039eea1577511b23158bffa736894a309bac3c5e1ed3b7862c",
+  "checks": {
+    "folded_skin_mesh": true,
+    "four_thin_seams": true,
+    "old_rigid_blocks_removed": true,
+    "same_wick_in_scene": true
+  },
+  "fails": [],
+  "limits": [
+    "Foil represented by editable thin shell and seams, not proven flexibility/microstructure or internal flow"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

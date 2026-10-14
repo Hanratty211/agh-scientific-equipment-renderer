@@ -16,3 +16,6 @@
 |[20_thermal](cases/20_thermal/CHECKPOINT.md) / D|[Materials PDF p.11 铝塑壳与铜网芯；Fig.1c仅后版核形态](demo-assets/20_thermal/source/SOURCE.md) → `text_p11.txt` SHA `1566e198b42d`|[`v01` PNG](cases/20_thermal/v01/overview.png) SHA `d24ecd05cc2c` · [scene](cases/20_thermal/v01/scene.blend)|见 CHECKPOINT.md 的 v01 差异；单例高清差异待 AGH 读图|外部人工逐例目视旧版并判未通过；AGH 未实读，新版待审|
 
 图像失效症状见 `INDIVIDUAL_REVIEW_STATUS.md`。本地单例对照画布路径固定且只本地存放；源码出处见各 SOURCE.md/PDF。逐例具体旧版像素差异及审阅者为 `EXTERNAL_HUMAN_REVIEW.md`；新修订必须重新经图像审查，不能沿用旧版人工结论作新版通过。
+
+## 第二轮外部目视后的最新队列
+外部复核逐条判词、目视/自动核查分栏：`EXTERNAL_HUMAN_REVIEW.md`。本轮另存 8 个候选版；04 v06 不变、18 仍 parent-material v02；十例最新源依据→被审旧版→当前版→有限 QA/哈希/本地并排画布见 `STAGE4_REVIEW_QUEUE.md`，替代本表早期版本的“当前”列。**新 PNG 尚未再次目视验收。**

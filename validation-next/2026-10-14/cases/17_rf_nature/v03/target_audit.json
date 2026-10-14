@@ -1,0 +1,16 @@
+{
+  "case": "17_rf_nature",
+  "scene_sha256": "e58495116ea62f8f880dcb9ec4cab15e9fd57f34f48b455781b42e6b1813779a",
+  "checks": {
+    "substrate_ground_face": true,
+    "radiator_ground_surface": true,
+    "connector_to_feed_y": true,
+    "feed_to_tip_y": true,
+    "two_existing_ground_boolean_modifiers": true
+  },
+  "fails": [],
+  "limits": [
+    "Geometric contact/overlap only; grounding and RF current not validated"
+  ],
+  "visual_review": "NOT_PERFORMED"
+}

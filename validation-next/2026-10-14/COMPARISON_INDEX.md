@@ -19,3 +19,6 @@
 
 ## 外部人工反馈后十例新的候选渲染（勿误判验收）
 完整源—v01—新版本清单及私有逐例高清画布、全长 SHA256 见 [`NEW_VERSION_REVIEW_QUEUE.md`](NEW_VERSION_REVIEW_QUEUE.md)。旧版外部人工逐例读图差异见 [`EXTERNAL_HUMAN_REVIEW.md`](EXTERNAL_HUMAN_REVIEW.md)。上表初轮比较仍保留历史，不再以其“最新版”列当今天新版本；04 最新 v06、15 最新 v04、02 最新 v03、其余最新 v02。所有新图尚未经用户再次目视，AGH 图片捕获仍故障。
+
+## 第二轮外部复核后
+上面历史表中“最新版”已不是最新；准确逐例链接及不可公开本地源图三栏画布在 `STAGE4_REVIEW_QUEUE.md`。新图均未由 AGH/外部再次实际读像素，任何几何项零 FAIL 不等于接受。

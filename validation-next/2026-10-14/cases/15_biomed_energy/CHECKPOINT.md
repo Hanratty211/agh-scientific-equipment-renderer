@@ -16,3 +16,6 @@ DOI: https://doi.org/10.1038/s41467-025-60911-1。日期 2025-07-01。依据：F
 
 ## 外部人工复核后的非破坏候选版（尚未验收）
 外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v04` 保存于 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，独立 Blender 进程重载并渲染。针对性修改：统一贴片中心重排顶盖窗口/PV/双电池/fPCB/PL，多层爆炸支撑；电路未知。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `6d41945250aa591eb2761a2fc2736618d62e31a10e2e1fd43eec775b82842619`；PNG SHA256 `f38aaa4204b4bb844c4786782e2443510e8e317aa7a416b9d4c575bd7034c03d`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/15_biomed_energy/source/SOURCE.md`，本地含原图画布 `../../demo-assets/15_biomed_energy/new_source_v01_v04_LOCAL.png` 不提交。
+
+### 第二轮外部复核后：`v05` 候选（旧版不覆盖）
+外部复核实际逐张目视旧 `v04` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v04/scene.blend` 另存 `v05/scene.blend`；**独立 Blender 进程重新打开**并写出 `v05/overview.png`。场景 SHA256 `7450be7a390668fb5ef53fc88e8270c926c29b5363c5369c9cb3158f470afe15`；PNG SHA256 `aca06694ec9a823bbcfcaf14ce14a9cc49dbf6516ce30b915a9c7423c6412f4b`。目标结构检查 `v05/target_audit.json` 3 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/15_biomed_energy/stage4_source_v04_v05_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。

@@ -27,3 +27,9 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 - 02 又多一段真实失败史：v02 上夹爪端位置 audit FAIL，v03 定点修复后仍待目视；本地四栏画布 `02_robotics/new_source_v01_v02_v03_LOCAL.png`。
 
 准确版本更正：02 最新是 v03（v02 上夹端检测 FAIL），04 v06，15 v04，其余 v02。
+
+## 第四阶段真实素材与不可公开源图（第二轮外部复核后）
+- 候选自制画面索引：`../STAGE4_REVIEW_QUEUE.md`，逐例新 `.blend`/PNG/SHA；八例新版本、04 保留 v06、18 parent-material v02 暂不重建。没有 AGH 新屏幕截图；当前可用只是 Blender 输出，不冒充界面录屏。
+- 本地逐例三栏 `demo-assets/<id>/stage4_source_<old>_<new>_LOCAL.png` **均含论文原图或正文**，只供用户本机对照，不可纳入 Git/公开视频。04 特别保证源 Fig.3C—v01—v06，不省略旧失败版。
+- 第二轮旧版外部判词 `../EXTERNAL_HUMAN_REVIEW.md`，八例新图尚无人类复核。02 v03 悬空杆等旧图失败不能用 v04 数值自动洗白。
+- 18 补图 p32–35 裁页与 PDF 均本地；没有假画 PIM。20 `v02_preseal_detail` 仍只属工艺态，不同于最新成品 v03。

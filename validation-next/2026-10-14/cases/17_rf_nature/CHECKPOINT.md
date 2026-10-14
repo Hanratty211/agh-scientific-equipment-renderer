@@ -14,3 +14,7 @@ DOI: https://doi.org/10.1038/s41598-026-39831-7。日期 2026-02-13。依据：F
 
 ## 外部人工复核后的非破坏候选版（尚未验收）
 外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：近贴主基板辐射体与馈线触点，保留真实椭圆槽；导电匹配未证。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `10b3878521df901447d9eb3475229f9a0628a96fe5abb0ac373bbc1ef8208851`；PNG SHA256 `8912513d08439448035b48399bc95ac6c99c3429a268f751ea8493724272cf2f`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/17_rf_nature/source/SOURCE.md`，本地含原图画布 `../../demo-assets/17_rf_nature/new_source_v01_v02_LOCAL.png` 不提交。
+
+### 第二轮外部复核后：`v03` 候选（旧版不覆盖）
+外部复核实际逐张目视旧 `v02` 后判失败；具体差异见 `../../EXTERNAL_HUMAN_REVIEW.md`，几何旧检查另列，不能跨版外推。`../../revise_connectivity_stage4.py` 从保存的 `v02/scene.blend` 另存 `v03/scene.blend`；**独立 Blender 进程重新打开**并写出 `v03/overview.png`。场景 SHA256 `e58495116ea62f8f880dcb9ec4cab15e9fd57f34f48b455781b42e6b1813779a`；PNG SHA256 `b66c011a53de07c58c5ddee27ac05a3ced92104d8ef76b818f67d743b36ba557`。目标结构检查 `v03/target_audit.json` 5 项零 FAIL（作用面/身份局部检查）；它不验可视清晰、机械/光电功能。审阅者：AGH 对脚本与有限结构核查；**新图 AGH 读图服务失败，外部复核新版本待审**。本地源—被审旧版—新图画布 `../../demo-assets/17_rf_nature/stage4_source_v02_v03_LOCAL.png` 不提交。相关尺寸、材料外观、不可见连接/载荷/密封仍是未知或假设。
+Fig.1a–d 表示基板与接地层是有层次的：本轮按同一 laminate 接触而非把有据两材料强合成同材；馈线铜迹线只作示意，RF 匹配未知。
