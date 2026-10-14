@@ -1,0 +1,17 @@
+{
+  "case": "13_biomed_optics",
+  "scene_sha256": "cf8175c9cb2a0b7288dcec4df47bbc87375c9c6fe4672034ba5f6824e985dce3",
+  "checks": {
+    "fiber_0_source": true,
+    "fiber_0_probe": true,
+    "fiber_1_source": true,
+    "fiber_1_probe": true,
+    "fiber_2_source": true,
+    "fiber_2_probe": true
+  },
+  "fails": [],
+  "limits": [
+    "External coupler only, no optical transmission or internal seals"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

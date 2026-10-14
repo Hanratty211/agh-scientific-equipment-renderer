@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/17_rf_nature/v02/scene.blend",
+  "scene_sha256": "10b3878521df901447d9eb3475229f9a0628a96fe5abb0ac373bbc1ef8208851",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/17_rf_nature/v02/overview.png",
+  "png_sha256": "8912513d08439448035b48399bc95ac6c99c3429a268f751ea8493724272cf2f",
+  "objects": 7,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

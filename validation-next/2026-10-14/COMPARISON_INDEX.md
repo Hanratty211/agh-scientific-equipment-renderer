@@ -16,3 +16,6 @@
 |[20_thermal](https://doi.org/10.1038/s41467-025-56960-1)|D|[源位置](demo-assets/20_thermal/source/SOURCE.md)：Materials p.11（辅以 p.2 正文）|[v01](cases/20_thermal/v01/overview.png) · [场景](cases/20_thermal/v01/scene.blend)|无修订（勿伪造）|v01 拼图粗看；未单例验收|未确认|
 
 脚本：`render_core.py`、`build_cases.py`、`build_more.py`、`render_saved.py`；针对 04/15 的修订：`revise_cases.py`、`revise_micro_v03.py`；每例逐条说明/假设/人工核验表：`cases/<id>/CHECKPOINT.md`。总览拼图 `demo-assets/v01_contact_sheet.png`。AGH 真读图与失败史见 `VISUAL_REVIEW_V01.md`、`REVISIONS_04_15.md`。其余八例没有 v02，**并非全部十例前后修订已完成**。本轮 Computer Use 窗口发现故障，逐例源图–PNG 像素审查尚未完成，最新两版仅重载/数值核验。具体见 `INDIVIDUAL_REVIEW_TABLE.md`。
+
+## 外部人工反馈后十例新的候选渲染（勿误判验收）
+完整源—v01—新版本清单及私有逐例高清画布、全长 SHA256 见 [`NEW_VERSION_REVIEW_QUEUE.md`](NEW_VERSION_REVIEW_QUEUE.md)。旧版外部人工逐例读图差异见 [`EXTERNAL_HUMAN_REVIEW.md`](EXTERNAL_HUMAN_REVIEW.md)。上表初轮比较仍保留历史，不再以其“最新版”列当今天新版本；04 最新 v06、15 最新 v04、02 最新 v03、其余最新 v02。所有新图尚未经用户再次目视，AGH 图片捕获仍故障。

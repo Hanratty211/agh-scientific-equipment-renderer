@@ -11,3 +11,6 @@ DOI: https://doi.org/10.1038/s41598-026-39831-7。日期 2026-02-13。依据：F
 |范围与身份|Fig. 1a–d，PDF p.4，馈线/双椭圆槽/辐射体|`v01/overview.png`|论文图/正文 + AGH 粗看|示意阶段/未验收|双槽真实开孔、馈电接触与图注配对|
 |可见线路/装配|Fig. 1a–d，PDF p.4，馈线/双椭圆槽/辐射体|`v01/scene.blend`|有限网格+渲染|未完成实端口逐跳验证|开孔、接头、遮挡及支撑|
 |图像外观|见本地 `../../demo-assets/17_rf_nature/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：近贴主基板辐射体与馈线触点，保留真实椭圆槽；导电匹配未证。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `10b3878521df901447d9eb3475229f9a0628a96fe5abb0ac373bbc1ef8208851`；PNG SHA256 `8912513d08439448035b48399bc95ac6c99c3429a268f751ea8493724272cf2f`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/17_rf_nature/source/SOURCE.md`，本地含原图画布 `../../demo-assets/17_rf_nature/new_source_v01_v02_LOCAL.png` 不提交。

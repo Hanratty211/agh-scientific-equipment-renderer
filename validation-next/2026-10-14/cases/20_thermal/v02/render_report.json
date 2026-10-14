@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v02/scene.blend",
+  "scene_sha256": "5ccebe9f87233318e1e60798a57be66ca65dbddb51e5234077082574a77f8fdf",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/20_thermal/v02/overview.png",
+  "png_sha256": "2537e7bc8f69bbbd8a0b580ec70cd3255c63c228c19ee98d2d5ee14107cb2484",
+  "objects": 85,
+  "camera": "Overview_Camera",
+  "source_basis": "text-only",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

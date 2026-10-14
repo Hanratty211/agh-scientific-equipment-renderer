@@ -1,0 +1,252 @@
+{
+  "scene_sha256": "3c74e24c6a8f0854ccc8647b47af415105a3eb7fd067c647765629d004624229",
+  "results": [
+    {
+      "channel": 0,
+      "checks": {
+        "syringe_cap_blue": true,
+        "blue_fitting_lip": true,
+        "right_fitting_chip_wall": true,
+        "left_fitting_chip_wall": true,
+        "left_fitting_green": true,
+        "green_to_balloon_body": true,
+        "balloon_reach": true,
+        "distinct_channel": true
+      },
+      "blue_start": [
+        0.6200000047683716,
+        0.07000000029802322,
+        0.8500000238418579
+      ],
+      "blue_end": [
+        -0.39500001072883606,
+        -0.6899999976158142,
+        0.14499999582767487
+      ],
+      "green_start": [
+        -2.005000114440918,
+        -0.6899999976158142,
+        0.14499999582767487
+      ],
+      "green_end": [
+        -3.4600000381469727,
+        -0.6899999976158142,
+        0.3199999928474426
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_fitting_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_fitting_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "balloon_x": [
+        -3.919999837875366,
+        -3.319999933242798
+      ]
+    },
+    {
+      "channel": 1,
+      "checks": {
+        "syringe_cap_blue": true,
+        "blue_fitting_lip": true,
+        "right_fitting_chip_wall": true,
+        "left_fitting_chip_wall": true,
+        "left_fitting_green": true,
+        "green_to_balloon_body": true,
+        "balloon_reach": true,
+        "distinct_channel": true
+      },
+      "blue_start": [
+        1.25,
+        0.07000000029802322,
+        0.8500000238418579
+      ],
+      "blue_end": [
+        -0.39500001072883606,
+        -0.8700000047683716,
+        0.14499999582767487
+      ],
+      "green_start": [
+        -2.005000114440918,
+        -0.8700000047683716,
+        0.14499999582767487
+      ],
+      "green_end": [
+        -3.4600000381469727,
+        -0.8700000047683716,
+        0.3199999928474426
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_fitting_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_fitting_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "balloon_x": [
+        -3.919999837875366,
+        -3.319999933242798
+      ]
+    },
+    {
+      "channel": 2,
+      "checks": {
+        "syringe_cap_blue": true,
+        "blue_fitting_lip": true,
+        "right_fitting_chip_wall": true,
+        "left_fitting_chip_wall": true,
+        "left_fitting_green": true,
+        "green_to_balloon_body": true,
+        "balloon_reach": true,
+        "distinct_channel": true
+      },
+      "blue_start": [
+        1.8799999952316284,
+        0.07000000029802322,
+        0.8500000238418579
+      ],
+      "blue_end": [
+        -0.39500001072883606,
+        -1.0499999523162842,
+        0.14499999582767487
+      ],
+      "green_start": [
+        -2.005000114440918,
+        -1.0499999523162842,
+        0.14499999582767487
+      ],
+      "green_end": [
+        -3.4600000381469727,
+        -1.0499999523162842,
+        0.3199999928474426
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_fitting_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_fitting_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "balloon_x": [
+        -3.919999837875366,
+        -3.319999933242798
+      ]
+    },
+    {
+      "channel": 3,
+      "checks": {
+        "syringe_cap_blue": true,
+        "blue_fitting_lip": true,
+        "right_fitting_chip_wall": true,
+        "left_fitting_chip_wall": true,
+        "left_fitting_green": true,
+        "green_to_balloon_body": true,
+        "balloon_reach": true,
+        "distinct_channel": true
+      },
+      "blue_start": [
+        2.509999990463257,
+        0.07000000029802322,
+        0.8500000238418579
+      ],
+      "blue_end": [
+        -0.39500001072883606,
+        -1.2300000190734863,
+        0.14499999582767487
+      ],
+      "green_start": [
+        -2.005000114440918,
+        -1.2300000190734863,
+        0.14499999582767487
+      ],
+      "green_end": [
+        -3.4600000381469727,
+        -1.2300000190734863,
+        0.3199999928474426
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_fitting_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_fitting_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "balloon_x": [
+        -3.919999837875366,
+        -3.319999933242798
+      ]
+    },
+    {
+      "channel": 4,
+      "checks": {
+        "syringe_cap_blue": true,
+        "blue_fitting_lip": true,
+        "right_fitting_chip_wall": true,
+        "left_fitting_chip_wall": true,
+        "left_fitting_green": true,
+        "green_to_balloon_body": true,
+        "balloon_reach": true,
+        "distinct_channel": true
+      },
+      "blue_start": [
+        3.140000104904175,
+        0.07000000029802322,
+        0.8500000238418579
+      ],
+      "blue_end": [
+        -0.39500001072883606,
+        -1.409999966621399,
+        0.14499999582767487
+      ],
+      "green_start": [
+        -2.005000114440918,
+        -1.409999966621399,
+        0.14499999582767487
+      ],
+      "green_end": [
+        -3.4600000381469727,
+        -1.409999966621399,
+        0.3199999928474426
+      ],
+      "chip_x": [
+        -1.9149999618530273,
+        -0.4850000739097595
+      ],
+      "right_fitting_x": [
+        -0.48500001430511475,
+        -0.39499998092651367
+      ],
+      "left_fitting_x": [
+        -2.005000114440918,
+        -1.915000081062317
+      ],
+      "balloon_x": [
+        -3.919999837875366,
+        -3.319999933242798
+      ]
+    }
+  ],
+  "fails": [],
+  "scope": "External visible mesh-surface and curve-world endpoint geometry only. Spline tangents, overlaps/occlusion, chip bores, seals and flow NOT VALIDATED."
+}

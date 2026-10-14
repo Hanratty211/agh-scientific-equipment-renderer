@@ -1,0 +1,14 @@
+{
+  "case": "17_rf_nature",
+  "scene_sha256": "10b3878521df901447d9eb3475229f9a0628a96fe5abb0ac373bbc1ef8208851",
+  "checks": {
+    "single_substrate": true,
+    "ground_boolean_holes": true,
+    "feed_contact_exists": true
+  },
+  "fails": [],
+  "limits": [
+    "Boolean topology and electromagnetic feed continuity require further inspection"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

@@ -11,3 +11,6 @@ DOI: https://doi.org/10.1038/s41467-026-77199-4。日期 2026-08-26。依据：M
 |范围与身份|Methods PDF p.9：ZwickRoell Z100 拉伸测试机与试样；Fig.2d仅后版核测量情境|`v01/overview.png`|论文图/正文 + AGH 粗看|示意阶段/未验收|型号外观及真实试样参 Supplementary Fig.17–20|
 |可见线路/装配|Methods PDF p.9：ZwickRoell Z100 拉伸测试机与试样；Fig.2d仅后版核测量情境|`v01/scene.blend`|有限网格+渲染|未完成实端口逐跳验证|开孔、接头、遮挡及支撑|
 |图像外观|见本地 `../../demo-assets/18_mechanical_nature/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：移除梯形 PIM 假试样，建 parent-material Type IV 示意哑铃和上下夹持；PIM另案。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `1531ccbf79169b00f4231e6ac090149ff9f53f0d13bd6ba8074a5225bab3311d`；PNG SHA256 `8845c9129ef8979eecc69f729dd7a2c304a93b465c050d8e6d56dda66cdda7fc`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/18_mechanical_nature/source/SOURCE.md`，本地含原图画布 `../../demo-assets/18_mechanical_nature/new_source_v01_v02_LOCAL.png` 不提交。 正文 p9 明言 ASTM D638 Type IV 对 parent materials；v02 不可称 PIM 格构拉伸样。

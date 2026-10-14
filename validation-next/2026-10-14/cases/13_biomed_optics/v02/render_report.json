@@ -1,0 +1,15 @@
+{
+  "scene": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/13_biomed_optics/v02/scene.blend",
+  "scene_sha256": "cf8175c9cb2a0b7288dcec4df47bbc87375c9c6fe4672034ba5f6824e985dce3",
+  "png": "/Users/wht/Desktop/黑客松/agnes-harness/validation-source-check/validation-next/2026-10-14/cases/13_biomed_optics/v02/overview.png",
+  "png_sha256": "336047f7cc96eeb2e13aa93e509fa0d5019e6e6f4131be78b7cbbae9abcb6d86",
+  "objects": 33,
+  "camera": "Overview_Camera",
+  "source_basis": "figure-and-caption",
+  "render_engine": "BLENDER_EEVEE",
+  "image_size": [
+    900,
+    640
+  ],
+  "visual_review": "NOT_YET_REVIEWED"
+}

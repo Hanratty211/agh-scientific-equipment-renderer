@@ -1,0 +1,14 @@
+{
+  "case": "14_acoustic_alt",
+  "scene_sha256": "0f3540a17731ba9672991dcaa49112a9e20f2158e1855ac8d4f38deeafcc5b95",
+  "checks": {
+    "ldv_target_x_aligned": true,
+    "ldv_target_y_aligned": true,
+    "ldv_above_sample_shaker": true
+  },
+  "fails": [],
+  "limits": [
+    "Spatial axis only, not laser focus or acoustic-force measurement"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

@@ -1,0 +1,19 @@
+{
+  "case": "02_robotics",
+  "scene_sha256": "63eeadc15ba3315017465956a6cf5e2912db4aefe0c45533a53a3de132ae1e84",
+  "checks": {
+    "lower_coupon_z_inside_grip": true,
+    "lower_jaw_pair": true,
+    "lower_face_gap_small": true,
+    "upper_coupon_z_inside_grip": false,
+    "upper_jaw_pair": true,
+    "upper_face_gap_small": true
+  },
+  "fails": [
+    "upper_coupon_z_inside_grip"
+  ],
+  "limits": [
+    "Jaw-specimen near-face, no force/contact stress evidence"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

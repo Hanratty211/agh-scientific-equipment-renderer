@@ -16,3 +16,14 @@ AGH 在会话 e3897ec9-dd7e-4bc7-bc55-a3ec72d67bd6 用已加载 v1.0 读取来�
 - 04：`../cases/04_microfluidics/v04/`（泵端 audit 五路 FAIL），`v05/`（5×6 外部边界 audit 0；PNG 未实读），数值报告 `v05/boundary_audit.json`；本地含论文图画布 `04_microfluidics/comparison_source_v01_v03_v04_v05_LOCAL.png`。证据 `../REVISIONS_04_V04_V05.md`。
 - 15：`../cases/15_biomed_energy/v03/`（隔离分层候选，PNG 未实读）；本地含论文图 `15_biomed_energy/comparison_source_v01_v02_v03_LOCAL.png`；证据 `../REVISIONS_15_V03.md`。
 - 十例单幅源—当前版 `*/source_and_current_LOCAL.png` 仅本地，不入 Git；**04/15 两张单幅生成时还是旧 v03/v02**，查看最新要用上面的多栏图。十例具体源/当前链接见 `../INDIVIDUAL_REVIEW_TABLE.md`。GUI Computer Use 窗口发现失败，未得到新截图；不得在视频标'十例已审'。
+
+## 人工十例复核后：新候选帧及真实失败史
+- 审阅者：**外部人工视觉复核**，逐例旧版图/正文与 v01（04 v05、15 v03）比较；十例均指出身份、接口或承载缺陷，详见 `../EXTERNAL_HUMAN_REVIEW.md`。这不是 AGH 对新图的 capture。
+- 本次十例新渲染帧/可编辑 scene/哈希：`../NEW_VERSION_REVIEW_QUEUE.md`；04 v06、15 v04、02 v03、其余 v02。自制新 PNG 可用于候选演示，但字幕须标“新图目视待审”。
+- 04 v05 30/30 数值与外部人工判视觉失败同时保留；v06 40/40 外部几何也不是像素或功能验收。`../cases/04_microfluidics/v06/boundary_audit.json`。
+- 20 final 主览 `../cases/20_thermal/v02/overview.png` 与预封口单独状态 `../cases/20_thermal/v02_preseal_detail/overview.png` 不混剪为同一实体状态。
+- 本地十张 `demo-assets/<id>/new_source_v01_<v>_LOCAL.png` 含出版方源图，只在本机，**不可提交、不可直接当公开视频镜头**。没有恢复的 AGH GUI 截图文件，不能伪称界面录屏。
+
+- 02 又多一段真实失败史：v02 上夹爪端位置 audit FAIL，v03 定点修复后仍待目视；本地四栏画布 `02_robotics/new_source_v01_v02_v03_LOCAL.png`。
+
+准确版本更正：02 最新是 v03（v02 上夹端检测 FAIL），04 v06，15 v04，其余 v02。

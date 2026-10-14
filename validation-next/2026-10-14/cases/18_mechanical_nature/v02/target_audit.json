@@ -1,0 +1,15 @@
+{
+  "case": "18_mechanical_nature",
+  "scene_sha256": "1531ccbf79169b00f4231e6ac090149ff9f53f0d13bd6ba8074a5225bab3311d",
+  "checks": {
+    "parent_material_coupon": true,
+    "ladder_removed": true,
+    "jaw_pairs": true,
+    "scope_property": true
+  },
+  "fails": [],
+  "limits": [
+    "ASTM type applies to parent materials, not PIM or CIM; grip force not tested"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

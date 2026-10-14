@@ -1,0 +1,16 @@
+{
+  "case": "20_thermal",
+  "scene_sha256": "5ccebe9f87233318e1e60798a57be66ca65dbddb51e5234077082574a77f8fdf",
+  "checks": {
+    "north_seal_exists": true,
+    "south_seal_exists": true,
+    "west_seal_exists": true,
+    "east_final_seal_exists": true,
+    "top_and_bottom_foil": true
+  },
+  "fails": [],
+  "limits": [
+    "Opaque final scene; wick not visible unless separate process detail; no inner flow check"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

@@ -11,3 +11,6 @@ DOI: https://doi.org/10.1038/s44303-026-00161-y。日期 2026-05-04。依据：F
 |范围与身份|Fig. 1a,c，PDF p.3，内窥镜与三个照明口|`v01/overview.png`|论文图/正文 + AGH 粗看|示意阶段/未验收|光纤插入深度/镜身实际柔曲|
 |可见线路/装配|Fig. 1a,c，PDF p.3，内窥镜与三个照明口|`v01/scene.blend`|有限网格+渲染|未完成实端口逐跳验证|开孔、接头、遮挡及支撑|
 |图像外观|见本地 `../../demo-assets/13_biomed_optics/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：屏支架/脚轮并入推车，光源到镜尾三外纤与柔性镜管；光纤接头内部未知。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `cf8175c9cb2a0b7288dcec4df47bbc87375c9c6fe4672034ba5f6824e985dce3`；PNG SHA256 `336047f7cc96eeb2e13aa93e509fa0d5019e6e6f4131be78b7cbbae9abcb6d86`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/13_biomed_optics/source/SOURCE.md`，本地含原图画布 `../../demo-assets/13_biomed_optics/new_source_v01_v02_LOCAL.png` 不提交。

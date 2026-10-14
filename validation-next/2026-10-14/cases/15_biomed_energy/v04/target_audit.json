@@ -1,0 +1,14 @@
+{
+  "case": "15_biomed_energy",
+  "scene_sha256": "6d41945250aa591eb2761a2fc2736618d62e31a10e2e1fd43eec775b82842619",
+  "checks": {
+    "two_batteries": true,
+    "pv_window_cover": true,
+    "four_visual_spacers": true
+  },
+  "fails": [],
+  "limits": [
+    "No electrical connections, seal or body contact audit"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

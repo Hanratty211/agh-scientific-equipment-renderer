@@ -1,0 +1,17 @@
+{
+  "case": "16_energy_nature",
+  "scene_sha256": "bb101c3674b842b86e4af7cc2dd00f74f0dade4024e495b3eb02c0544c4264a5",
+  "checks": {
+    "unfounded_cups_removed": true,
+    "two_gas_lines": true,
+    "two_mfc": true,
+    "distinct_gas_liquid_lines": true,
+    "CO2_cathode_rear_stub": true,
+    "Ar_anode_rear_stub": true
+  },
+  "fails": [],
+  "limits": [
+    "Liquid and gas geometry distinct; flow paths, channels and MFC function not checked"
+  ],
+  "scope": "Identity/presence/selected world-space geometry only; not pixel or functional acceptance"
+}

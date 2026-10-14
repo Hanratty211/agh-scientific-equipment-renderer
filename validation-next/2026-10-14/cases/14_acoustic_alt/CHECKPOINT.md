@@ -11,3 +11,6 @@ DOI: https://doi.org/10.1038/s41598-025-24666-5。日期 2025-11-19。依据：F
 |范围与身份|Fig. 1c（辅以 Fig.1a），PDF p.3，Tiny-Lev 与振动台|`v01/overview.png`|论文图/正文 + AGH 粗看|示意阶段/未验收|LDV 轴线和照片可辨仪器|
 |可见线路/装配|Fig. 1c（辅以 Fig.1a），PDF p.3，Tiny-Lev 与振动台|`v01/scene.blend`|有限网格+渲染|未完成实端口逐跳验证|开孔、接头、遮挡及支撑|
 |图像外观|见本地 `../../demo-assets/14_acoustic_alt/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v02` 保存于 [`v02/scene.blend`](v02/scene.blend)、[`v02/overview.png`](v02/overview.png)，独立 Blender 进程重载并渲染。针对性修改：LDV 光轴下瞄悬浮样品，保留非接触阵列+振动台；光轴为假设图示。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `0f3540a17731ba9672991dcaa49112a9e20f2158e1855ac8d4f38deeafcc5b95`；PNG SHA256 `5a0334fa696f499e057571ea55a5c6a2fe682f191374c8f56e104bb29ef66dbb`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/14_acoustic_alt/source/SOURCE.md`，本地含原图画布 `../../demo-assets/14_acoustic_alt/new_source_v01_v02_LOCAL.png` 不提交。

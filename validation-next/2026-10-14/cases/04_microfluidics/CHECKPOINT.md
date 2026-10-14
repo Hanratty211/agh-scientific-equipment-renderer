@@ -13,3 +13,6 @@ DOI: https://doi.org/10.1038/s41526-025-00470-3。日期 2025-05-06。依据：F
 |图像外观|见本地 `../../demo-assets/04_microfluidics/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
 
 最新独立重载版本 `v05`：[`scene.blend`](v05/scene.blend) SHA256 `0c04967e4a8e4ebe7ca8619731f805bda66eac3e8cbe2ff8a86f18c2c5ed1dcb`；[`overview.png`](v05/overview.png) SHA256 `030be22f931483b2cbc5ff1110a2dd5b793856b740a243225e0bb0a30c1d2904`。本轮图像访问故障，AGH 尚未读此版像素；不作视觉通过声明。
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v06` 保存于 [`v06/scene.blend`](v06/scene.blend)、[`v06/overview.png`](v06/overview.png)，独立 Blender 进程重载并渲染。针对性修改：五路蓝软管接注射器外端及芯片两侧外接头，左五路绿 balloon 扩展；无实孔/内流/气密。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `3c74e24c6a8f0854ccc8647b47af415105a3eb7fd067c647765629d004624229`；PNG SHA256 `88dc7e90184b07490e9bd12adec1e4c264e2b18a091aaee79e62cf8d67824199`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/04_microfluidics/source/SOURCE.md`，本地含原图画布 `../../demo-assets/04_microfluidics/new_source_v01_v06_LOCAL.png` 不提交。

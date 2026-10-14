@@ -17,3 +17,5 @@
 - 2026-10-14 续轮：04 v04 数值检测五个泵端 FAIL，v05 修订后外部边界 5×6 项零 FAIL（非内孔/像素 PASS）；15 v03 分层候选独立重载。十例单幅私有对照画布已生成，**Computer Use windows/apps discovery failed，未能实际读新的十例像素**，详见 `INDIVIDUAL_REVIEW_STATUS.md`。本轮提交后再记 SHA/推送，不得当人工验收。
 
 - 后续 AGH `computer_use.list_apps` 再测仍 `Computer Use apps discovery failed`；没有恢复逐例像素访问。外部阻塞是 GUI 发现服务，不是 Blender 渲染或文件缺失。持续尝试同一捕获将不会产生审阅证据。
+
+- 用户随后说明已由**外部人工**逐例实际打开旧版源图/文字和 PNG（非拼图），十例均给出目视缺陷；记录 `EXTERNAL_HUMAN_REVIEW.md`，不与 AGH 数值 audit 合并。先 04 v05→v06，右五蓝软管—中央固芯片左右五外接头—左五绿色 balloon 的外部几何 40/40（`v06/boundary_audit.json`），仍不证明实孔/像素。随后其余九例定点修订：02 v02 audit 上夹头 FAIL→v03；15 v03→v04；其余 v01→v02；20 另加三边封口准备态独立场景。所有保存均在另进程重开渲染、SHA 可复核，主说明 `NEW_VERSION_REVIEW_QUEUE.md`。Computer Use `list_apps` 再失败，因此**新的十例 PNG 均待外部人工再审，不得写验收**。来源 PDF/源图/含源图画布均未计划进 Git。

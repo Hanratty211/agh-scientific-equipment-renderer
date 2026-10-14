@@ -13,3 +13,6 @@ DOI: https://doi.org/10.1038/s41467-025-60911-1。日期 2025-07-01。依据：F
 |图像外观|见本地 `../../demo-assets/15_biomed_energy/source/SOURCE.md`|`v01/overview.png`|AGH 实际读批次拼图|不作通过声明|对应实物形态|
 
 最新独立重载版本 `v03`：[`scene.blend`](v03/scene.blend) SHA256 `916c34984166b9f69ff2ac5105f1aba0020b24c7c0910922130a834e6000cd8d`；[`overview.png`](v03/overview.png) SHA256 `54dfb2959a90bb659ad4ab0044d4f3891a1f73421fc4fa606cd0f596761b89cf`。本轮图像访问故障，AGH 尚未读此版像素；不作视觉通过声明。
+
+## 外部人工复核后的非破坏候选版（尚未验收）
+外部人工逐例读源依据与旧版 PNG 后指出的差异详见 `../../EXTERNAL_HUMAN_REVIEW.md`（审阅者：外部复核，目视，**针对旧版**）。新 `v04` 保存于 [`v04/scene.blend`](v04/scene.blend)、[`v04/overview.png`](v04/overview.png)，独立 Blender 进程重载并渲染。针对性修改：统一贴片中心重排顶盖窗口/PV/双电池/fPCB/PL，多层爆炸支撑；电路未知。绝对尺寸、比例、不可见接口与内部机理仍为建模假设/开放未知。 scene SHA256 `6d41945250aa591eb2761a2fc2736618d62e31a10e2e1fd43eec775b82842619`；PNG SHA256 `f38aaa4204b4bb844c4786782e2443510e8e317aa7a416b9d4c575bd7034c03d`。**新图 AGH 未能 capture（apps discovery failed），也尚无新版本外部人工或用户验收；重载成功/几何项 PASS 不等于目视通过。**来源锚点在 `../../demo-assets/15_biomed_energy/source/SOURCE.md`，本地含原图画布 `../../demo-assets/15_biomed_energy/new_source_v01_v04_LOCAL.png` 不提交。
