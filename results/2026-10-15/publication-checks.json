@@ -27,6 +27,24 @@
         "FAIL": 0
       },
       "scene_sha256": "06481e7f7ef9569af84fe9f485e9cbe959506cb58054a176f474c7983cd2b2f7"
+    },
+    {
+      "case": "robotics-v08-geometry",
+      "status": "PASS",
+      "counts": {
+        "PASS": 32,
+        "FAIL": 0
+      },
+      "scene_sha256": "559c24879a2427012d8e3fe6f68f9aea6356bdbacb0997e4341fd40485659dfb"
+    },
+    {
+      "case": "robotics-v08-shapes",
+      "status": "PASS",
+      "counts": {
+        "PASS": 10,
+        "FAIL": 0
+      },
+      "scene_sha256": "559c24879a2427012d8e3fe6f68f9aea6356bdbacb0997e4341fd40485659dfb"
     }
   ],
   "portable_contract_tests": {

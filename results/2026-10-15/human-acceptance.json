@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-15T12:28:37.433674+08:00",
+  "source": "User pasted review directly into this conversation",
+  "review_type": "known-label user visual acceptance; not independent blind evaluation",
+  "microfluidics_v11": {
+    "decision": "接受",
+    "connections": "符合",
+    "fidelity": "符合",
+    "readability": "符合",
+    "scene_sha256": "d3f577c9c0437742b3cd61ac06c043239dcf663138c1a930f3c512a13cd78afe"
+  },
+  "robotics_v08": {
+    "decision": "接受",
+    "silhouette": "符合",
+    "support": "符合",
+    "note": null,
+    "scene_sha256": "559c24879a2427012d8e3fe6f68f9aea6356bdbacb0997e4341fd40485659dfb"
+  },
+  "comparison": {
+    "B": "Skill",
+    "B_preferred": [
+      "器件与完整性",
+      "连接与接口",
+      "外形与比例",
+      "整体更愿意使用"
+    ],
+    "ties": [
+      "支撑与装配",
+      "清晰度与构图"
+    ],
+    "reviewer_count": 1
+  },
+  "actual_use_value": null,
+  "raw_feedback_sha256": "b7eef3f84da8bf4ae84fffc9f6eeea4a09547fed2d13e2172cf20332885958e7",
+  "publication": "User authorized GitHub synchronization after local acceptance",
+  "raw_feedback_location": "Original user feedback and detailed logs retained locally"
+}
