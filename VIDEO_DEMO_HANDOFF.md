@@ -47,4 +47,4 @@ A=工程/装配，B=架构与物理接线，C=实拍，D=正文先行；D 后续
 
 ### 打开与复现
 
-图片可在 clone 后直接用系统预览或浏览器打开 `.png`，本地浏览器打开画廊 `index.html`（相邻图使用相对文件名）。Blender 5.1.2 或兼容版本通过 File → Open 打开对应 `scene.blend`；不应把生成时 Blender 路径当必须存在的协作者路径。需要重算时在 `validation-next/2026-10-14/` 查版本构建脚本与运行记录，**不要覆盖已交付场景**；新输出另建版本。`GIT_FILE_MANIFEST_VIDEO_DEMO.txt` 含这次上传文件路径、字节数与 SHA-256，用来核对 clone 完整性。上传不是许可声明，也不是改判旧图通过。
+图片可在 clone 后直接用系统预览或浏览器打开 `.png`，本地浏览器打开画廊 `index.html`（相邻图使用相对文件名）。Blender 5.1.2 或兼容版本通过 File → Open 打开对应 `scene.blend`；不应把生成时 Blender 路径当必须存在的协作者路径。需要重算时在 `validation-next/2026-10-14/` 查版本构建脚本与运行记录，**不要覆盖已交付场景**；新输出另建版本。`docs/history/GIT_FILE_MANIFEST_VIDEO_DEMO.txt` 含这次上传文件路径、字节数与 SHA-256，用来核对 clone 完整性。上传不是许可声明，也不是改判旧图通过。
