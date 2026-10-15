@@ -1,12 +1,16 @@
 # 仓库地图
 
-|目录/文件|用途|维护原则|
-|---|---|---|
-|`agh-scientific-equipment-renderer/`|唯一独立Skill源码|不把论文、渲染或证据混入安装包|
-|`validation-next/2026-10-14/`|十例来源、场景、脚本、失败和审阅记录|按现有版本和检查点检索，不覆盖历史|
-|`public-validation-11-20/`|前一批验证材料|历史证据，保持路径|
-|`case-*`|更早探索与各案例工程|保留脚本及相对链接；不批量移动大型二进制|
-|`VIDEO_DEMO_HANDOFF.md`|已有视频素材协作入口|记录当时范围和限制|
-|`docs/history/`|从根目录归档的批次状态、旧README、旧文件清单|原始内容不重写；按原根目录理解历史相对路径|
+|目录/文件|用途|
+|---|---|
+|`agh-scientific-equipment-renderer/`|唯一规范 Skill 源码；独立安装包|
+|`results/2026-10-15/`|当前可编辑场景、原始渲染、验收契约、图片对照和复核命令|
+|`tools/acceptance/`|可独立运行的共享验收工具和测试|
+|`integrations/agnes-visual-guard/`|可选 Agnes 视觉复核保护插件|
+|`validation-next/2026-10-14/`|既往十例工程及历史证据，保留原路径|
+|`public-validation-11-20/`、`case-*`|更早批次与探索工程|
+|`VIDEO_DEMO_HANDOFF.md`|历史视频素材协作说明，当前成果以前述 results 为准|
+|`docs/history/`|旧状态、README 与文件清单归档|
 
-本次结构整理仅移动七份根目录历史状态/清单文件，保留原README副本并重写导航。旧目录名称未批量重命名，以避免破坏已有脚本和上千份材料之间的引用。若使用稀疏检出，`git sparse-checkout add docs` 可检出新文档；其他历史案例仍可按需检出。
+本次发布以首页、独立 Skill、公开成果和可复用工具为入口，未批量移动历史案例或重写 Git 历史。详细本地会话证据位于被忽略的 `validation-next/2026-10-15/`，发布整理前的文档备份位于被忽略的 `.local-publication/`；本地 SDK 驱动脚本也不纳入公共工具包。
+
+稀疏检出可运行 `git sparse-checkout add results tools integrations docs` 获取新目录。历史文档中的“私有仓库”“仅本地”及版本状态描述对应其记录日期；当前仓库为公开仓库，本次 results 为公开发布内容。

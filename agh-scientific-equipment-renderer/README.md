@@ -16,7 +16,7 @@ agh-scientific-equipment-renderer/
 
 ## 安装、调用与测试
 
-在 AGH 使用受管 Skill 导入流程，从此目录作 `local` 来源，随后按宿主确认安装；用户已有同名安装时若返回 `SKILL_TARGET_CONFLICT`，**停止**，不得手动覆盖已安装目录、改名绕过或宣称新版已加载。等待合法的管理流程解决冲突，再于下一轮通过 `skill_read` 的正文和 revision 核实生效版本。仓库提交 ≠ 运行时安装。
+当前版本 **v1.1.1**。在 AGH 使用受管 Skill 导入流程，将本目录指定为 `local` 来源，完成安装后用实际 `skill_read` 核对加载版本。同名冲突按安装提示处理。此次项目的版本同步与实际读取情况见 [PROVENANCE.md](PROVENANCE.md)。
 
 `SKILL.md` 的描述用于路由：当用户需要论文装置的实物可编辑三维场景、端口/管线修复或逐篇源图—生成图审查时读取该 Skill；按 `references/identity_port_gate_v11.md` 的四表门槛建模，按 `references/source_render_and_demo_v11.md` 逐版对照，必要时运行工具。自行创建的 Blender 场景生成器与图片比较脚本应在**项目**目录存档，不能假称本包自动生成。
 

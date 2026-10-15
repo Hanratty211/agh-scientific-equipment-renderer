@@ -1,3 +1,5 @@
+> **当前入口（2026-10-15）**：[公开成果与复核](results/2026-10-15/README.md)。本仓库当前为公开仓库；以下为 2026-10-14 历史交接内容，其中仓库可见性和版本状态仅对应当时。
+
 # 功能演示协作交接｜2026-10-14 私有仓库 main
 
 **拿到仓库后**：`git clone https://github.com/Hanratty211/agh-scientific-equipment-renderer.git`，在 `main` 阅读本文件；仓库经 AGH 检查为 GitHub **PRIVATE**。十篇项目根为 [`validation-next/2026-10-14/`](validation-next/2026-10-14/)。Skill 唯一规范源码在 [`agh-scientific-equipment-renderer/`](agh-scientific-equipment-renderer/README.md)，与论文工程分开。十例是在加载 AGH Skill v1.0 时用本项目自写 Blender 脚本做场景/渲染；后续源—图画布是**独立排版成果**，不是 Skill 直接生成，也不是十例通过验证。

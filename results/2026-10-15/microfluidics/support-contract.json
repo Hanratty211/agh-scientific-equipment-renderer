@@ -1,0 +1,13 @@
+{
+  "case_id": "microfluidics-support",
+  "audit_script": "check_support.py",
+  "audit_sha256": "eb4480b4e14f40f0b4a99aa68e48be4a736bb1aa27a77530f9705b8a2da734c8",
+  "expected_check_ids": [
+    "barrel0.support_surface",
+    "barrel1.support_surface",
+    "barrel2.support_surface",
+    "barrel3.support_surface",
+    "barrel4.support_surface"
+  ],
+  "scope": "Five finite evaluated-mesh support probes; separate from original 141-check contract."
+}

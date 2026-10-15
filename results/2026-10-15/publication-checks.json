@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15",
+  "checks_on_public_copies": [
+    {
+      "case": "microfluidics-check",
+      "status": "PASS",
+      "counts": {
+        "PASS": 141,
+        "FAIL": 0
+      },
+      "scene_sha256": "d3f577c9c0437742b3cd61ac06c043239dcf663138c1a930f3c512a13cd78afe"
+    },
+    {
+      "case": "support-check",
+      "status": "PASS",
+      "counts": {
+        "PASS": 5,
+        "FAIL": 0
+      },
+      "scene_sha256": "d3f577c9c0437742b3cd61ac06c043239dcf663138c1a930f3c512a13cd78afe"
+    },
+    {
+      "case": "robotics-check",
+      "status": "PASS",
+      "counts": {
+        "PASS": 32,
+        "FAIL": 0
+      },
+      "scene_sha256": "06481e7f7ef9569af84fe9f485e9cbe959506cb58054a176f474c7983cd2b2f7"
+    }
+  ],
+  "portable_contract_tests": {
+    "passed": 10
+  },
+  "skill_package": "PASS: structure, local links, abstract examples, Blender behavior tests",
+  "guard_unit_checks": "PASS",
+  "original_local_evidence": [
+    {
+      "manifest": "validation-next/2026-10-15/SHA256SUMS.txt",
+      "checked": 314,
+      "changed": 0
+    },
+    {
+      "manifest": "validation-next/2026-10-15/priority-1-2/SHA256SUMS.txt",
+      "checked": 497,
+      "changed": 0
+    }
+  ],
+  "blender": "5.1.2",
+  "agnes_invoked_for_publication": false,
+  "scope": "Publication checks; not a new image-generation experiment or visual acceptance."
+}

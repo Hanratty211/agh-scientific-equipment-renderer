@@ -1,7 +1,16 @@
-# Local system and Python cache; research sources, failed drafts and Blender backups stay versioned.
+# System and Python cache; historical tracked evidence stays versioned.
 .DS_Store
 __pycache__/
 *.py[cod]
 .venv/
 .env
 .env.*
+
+# Detailed local session evidence and publication backups are not public release assets.
+/validation-next/2026-10-15/
+/.local-publication/
+/rerun/
+# Local SDK/operator helpers; portable public tools live in tools/acceptance/.
+/tools/*.py
+/tools/*.mjs
+/tools/*.mts
