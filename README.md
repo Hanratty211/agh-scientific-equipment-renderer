@@ -48,7 +48,7 @@
 
 ## 验证与工程资料
 
-- [同一 Agnes 模型的图片对照](results/2026-10-15/visual-comparison/README.md)：纯提示词与调用 Skill 的原始输出、固定渲染条件和匿名评审结果。
+- [同一 Agnes 模型的图片对照](results/2026-10-15/visual-comparison/README.md)：纯提示词与调用 Skill 的原始输出、固定渲染条件和人工核查结果。
 - [共享验收工具](tools/acceptance/README.md)：冻结检查集合、校验脚本与场景哈希，保留每次独立输出。
 - [Agnes 视觉复核插件](integrations/agnes-visual-guard/README.md)：按会话选择启用，状态可恢复。
 - [Skill 版本与来源](agh-scientific-equipment-renderer/PROVENANCE.md)：源码、安装与运行时读取分别记录。
