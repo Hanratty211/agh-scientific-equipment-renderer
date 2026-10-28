@@ -22,9 +22,13 @@ agh-scientific-equipment-renderer/
 
 ```bash
 python3 agh-scientific-equipment-renderer/scripts/test_v11_workflow.py
-python3 agh-scientific-equipment-renderer/scripts/check_structure.py
+python3 -B agh-scientific-equipment-renderer/scripts/check_structure.py
 python3 agh-scientific-equipment-renderer/examples/run_v06_regression.py \
   --blender /path/to/blender --report /tmp/agh-equipment-synthetic.json
 ```
 
 `check_structure.py` 还运行 Blender 反例，需本机 Blender 和 PyYAML；图片数值脚本另需 Pillow。脚本默认 Blender 可执行文件路径可由 `AGH_BLENDER` 环境变量设定，检查产物写系统临时目录而不污染本包。`examples/valid_record.json`、`make_synthetic_scene.py` 只为工具回归，不是论文装置模板。工具通过不等于视觉/科学/安全验证。出版方 PDF、原图、含原图画布不得打包或未经许可提交公开仓库；仅自制通用工具与说明可发布。
+
+## License / 许可
+
+Original Skill instructions, code and documentation: [MIT](LICENSE). Third-party materials retain their own licenses. / 原创 Skill 方法、代码与文档采用 MIT；第三方材料保留各自许可。

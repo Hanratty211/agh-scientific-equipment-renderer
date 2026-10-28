@@ -5,6 +5,11 @@ __pycache__/
 .venv/
 .env
 .env.*
+!.env.example
+*.pem
+*.key
+.scirender-visual-review.json
+.scirender-review-state/
 
 # Detailed local session evidence and publication backups are not public release assets.
 /validation-next/2026-10-15/

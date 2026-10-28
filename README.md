@@ -1,55 +1,158 @@
-# SciRender · 让科研装置从论文走进可编辑三维场景
+# SciRender · Editable 3D scientific equipment from research sources
 
-**基于 Agnes 的科研装置重建 Skill：把来源识别、器件建模、端口连接、几何验收和图片复核串成可追溯的工作流程。**
+**English** | [简体中文](README.zh-CN.md)
 
-面向论文解读、组会展示和科研方案沟通，交付可编辑的 Blender 场景与多视角图片。当前独立 Skill 为 **v1.1.1**，不依赖仓库中的案例素材即可安装。
+An Agnes Harness Skill that turns research figures, photographs and descriptions into editable Blender scenes, with traceable sources, explicit connection topology and separate geometry and image reviews.
 
-[安装与使用](agh-scientific-equipment-renderer/README.md) · [最新成果与复核](results/2026-10-15/README.md) · [仓库地图](docs/REPOSITORY_MAP.md)
+[Demo video](#demo-video) · [Quick start](#quick-start) · [Architecture](#architecture) · [Integration standards](#integration-standards) · [Results](results/2026-10-15/README.md)
 
-## 从“画出来”到“能检查、能修改、能复用”
+## Project overview
 
-- **来源驱动建模**：先确定器件身份、接口和逐线连接关系，再生成场景，让关键结构有据可查。
-- **可编辑交付**：保留对象、材质、相机与场景文件；支持继续改结构、换视角和制作展示图。
-- **双层验收**：独立重开保存场景检查几何，再实际读取渲染图片，分别核对结构和可读性。
-- **跨案例复用**：共享验收执行器，按领域配置检查契约；覆盖数量、场景哈希和进程退出均纳入判定。
-- **有界视觉复核**：可选 Agnes 插件保存复核状态，控制重复截图次数与步骤时间预算。
+Scientific equipment is often documented across figures, captions and methods. Reconstructing it for a paper discussion or presentation requires recognizable devices, clear assembly relationships and visible connections. The result should remain editable as the equipment or presentation changes.
 
-## 已交付案例
+**SciRender (研境)** organizes this process into a reusable Skill for [Agnes Harness](https://github.com/AgnesAI-Labs/agnes-harness). Agnes coordinates source reading and task execution; Python and Blender implement the scene. The current standalone Skill is **v1.1.1**, and its installation does not require the case archive.
 
-|案例|可编辑成果|独立几何检查|图片复核|
-|---|---|---|---|
-|微流控外部采样装置|v11 场景、4 个视角|141/141 + 5/5 支承检查通过|用户接受|
-|机器人材料夹持装置|v08 场景、4 个视角|32/32 + 10/10 补充检查通过|用户复核接受|
+### Core features and innovations
 
-### 微流控：五路连接清晰呈现
+- **Source-grounded modeling:** record source anchors, device identities, visible features, assumptions and unknowns before modeling. Unsupported details remain schematic or unknown.
+- **Connections with ownership:** define ports, media, directions and routes before building cables, tubes and optical paths. A line touching a housing does not establish a valid connection.
+- **Editable delivery:** preserve objects, materials, cameras and modeling scripts; render overviews and details from the same geometry, with optional editable SVG labels.
+- **Separate geometry and image review:** reopen the saved scene in an independent Blender process for declared geometry checks, then inspect actual images for appearance and readability.
+- **Reusable acceptance contracts:** a shared runner verifies frozen auditor hashes, expected check IDs, scene hashes, counts and process completion. Case-specific audits define coverage.
+- **Bounded visual review:** an optional Agnes plugin persists review state, limits repeated screenshots and supports resuming unfinished work from checkpoints.
 
-![微流控外部采样装置](results/2026-10-15/microfluidics/renders/overview.png)
+SciRender supports paper interpretation, group meetings, teaching and research planning. Outputs are illustrative reconstructions; they do not establish exact dimensions, manufacturing suitability, sealing, flow, mechanical performance or equipment safety. Recorded examples involve human direction and AI-assisted repairs; they are not an autonomous blind benchmark.
 
-五支注射器共架，连接五路蓝色输入管、芯片外口和五路绿色输出气囊；六对外口中保留一对闲置。查看 [可编辑场景](results/2026-10-15/microfluidics/scene.blend) 与 [验收说明](results/2026-10-15/README.md)。
+## Demo video
 
-### 机器人材料夹持：结构与局部同时可查
+[Watch / download demo video](https://github.com/Hanratty211/agh-scientific-equipment-renderer/releases/download/demo-20261028/scirender-demo.mp4)
 
-![机器人材料夹持装置](results/2026-10-15/robotics-v08/renders/overview.png)
+### Delivered examples
 
-上下圆形夹具、连续两色试样和支承框架完整呈现，另提供正视及上下夹具局部图。[下载可编辑场景](results/2026-10-15/robotics-v08/scene.blend)。
+| Example | Editable output | Recorded geometry checks | Image review |
+| --- | --- | --- | --- |
+| Microfluidic external sampling setup | v11 scene and four views | 141/141 + 5/5 support checks | Accepted by the user |
+| Robotic material gripping setup | v08 scene and four views | 32/32 + 10/10 revision checks | Accepted after user review |
 
-以上是来源约束下的科研示意验收，适用于解释与展示；未作为制造、密封、流动或力学性能验证。实现包含 AI 辅助工程修复，执行与审阅分工见[成果记录](results/2026-10-15/README.md)。
+![Microfluidic external sampling setup](results/2026-10-15/microfluidics/renders/overview.png)
 
-## 快速开始
+Five syringes share a rack, with five blue inlet routes and five green outlet reservoirs. One of the six external port pairs remains unused. [Editable scene](results/2026-10-15/microfluidics/scene.blend) · [Evidence and sources](results/2026-10-15/README.md)
 
-1. 将 `agh-scientific-equipment-renderer/` 整个目录作为本地来源，通过 Agnes 受管 Skill 导入流程安装。
-2. 提供论文图、目标子图和需要展示的范围，请 Agnes 调用 `agh-scientific-equipment-renderer`。
-3. 按 Skill 完成来源与端口表、建模、保存、重载检查及原生图片复核。
-4. 交付 `.blend`、多视图 PNG 和简明验收结论。
+![Robotic material gripping setup](results/2026-10-15/robotics-v08/renders/overview.png)
 
-已有成果可直接在 Blender 5.1.2 中打开；独立检查无需运行 Agnes。详见[复核命令](results/2026-10-15/REPRODUCE.md)。
+Upper and lower circular grips, a continuous two-color specimen and the support frame remain editable. [v08 scene](results/2026-10-15/robotics-v08/scene.blend) · [Revision comparison](results/2026-10-15/robotics-v08/README.md) · [Human acceptance](results/2026-10-15/HUMAN_REVIEW.md)
 
-用户已接受微流控 v11 和机器人 v08。[用户图像验收](results/2026-10-15/HUMAN_REVIEW.md) · [机器人修改前后对照](results/2026-10-15/robotics-v08/README.md)。
+## Quick start
 
-## 验证与工程资料
+### Environment
 
-- [同一 Agnes 模型的图片对照](results/2026-10-15/visual-comparison/README.md)：纯提示词与调用 Skill 的原始输出、固定渲染条件和人工核查结果。
-- [共享验收工具](tools/acceptance/README.md)：冻结检查集合、校验脚本与场景哈希，保留每次独立输出。
-- [Agnes 视觉复核插件](integrations/agnes-visual-guard/README.md)：按会话选择启用，状态可恢复。
-- [Skill 版本与来源](agh-scientific-equipment-renderer/PROVENANCE.md)：源码、安装与运行时读取分别记录。
-- [历史材料导航](docs/REPOSITORY_MAP.md)：保留既有案例路径和版本历史；详细本地调试记录不重复发布。
+| Component | Requirement / recorded environment |
+| --- | --- |
+| Blender | **5.1.2** was used for published cases; other versions require verification |
+| Python | Python 3 for CLI helpers; the acceptance runner uses only the standard library |
+| Optional Python packages | PyYAML for package structure checks; Pillow for image utilities |
+| Agnes Harness | Required for the interactive Skill workflow; configure the model provider in your own installation |
+| Node.js | Only for the optional review plugin; follow your Agnes checkout's requirement |
+| Platform | Recorded local validation on macOS; Windows/Linux have not been validated here |
+
+```bash
+git clone https://github.com/Hanratty211/agh-scientific-equipment-renderer.git
+cd agh-scientific-equipment-renderer
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install PyYAML Pillow
+export AGH_BLENDER="/Applications/Blender.app/Contents/MacOS/Blender"
+```
+
+The activation and executable path above are macOS/Linux shell examples. On Windows, activate `.venv\Scripts\Activate.ps1` and set `$env:AGH_BLENDER` to your Blender executable. Configure model credentials in local Agnes settings; no model key is needed to inspect scenes or run standalone acceptance tools.
+
+### Run the Skill
+
+1. Start your configured [Agnes installation](https://github.com/AgnesAI-Labs/agnes-harness/blob/main/docs/guide/install.md).
+2. Import the **whole `agh-scientific-equipment-renderer/` directory** as a local source through Agnes's managed Skill flow. Resolve same-name conflicts and updates through the host's supported management flow.
+3. Read the installed Skill with `skill_read` and verify the version/revision. The historical `skills/` path is not the canonical package.
+4. Supply the source material, target panel, relevant captions/methods and required scope. For example:
+
+   > Use agh-scientific-equipment-renderer to reconstruct the external sampling assembly in Fig. 3C. Preserve five input/output routes. Deliver an editable .blend, overview/detail PNGs and source/assumption records. Mark hidden paths and unsupported dimensions as unknown. Reopen the saved scene for geometry checks and review the actual PNGs separately.
+
+5. Follow the Skill's source/device/port/topology tables, modeling, saved-scene checks and image review. Keep failed versions and unresolved items in the project directory.
+
+The Skill provides instructions and reusable helpers. Scene builders are written for each task; the package does not offer a one-command paper-to-CAD conversion. [Package installation and tests](agh-scientific-equipment-renderer/README.md)
+
+### Recheck an existing result without Agnes
+
+From the repository root, after setting `AGH_BLENDER`:
+
+```bash
+python3 tools/acceptance/accept_case.py \
+  results/2026-10-15/microfluidics/scene.blend rerun/microfluidics \
+  --contract results/2026-10-15/microfluidics/contract.json
+```
+
+Expected coverage: **141 checks**. Use a fresh output directory for each run; the runner refuses to overwrite evidence. Results are saved as `gate.json`, `geometry.json` and `execution.log`. Support checks, robotics v08 checks and re-render commands are in [REPRODUCE.md](results/2026-10-15/REPRODUCE.md) (Chinese).
+
+```bash
+python3 -m unittest discover -s tools/acceptance -p 'test_*.py' -v
+python3 agh-scientific-equipment-renderer/scripts/test_v11_workflow.py
+python3 -B agh-scientific-equipment-renderer/scripts/check_structure.py
+node integrations/agnes-visual-guard/test.mjs
+```
+
+The structure check invokes real Blender synthetic tests. Passing these tests establishes tool behavior within their scope, not scientific or visual acceptance.
+
+## Architecture
+
+```mermaid
+flowchart TD
+    A[Paper / figure / photo / description] --> B[Agnes + SciRender Skill]
+    B --> C[Source anchors + device / port / topology tables]
+    C --> D[Task-specific Python scene builder]
+    H[Reusable geometry helpers] --> D
+    D --> E[Blender: meshes / curves / materials / cameras]
+    E --> F[Saved blend + PNG views + project record]
+    F --> G[Independent Blender reload + geometry contract]
+    F --> I[Actual source and rendered-image review]
+    G --> J[Versioned delivery + evidence + unresolved items]
+    I --> J
+    K[Optional visual review guard] -. bounds repeated captures .-> I
+```
+
+| Module | Implementation and responsibility |
+| --- | --- |
+| [Skill package](agh-scientific-equipment-renderer/SKILL.md) | Routing, source interpretation, identity/port gates, progressive modeling and review checkpoints |
+| [Geometry helpers](agh-scientific-equipment-renderer/scripts/blender_core.py) | Reusable Blender Python helpers; tasks may also use their own builders |
+| [Record validator](agh-scientific-equipment-renderer/scripts/validate_project_record.py) | JSON consistency, required scope, references, media and dependency records |
+| [Saved-scene auditor](agh-scientific-equipment-renderer/scripts/audit_saved_scene.py) | Supported, explicitly declared geometry checks against the saved scene |
+| [Acceptance runner](tools/acceptance/README.md) | Independent process, frozen coverage/hash checks, timeouts and preserved reports |
+| [Optional review plugin](integrations/agnes-visual-guard/README.md) | Public Agnes hooks with opt-in, persistent capture limits |
+| [Published results](results/2026-10-15/README.md) | Editable scenes, render scripts, contracts, checksums and review evidence |
+
+Blender meshes and Boolean operations represent devices, apertures and cavities. Curves represent visible tubes and cables; world-space transforms locate ports and routes. Cameras render the assembly and details from the same geometry. Source interpretation, geometry checks and image judgments remain separately recorded.
+
+## Integration standards
+
+SciRender integrates through a **managed Skill, local CLI/files and an optional Agnes plugin**. It does not expose a hosted HTTP API. These JSON contracts are project formats, not industry certification standards.
+
+| Interface | Contract and integration method |
+| --- | --- |
+| Skill discovery | `SKILL.md` with YAML frontmatter (`name`, `description`), bundled references/scripts; import the full canonical directory and verify `skill_read` |
+| Task inputs | Source URL/DOI or authorized local material, target figure/panel, scope and outputs; keep facts, assumptions and unknowns separate |
+| Project record | JSON `schema: "agh-equipment/0.6"`; top-level `task`, `components`, `ports`, `connections`, `supports`; stable IDs bind records to Blender objects |
+| Port/route semantics | Ports declare `owner`, `medium`, `direction`, `state`; connections reference endpoint IDs. Explicit tolerances use Blender world units; physical-unit interpretation requires a verified scene scale |
+| Static validation | `validate_project_record.py RECORD --report REPORT`; exit `0` = PASS, `2` = FAIL, `3` = UNKNOWN, `1` = invalid input/schema |
+| Case acceptance | `accept_case.py SCENE NEW_OUTPUT_DIR --contract CONTRACT [--blender PATH] [--timeout SECONDS]`; contract records `case_id`, `audit_script`, `audit_sha256`, `expected_check_ids`, `scope` |
+| Acceptance result | `gate.json` reports PASS/FAIL, reasons, hashes, exit code and coverage; geometry reports include check IDs/statuses/counts and scene path/hash. Missing coverage or unsuccessful execution fails the gate |
+| Artifacts | `.blend`, PNG, Python builders/renderers, JSON records/reports, Markdown evidence and optional SVG labels; published checksums use SHA-256 |
+| Visual guard | ESM plugin `@scirender/visual-review-guard` v0.1.1; `registerHook` for `tool_call`, `tool_result`, `before_step`; workspace marker `{"run_id":"my-review-001"}` opts in |
+
+The guard limits the supported `computer_use capture` path to three attempts per target, three identical image digests and twelve attempts overall. A 180-second budget is enforced at subsequent call/step boundaries. State persists under `.scirender-review-state/`; exhausted runs block with `NEEDS_EXTERNAL_REVIEW`. The guard does not interrupt in-flight tools or constrain other tools.
+
+For another agent host, supply file access, command execution, Blender and actual image inspection, then follow the same records and reviews. Host compatibility must be checked; no MCP server or cross-host certification is included. [Record specification](agh-scientific-equipment-renderer/references/project_record.md) · [Acceptance tools](tools/acceptance/README.md) · [Plugin installation](integrations/agnes-visual-guard/README.md)
+
+## License, attribution and repository hygiene
+
+Original code, Skill instructions and documentation are licensed under [MIT](LICENSE). Third-party papers, figures, photographs, audio and other assets retain their own licenses. Generated scenes/renders are outside this blanket code/documentation grant. See [third-party notices and asset scope](THIRD_PARTY_NOTICES.md), including demo credits and historical archive limitations.
+
+Keep model keys, passwords, private material and local session state outside commits. Local `.env` files and runtime review state are ignored. [Submission checks](docs/SUBMISSION_CHECKLIST.md) record the inspection scope and limitations.
+
+[Repository map](docs/REPOSITORY_MAP.md) · [Version provenance](agh-scientific-equipment-renderer/PROVENANCE.md) · [Historical archive](docs/history/README.md) · [Same-model visual comparison](results/2026-10-15/visual-comparison/README.md)
